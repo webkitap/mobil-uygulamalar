@@ -1,0 +1,1 @@
+# VERİ TABANI İŞLEMLERİ
