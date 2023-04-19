@@ -20,15 +20,4 @@
 3. Unicode ve ASCII tablosunu araştırınız. Edindiğiniz bilgileri arkadaşlarınızla paylaşınız.
 
 ### ANAHTAR KELİMELER
-- Aritmetiksel operatörler
-- Atama operatörleri
-- Değişken
-- Hata ayıklama
-- İlkel veri tipleri
-- Karşılaştırma operatörleri
-- Logcat
-- Mantıksal operatörler
-- Referans veri tipleri
-- Sabit
-- Veri
-- Veri tipleri 
+Aritmetiksel operatörler, Atama operatörleri, Değişken, Hata ayıklama, İlkel veri tipleri, Karşılaştırma operatörleri, Logcat, Mantıksal operatörler, Referans veri tipleri, Sabit, Veri, Veri tipleri

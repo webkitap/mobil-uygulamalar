@@ -1,8 +1,8 @@
 # Mobil Uygulamalar
 - Ünite isimleri MD dosyalarında
-    - NELER ÖĞRENECEKSİNİZ?
-    - Hazırlık Çalışmaları
-    - ANAHTAR KELİMELER bölümleri yer alacak
+  - NELER ÖĞRENECEKSİNİZ?
+  - Hazırlık Çalışmaları
+  - ANAHTAR KELİMELER bölümleri yer alacak
     
 - Başlık seviyeleri
   - Ünite 1. seviye H1 örneğin 1. Temel Kavramlar
@@ -12,7 +12,7 @@
   - **İlk 2 seviye sayfalandırılacak diğerleri ilgili sayfaya dahil edilecek**
 
 - Görseller
-   - Her ünite için resim klasörü olacak
-   - Görseller png formatında kaydedilecek
-   - Görsel isimlerinde tr karakterler ve boşluklar olmayacak
-   - Görsel ALT bilgileri eklenecek
+  - Her ünite için resim klasörü olacak
+  - Görseller png formatında kaydedilecek
+  - Görsel isimlerinde tr karakterler ve boşluklar olmayacak
+  - Görsel ALT bilgileri eklenecek

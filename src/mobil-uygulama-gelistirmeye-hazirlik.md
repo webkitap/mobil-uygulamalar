@@ -14,10 +14,4 @@ farklı özellikler neler olabilir? Düşüncelerinizi arkadaşlarınızla payla
 2. Mobil uygulama geliştirme ortamında nasıl bir uygulama tasarlamak istediğinizi arkadaşlarınızla paylaşınız.
 
 ### ANAHTAR KELİMELER
-- Activity
-- Android Studio
-- Emülatör
-- Java
-- JDK
-- XML
-- Proje
+Activity, Android Studio, Emülatör, Java, JDK, XML, Proje

@@ -1,2 +1,2 @@
-## 3.1. VERİ
+# 3.1. VERİ
 Akıllı cihazlarda uygulamalar tarafından işlenmek üzere hafızada tutulan her türlü ham bilgiye **veri** denir. Veriler tek başlarına bir şey ifade etmez. Verilerin bir anlam ifade etmesi için veri üzerinde işlem yapılması gereklidir. Tek başına 60 sayısının bir anlamı yoktur. Bu sayı, üzerinde yapılacak işleme göre anlam kazanır. Örneğin bir öğrencinin mobil uygulamalar dersine ait not ortalaması 60 olarak ifade edilirse ders geçme notu 50’den büyük olduğu için öğrenci mobil uygulamalar dersinden geçmiş sayılır. 

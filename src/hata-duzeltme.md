@@ -1,4 +1,4 @@
-## 3.8. HATA DÜZELTME
+# 3.8. HATA DÜZELTME
 
 Çalışma zamanı hatalarını düzeltmek için birçok yöntem vardır. Bunlardan en çok kullanılanı Try-Catch-Finally yapısıdır. Hata verebilecek kodlar Try (Dene) bloku içine alınır. Böylelikle herhangi bir istisna (Exception) meydana geldiğinde kod çalışmaya devam eder. Bir istisna meydana gelirse Catch (Yakala) bloku içindeki kodlar çalışır. Finally (En sonunda) bloku herhangi bir istisna oluşup oluşmadığına bakılmaksızın Try-Catch-Finally yapısında en son olarak çalıştırılacak kodların bulunduğu bölümdür. Finally blokunun kullanılması zorunlu değildir.
 
@@ -24,7 +24,7 @@ finally {
 
 ```java
 public class MainActivity extends AppCompatActivity {
-    private final String TAG = “Etiket”;
+    private final String TAG = "Etiket";
     private int sayi = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +32,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void islemYap(View view) {
-        Log.i(TAG,”Düğmeye tıklandı”);
+        Log.i(TAG,"Düğmeye tıklandı");
         EditText editText = (EditText) findViewById(R.id.editText);
-        Log.i(TAG,”Edit Text tanımlandı”);
+        Log.i(TAG,"Edit Text tanımlandı");
         String s1 = editText.getText().toString();
-        Log.i(TAG, “Edit Text içindeki yazı alındı”);
+        Log.i(TAG, "Edit Text içindeki yazı alındı");
         try {
             sayi = Integer.parseInt(s1);
-            Log.i(TAG,”Yazı sayıya çevrildi”);
+            Log.i(TAG,"Yazı sayıya çevrildi");
         }
         catch (Exception e){
-            Log.e(TAG,”Çevirim hatası”);
+            Log.e(TAG,"Çevirim hatası");
             sayi = 0;
         }
         finally {
             sayi = sayi + 2;
-            Log.i(TAG, “(finally) sayı = “ +sayi);
+            Log.i(TAG, "(finally) sayı = " +sayi);
         }
     }
 }
@@ -61,23 +61,23 @@ public class MainActivity extends AppCompatActivity {
 
 ![Logcat gözlem](./temel-komutlar/logcat-gozlem.png)
 
-**SIRA SİZDE**:
-
+>**SIRA SİZDE**:
+>
 >İki sayıyı birbirine bölen uygulamayı Try-Catch-Finally yapısını kullanarak tasarlayınız.
-
-**DEĞERLENDİRME**:
-
+>
+>**DEĞERLENDİRME**:
+>
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
-
-**KONTROL LİSTESİ**
-
-|DEĞERLENDİRME ÖLÇÜTLERİ |EVET| HAYIR|
-|-|-|-|
-|1. Uygulamaya iki adet EditText ekledi.|
-|2. Uygulamaya bir adet TextView ekledi.|
-|3. Uygulamaya bir adet Button ekledi.|
-|4. Button tıklama olayını yazdı.|
-|5. Button tıklama olayına bölme işlemi kodlarını yazdı.|
-|6. Metni sayıya çevirme kodları için Try-Catch-Finally yapısını kullandı.|
-|7. Sıfıra bölme hatası için Try-Catch-Finally yapısını kullandı.|
-|8. Logcat ekranını kullandı.|
+>
+>**KONTROL LİSTESİ**
+>
+>| DEĞERLENDİRME ÖLÇÜTLERİ                                                   | EVET | HAYIR |
+>| ------------------------------------------------------------------------- | ---- | ----- |
+>| 1. Uygulamaya iki adet EditText ekledi.                                   |
+>| 2. Uygulamaya bir adet TextView ekledi.                                   |
+>| 3. Uygulamaya bir adet Button ekledi.                                     |
+>| 4. Button tıklama olayını yazdı.                                          |
+>| 5. Button tıklama olayına bölme işlemi kodlarını yazdı.                   |
+>| 6. Metni sayıya çevirme kodları için Try-Catch-Finally yapısını kullandı. |
+>| 7. Sıfıra bölme hatası için Try-Catch-Finally yapısını kullandı.          |
+>| 8. Logcat ekranını kullandı.                                              |

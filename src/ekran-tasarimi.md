@@ -19,19 +19,4 @@ durumları anlatınız.
 paylaşınız.
 
 ## ANAHTAR KELİMELER
-- Action Bar
-- APK
-- APPS
-- Button
-- CheckBox
-- ConstraintLayout
-- EditView
-- Layout
-- MainActivity
-- Navigation bar
-- ProgressBar
-- RelativeLayout
-- Status bar
-- TextView
-- View
-- ViewGroup
+Action Bar, APK, APPS, Button, CheckBox, ConstraintLayout, EditView, Layout, MainActivity, Navigation bar, ProgressBar, RelativeLayout, Status bar, TextView, View, ViewGroup

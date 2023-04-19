@@ -1,10 +1,10 @@
-## 3.5. İSİMLENDİRME KURALLARI
+# 3.5. İSİMLENDİRME KURALLARI
 Her programlama dilinde uyulması gereken isimlendirme kuralları ve standartları vardır. Kurallara mutlaka uyulması gerekirken standartlara uyulma zorunluluğu yoktur. İsimlendirme kurallarına uyulmadığında derleyici hatası meydana gelir ve uygulama çalışmaz. İsimlendirme standartlarına uyulmadığında herhangi bir hata ile karşılaşılmaz. İsimlendirme kuralları şunlardır:
 
 * İsimlerde boşluk kullanılmaz.
 * İsimlerde $ ve _ karakterleri dışında özel karakterler kullanılmaz.
 * İsimler sayı ile başlamaz.
-* İsimler büyük ve küçük harf duyarlıdır. Bir uygulama içinde yer alan “ad” değişkeni ile “Ad”değişkeni farklıdır.
+* İsimler büyük ve küçük harf duyarlıdır. Bir uygulama içinde yer alan "ad" değişkeni ile "Ad"değişkeni farklıdır.
 * Ayrılmış anahtar kelimeler (reserved keywords) isim olarak kullanılmaz. İsimlendirmede if,else, int, char gibi programa ait ifadeler ayrılmış anahtar kelimelerdir.
 
 Birçok isimlendirme standardı vardır. Bunlardan üç tanesi Java programlama dilinde sıklıkla kullanılır.
@@ -39,32 +39,32 @@ kullanılan isimlendirme standartları şunlardır:
 - Paket isimleri Pascal Case şeklinde olmalıdır.
 - Metot isimleri Camel Case şeklinde olmalıdır.
 
-**SIRA SİZDE**: 
-
+>**SIRA SİZDE**: 
+>
 >Tabloda verilen isimlerin karşısına isimlendirme kuralları ve standartlarınagöre isimleri tekrar yazınız.
-
-|İsim |Türü| Doğru GösterimI|
-|-|-|-|
-|Öğrenci Adı |Değişken|
-|Araba Sınıfı |Sınıf|
-|1. not| Değişken|
-|Tahmin Oyunu| Proje Adı|
-|Geçme Notu |Sabit|
-|Kullanıcı İşlemleri| Paket Adı|
-|Puan Hesapla |Metot Adı|
-
-
-**DEĞERLENDİRME**: 
+>
+>| İsim                | Türü      | Doğru GösterimI |
+>| ------------------- | --------- | --------------- |
+>| Öğrenci Adı         | Değişken  |
+>| Araba Sınıfı        | Sınıf     |
+>| 1. not              | Değişken  |
+>| Tahmin Oyunu        | Proje Adı |
+>| Geçme Notu          | Sabit     |
+>| Kullanıcı İşlemleri | Paket Adı |
+>| Puan Hesapla        | Metot Adı |
+>
+>
+>**DEĞERLENDİRME**: 
 >Çalışmalarınız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
-
-**KONTROL LİSTESİ**
-
-|DEĞERLENDİRME ÖLÇÜTLERİ |EVET| HAYIR|
-|-|-|-|
-|1. “Öğrenci Adı” değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|2. “Araba Sınıfı” sınıfına isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|3. “1. not” değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|4. “Tahmin Oyunu” projesine isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|5. “Geçme Notu” sabitine isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|6. “Kullanıcı İşlemleri” paket adına isimlendirme kurallarına ve standartlarına uygun isim verdi.|
-|7. “Puan Hesapla” metoduna isimlendirme kurallarına ve standartlarına uygun isim verdi.|
+>
+>**KONTROL LİSTESİ**
+>
+>| DEĞERLENDİRME ÖLÇÜTLERİ                                                                           | EVET | HAYIR |
+>| ------------------------------------------------------------------------------------------------- | ---- | ----- |
+>| 1. "Öğrenci Adı" değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.         |
+>| 2. "Araba Sınıfı" sınıfına isimlendirme kurallarına ve standartlarına uygun isim verdi.           |
+>| 3. "1. not" değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.              |
+>| 4. "Tahmin Oyunu" projesine isimlendirme kurallarına ve standartlarına uygun isim verdi.          |
+>| 5. "Geçme Notu" sabitine isimlendirme kurallarına ve standartlarına uygun isim verdi.             |
+>| 6. "Kullanıcı İşlemleri" paket adına isimlendirme kurallarına ve standartlarına uygun isim verdi. |
+>| 7. "Puan Hesapla" metoduna isimlendirme kurallarına ve standartlarına uygun isim verdi.           |
