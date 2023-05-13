@@ -10,8 +10,10 @@ Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür
 - **All apps (Tüm Uygulamalar)**: Taşınabilir cihaza kurulu tüm uygulamaların gösterildiği arayüz ekranıdır (Görsel 2.1b). Uygulamalar ekranına geçmek için ana ekranda bulunan **Apps** simgesine dokunulur veya tıklanır.
 
 - **Recent screen (Son Kullanılan Uygulamalar Ekranı)**: Taşınabilir cihazda son kullanılan uygulamaların listesinin görüntülendiği arayüz ekranıdır (Görsel 2.1c).
+<div style="display:block;text-align:center">
 
 ![Gorsel 2.1a-b-c](./ekran-tasarimi/gorsel-2.1a-home-screen-gorsel-2.1b-all-apps-gorsel-2.1c-recent-screen.png)
+</div>
 
 **UYARI**: Bu üç temel mobil cihaz ekranının dışında saatin, bildirimlerin, mesajların gösterilebildiği **Lock screen (Kilit ekranı)** de vardır.
 
@@ -23,7 +25,7 @@ Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                                     | EVET | HAYIR |
 >| ------------------------------------------------------------------------------------------ | ---- | ----- |

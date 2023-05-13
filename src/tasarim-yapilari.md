@@ -6,9 +6,10 @@
 - <a href="#1.3.4.">1.3.4. Activity Yaşam Döngüsü Metotları</a> 
 
 Emülatör kurulumu tamamlanıp pencereler kapatıldıktan sonra Android Studio karşılama ekranına tekrar dönülür (Görsel 1.23).
+<div style="display:block;text-align:center">
 
 ![Yeni Proje simgesi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.23-yeni-proje-simgesi.png)
-
+</div>
 Bu ekrandaki simgeler şunlardır:
 
 - **New Project (Yeni Proje)**: En baştan yeni bir proje oluşturulacaksa bu simge tıklanır.
@@ -17,8 +18,10 @@ Bu ekrandaki simgeler şunlardır:
 
 New Project simgesi tıklandıktan sonra Templates (Şablonlar) bölümünden Phone and Tablet
 seçilir. Uygulamaya Activity Templates (Tasarım Yapıları) eklenebilen seçim penceresi gelir (Görsel 1.24).
+<div style="display:block;text-align:center">
 
 ![Activity Templates](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.24-activity-templates.png)
+</div>
 
 Bu pencerede uygulama geliştirilecek cihaza göre **Phone and Tablet (Telefon ve Tablet)**, **Wear Os (Giyilebilir Cihaz)**, **Android TV (Akıllı Televizyon)** ve **Automotive (Otomotiv)** olarak kategorilere ayrılmış Activity Templates yer alır.
 
@@ -32,7 +35,7 @@ Uygulama geliştirilmek istenen cihaz olarak Phone and Tablet seçilir ve hazır
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                            | EVET | HAYIR |
 >| ----------------------------------------------------------------- | ---- | ----- |
@@ -61,8 +64,10 @@ Yeni bir proje oluşturulurken hazır activitylerden biri seçilmelidir. Hazır 
 Android uygulaması içinde activitylerin bir yaşam döngüsü vardır. Program yazılırken yaşam döngüsünün iyi bilinmesi işleri kolaylaştırır.
 
 Bir Android uygulaması ilk başlatıldığında main (ana) activity oluşturulur. Activity kullanıcıya hizmet vermeden önce **OLUŞTURULDU (CREATED), BAŞLATILDI (STARTED) ve SÜRDÜRÜLDÜ (RESUMED)** olmak üzere üç durumdan geçer (Görsel 1.25).
+<div style="display:block;text-align:center">
 
 ![Activity yaşam döngüsü](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.25-activity-yasam-dongusu.png)
+</div>
 
 - Main activity, başka herhangi bir activity açarsa yeni açılan activityler de OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarından geçer.
 - Bir A activity başka bir B activity açarsa A activity durumu **DURAKLATILDI (PAUSED)** hâline geçer. Kullanıcı, telefonun Geri (Back) tuşuna basarsa A activitye döner ve durumu SÜRDÜRÜLDÜ olur.
@@ -74,7 +79,7 @@ Bir Android uygulaması ilk başlatıldığında main (ana) activity oluşturulu
 
 Java programlama dilinde programlar main() metoduyla başlar. Android uygulamalarda ise çok benzer şekilde çalıştırılan activitynin onCreate() metodunu çağırmasıyla OLUŞTURULDU durumuna geçilir. Tablo 1.1’de durumlar ve karşılığında çağrılacak metotlar verilmiştir.
 
-**Tablo 1.1: Metotlar**
+<div style="text-align:center;"><b>Tablo 1.1: Metotlar</b></div>
 
 | Çağrılan Metot | Tanımı                                                                                    | Durum                 |
 | -------------- | ----------------------------------------------------------------------------------------- | --------------------- |

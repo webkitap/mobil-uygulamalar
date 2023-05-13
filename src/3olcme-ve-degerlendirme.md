@@ -1,4 +1,4 @@
-# ÖLÇME VE DEĞERLENDİRME
+<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
 
 **A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise “D”, yanlış ise “Y” yazınız.**
 
@@ -14,29 +14,56 @@
 
 **8. Aşağıdakilerden hangisi isimlendirme kurallarına uygun bir değişken tanımlamadır?**
 
-A) yazılı-1 B) 1.yazili C) YAZILI D) yazili1 E) yazili 1
+A) yazılı-1 <br>
+B) 1.yazili <br>
+C) YAZILI <br>
+D) yazili1 <br>
+E) yazili 1
 
 **9. Aşağıdakilerden hangisi isimlendirme standartlarına uyularak kullanılacak bir değişken ismidir?**
 
-A) kullaniciAdi B) KULLANICIADI C) KullaniciAdi
-D) kullaniciadi E) kullaniciADI
+A) kullaniciAdi<br> 
+B) KULLANICIADI<br> 
+C) KullaniciAdi<br>
+D) kullaniciadi<br> 
+E) kullaniciADI
 
 **10. Mod alma işlemi için aşağıdaki operatörlerden hangisi kullanılır?**
 
-A) / B) % C) & D) | E) #
+A) / <br> 
+B) % <br> 
+C) & <br> 
+D) | <br> 
+E) #
 
 **11. Aşağıdaki atama operatörlerinden hangisi önce topla sonra atama işlemini yap anlamına gelir?**
 
-A) =+ B) += C) == D) ++ E) -=
+A) =+ <br>
+B) += <br>
+C) == <br>
+D) ++ <br>
+E) -=
 
 **12. Aşağıdaki karşılaştırma operatörlerinden hangisi <U>yanlıştır?</U>**
 
-A) == B) >= C) >> D) < E) !=
+A) == <br>
+B) >= <br>
+C) >> <br>
+D) < <br>
+E) !=
 
 **13. Aşağıdaki mantıksal operatörlerden hangisi “ve” anlamına gelir?**
 
-A) || B) == C) %% D) && E) !
+A) || <br>
+B) == <br>
+C) %% <br>
+D) && <br>
+E) !
 
 **14. Aşağıdakilerden hangisi log kayıtlarına bir hata mesajı bırakmak için kullanılır?**
 
-A) Log.d B) Log.i C) Log.v D) Log.w E) Log.e
+A) Log.d <br>
+B) Log.i <br>
+C) Log.v <br>
+D) Log.w <br>
+E) Log.e

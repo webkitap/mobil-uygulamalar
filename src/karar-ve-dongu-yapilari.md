@@ -1,4 +1,4 @@
-# KARAR VE DÖNGÜ YAPILARI
+# 4. KARAR VE DÖNGÜ YAPILARI
 
 ## NELER ÖĞRENECEKSİNİZ?
 - Karşılaştırma operatörlerinin ve mantıksal operatörlerin kullanım alanları

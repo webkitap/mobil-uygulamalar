@@ -1,7 +1,9 @@
 # 3.4. SABİTLER
 Sabit, değeri atandıktan sonra değeri değiştirilemeyen bir değişken türüdür. Sabit tanımlandığında atanan değer programın herhangi bir yerinde değiştirilemez, değiştirilmeye çalışıldığında program hata verir. Bir değişken türü olması nedeniyle aynı değişken gibi tanımlanır fakat başına **final** ayrılmış kelimesi (keyword) getirilir (Görsel 3.20).
+<div style="display:block;text-align:center">
 
 ![Sabit tanımlama söz dizimi](./temel-komutlar/gorsel-3.20-sabit-tanimlama-soz-dizimi.png)
+</div>
 
 **NOT**
 
@@ -9,7 +11,7 @@ Sabit, değeri atandıktan sonra değeri değiştirilemeyen bir değişken tür�
 
 **6. UYGULAMA**: İşlem adımlarına göre sabitin kullanıldığı bir uygulamayı tasarlayınız.
 
-**1. Adım**: “DenemeSabitler” adında yeni bir Java sınıfı tanımlayınız.
+**1. Adım**: "DenemeSabitler" adında yeni bir Java sınıfı tanımlayınız.
 
 **2. Adım**: DenemeSabitler sınıfı içine şu kodu yazınız:
 
@@ -37,7 +39,7 @@ public class DenemeSabitler {
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                | EVET | HAYIR |
 >| ------------------------------------------------------ | ---- | ----- |
@@ -46,7 +48,7 @@ public class DenemeSabitler {
 >| 3. Uygulama adını belirledi.                           |
 >| 4. Project penceresinde New Java Class komutunu seçti. |
 >| 5. Java sınıfı için hedef klasör seçti.                |
->| 6. Java sınıfına “DenemeSabitler” adını belirledi.     |
+>| 6. Java sınıfına "DenemeSabitler" adını belirledi.     |
 >| 7. PI sabitine uygun değişken türünü belirledi.        |
 >| 8. PI sabitine 3.14 sayısını atadı.                    |
 >| 9. Run with Coverage komutuyla uygulamayı çalıştırdı.  |

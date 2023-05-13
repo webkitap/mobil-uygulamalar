@@ -19,11 +19,11 @@ En çok kullanılan görünüm sınıfları şunlardır:
 
 TextView, en temel bileşenlerden biridir ve mobil cihazın ekranında metin göstermek için kullanılır. TextView görünümüne ait niteliklerden en çok kullanılanları Tablo 2.1’de verilmiştir.
 
-**Tablo 2.1: TextView Görünümüne Ait Nitelikler**
+<div style="text-align:center;"><b>Tablo 2.1: TextView Görünümüne Ait Nitelikler</b></div>
 
-| Nitelik               | Tanım                                                                  |
-| :-------------------- | ---------------------------------------------------------------------- |
-| **android:id**           | Java kodlarının ulaşabilmesi için bir tanımlama ismi verilir.          |
+| Nitelik                   | Tanım                                                                  |
+| ------------------------- | ---------------------------------------------------------------------- |
+| **android:id**            | Java kodlarının ulaşabilmesi için bir tanımlama ismi verilir.          |
 | **android:text**          | Ekranda gösterilecek metin yazılır.                                    |
 | **android:textSize**      | Metnin boyutu belirlenir.                                              |
 | **android:padding**       | Metnin etrafında boşluk olması sağlanır                                |
@@ -45,8 +45,10 @@ TextView görünümünün XML kodu şu şekildedir:
 ```
 
 XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa mavi renkli, metin boyutu **50 sp**, metin etrafında boşluğu **25 dp** olan "Bilişim" yazısı görüntülenir (Görsel 2.9).
+<div style="display:block;text-align:center">
 
 ![TextView ön izleme](./ekran-tasarimi/gorsel-2.9-textview-on-izleme.png)
+</div>
 
 **3. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım ekranına XML kodlarıyla kırmızı renkli, 55 sp boyutunda, kenar boşlukları 30 dp olan "Teknolojileri" yazısını yazdırınız.
 
@@ -68,12 +70,16 @@ XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa mavi
  	android:padding="30dp"
  	android:textColor="#FF0000"/>
 ```
+<div style="display:block;text-align:center">
 
 ![XML görünüm kodlarının yazılacağı alan](./ekran-tasarimi/gorsel-2.10-xml-gorunum-kodlarinin-yazilacagi-alan.png)
+</div>
 
 **5. Adım**: XML görünüm kodları yazıldıktan sonra Design ekranında görünüm belirir (Görsel 2.11). Klavyeden Shift+F10 tuşlarıyla uygulamanın ön izlemesini yapınız. 
+<div style="display:block;text-align:center">
 
 ![Design ekranında görünüm](./ekran-tasarimi/gorsel-2.11-design-ekraninda-gorunum.png)
+</div>
 
 >**SIRA SİZDE**: 
 >
@@ -83,7 +89,7 @@ XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa mavi
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                                                              | EVET | HAYIR |
 >| ------------------------------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -100,7 +106,8 @@ hemen hemen aynı niteliklere sahiptir. Kullanıcının mobil uygulamaya metin g
 yapılabilir. Mobil uygulamada bir EditText görünümüne dokunulduğunda klavye otomatik olarak
 aktif hâle gelir. EditText görünümüne ait niteliklerden en çok kullanılanları Tablo 2.2’de verilmiştir.
 
-**Tablo 2.2: EditText Görünümüne Ait Nitelikler**
+
+<div style="text-align:center;"><b>Tablo 2.1: TextView Görünümüne Ait Nitelikler</b></div>
 
 <table>
 <thead>
@@ -155,8 +162,10 @@ EditText görünümünün bir yerleşim içinde XML kodu şu şekildedir:
 ```
 
 EditText XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa e-posta metni girilebilecek bir ekran bileşeni görülür (Görsel 2.12).
+<div style="display:block;text-align:center">
 
 ![EditText ön izleme](./ekran-tasarimi/gorsel-2.12-edittext-on-izleme.png)
+</div>
 
 **4. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım
 ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifrenizi yazınız." metin görünümünü yerleştiriniz.
@@ -190,7 +199,7 @@ ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifreniz
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                                             | EVET | HAYIR |
 >| ------------------------------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -204,7 +213,7 @@ ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifreniz
 
 Düğme bileşeni, üzerine tıklandığında veya dokunulduğunda bir eylem gerçekleştirir. TextView bileşeniyle aynı niteliklere sahip olmakla beraber Button görünümünün kendine has bazı nitelikleri de vardır. Button görünümüne ait niteliklerden en çok kullanılanı Tablo 2.3’te verilmiştir.
 
-**Tablo 2.3: Button Görünümüne Ait Nitelik**
+<div style="text-align:center;"><b>Tablo 2.3: Button Görünümüne Ait Nitelik</b></div>
 
 | Nitelik             | Tanım                                                              |
 | ------------------- | ------------------------------------------------------------------ |
@@ -223,8 +232,10 @@ Button görünümünün bir yerleşim içinde XML kodu şu şekildedir:
 ```
 
 Button XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa ekranda bir düğme bileşeni görülür (Görsel 2.13).
+<div style="display:block;text-align:center">
 
 ![Button ön izleme](./ekran-tasarimi/gorsel-2.13-button-on-izleme.png)
+</div>
 
 >**SIRA SİZDE**: 
 >
@@ -234,7 +245,7 @@ Button XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılır
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                      | EVET | HAYIR |
 >| -------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -246,7 +257,7 @@ Button XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılır
 
 ImageView, kullanıcı arayüzünde resim gösterilmesi gerektiğinde kullanılan görünümdür. ImageView görünümüne ait niteliklerden en çok kullanılanları Tablo 2.4’te verilmiştir.
 
-**Tablo 2.4: ImageView Görünümüne Ait Nitelikler**
+<div style="text-align:center;"><b>Tablo 2.4: ImageView Görünümüne Ait Nitelikler</b></div>
 
 <table>
 <thead>
@@ -292,8 +303,10 @@ kapsayıcıya yerleştirilir.
 
 
 Mobil uygulamaya yerleştirilmek istenen görüntü dosyası üzerinde sağ tuşla tıklanır ve **Kopyala** seçeneği seçilir. Resim dosyası kopyalandıktan sonra mobil uygulama geliştirme ortamında **Project** sekmesi seçili hâle getirilir. Dizinlerden **res** içinde **drawable** sağ tıklanır ve **Paste** seçeneği  işaretlenerek resim bu dizine yapıştırılır. Yapıştırılan **meblogo.png** resim dosyasının ismi, XML’de kaynak dosya adı belirtilirken **android:src="@drawable/meblogo"** şeklinde yazılır (Görsel 2.14).
+<div style="display:block;text-align:center">
 
 ![Resim dosyasının drawable dizinine yerleştirilmesi](./ekran-tasarimi/gorsel-2.14-resim-dosyasinin-drawable-dizinine-yerlestirilmesi.png)
+</div>
 
 ImageView görünümünün bir yerleşim içinde XML kodu şu şekildedir:
 
@@ -308,8 +321,10 @@ ImageView görünümünün bir yerleşim içinde XML kodu şu şekildedir:
 ```
 
 ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için XML yazılıp ön izleme yapıldığında ekranda resim görülür (Görsel 2.15).
+<div style="display:block;text-align:center">
 
 ![ImageView ön izleme](./ekran-tasarimi/gorsel-2.15-imageview-on-izleme.png)
+</div>
 
 **5. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım ekranına XML kodlarıyla resim görünümünü ekranın sağına yerleştiriniz.
 
@@ -337,7 +352,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                                     | EVET | HAYIR |
 >| ----------------------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -355,7 +370,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 
 Mobil uygulamada kullanıcıya onay kutuları sunarak bunlardan bir tanesini, birkaçını veya hepsini seçebilmesi gereken durumlarda kullanılan görünümdür. CheckBox görünümüne ait niteliklerden en çok kullanılanı Tablo 2.5’te verilmiştir.
 
-**Tablo 2.5: CheckBox Görünümüne Ait Nitelik**
+<div style="text-align:center;"><b>Tablo 2.5: CheckBox Görünümüne Ait Nitelik</b></div>
 
 | Nitelik             | Tanım                                                          |
 | ------------------- | -------------------------------------------------------------- |
@@ -378,8 +393,10 @@ Mobil uygulamada kullanıcıya onay kutuları sunarak bunlardan bir tanesini, bi
   android:text="YAZILIM GELİŞTİRME" />
 ```
 ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için XML kodlar yazılıp ön izleme yapıldığında ekranda resim görülür (Görsel 2.16).
+<div style="display:block;text-align:center">
 
 ![CheckBox ön izleme](./ekran-tasarimi/gorsel-2.16-checkbox-on-izleme.png)
+</div>
 
 >**SIRA SİZDE**: 
 >
@@ -389,7 +406,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                      | EVET | HAYIR |
 >| -------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -402,7 +419,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 
 ProgressBar, bir işlemin ilerleme durumunu göstermek için kullanılan görünümdür. Varsayılan olarak ProgressBar, dönen bir çember şeklinde mobil uygulamasında görüntülenir. ProgressBar görünümüne ait niteliklerden en çok kullanılanları Tablo 2.6’da verilmiştir.
 
-**Tablo 2.6: ProgressBar Görünümüne Ait Nitelikler**
+<div style="text-align:center;"><b>Tablo 2.6: ProgressBar Görünümüne Ait Nitelikler</b></div>
 
 | Nitelik               | Tanım                                                                         |
 | --------------------- | ----------------------------------------------------------------------------- |
@@ -422,5 +439,6 @@ ProgressBar ile ilerlemeyi göstermek için Determinate (Belirli) ve Indetermina
 ```
 
 Yazılan XML kodlar emülatörde ön izleme yapıldığında cihazın ekranında dönen bir çember görüntülenir (Görsel 2.17)
+<div style="display:block;text-align:center">
 
-![ProgressBar ön izleme](./ekran-tasarimi/gorsel-2.17-progressbar-on-izleme.png)
+![ProgressBar ön izleme](./ekran-tasarimi/gorsel-2.17-progressbar-on-izleme.png)</div>

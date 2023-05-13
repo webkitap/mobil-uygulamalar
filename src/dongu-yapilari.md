@@ -43,12 +43,16 @@ for( sayaç tanımlama; şart ifadesi; sayaç arttırma veya azaltma)
 ```
 
 Örneğin 1’den 10’a kadar olan sayıların Logcat ekranında gösterilmesi istendiğinde uygulama geliştirme ortamında kodlar onResume yaşam döngüsünün içine Görsel 4.21’deki gibi yazılır.
+<div style="display:block;text-align:center">
 
 ![for döngüsü](./karar-ve-dongu-yapilari/gorsel-4.21-for-dongusu.png)
+</div>
 
 Görsel 4.21’de olduğu gibi "int i=0" komutu ile i isminde bir sayaç tanımlanır. Döngü yapısında yer alan bloklar arasındaki kodlar, sayacın değeri 0’dan başlayarak 10’a eşit veya 10’dan küçük olduğu sürece "i<=0" komutu ile tekrar tekrar çalışır. Her çalışma sonucunda tekrar başa döndüğünde ise "i++" komutu ile sayaç 1 sayı artarak yeniden şart ifadesinde karşılaştırılır. Blok içine yazılan "System.out.println(i);" komutu da Logcat ekranında Görsel 4.22’de olduğu gibi 0 ile 10 arasındaki değerleri gösterir.
+<div style="display:block;text-align:center">
 
 ![Logcat ekran çıktısı](./karar-ve-dongu-yapilari/gorsel-4.22-logcat-ekran-ciktisi.png)
+</div>
 
 **NOT:**
 
@@ -68,12 +72,16 @@ for( (1); (2); (3); )
 **2. Adım**: MainActivity sınıfını açınız. "onResume" yaşam döngüsü metodunu oluşturunuz.
 
 **3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz. Sayacı 1’den başlatıp sayaç 50’den küçük veya 50’ye eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 1 sayı artıran şekilde düzenleyiniz (Görsel 4.23).
+<div style="display:block;text-align:center">
 
 ![1’den 50’ye kadar olan sayıları yazdıran uygulama](./karar-ve-dongu-yapilari/gorsel-4.23-1den-50ye-kadar-olan-sayilari-yazdiran-uygulama.png)
+</div>
 
 **4. Adım:** Uygulamayı çalıştırdığınızda uygulama geliştirme programına dönerek Logcat ekranını açınız. Arama çubuğuna "System.out" yazarak çıkan sonuçları filtreleyiniz. Tek satır kod yazılmasına rağmen (System.out.println(i)) 50 defa aynı kodun alıştırıldığını gözlemleyiniz (Görsel 4.24).
+<div style="display:block;text-align:center">
 
 ![1’den 50’ye kadar olan sayıları ekranda yazdıran program Logcat ekranı](./karar-ve-dongu-yapilari/gorsel-4.24-1den-50ye-kadar-olan-sayilari-ekranda-yazdiran-program-logcat-ekrani.png)
+</div>
 
 **8. UYGULAMA**: İşlem adımlarına göre yedinci uygulamaya benzer şekilde 0’dan 100’e kadar olan sayılardan üçün katı olanları Logcat ekranında gösteren mobil uygulamayı tasarlayınız.
 
@@ -88,12 +96,16 @@ for( (1); (2); (3); )
 **2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.
 
 **3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz. Sayacı 0’dan başlatıp sayaç 100’den küçük veya 100’e eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 3 sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında 1’den 100’e kadar üçün katı olan sayıları gösteren uygulama](./karar-ve-dongu-yapilari/gorsel-4.25-mainactivity-sayfasinda-1den-100e-kadar-ucun-kati-olan-sayilari-gosteren-uygulama.png)
+</div>
 
 **4. Adım:** Uygulamayı çalıştırdığınızda Logcat ekranını açınız. Arama çubuğuna "System.out" yazarak çıkan sonuçları filtreleyiniz. Tek satır kod yazılmasına rağmen (System.out.println(i)) kodun tekrar tekrar çalıştığını gözlemleyiniz (Görsel 4.26).
+<div style="display:block;text-align:center">
 
 ![1’den 100’e kadar üçün katı olan sayıların Logcat ekranında gösterilmesi](./karar-ve-dongu-yapilari/gorsel-4.26-1den-100e-kadar-ucun-kati-olan-sayilarin-logcat-ekraninda-gosterilmesi.png)
+</div>
 
 **2. Yöntem**
 
@@ -106,8 +118,10 @@ for( (1); (2); (3); )
 sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 
 **4. Adım**: for döngüsünün blokları arasına if karar yapısı oluşturunuz. Gelen her "i" sayacının 3 ile modunu aldırınız. İşlemin sonucu "0" olduğu takdirde ekrana yazdırma işlemi yapacak kodu yazınız (Görsel 4.27).
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında 1’den 100’e kadar üçün katı olan sayıları gösteren uygulama](./karar-ve-dongu-yapilari/gorsel-4.27-mainactivity-sayfasinda-1den-100e-kadar-ucun-kati-olan-sayilari-gosteren-uygulama.png)
+</div>
 
 **5. Adım:** Uygulamayı çalıştırdığınızda Logcat ekranını açınız. Arama çubuğuna "System.out" yazarak çıkan sonuçları filtreleyiniz. Gelen sonucun Görsel 4.26 ile aynı şekilde olduğunu gözlemleyiniz.
 
@@ -120,30 +134,40 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 **1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.
 
 **2. Adım**: Görsel 4.28’de görülen ekran tasarımını yapınız. Üst tarafta bir "Multiline Text" yer alır. Alt tarafta da üç adet button bulunur. Multiline Text’in "ConstraintLayout"ununu uygulama penceresine soldan ve sağdan yerleştirip 8 dp boşluk bırakınız. Yukarıdan da ekranın üstüne bağlayarak 8 dp boşluk bırakınız. "layout_width" özelliğine (genişlik özelliği) tamamını kaplaması için "match_parent" yazınız. Yükseklik değeri olan "layout_height" özelliğine ise yazıldığı kadar genişlemesini sağlayan "wrap_content" yazınız.
+<div style="display:block;text-align:center">
 
 ![Sayıları gösteren uygulama](./karar-ve-dongu-yapilari/gorsel-4.28.sayilari-gosteren-uygulama.png)
+</div>
 
 **3. Adım**: Buttonları da ekleyerek aynı şekilde genişlik özelliği olan "layout_width"e "match_parent", yükseklik özelliği olan "layout_height"e "wrap_content" yazınız. En alttaki buttonu yerleşimin alt çerçevesine bağlayıp 16 dp boşluk bırakınız. Soldan ve sağdan da 8 dp boşluk bırakarak yan çerçeveye sabitleyiniz. Diğer buttonları da sırasıyla birbirine bağlayarak hizalama işlemini bitiriniz.
 
 **4. Adım**: Multiline Text’in id özelliğini "editTextTextMultiLine_Sayilar" şeklinde veriniz. Buttonların id özelliklerini de sırasıyla "button_CiftSayilar", "button_TekSayilar", "button_TumSayilar" şeklinde değiştiriniz. Ayrıca buttonların "onClick" özelliklerine üstten sırayla "ciftSayilar", "tekSayilar", "tumSayilar" olacak şekilde yazınız.
 
 **5. Adım:** EditTexti ve buttonları tanımlayarak başlatmasını (initialize) onCreate metodunda yapınız (Görsel 4.29).
+<div style="display:block;text-align:center">
 
 ![Nesneleri initialize aşaması](./karar-ve-dongu-yapilari/gorsel-4.29-nesnelerin-initialize-asamasi.png)
+</div>
 
 **6. Adım**: Buttonlara ait üç adet metodu yazınız.
 
 **7. Adım**: Çift sayılar için yazılan metodun blokları arasına Multiline Text’i temizlemesi için gereken "`editText_Sayilar.setText("");`" kodunu yazınız. Bu komut, her button farklı bir amacı aynı Text üzerinde yapacağı için gereklidir. Ardından 0’dan 15’e kadar sayacı birer birer artırarak 16 defa dönen bir döngü açınız ve içinde if şart yapısını oluşturunuz. Sayacın modunu alınız . İşlem sonucu sıfıra eşit olursa modu alınan sayacın çift olduğu anlamına gelir. Sayaç çift olduğunda ekrana sayıyı yazmasını isteyiniz (Görsel 4.30).
+<div style="display:block;text-align:center">
 
 ![Çift sayılar buttonunun metodu](./karar-ve-dongu-yapilari/gorsel-4.30-cift-sayilar-buttonunun-metodu.png)
+</div>
 
 **8. Adım:** Yedinci adımdaki gibi tek sayılar buttonu için de bir metot yazınız. Bu metot içinde çift sayılar metoduna göre sadece şart ifadesi değişecektir. Şart ifadesini "mod işlemi sonucu 0’dan farklı olursa" şeklinde düzenleyerek tek olan sayıları gösteriniz (Görsel 4.31).
+<div style="display:block;text-align:center">
 
 ![Tek sayılar buttonunun metodu](./karar-ve-dongu-yapilari/gorsel-4.31-tek-sayilar-buttonunun-metodu.png)
+</div>
 
 **9. Adım:** Yedinci adımdaki gibi tüm sayılar buttonu için de bir metot hazırlayınız . Bu metot içinde hiç şart ifadesi yazmayınız. Döngü içindeki tüm sayıları Multi Text’te gösteriniz (Görsel 4.32).
+<div style="display:block;text-align:center">
 
 ![Tüm sayılar buttonunun metodu](./karar-ve-dongu-yapilari/gorsel-4.32-tum-sayilar-buttonunun-metodu.png)
+</div>
 
 **10. Adım:** Tüm adımlar yapıldığına göre uygulamayı çalıştırınız. Uygulama çalıştırıldığında ve buttonlara tıklandığında çıkan sonuçlar da Görsel 4.33’te verilmiştir. Oluşturulan MainActivity’nin son şekli Görsel 4.34’te görülür.
 
@@ -152,10 +176,14 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 **NOT:**
 
 >"break" komutu tıpkı switch-case karar yapısında olduğu gibi burada da blok kırma görevinde yer alır. Döngünün belirli bir şarta bağlı olarak zamanından önce bitirilmesi istenirse "break" komutu aynı şekilde kullanılabilir. Örneğin bu komut sayesinde veri tabanında 10.000 kişinin yer aldığı bir listede T.C. Kimlik Numarası ile arama yapılırsa ve aranan kayıt tüm liste bitirilmeden bulunursa listenin devamını aratmaya gerek kalmayacağı için döngü orada bitirilebilir. Bu sayede de gereksiz iş yükü önlenir.
+<div style="display:block;text-align:center">
 
 ![Sayıları gösteren uygulama ekran çıktısı](./karar-ve-dongu-yapilari/gorsel-4.33-sayilari-gosteren-uygulama-ekran-ciktisi.png)
+</div>
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında sayıları gösteren uygulama](./karar-ve-dongu-yapilari/gorsel-4.34-mainactivity-sayfasinda-sayilari-gosteren-uygulama.png)
+</div>
 
 >**SIRA SİZDE:**
 >
@@ -165,7 +193,7 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                          | EVET | HAYIR |
 >| -------------------------------------------------------------------------------- | ---- | ----- |
@@ -202,8 +230,10 @@ while(şart)
 >Bir sayının faktöriyeli, 1’den o sayıya kadar olan tüm sayıların çarpılması ile oluşur. Örneğin 5’in faktöriyeli, 1 x 2 x 3 x 4 x 5 = 120 şeklinde ifade edilebilir.
 
 **1. Adım:** Görsel 4.35’teki uygulama ekranını tasarlayınız. Bu tasarım ekranında bir adet EditTextNumber objesi, bir adet Button ve bir adet TextView bulunur. EditTextNumber objesinin id’sini editTextNumber_Sayi şeklinde, onayla buttonunun id’sini button_Onayla şeklinde, TextView’in id’sini de textView_Sonuc şeklinde yapınız. EditTextNumber objesinin hint özelliğine "Sayınızı Giriniz" şeklinde yazı yazınız. Buttonun da text özelliğine "ONAYLA" şeklinde, TextView’in text özelliğine de "Sonuç :" şeklinde yazınız. Button tıklandığında çalışacak olan metodu aktif etmek için buttonun onClick özelliğine "onayla" ifadesi ekleyiniz.
+<div style="display:block;text-align:center">
 
 ![Girilen sayının faktöriyelini bulan uygulama](./karar-ve-dongu-yapilari/gorsel-4.35-girilen-sayinin-faktoriyelini-bulan-uygulama.png)
+</div>
 
 ```java
 EditText number;
@@ -248,10 +278,14 @@ public void onayla(View view) {
 ```
 
 MainActivity’nin son hâli Görsel 4.36’da yer alırken uygulamanın son çıktısı Görsel 4.37’de gösterildiği şekilde olacaktır.
+<div style="display:block;text-align:center">
 
 ![MainActivity son hâli](./karar-ve-dongu-yapilari/gorsel-4.36-mainactivity-son-hali.png)
+</div>
+<div style="display:block;text-align:center">
 
 ![Program Çıktısı](./karar-ve-dongu-yapilari/gorsel-4.37-program-ciktisi.png)
+</div>
 
 **NOT:**
 

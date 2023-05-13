@@ -10,8 +10,10 @@ Görünüm, mobil uygulamalarda kullanıcı arabiriminin temel yapı taşıdır 
 * **wrap_content**: İçeriğin görüntülenmesi için gereken kadar alanı kaplayacağı anlamına gelir.
 
 * **match_parent**: Cihazın ekranında bulunan tüm alanı kaplayacağı anlamına gelir (Görsel 2.5).
+<div style="display:block;text-align:center">
 
 ![match_parent ile wrap_content farkı](./ekran-tasarimi/gorsel-2.5-match_parent-ile-wrap_content-farki.png)
+</div>
 
 Genişlik ve yükseklik niteliklerine wrap_content ve match_parent önceden tanımlı değerler girilebileceği gibi sayılar da girilebilir ancak bu sayıların yanında birim olması gerekir. Bu birimler şunlardır:
 
@@ -79,16 +81,22 @@ Her görünüm, **android:layout_width (görünümün genişliği)** ve **androi
 <h2 id="2.4.2.">2.4.2. Görünüm Yerleştirmek İçin Palette Kullanımı</h2>
 
 Bir mobil uygulamada herhangi bir görünümü ekrana yerleştirmek için mobil uygulama geliştirme ortamında bulunan Palette panelindeki bileşenlerden biri sürükle bırak yardımıyla Design (Tasarım) bölümüne bırakılır. Projedeki activity_main.xml dosyası seçiliyken görünümlerden Design düğmesi tıklanır ve çalışma alanında Palette panelindeki görünümlerden istenen herhangi biri sürükle bırak yöntemiyle tasarım alanına bırakılır (Görsel 2.6).
+<div style="display:block;text-align:center">
 
 ![Görünüm ekleme](./ekran-tasarimi/gorsel-2.6-gorunum-ekleme.png)
+</div>
 
 Görünümlerden ekranda metin göstermek için kullanılan TextView, tasarım ekranına yerleştirilerek proje ön izleme simgesine tıklanır veya Shift+F10 klavye tuşlarına basılarak mobil uygulama çalıştırılır. Mobil uygulamada ConstraintLayout yerleşimi kullanıldığı ve TextView görünümünün nitelikleri ayarlanmadığı için TextView otomatik olarak ekranın sol üst bölümüne yerleşir (Görsel 2.7).
+<div style="display:block;text-align:center">
 
 ![TextView görünümünün ön izlemesi](./ekran-tasarimi/gorsel-2.7-textview-gorunumunun-on-izlemesi.png)
+</div>
 
 Tasarım ekranında seçili görünümün nitelikleri, mobil uygulama geliştirme ortamında **Attributes** paneli kullanılarak değiştirilebilir. Bu paneldeki kutulara sayılar veya ön tanımlı değerler girilerek görünümün nitelikleri değiştirilir (Görsel 2.8).
+<div style="display:block;text-align:center">
 
 ![Attributes paneli](./ekran-tasarimi/gorsel-2.8-attributes-paneli.png)
+</div>
 
 **1. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım ekranına Palette panelini kullanarak Button görünümünü yerleştiriniz.
 
@@ -106,7 +114,7 @@ Tasarım ekranında seçili görünümün nitelikleri, mobil uygulama geliştirm
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                                          | EVET | HAYIR |
@@ -139,7 +147,7 @@ ekranına yerleştirilmiş CheckBox görünümünün layout_width kutusuna 100 d
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                          | EVET | HAYIR |
 >| --------------------------------------------------------------- | ---- | ----- |
@@ -150,14 +158,13 @@ ekranına yerleştirilmiş CheckBox görünümünün layout_width kutusuna 100 d
 
 <h2 id="2.4.3.">2.4.3. Görünüm Yerleştirmek İçin Java Kullanımı</h2>
 
-Görünümler, Java kodları kullanılarak da tanımlanır veya oluşturulur. Java kodlarıyla yapılan bu işlem, **Programmatic Approach (Programatik Yaklaşım)** olarak adlandırılır. Genellikle Java kodları
-MainActivity.java dosyası içine yazılır.
+Görünümler, Java kodları kullanılarak da tanımlanır veya oluşturulur. Java kodlarıyla yapılan bu işlem, **Programmatic Approach (Programatik Yaklaşım)** olarak adlandırılır. Genellikle Java kodları MainActivity.java dosyası içine yazılır.
 
 **ÖRNEK**
 
 TextView görünümünün metni Java kodlarıyla değiştirilmek istenirse şu kodlar yazılır:
 
-```JAVA
+```java
 TextView textView = (TextView) findViewById(R.id.textView);
 textView.setText("Bilişim Teknolojileri");
 ```

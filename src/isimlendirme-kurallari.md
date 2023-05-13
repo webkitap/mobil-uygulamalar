@@ -55,9 +55,10 @@ kullanılan isimlendirme standartları şunlardır:
 >
 >
 >**DEĞERLENDİRME**: 
+>
 >Çalışmalarınız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                           | EVET | HAYIR |
 >| ------------------------------------------------------------------------------------------------- | ---- | ----- |

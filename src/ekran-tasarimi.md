@@ -1,4 +1,4 @@
-# EKRAN TASARIMI
+# 2. EKRAN TASARIMI
 
 ## NELER ÖĞRENECEKSİNİZ?
 - Mobil cihaz ekran türleri
@@ -12,11 +12,11 @@
 - Temel görünüm sınıfları
 - Layout çeşitleri
 
-## HAZIRLIK ÇALIŞMALARI
+### HAZIRLIK ÇALIŞMALARI
 1. Günlük hayatta en çok tercih ettiğiniz mobil uygulamanın arayüzünü kullanırken zorlandığınız
 durumları anlatınız.
 2. Bir mobil uygulamanın ekran tasarımını siz nasıl yapardınız? Düşüncelerinizi arkadaşlarınızla
 paylaşınız.
 
-## ANAHTAR KELİMELER
+### ANAHTAR KELİMELER
 Action Bar, APK, APPS, Button, CheckBox, ConstraintLayout, EditView, Layout, MainActivity, Navigation bar, ProgressBar, RelativeLayout, Status bar, TextView, View, ViewGroup

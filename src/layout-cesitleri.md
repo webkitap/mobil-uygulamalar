@@ -15,12 +15,16 @@ Kullanıcı arayüzü tasarlamak için Android SDK’nin sağladığı layout ye
 - FrameLayout (Çerçeve Yerleşim)
 
 Mobil uygulama geliştirme ortamında yerleşimlerin türünü değiştirmek için Component Tree paneli kullanılır. Component Tree paneli açık değilse ismi dikey yazılı olan sekmeye tıklanır. Açılan panelin en üstündeki layout üzerinde sağ fare tuşuna basılır. Açılan listeden Convert view… menüsü seçilir (Görsel 2.18). 
+<div style="display:block;text-align:center">
 
 ![Component Tree paneli](./ekran-tasarimi/gorsel-2.18-component-tree-paneli.png)
+</div>
 
 Bu aşamada istenen yerleşim ismi seçilir ve Apply düğmesine tıklanır (Görsel 2.19).
+<div style="display:block;text-align:center">
 
 ![Layout Çeşitleri](./ekran-tasarimi/gorsel-2.19-layout-cesitleri.png)
+</div>
 
 **6. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında yerleşim türünü LinearLayout olarak değiştiriniz.
 
@@ -42,7 +46,7 @@ Bu aşamada istenen yerleşim ismi seçilir ve Apply düğmesine tıklanır (Gö
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                                   | EVET | HAYIR |
 >| --------------------------------------------------------------------------------------------------------- | ---- | ----- |
@@ -55,8 +59,10 @@ Bu aşamada istenen yerleşim ismi seçilir ve Apply düğmesine tıklanır (Gö
 <h2 id="2.6.1.">2.6.1. ConstraintLayout</h2>
 
 ConstraintLayout, Android işletim sisteminin 7. sürümü ile sunulan bir yerleşimdir. En yeni yerleşim türüdür ve getirdiği yeniliklerle en çok kullanılanıdır. Esnek olduğu, alt görünümleri ekrandan istenen yere konumlandırdığı ve çoğu yerleşim gereksinimlerini karşıladığı için tercih edilir. Basit kısıtlama ayarlarıyla bileşenler birbirinin içine yerleştirilmeden hızlı ve kolay bir şekilde kullanıcı arayüzü tasarlanabilir. Ayrıca Android Studio tasarım editörü kullanılarak basit sürükle bırak işlemleriyle tüm bir layout tasarlanabilir (Görsel 2.20). 
+<div style="display:block;text-align:center">
 
-![ConstraintLayout içinde TextView ve Button görünümleri](./ekran-tasarimi/gorsel-2.20-constraintlayout-icinde-textview-ve-button-gorunumleri.png)
+![ConstraintLayout içinde TextView ve Button görünümleri](./ekran-tasarimi/gorsel-2.</div>
+20-constraintlayout-icinde-textview-ve-button-gorunumleri.png)
 
 Palette paneli içinde sürükle bırak yöntemiyle alt görünümler tasarım ekranına yerleştirilir. Alt görünümün etrafındaki yuvarlaklar kullanılarak sürükle bırak yöntemiyle ya kenar boşluklarına ya da diğer görünümlere bağlanır. Bu sayede ekranın istenen bir konumuna görünüm yerleştirilebilir. 
 
@@ -112,28 +118,36 @@ kodların çalışmasını etkilemez.
 **9. Adım**: Üst kenara yapışan birinci Button görünümünü sürükle bırak yöntemiyle aşağı doğru ekranın ortasına getiriniz.
 
 **10. Adım**: İkinci Button görünümünün üst tarafındaki yuvarlağa tıklayarak oluşan oku birinci Button görünümünün alt tarafına taşıyınız (Görsel 2.23).
+<div style="display:block;text-align:center">
 
-![Constrait ayarı](./ekran-tasarimi/gorsel-2.21-sol-constaint-ayari-gorsel-2.22-ust-constaint-ayari-gorsel-2.23-ikinci-button-ust-constraint-ayari)
+![Constrait ayarı](./ekran-tasarimi/gorsel-2.21-sol-constaint-ayari-gorsel-2.22-ust-constaint-ayari-gorsel-2.</div>
+23-ikinci-button-ust-constraint-ayari)
 
 **11. Adım**: Üstteki Button görünümüne yapışan ikinci Button görünümünü sürükle bırak yöntemiyle aşağı doğru ekranın ortasına getiriniz.
 
 **12. Adım**: İkinci Button görünümün sol tarafındaki yuvarlağa tıklayarak oluşan oku sürükle bırak ile sol kenara taşıyınız.
 
 **13. Adım**: Sol kenara yapışan ikinci Button görünümünü sürükle bırak yöntemiyle sağa doğru ekranın ortasına getiriniz (Görsel 2.24).
+<div style="display:block;text-align:center">
 
 ![Görünümler](./ekran-tasarimi/gorsel-2.24-gorunumler.png)
+</div>
 
 **UYARI**: ConstraintLayout yerleşiminde birinci görünüme ikinci bir görünüm bağlandığında ikinci görünüm, birinci görünüme göre konumlandırılır. Bir görünüm sol kenar boşluğuna bağlanırsa bu görünümün sol kenar boşluğu korunur, sağ kenar boşluğu değişebilir.
 
 <h2 id="2.6.2.">2.6.2. LinearLayout</h2>
 
 LinearLayout, seçilen yatay veya dikey yönlendirmeye göre alt görünümleri tek bir satır veya tek bir sütuna yerleştiren bir yerleşim türüdür. LinearLayout yatay özelliği kullanılarak Palette panelinden getirilen TextView, Button1 ve Button2 alt görünümleri tek bir satırda yan yana yerleştirilir (Görsel 2.25).
+<div style="display:block;text-align:center">
 
 ![LinearLayout (Yatay)](./ekran-tasarimi/gorsel-2.25-linearlayout-yatay.png)
+</div>
 
 LinearLayout dikey özelliği kullanılarak Palette panelinden getirilen TextView, Button1 ve Button2 alt görünümleri tek bir sütunda alt alta yerleştirilir (Görsel 2.26).
+<div style="display:block;text-align:center">
 
 ![LinearLayout (Dikey)](./ekran-tasarimi/gorsel-2.26-linearlayout-dikey.png)
+</div>
 
 LinearLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazılır:
 
@@ -174,14 +188,18 @@ LinearLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazılır
 **5. Adım**: İkinci CheckBox görünümünü sürükle bırak yöntemiyle tasarım ekranına bırakınız.
 
 **6. Adım**: Üçüncü CheckBox görünümünü sürükle bırak yöntemiyle tasarım ekranına bırakınız (Görsel 2.27).
+<div style="display:block;text-align:center">
 
 ![Yatay LinearLayout yerleşimi](./ekran-tasarimi/gorsel-2.27-yatay-linearlayout-yerlesimi.png)
+</div>
 
 <h2 id="2.6.3.">2.6.3. RelativeLayout</h2>
 
 RelativeLayout, ConstraintLayouttan sonra en esnek yerleşimdir. Alt görünümler, ekranda kenaruzaklıklarına göre yerleştirilebildiği gibi birbirlerine bağlı olarak da yerleştirilebilir. RelativeLayout içindeki üç adet TextView alt görünümü, kenarlardan mesafelerine göre tasarım ekranına yerleştirilir. Düğme1 alt görünümü, "Bilişim" TextView görünümüne bağlanır. Düğme2 alt görünümü ise "Teknolojileri" TextView görünümüne bağlanır (Görsel 2.28).
+<div style="display:block;text-align:center">
 
 ![RelativeLayout](./ekran-tasarimi/gorsel-2.28-relativelayout.png)
+</div>
 
 Bir alt görünümü diğer bir alt görünüme göre düzenlemek için Above (Yukarıda), Below (Aşağıda), Left (Solda) ve Right (Sağda) ifadeleri kullanılır.
 
@@ -220,14 +238,18 @@ RelativeLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazıl�
 **5. Adım**: İkinci RadioButton görünümünü sürükle bırak yöntemiyle tasarım ekranına bırakınız.
 
 **6. Adım**: Üçüncü RadioButton görünümünü sürükle bırak yöntemiyle tasarım ekranına bırakınız (Görsel 2.29).
+<div style="display:block;text-align:center">
 
 ![RelativeLayout yerleşimi](./ekran-tasarimi/gorsel-2.29-relativelayout-yerlesimi.png)
+</div>
 
 <h2 id="2.6.4.">2.6.4. FrameLayout</h2>
 
 FrameLayout, alt görünümleri en basit şekilde organize edebilecek yerleşim türüdür. Ekranın bir bölümü kaplanır ve alt görünüme atanacak **android:layout_gravity** niteliğiyle görünümlerin konumlandırılması sağlanır (Görsel 2.30). Bu nitelik atanmazsa alt görünümler üst üste yerleştirilir.
+<div style="display:block;text-align:center">
 
 ![FrameLayout yerleşimi parametreleri](./ekran-tasarimi/gorsel-2.30-framelayout-yerlesimi-parametreleri.png)
+</div>
 
 FrameLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazılır:
 
@@ -270,8 +292,10 @@ FrameLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazılır:
 **8. Adım**: İkinci TextView görünümüne XML android:layout_gravity="center" kodunu ekleyiniz.
 
 **9. Adım**: Üçüncü TextView görünümüne XML android:layout_gravity="top|right" kodunu ekleyiniz (Görsel 2.31).
+<div style="display:block;text-align:center">
 
 ![FrameLayoout yerleşimi](./ekran-tasarimi/gorsel-2.31-framelayout-yerlesimi.png)
+</div>
 
 
 
