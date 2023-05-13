@@ -4,15 +4,25 @@ Farklı işletim sistemine ait programları yerel işletim sisteminde çalışt�
 
 Kurulumdan sonra Android Studio çalıştırıldığında karşılama ekranında **More Actions (Ek Eylemler)** listesindeki **Virtual Device Manager (Sanal Cihaz Yöneticisi)** seçeneği tıklanır (Görsel 1.13).
 
+<div style="display:block;text-align:center">
+
 ![Virtual Device Manager seçimi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.13-virtual-device-manager-secimi.png)
+</div>
+
 
 Açılan **Device Manager (Cihaz Yöneticisi)** penceresindeki **Create device (Cihaz oluştur)** düğmesine tıklanır (Görsel 1.14). 
+<div style="display:block;text-align:center">
 
 ![Create device düğmesi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.14-create-device-dugmesi.png)
+</div>
+
 
 **Select Hardware (Donanım Seç)** penceresi açılır. Bu pencerede **Category (Kategori)** kısmında TV, Phone (Cep telefonu), Wear OS (Giyilebilir cihazlar), Tablet ve Automotive (Otomotiv tabletleri) yer alır. Uygulamanın çalıştırılacağı cihaz hangi kategorideyse o kategori seçilerek uygun ekran büyüklüğü ve çözünürlük belirlenir. Görsel 1.15’te 480 piksel genişliğinde, 854 piksel uzunluğunda ve 5.4 inch ekran büyüklüğüne sahip bir cep telefonu cihazı seçilmiştir. İhtiyaç duyulması hâlinde **New Hardware Profile (Yeni Donanım Profili)** düğmesiyle boyut ve çözünürlüğünü kullanıcının ayarlayabileceği bir cihaz oluşturulabilir. **Import Hardware Profiles (Donanım Profili İçe Aktar)** düğmesiyle daha önceden dosyaya kaydedilmiş bir donanım profili yüklenebilir. **Clone Device (Cihazı Kopyala)** düğmesi kullanılarak da belirli bir cihazın özellikleri kopyalanır. Kopyalanan cihazın birkaç özelliğinde değişiklik yapılabilir. Next düğmesi tıklanarak bir sonraki pencereye geçilir.
+<div style="display:block;text-align:center">
 
 ![Emülatör cihazının seçimi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.15-emulator-cihazinin-secimi.png)
+</div>
+
 
 **Select a system image (Sistem imajı seçimi)** penceresinde emülatör cihazına bir işletim sistemi seçilir. Pencerenin üstünde **Recommended (Tavsiye edilen)**, **x86 Images (x86 İşlemciler için imajlar)** ve **Other Images (Diğer imajlar)** olmak üzere üç adet sekme yer alır.
 
@@ -24,7 +34,11 @@ Açılan **Device Manager (Cihaz Yöneticisi)** penceresindeki **Create device (
 
 Recommended sekmesindeki Android işletim sistemlerinin isimlerinin hemen yanında Download düğmesi yer alır. Bu düğmeyle o işletim sisteminin imajı indirilir ve işletim sistemi seçime hazır hâle getirilir. Görsel 1.16 penceresinde Marshmallow (Android 6.0) işletim sistemi indirilmiş ve seçime hazır hâle getirilmiştir. Bu sürüm seçilir ve Next düğmesine tıklanır.
 
+<div style="display:block;text-align:center">
+
 ![Sanal cihaza işletim sistemi seçimi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.16-sanal-cihaza-isletim-sistemi-secimi.png)
+</div>
+
 
 Kurulumun son penceresinde oluşturulan ayarların doğruluğu kontrol edilebilir ve bu pencereden ayarlar değiştirilebilir (Görsel 1.17).
 
@@ -37,25 +51,37 @@ Kurulumun son penceresinde oluşturulan ayarların doğruluğu kontrol edilebili
 - **Device Frame (Cihaz Çerçevesi)**: Bu onay kutusu işaretlenerek sanal cihazın kenarında çeşitli işlev düğmeleri kullanılabilir hâle getirilir. Bu düğmeler istenmezse bu onay kutusu
 işaretlenmez.
 - **Show Advanced Settings (Gelişmiş Ayarları Göster)**: Sanal cihazla ilgili ayrıntılı ayarlar yapılması gerektiğinde bu düğme tıklanır. Bu düğme tıklandıktan sonra cihaz ön ve arka kamera ayarları, ana bellek miktarı, yardımcı depolama bellek miktarı, SD kart bellek miktarı, cihazın işlemci sayısı gibi ayrıntılı ayarların belirlenebileceği kutular pencerede belirir. 
+<div style="display:block;text-align:center">
 
 ![Ayarları doğrulama penceresi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.17-ayarlari-dogrulama-penceresi.png)
+</div>
+
 
 Finish düğmesine tıklandıktan sonra pencerenin ortasında **Creating Android Virtual Device (Android Sanal Cihaz Oluşturuluyor)** ifadesi görüntülenir (Görsel 1.18).
+<div style="display:block;text-align:center">
 
 ![Sanal cihaz oluşturuluyor bilgisi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.18-sanal-cihaz-olusturuluyor-bilgisi.png)
+</div>
 
 Sanal cihaz oluşturulduktan sonra pencerenin en üstünde Görsel 1.19’daki bilgiler ve simgeler görünür.
+<div style="display:block;text-align:center">
 
 ![Sanal cihaz bilgileri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.19-sanal-cihaz-bilgileri.png)
+</div>
+
 
 Bu bilgilerde sanal cihazın ismi, sanal cihazda yüklü olan işletim sistemi, API düzeyi, yardımcı depolama biriminde kapladığı alan ve Actions (Eylemler) simgeleri yer alır. Bu simgeler şunlardır:
+
 ![Launch this AVD in the emulator](./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png)
+
 **Launch this AVD in the emulator (Bu Android Sanal Cihazı emülatörde çalıştır)**: Bu simge tıklanarak sanal cihaz çalıştırılır.
 
 ![Edit this AVD](./mobil-uygulama-gelistirmeye-hazirlik/edit-this-avd.png)
+
 **Edit this AVD (Bu Android Sanal Cihazı düzenle)**: Sanal cihazla ilgili değişiklik yapılması gerekirse bu simge tıklanır.
 
 ![Açılır menu](./mobil-uygulama-gelistirmeye-hazirlik/acilir-menu.png)
+
 Bu simge tıklandığında açılır bir menü ile karşılaşılır (Görsel 1.20). Bu menüdeki seçenekler
 şunlardır: 
 
@@ -64,13 +90,23 @@ Bu simge tıklandığında açılır bir menü ile karşılaşılır (Görsel 1.
 - **Cold Boot Now (Soğuk Önyükleme Şimdi)**: Sanal cihazın herhangi bir kaydedilmiş durumdan değil, en baştan açılmasını sağlar.
 - **Show on Disk (Disk Üzerinde Göster)**: Sanal cihazın dosyalarını bulunduğu klasörde gösterir.
 - **Delete (Sil)**: Sanal cihazın silinmesini sağlar.
+<div style="display:block;text-align:center">
 
 ![Açılır menü seçenekleri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.20-acilir-menu-secenekleri.png)
+</div>
 
 
-Emülatörde sanal cihazı başlatmak için ![Launch this AVD in the emulator](./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png) simgesine tıklanır. Her şey doğru ayarlandıysa Android işletim sistemi yüklü bir cep telefonu cihaz penceresi ekranda belirir (Görsel 1.21).
+<div style="display:block;text-align:center">
+Emülatörde sanal cihazı başlatmak için ![Launch this AVD in the emulator](./mobil-uygulama-gelistirmeye-hazirlik/
+</div>
+
+launch-this-avd-in-the-emulator.png) simgesine tıklanır. Her şey doğru ayarlandıysa Android işletim sistemi yüklü bir cep telefonu cihaz penceresi ekranda belirir (Görsel 1.21).
+<div style="display:block;text-align:center">
 
 ![Sanal cihaz ve cihazın sağ yanında çerçeve işlev düğmeleri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.21-sanal-cihaz-ve-cihazin-sag-yaninda-cerceve-islev-dugmeleri.png)
+</div>
+
+21-sanal-cihaz-ve-cihazin-sag-yaninda-cerceve-islev-dugmeleri.png)
 
 **1. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında 5.1 inch
 büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumunu yapınız.
@@ -80,8 +116,11 @@ büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumun
 **3. Adım**: Açılan listeden Virtual Device Manager seçeneğine tıklayınız.\
 **4. Adım**: Yeni gelen pencerede Create device düğmesine tıklayınız.\
 **5. Adım**: Select Hardware penceresinde Category kısmından Phone ve 5.1”WVGA seçiniz (Görsel 1.22).
+<div style="display:block;text-align:center">
 
 ![Emülatör seçimi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.22-emulator-secimi.png)
+</div>
+
 
 **6. Adım**: Next düğmesini tıklayınız.\
 **7. Adım**: Select a system image penceresinde Marshmallow seçiniz.\
@@ -96,7 +135,7 @@ büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumun
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                             | EVET | HAYIR |
 >| ---------------------------------------------------------------------------------- | ---- | ----- |

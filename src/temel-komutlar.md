@@ -1,4 +1,4 @@
-# TEMEL KOMUTLAR
+# 3. TEMEL KOMUTLAR
 
 ## NELER ÖĞRENECEKSİNİZ?
 - Java dilinde değişken kavramını tanımlama

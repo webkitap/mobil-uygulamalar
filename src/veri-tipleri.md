@@ -1,11 +1,17 @@
 # 3.3. VERİ TİPLERİ
+- <a href="#3.3.1.">3.3.1. İlkel (Temel) Veri Tipleri</a>
+- <a href="#3.3.2.">3.3.2. Referans Veri Tipleri</a>
+  
 Java programlama dili, statik ve kesin olarak yazılmış (Strongly Typed) bir programlama dili olarak tanımlanır. Bu durum, değişkenin oluşturulması sırasında değişken türünün tanımlaması gerektiği ve daha sonra değişken türünün değiştirilemeyeceği anlamına gelir. Değişken türü ile değişkenin değeri farklı kavramlardır.
 
-Java"da ilkel (primitive) veri tipleri ve referans veri tipleri olmak üzere iki değişken grubu vardır (Görsel 3.7).
+Java'da ilkel (primitive) veri tipleri ve referans veri tipleri olmak üzere iki değişken grubu vardır (Görsel 3.7).
+<div style="display:block;text-align:center">
 
 ![Değişken tipleri](./temel-komutlar/gorsel-3.7-degisken-tipleri.png)
+</div>
 
-## 3.3.1. İlkel (Temel) Veri Tipleri
+<h2 id="3.3.1.">3.3.1. İlkel (Temel) Veri Tipleri</h2>
+
 İlkel veri tipleri, içinde bir seferde tek bir değer tutan veri tipleridir. Java programlama dilinde ilkel veri tipleri program içinde ilk oluşturuldukları andan itibaren bir değere sahip olmak zorundadır
 
 **NOT**: 
@@ -13,40 +19,52 @@ Java"da ilkel (primitive) veri tipleri ve referans veri tipleri olmak üzere iki
 >İlkel veri tipleri küçük harflerle yazılır. 
 
 ### 3.3.1.1. Mantıksal Veri Tipi
-Java"da boolean olarak isimlendirilen bir adet mantıksal veri tipi vardır.
+Java'da boolean olarak isimlendirilen bir adet mantıksal veri tipi vardır.
 
 **boolean**: boolean veri tipinin true (doğru) ve false (yanlış) olmak üzere sadece iki değeri vardır. boolean veri tipi, evet veya hayır şeklinde cevaplanabilecek soruların cevapları şeklinde düşünülebilir. 
 
 **1. UYGULAMA**: İşlem adımlarına göre ilkel veri tiplerinin kullanıldığı bir uygulamayı tasarlayınız.
 
 **1. Adım**: Mobil uygulama geliştirme programında File menüsünden New>New Project komutunu tıklayınız (Görsel 3.8).
+<div style="display:block;text-align:center">
 
 ![New Project komutu](./temel-komutlar/gorsel-3.8-new-project-komutu.png)
+</div>
 
 
 **2. Adım**: New Project penceresinden Empty Activity seçeneğini seçip Next düğmesine tıklayınız (Görsel 3.9).
+<div style="display:block;text-align:center">
 
 ![New Project penceresi](./temel-komutlar/gorsel-3.9-new-project-penceresi.png)
+</div>
 
 **3. Adım**: Ekrana gelen pencereden Name kısmına uygulamanıza vereceğiniz adı giriniz. Projenin kaydedileceği yolu Save Location kısmına giriniz. Finish düğmesine basınız (Görsel 3.10).
+<div style="display:block;text-align:center">
 
 ![New Project No Activity penceresi](./temel-komutlar/gorsel-3.10-new-project-no-activity-penceresi.png)
+</div>
 
-**4. Adım**: Project penceresinde app>java üzerine sağ tıklayıp New>Java Class"ı tıklayınız (Görsel 3.11).
+**4. Adım**: Project penceresinde app>java üzerine sağ tıklayıp New>Java Class'ı tıklayınız (Görsel 3.11).
+<div style="display:block;text-align:center">
 
 ![Yeni Java sınıfı oluşturma](./temel-komutlar/gorsel-3.11-yeni-java-sinifi-olusturma.png)
+</div>
 
-**5. Adım**: Choose Destination Directory penceresinde sınıfınızın kaydedileceği klasör olarak app\src\main\java"yı seçiniz ve OK düğmesine tıklayınız (Görsel 3.12).
+**5. Adım**: Choose Destination Directory penceresinde sınıfınızın kaydedileceği klasör olarak app\src\main\java'yı seçiniz ve OK düğmesine tıklayınız (Görsel 3.12).
+<div style="display:block;text-align:center">
 
 ![Choose Destination Directory penceresi](./temel-komutlar/gorsel-3.12-choose-destination-directory-penceresi.png)
+</div>
 
 **6. Adım**: New Java Class penceresinde Name kısmına "DenemeMantiksal" yazarak yeni bir sınıf oluşturunuz (Görsel 3.13). 
+<div style="display:block;text-align:center">
 
 ![New Java Class penceresi](./temel-komutlar/gorsel-3.13-new-java-class-penceresi.png)
+</div>
 
 **NOT**
 
->Java"da sınıf isimleri büyük harfle başlar.
+>Java'da sınıf isimleri büyük harfle başlar.
 
 **7. Adım**: DenemeMantiksal sınıfı içine şu kodu yazınız:
 
@@ -82,12 +100,16 @@ public class DenemeMantiksal {
 >yapısının oluşturulması için mobil uygulama geliştirme programında **sout** yazılıp TAB tuşuna basılmalıdır.
 
 **8. Adım**: Yazılan programı çalıştırmak için Run menüsünden Run "...." with Coverage komutunu tıklayınız (Görsel 3.14). Aynı işlem, kod editöründeki yeşil çalıştırma düğmesine tıklanarak da gerçekleştirilebilir. Proje, Run komutuyla çalıştırılırsa hata penceresiyle karşılaşılır. Bunun nedeni, bir Android yaşam döngüsünde projeyi çalıştırmak için main fonksiyonunun olmamasıdır. 
+<div style="display:block;text-align:center">
 
 ![Run with Converage komutu](./temel-komutlar/gorsel-3.14-run-with-coverage-komutu.png)
+</div>
 
 **9. Adım**: Cover penceresinde çalışan kodun çıktısını inceleyiniz(Görsel 3.15).
+<div style="display:block;text-align:center">
 
 ![Cover penceresi](./temel-komutlar/gorsel-3.15-cover-penceresi.png)
+</div>
 
 >**SIRA SİZDE**:
 >
@@ -97,7 +119,7 @@ public class DenemeMantiksal {
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                    | EVET | HAYIR |
 >| ---------------------------------------------------------- | ---- | ----- |
@@ -116,9 +138,11 @@ Değer olarak tam sayıları içinde barındırabilen veri tipleridir. Büyükl�
 
 **NOT**
 
->Bilgisayarlardaki en küçük veri boyutu bit"tir. Bitler 0 veya 1 ile temsil edilir (Görsel 3.16).
+>Bilgisayarlardaki en küçük veri boyutu bit'tir. Bitler 0 veya 1 ile temsil edilir (Görsel 3.16).
+<div style="display:block;text-align:center">
 
 ![Byte ile bit ilişkisi](./temel-komutlar/gorsel-3.16-byte-ile-bit-iliskisi.png)
+</div>
 
 Tam sayı veri türleri şunlardır (Tablo 3.1):
 
@@ -141,17 +165,21 @@ tam sayı veri tipidir. Hafızada 8 byte yer kaplar.
 | long          | 8 byte         | -9223372036854775808,…,9223372036854775807     |
 | char          | 2 byte         | 0,…,65535 arası Unicode ile kodlanmış karakter |
 
-Tam sayı veri tipleri büyüklükleri Görsel 3.17"de verilmiştir.
+Tam sayı veri tipleri büyüklükleri Görsel 3.17'de verilmiştir.
+<div style="display:block;text-align:center">
 
 ![Tam sayı veri türlerinde büyüklük karşılaştırması](./temel-komutlar/gorsel-3.17-tam-sayi-veri-turlerinde-buyukluk-karsilastirmasi.png)
+</div>
 
 Unicode, her bir karakterin sayısal olarak ifade edildiği endüstri standardıdır. Örnek olarak Unicode ile kodlanmış A karakterinin değeri 65"tir.
 
 Tanımlanan bir char veri türü, hafızada değer olarak sayısal şekilde ifade edilir. Bundan dolayı char veri tipi, tam sayı veri tipleri içinde gruplandırılır.
 
 Değişkenin tipi, değişken üzerinde gerçekleştirilecek işlemleri de belirtir. "char" veri tipi sayısal olduğu için üzerinde aritmetiksel işlemler gerçekleştirilir (Görsel 3.18). 
+<div style="display:block;text-align:center">
 
 ![char veri türü](./temel-komutlar/gorsel-3.18-char-veri-turu.png)
+</div>
 
 **NOT**:
 
@@ -161,19 +189,19 @@ Değişkenin tipi, değişken üzerinde gerçekleştirilecek işlemleri de belir
 
 | Karakter | ASCII Kodu |
 | -------- | ---------- |
-| ~        |
-| &        |
-|          |            |
-| @        |
+| ~        |            |
+| &        |            |
+| \|       |            |
+| @        |            |
 
 
 **ETKİNLİK**: Sırasıyla 77, 69 ve 66 değerlerine sahip char veri tipleri ile oluşan kelimeyi yazınız.
 
 | ASCII Kodu | Karakter |
 | ---------- | -------- |
-| 77         |
-| 69         |
-| 66         |
+| 77         |          |
+| 69         |          |
+| 66         |          |
 
 **2. UYGULAMA**: İşlem adımlarına göre tam sayı veri tiplerinin kullanıldığı bir uygulamayı tasarlayınız.
 
@@ -228,7 +256,7 @@ public class DenemeTamSayilar {
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                              | EVET | HAYIR |
 >| -------------------------------------------------------------------- | ---- | ----- |
@@ -276,7 +304,7 @@ Karakter: B
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ        | EVET | HAYIR |
 >| ------------------------------ | ---- | ----- |
@@ -315,7 +343,7 @@ ASCII kodu: 97
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                    | EVET | HAYIR |
 >| ---------------------------------------------------------- | ---- | ----- |
@@ -371,18 +399,19 @@ komutuyla çalıştırınız.
 >float: (1/3) = 0.33333334\
 double: (1/3) = 0.3333333333333333
 
-## 3.3.2. Referans Veri Tipleri
-İlkel ve referans değişkenler, akıllı cihazın stack hafıza adı verilen bölümünde bulunur. Görsel
-3.19"un a ile belirtilen kısmında görüldüğü gibi ilkel veri tipleri stack hafıza içinde değerlerini barındırır.
+<h2 id="3.3.2.">3.3.2. Referans Veri Tipleri</h2>
 
-İlkel veri tipleri, içinde birden fazla veri barındıramaz. İlkel veri tipi olarak tanımlanmış bir değişkenin boyutu hafızada sabittir, daha sonra değiştirilemez. Uygulama, içinde birden fazla veri
-tutacak yapılara ihtiyaç duyar. Bu verilerin boyutu sabit değildir. Uygulama çalışırken boyutu artırılabilir şekilde olmalıdır. Referans veri tipleri bu ihtiyaca cevap verir. 
+İlkel ve referans değişkenler, akıllı cihazın stack hafıza adı verilen bölümünde bulunur. Görsel 3.19'un a ile belirtilen kısmında görüldüğü gibi ilkel veri tipleri stack hafıza içinde değerlerini barındırır.
 
-Referans veri tipleri de stack hafızada yer alır. İlkel veri tiplerinden farklı olarak içinde değerleri yoktur. Görsel 3.19"un b ile belirtilen kısmında görüldüğü gibi değer yerine içinde bir hafıza adresi barındırır. 
+İlkel veri tipleri, içinde birden fazla veri barındıramaz. İlkel veri tipi olarak tanımlanmış bir değişkenin boyutu hafızada sabittir, daha sonra değiştirilemez. Uygulama, içinde birden fazla veri tutacak yapılara ihtiyaç duyar. Bu verilerin boyutu sabit değildir. Uygulama çalışırken boyutu artırılabilir şekilde olmalıdır. Referans veri tipleri bu ihtiyaca cevap verir. 
+
+Referans veri tipleri de stack hafızada yer alır. İlkel veri tiplerinden farklı olarak içinde değerleri yoktur. Görsel 3.19'un b ile belirtilen kısmında görüldüğü gibi değer yerine içinde bir hafıza adresi barındırır. 
+<div style="display:block;text-align:center">
 
 ![Stack ve heap hafıza](./temel-komutlar/gorsel-3.19-stack-ve-heap-hafiza.png)
+</div>
 
-Görsel 3.19"daki x değişkeni bir ilkel değişkendir ve stack hafıza içinde yer alır. Değişkenin değerini de kendi içinde barındırır. Boyutu sabittir ve değiştirilemez. Referans veri tipi olan y değişkeni içerik olarak bir adres barındırır. Bu adresin gösterdiği heap hafıza bölümünde uygun alan y değişkeni için ayrılır. Görsel 3.19a"da y referans değişkenin değeri "M" harfidir. Buna uygun olarak heap hafızada bir harflik alan ayrılır. Görsel 3.19b"de y referans değişkenin değeri "MEB" olarak değiştirilmiştir. Buna uygun olarak heap bölümünde ayrılan alan da artırılmıştır.
+Görsel 3.19'daki x değişkeni bir ilkel değişkendir ve stack hafıza içinde yer alır. Değişkenin değerini de kendi içinde barındırır. Boyutu sabittir ve değiştirilemez. Referans veri tipi olan y değişkeni içerik olarak bir adres barındırır. Bu adresin gösterdiği heap hafıza bölümünde uygun alan y değişkeni için ayrılır. Görsel 3.19a'da y referans değişkenin değeri "M" harfidir. Buna uygun olarak heap hafızada bir harflik alan ayrılır. Görsel 3.19b'de y referans değişkenin değeri "MEB" olarak değiştirilmiştir. Buna uygun olarak heap bölümünde ayrılan alan da artırılmıştır.
 
 En çok kullanılan referans tipi, karakter dizisidir (String). String, içinde birden fazla karakter barındırabilen referans veri tipidir.
 

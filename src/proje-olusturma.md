@@ -4,12 +4,11 @@
 - <a href="#1.4.2.">1.4.2. Android Studio Tasarım Ekranı</a> 
 - <a href="#1.4.3.">1.4.3. Ön İzleme Görünümünü Değiştirmek</a> 
 
-
-
-
 Empty Activity seçildikten sonra Next düğmesine basılınca proje ayarlarının yapılabileceği bir pencere belirir (Görsel 1.26).
+<div style="display:block;text-align:center">
 
 ![Yeni proje ayarları](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.26-yeni-proje-ayarlari.png)
+</div>
 
 - **Name (İsim)**: Projenin ismi bu kutuda belirlenir. Uygulamanın ismi de projeye verilen bu isim olur.
 - **Package name (Paket İsmi)**: Paket ismi otomatik olarak verilir. İstenirse sonradan değiştirilebilir.
@@ -19,8 +18,10 @@ Empty Activity seçildikten sonra Next düğmesine basılınca proje ayarların�
 - **Use legacy android.support.libraries (Eski Android Kütüphaneleri)** onay kutusu seçilirse son güncel servisler ve kütüphanelerin kullanılması engellenir.
 
 Finish düğmesine tıklanır. Açılan Tip of the Day (Günün ipucu) penceresi, Close (Kapat) düğmesi ile kapatılır (Görsel 1.27).
+<div style="display:block;text-align:center">
 
 ![Tip of the Day penceresi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.27-tip-of-the-day-penceresi.png)
+</div>
 
 **2. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım yapılarından Empty Activity seçerek MobilUygulamam isimli uygulamayı geliştiriniz.
 
@@ -39,27 +40,30 @@ Finish düğmesine tıklanır. Açılan Tip of the Day (Günün ipucu) penceresi
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
->|DEĞERLENDİRME ÖLÇÜLERİ|EVET|HAYIR|
->|---|---|---|
->|1. Mobil uygulama geliştirme ortamını çalıştırdı.|
->|2. Karşılama ekranında New Project seçeneğine tıkladı.|
->|3. Templates bölümünden Phone and Tablet seçti.|
->|4. Sağ taraftaki pencereden Fullscreen Activity tasarım yapısını seçti.|
->|5. Yeni gelen pencerede Name kutusuna TamEkranUygulamam yazdı.|
->|6. Pencerenin sağ alt köşesindeki Finish düğmesine tıkladı.|
+>| DEĞERLENDİRME ÖLÇÜLERİ                                                  | EVET | HAYIR |
+>| ----------------------------------------------------------------------- | ---- | ----- |
+>| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                       |
+>| 2. Karşılama ekranında New Project seçeneğine tıkladı.                  |
+>| 3. Templates bölümünden Phone and Tablet seçti.                         |
+>| 4. Sağ taraftaki pencereden Fullscreen Activity tasarım yapısını seçti. |
+>| 5. Yeni gelen pencerede Name kutusuna TamEkranUygulamam yazdı.          |
+>| 6. Pencerenin sağ alt köşesindeki Finish düğmesine tıkladı.             |
 
 <h2 id="1.4.1.">1.4.1. Projenin Emülatörde Çalıştırılması</h2>
 
 "MobilUygulamalard" projesi oluşturulduktan sonra uygulama geliştirme ortamında Run 'app' simgesine veya Shift+F10 kısayol tuşlarına basılır (Görsel 1.28).
+<div style="display:block;text-align:center">
 
 ![Android Studio uygulama geliştirme ortamı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.28-android-studio-uygulama-gelistirme-ortami.png)
+</div>
 
 Daha önce oluşturulan sanal cihazda **Hello World!** yazısı görüntülenir ve oluşturulan projenin ilk denemesi yapılır (Görsel 1.29).
+<div style="display:block;text-align:center">
 
 ![Sanal cihazda çalıştırılan "MobilUygulamalard" projesi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.29-sanal-cihazda-calistirilan-mobiluygulamalar-projesi.png)
-
+</div>
 <h2 id="1.4.2.">1.4.2. Android Studio Tasarım Ekranı</h2>
 
 Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity.javad" dosyası varsayılan olarak seçili gelir. Bu dosyada tasarlanan mobil uygulamanın işlevleri kodlanır. Mobil uygulamanın ekran tasarımı, bir başka deyişle kullanıcı arayüzü tasarlanacaksa sol tarafındaki "activity_main.xmld" dosyası seçilir (Görsel 1.30).
@@ -77,8 +81,10 @@ Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity
 **View mode (6)**: Tasarım ekranının Code (Kod), Design (Tasarım) ve Split (Böl) modunda gösterilmesini sağlar. Split modu hem Code hem de Design görünümünü aynı anda tek pencerede gösterir.\
 
 **Zoom and pan controls (7)**: Buradaki düğmeler yardımıyla ön izlemenin boyutu ve konumu editör içinde ayarlanabilir.
+<div style="display:block;text-align:center">
 
 ![Android Studio Tasarım Ekranı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.30-android-studio-tasarim-ekrani.png)
+</div>
 
 **UYARI**: Code, Split ve Design görünümleri arasında geçiş yapmak için klavyeden Alt+Shift+Sağ/Sol Ok
 tuşları kullanılır.
@@ -86,8 +92,10 @@ tuşları kullanılır.
 <h2 id="1.4.3.">1.4.3. Ön İzleme Görünümünü Değiştirmek</h2>
 
 Tasarım ekranının en üstündeki düğmeler editör içindeki ön izleme görünümlerini değiştirmek için kullanılır (Görsel 1.31).
+<div style="display:block;text-align:center">
 
 ![Toolbar simgeleri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.31-toolbar-simgeleri.png)
+</div>
 
 Bu simgelerle yapılan değişiklikler şunlardır:
 

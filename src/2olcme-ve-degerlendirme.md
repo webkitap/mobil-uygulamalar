@@ -1,4 +1,4 @@
-# ÖLÇME VE DEĞERLENDİRME
+<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
 
 **A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise “D”, yanlış ise “Y” yazınız.**
 
@@ -13,28 +13,49 @@
 **B) Aşağıdaki soruları dikkatlice okuyarak doğru seçeneği işaretleyiniz.**
 
 **8.** **Aşağıdakilerden hangisi taşınabilir cihazlara ait ekranlardan biri <ins>değildir?</ins>**\
-A) Home screen B) All apps C) Recent screen
-D) Lock screen E) Status Bar
+
+A) Home screen <br>
+B) All apps <br>
+C) Recent screen<br>
+D) Lock screen <br>
+E) Status Bar
 
 **9**. **Aşağıdakilerden hangisi bir mobil uygulama ekran yapısı içinde <ins>yer almaz?</ins>**\
-A) Status Bar B) Palette paneli C) Action Bar
-D) Navigation Bar E) Uygulama ismi
+
+A) Status Bar <br>
+B) Palette paneli <br>
+C) Action Bar<br>
+D) Navigation Bar <br>
+E) Uygulama ismi
 
 **10**. **Aşağıdakilerden hangisi bir mobil uygulamada kullanıcıya metin göstermek için kullanılan görünümdür?**\
-A) TextView B) Button C) CheckBox
-D) ProgressBar E) ImageView
+
+A) TextView <br>
+B) Button <br>
+C) CheckBox<br>
+D) ProgressBar <br>
+E) ImageView
 
 **11**. **Aşağıdakilerden hangisi bir mobil uygulamada kullanıcıya resim göstermek için kullanılan görünümdür?**\
-A) EditText B) ImageView C) CheckBox
-D) ProgressBar E) Button
+
+A) EditText <br>
+B) ImageView <br>
+C) CheckBox<br>
+D) ProgressBar <br>
+E) Button
 
 **12.** **Aşağıdakilerden hangisi CheckBox görünümüne ait niteliklerden “android:Checked” ile belirtilir?**\
-A) Görünümün seçili olması veya olmaması sağlanır.
-B) Görünümün genişliği ayarlanır.\
-C) Görünümün yüksekliği ayarlanır.
-D) Görünümün metni belirlenir.
+
+A) Görünümün seçili olması veya olmaması sağlanır.<br>
+B) Görünümün genişliği ayarlanır.<br>
+C) Görünümün yüksekliği ayarlanır.<br>
+D) Görünümün metni belirlenir.<br>
 E) Görünüm resminin kaynağı belirtilir.
 
 **13.** **Aşağıdaki yerleşimlerden hangisi görünümlerin ekrana yatay ve dikey şekilde konumlandırılmasını sağlar?**\
-A) LinearLayout B) ConstraintLayout C) FrameLayout
-D) RelativeLayout E) Home screen
+
+A) LinearLayout <br>
+B) ConstraintLayout <br>
+C) FrameLayout<br>
+D) RelativeLayout <br>
+E) Home screen

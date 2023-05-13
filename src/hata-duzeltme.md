@@ -58,8 +58,10 @@ public class MainActivity extends AppCompatActivity {
 **3. Adım**: Metin kutusuna Merhaba yazıp İşlem Yap düğmesine tıklayınız.
 
 **4. Adım**: Logcat ekranını gözlemleyiniz.
+<div style="display:block;text-align:center">
 
 ![Logcat gözlem](./temel-komutlar/logcat-gozlem.png)
+</div>
 
 >**SIRA SİZDE**:
 >
@@ -69,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                   | EVET | HAYIR |
 >| ------------------------------------------------------------------------- | ---- | ----- |

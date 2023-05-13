@@ -81,7 +81,7 @@ Azaltma: 2
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                         | EVET | HAYIR |
 >| --------------------------------------------------------------- | ---- | ----- |
@@ -160,7 +160,7 @@ x %= 2 : 0
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                | EVET | HAYIR |
 >| ---------------------------------------------------------------------- | ---- | ----- |
@@ -235,7 +235,7 @@ x, y’den küçük veya eşit mi : false
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                      | EVET | HAYIR |
 >| ------------------------------------------------------------ | ---- | ----- |
@@ -293,7 +293,7 @@ x 10’dan büyük veya y 10’dan küçük mü tersi: false
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                | EVET | HAYIR |
 >| -------------------------------------------------------------------------------------- | ---- | ----- |

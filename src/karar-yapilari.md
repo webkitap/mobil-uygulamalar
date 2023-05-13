@@ -1,4 +1,4 @@
-# KARAR YAPILARI
+# 4.1. KARAR YAPILARI
 - <a href="#4.1.1.">4.1.1. if Karar Yapısı</a> 
 - <a href="#4.1.2.">4.1.2. if-else Karar Yapısı </a> 
 - <a href="#4.1.3.">4.1.3. if-else-if Karar Yapısı</a> 
@@ -27,8 +27,10 @@ if(şart ifadesi){
 **3. Adım**: Button ögesinin "onClick" özelliğine "kontrolEt" yazınız (Butona tıklandığında çalışacak "kontrolEt" isimli metot sonradan yazılacaktır.).
 
 **4. Adım**: MainActivity’yi açınız ve eklenen ögeleri "findViewById" ile onCreate metoduna ait blokların içinde tanımlayınız.
+<div style="display:block;text-align:center">
 
 ![Not kontrol uygulaması tasarımı](./karar-ve-dongu-yapilari/gorsel-4.1-not-kontrol-uygulamasi-tasarimi.png)
+</div>
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -58,8 +60,10 @@ public void kontrolEt(View view){
 ```
 
 **7. Adım:** Uygulamanın son şekli Görsel 4.2’de verilmiştir. Shift+F10 tuşlarıyla veya Başlat ikonuyla uygulamayı çalıştırınız.
+<div style="display:block;text-align:center">
 
 ![Not kontrol uygulaması MainActivity](./karar-ve-dongu-yapilari/gorsel-4.2-not-kontrol-uygulamasi-mainactivity.png)
+</div>
 
 **NOT**:
 
@@ -74,8 +78,10 @@ public void kontrolEt(View view){
 **1. Adım**: Görsel 4.3’te görülen tasarımı Empty Activity açarak hazırlayınız.
 
 **2. Adım**: İçeriye iki adet sadece sayı girilen "EditText" ögesi, bir adet "Button" ögesi, iki adet de 1. Sayı ve 2. Sayı yazan "TextView" ögesi ekleyiniz. Daha sonra "Infer Constraints" butonuna tıklayarak ögelerin yerini sabitleyiniz (Görsel 4.3).
+<div style="display:block;text-align:center">
 
 ![Sayıları karşılaştırma uygulaması tasarımı](./karar-ve-dongu-yapilari/gorsel-4.3-sayilari-karsilastirma-uygulamasi-tasarimi.png)
+</div>
 
 **3. Adım**: Button ögesinin "onClick" özelliğine "kontrol" yazınız.
 
@@ -124,8 +130,10 @@ lamayı çalıştırınız.
 **NOT:**
 
 >Bundan sonraki uygulamalarda eklenen nesnelerin varsayılan isimleri (id) değiştirilerek işlemyapılacaktır. Bu uygulamada da bu nedenle EditTextlerin ve buttonun id’leri değiştirilmiş ve uygun isimler verilmiştir. Bu isimler de ögelerin başlatması yapılırken yazılan findViewByld metodunda görülür.
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında sayıların karşılaştırılması](./karar-ve-dongu-yapilari/gorsel-4.4-mainactivity-sayfasinda-sayilarin-karsilastirilmasi.png)
+</div>
 
 <h2 id="4.1.2.">4.1.2. if-else Karar Yapısı</h2>
 
@@ -151,8 +159,10 @@ else{
 **NOT:**
 
 >Hint özelliği, o ögeye tıklanmadığı sürece görünen fakat tıklandığında kaybolan, ipucu şeklinde yer alan text mesajıdır.
+<div style="display:block;text-align:center">
 
 ![Kullanıcı girişi uygulama tasarımı](./karar-ve-dongu-yapilari/gorsel-4.5-kullanici-girisi-uygulama-tasarimi.png)
+</div>
 
 **2. Adım:** Button nesnesinin "onClick" özelliğine "onayla" yazınız.
 
@@ -220,14 +230,18 @@ else {
 ```
 
 **9. Adım:** Uygulamanın son şekli Görsel 4.6’da verilmiştir. Buna göre Shift+F10 tuşlarıyla veya Başlat ikonuyla uygulamayı çalıştırınız.
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında kullanıcı girişi](./karar-ve-dongu-yapilari/gorsel-4.6-mainactivity-sayfasinda-kullanici-girisi.png)
+</div>
 
 **4. UYGULAMA**: İşlem adımlarına göre mobil uygulama ekranına üç adet "switch" ögesi ekleyiniz. Birinci switch ögesi olan "Konum Servisleri" açık ise "Konum Bilgilerini Al" ve "Konum Bilgilerini Gönder" switchlerini kontrol ederek açık ve kapalı olanları Toast mesajında gösteren uygulamayı tasarlayınız.
 
 **1. Adım**: Üç adet switch ve bir adet button ile Görsel 4.7’yi oluşturunuz. Birinci switchi; id’si "switch_KonumServisi", layouth_with özelliği "match_parent", Left Margin özelliği ise 8 dp olacak şekilde ayarlayınız. İkinci switchi; id’si "switch_KonumAl", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız. Üçüncü switchi; id’si "switch_KonumGonder", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız.
+<div style="display:block;text-align:center">
 
 ![Konum servisleri tasarım ekranı](./karar-ve-dongu-yapilari/gorsel-4.7-konum-servisleri-tasarim-ekrani.png)
+</div>
 
 **2. Adım:** Oluşturulan ögeleri MainActivity sayfasında tanımlayıp onCreate blokları içinde findViewById metodu ile initialize (başlatma) ediniz.
 
@@ -245,34 +259,48 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
 **3. Adım:** Uygulama ilk açıldığında konum servislerinin durumunu kontrol etmek için bir if-else karar yapısı uygulayınız. Bunun için onCreate metodu içine Görsel 4.8’deki kodu ekleyiniz.
+<div style="display:block;text-align:center">
 
 ![Konum servisleri switchini kontrol kodu](./karar-ve-dongu-yapilari/gorsel-4.8-konum-servisleri-switchini-kontrol-kodu.png)
+</div>
 
 **4. Adım:** Yaşam döngülerinden olan "onResume" metodunu oluşturunuz. Konum servisleri switchi anlık olarak kapatılıp açıldığında alt switchlerin ona göre hareketler yapması istenir. Bunun için onCreate metodundan çıkılıp MainActivity sınıfı bloklarındayken onResume yazılırsa Görsel 4.9’da olduğu gibi bir görüntü elde edilir. Enter tuşuna basıldığında onResume yaşam döngüsü oluşturulur.
+<div style="display:block;text-align:center">
 
 ![onResume yaşam döngüsü](./karar-ve-dongu-yapilari/gorsel-4.9-onresume-yasam-dongusu.png)
+</div>
 
 **5. Adım:** Oluşturulan onResume içinde "konumServisleri" isimli switchin anlık durumunun değişimi kontrol edilmelidir. Bunun için de switchin "setOnCheckedChangeListener" metodu kullanılır. Bunlar tıpkı onCreate, onResume gibi interface’den gelen gövdeli metotlardır. Bu nedenle bunlar da override edilir. Kullanımı için "onResume" metodu blokları içindeyken "konumServisleri.setOnCheckedChangeListener()" yazınız. Parametre girmek için Görsel 4.10’da görüldüğü gibi new yazınız. Çıkan "onCheckedChangeListener" seçeneğine Enter tuşu ile basınız ve Görsel 4.11’de görülen yapıyı oluşturunuz.
+<div style="display:block;text-align:center">
 
 ![setOnCheckedChangeListener seçimi](./karar-ve-dongu-yapilari/gorsel-4.10-setoncheckedchangelistener-secimi.png)
+</div>
+<div style="display:block;text-align:center">
 
 ![OnCheckedChangeListener yapısı](./karar-ve-dongu-yapilari/gorsel-4.11-setoncheckedchangelistener-yapisi.png)
+</div>
 
 **6. Adım:** "onCheckedChanged" metodunun blokları arasına girilerek karar ve kontrol yapıları oluşturulur. Buradaki kontroller bire bir şekilde onCreate blokları arasında yazılan if-else karar yapılarıdır. Öncelikle konumServisleri switchinin açık olup olmadığı kontrol edilir. Açık olursa alt switchlerin (Konum Al ve Konum Gönder) görünümü aktif, kapalı olursa da pasif edilir. Bunun için "setVisibility" metodunu kullanarak içine View sınıfından parametre gönderiniz (Görsel 4.12).
+<div style="display:block;text-align:center">
 
 ![Switchlerin kontrolü](./karar-ve-dongu-yapilari/gorsel-4.12-switchlerin-kontrolu.png)
+</div>
 
 **7. Adım:** Buton işleri için buttonun onClick özelliğine "onayla yazınız ve MainActivity’yi açıp orada da geri dönüş değeri olmayan bir metot tanımlayınız. Bu metodun içinde switchin kontrolünü yapınız. Switch pasif durumdaysa diğer alt switchlere bakmadan Toast mesajı ile "Konum Servisleri Kapalı mesajı veriniz. Switch aktif durumdaysa alt switchleri kontrol ediniz ve bu switchlerin durumunu Toast mesajı ile bildiriniz (Görsel 4.13).
+<div style="display:block;text-align:center">
 
 ![onayla metodunun içi](./karar-ve-dongu-yapilari/gorsel-4.13-onayla-metodunun-ici.png)
+</div>
 
 **NOT:**
 
 >konumServisleri önünde bulunan "!" işareti durumu terslemek için kullanılır. Bir başka deyişle olumlu olan durumu olumsuza çevirir. Ayrıca else karar yapısı içinde farklı durumlarda ne yapılacağını anlatmak için if’ler yeniden kullanılır ve iç içe karar yapıları oluşturulur.
 
 MainActivity içindeki kodların bütün hâli Görsel 4.14’te görülür.
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasının içeriği](./karar-ve-dongu-yapilari/gorsel-4.14-mainactivity-sayfasinin-icerigi.png)
+</div>
 
 <h2 id="4.1.3.">4.1.3. if-else-if Karar Yapısı</h2>
 
@@ -291,8 +319,10 @@ if(şart){
 **5. UYGULAMA:** İşlem adımlarına göre mobil uygulama ekranında kullanıcı tarafından bir derse ait üç not girişi yapıldığında dersin ortalamasını alan ve Toast mesajı ile ortalamanın karşılığını veren uygulamayı tasarlayınız.
    
 **1. Adım:** Görsel 4.15’teki tasarımı yaparak "Infer Constraints" ile otomatik constraint veriniz. Üç adet number ögesi (EditText), 1 adet button ögesi ekleyiniz. EditTextlerin id’lerini "editTextNumber_Not1", "editTextNumber_Not2", "editTextNumber_Not3" şeklinde, buttonun id’sini ise "button_Onayla" biçiminde oluşturunuz. EditTextlerin hint özelliğine ilgili yazıları giriniz . Buttonun onClick özelliğine de "onayla" yazınız.
+<div style="display:block;text-align:center">
 
 ![Not girişi uygulama tasarımı](./karar-ve-dongu-yapilari/gorsel-4.15-not-girisi-uygulama-tasarimi.png)
+</div>
 
 **2. Adım:** MainActivity sınıfında nesneleri tanımlayıp onCreate blokları içinde başlatınız.
 
@@ -301,14 +331,20 @@ if(şart){
 **4. Adım**: Metot içinde integer tipte not1, not2, not3 isimlerindeki değişkenleri tanımlayınız . EditTextlerden gelen verileri integer veri tipine çevirerek oluşturulan değişkenlerin içlerine atınız. Float tipte ort isminde bir değişken tanımlayıp girilen üç notun hesaplamasını bu değişkende yapınız.
 
 **5. Adım**: if-else-if karar yapısını oluşturarak Görsel 4.16’daki gibi şartları yazınız.
+<div style="display:block;text-align:center">
 
 ![Not girişi uygulaması if-else-if karar yapısı](./karar-ve-dongu-yapilari/gorsel-4.16-not-girisi-uygulamasi-if-else-if-karar-yapisi.png)
+</div>
 
 **6. Adım:** MainActivity sınıfının içi Görsel 4.17a ve Görsel 4.17b’deki hâle geldikten sonra uygulamayı başlatarak test ediniz.
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında ders notu girişi 1. kısım](./karar-ve-dongu-yapilari/gorsel-4.17a-mainactivity-sayfasinda-ders-notu-girisi-1-kisim.png)
+</div>
+<div style="display:block;text-align:center">
 
 ![MainActivity sayfasında ders notu girişi 2. kısım](./karar-ve-dongu-yapilari/gorsel-4.17b-mainactivity-sayfasinda-ders-notu-girisi-2-kisim.png)
+</div>
 
 <h2 id="4.1.4.">4.1.4. Switch-Case Yapısı</h2>
 
@@ -381,18 +417,24 @@ Switch-case, bir başka karar yapısıdır. Burada olay, switch içinde verilen 
 **1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.
 
 **2. Adım**: Açılan ekranda activity_main içine Görsel 4.18’deki ekran tasarımını yapınız. Tasarımda bir adet "Number", bir adet "Button" ve bir adet de "TextView" bulundurunuz. Number ögesini tasarım ekranının üst kısmına sabitleyiniz. Boşluk olarak 24 dp bırakınız. Aynı şekilde sağ ve sol yanı da çerçeveye sabitleyerek sağdan ve soldan tasarıma ortalayınız. Boşluk değeri olarak 0 dp bırakınız. Button ögesini de Number nesnesine sabitleyip arada 100 dp bırakınız. Soldan ve sağdan sabitleyip onu da tasarımda ortalayınız. TextView ögesinin layout_width (genişlik) özelliğini "match_parent" şeklinde ayarlayıp, tasarım içinde tek satırda tek öge olarak kendini büyütmesini sağlayınız. Sağdan ve soldan 8 dp boşluk bırakarak çerçeveye sabitleyiniz. Üstten ise buttona sabitleyip arada 200 dp bırakınız. Yazı tipi boyutu textSize özelliğini 50 sp olarak ayarlayıp, "textAlignment" özelliğinden "Align Center"ı işaretleyerek TextView yerleşimini ortalayınız.
+<div style="display:block;text-align:center">
 
 ![Ayların gösterilmesi uygulaması](./karar-ve-dongu-yapilari/gorsel-4.18-aylarin-gosterilmesi-uygulamasi.png)
+</div>
 
 **3. Adım:** Number ögesinin id’sini "editTextNumber_Ay" şeklinde değiştiriniz. Button ögesinin id’sini "button_Onayla", text özelliğini "Onayla" olarak değiştiriniz. "onClick" özelliğine de "onayla" yazınız.
 
 **4. Adım:** Ögeleri Görsel 4.19’da görüldüğü şekilde initialize yapınız.
+<div style="display:block;text-align:center">
 
 ![Ögelerin initialize yapılması](./karar-ve-dongu-yapilari/gorsel-4.19-ogelerin-initialize-yapilmasi.png)
+</div>
 
 **5. Adım:** onayla isimli buttona tıklandığı zaman çalışacak metodu Görsel 4.20’de olduğu gibi hazırlayınız. Görselde sayfa ikiye ayrılmış durumdadır. Bu ayrılma kodlama esnasında yapılmaz,case 7 ifadesi case 6’dan sonra alt alta yazılarak işleme devam edilir. "onayla" isimli metodun içinde switch-case oluşturulur. Metot içinde önce sayı okutulur sonra switch ile karşılaştırma yapılır. Case olarak gelebilecek değerler 1 ile 12 arasında değişir. Bunlar dışında bir değer gelirse de default olarak ayrılan bölüm çalışır. Buttona her tıklamada number nesnesinin içeriğinin de silinmesi için "number.setText("");" kodunu yazınız ve metot bittikten sonra uygulamayı çalıştırınız.
+<div style="display:block;text-align:center">
 
 !["onayla" isimli metodun içeriği](./karar-ve-dongu-yapilari/gorsel-4.20-onayla-isimli-metodun-icerigi.png)
+</div>
 
 
 >**SIRA SİZDE:**
@@ -403,7 +445,7 @@ Switch-case, bir başka karar yapısıdır. Burada olay, switch içinde verilen 
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                     | EVET | HAYIR |
 >| ------------------------------------------------------------------------------------------- | ---- | ----- |

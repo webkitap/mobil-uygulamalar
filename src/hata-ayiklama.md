@@ -6,15 +6,21 @@ Mobil uygulama geliştirirken çeşitli hatalardan dolayı uygulama istenen şek
    2. **Çalışma Zamanı Hatası (Run-Time Error)**: Uygulamanın çalışması sırasında meydana gelen hatalardır. Bu tür hataların ne zaman meydana geleceğini önceden tespit etmek zordur.Çalışma zamanında hata vermeyen bir uygulama bazen bir sonraki çalıştırılmasında hata verebilir. Örneğin internet üzerinden anlık mesajlaşma uygulaması, internet bağlantısı kontrol kodlarını barındırmadan bir mesaj gönderildiğinde çalışma zamanı hatası verir.
 
 Çalışma zamanı hatalarını gidermek için **hata ayıklama (Debug)** işlemi yapılır. Hata ayıklama işlemi için uygulama, hata ayıklama modunda çalıştırılmalıdır. Hata ayıklama modu uygulamada gerçekleşen olayları günlük kayıtlarından (log) izleyebilmeyi, kod satılarına durak noktası (break-point) koyup kodu adım adım çalıştırabilmeyi, uygulama içindeki değişken ve nesnelerin durumlarını izleyebilmeyi sağlar. Çalışma zamanında uygulamanın davranışlarını izlemek için uygulama, hata ayıklama modunda çalıştırılmalıdır. Görsel 3.21 ve Görsel 3.22’de hata ayıklama modunda uygulamayı başlatma verilmiştir.
+<div style="display:block;text-align:center">
 
 ![Hata ayıklama (Debug) düğmesi](./temel-komutlar/gorsel-3.21-hata-ayiklama-debug-dugmesi.png)
+</div>
+<div style="display:block;text-align:center">
 
 ![Hata ayıklama menü komutu](./temel-komutlar/gorsel-3.22-hata-ayiklama-menu-komutu.png)
+</div>
 
 ## 3.7.1. Logcat
 Logcat, çalışma zamanında uygulama ile ilgili çıktıları izlemeye yarayan geliştirici aracıdır (Görsel 3.23). Logcat penceresini açmak için menüden View>Tool Windows>Logcat komutu seçilir.
+<div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.23-logcat-ekrani.png)
+</div>
 
 Görsel 3.23’te 1 numara ile gösterilen kısım, uygulamanın çalıştığı cihazı gösterir. 2 numaralı kısım, çalıştırılan uygulamayı gösterir. 3 numaralı kısım, log sınıfını gösterir (Tablo 3.7).
 
@@ -95,16 +101,20 @@ public class MainActivity extends AppCompatActivity {
 
 **6. Adım**: Görsel 3.24’teki Logcat ekranında düğmeye tıklanma, EditText 
 tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı sayıya çevirme ve sayıya 2 eklemenin çalışmadığını, hatanın yazıyı sayıya çevirme işleminde olduğunu gözlemleyiniz.
+<div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.24-logcat-ekrani.png)
+</div>
 
 **7. Adım**: Debug modunda tekrar uygulamayı çalıştırınız.
 
 **8. Adım**: Metin kutusuna herhangi bir sayı yazıp İşlem Yap düğmesine tıklayınız.
 
 **9. Adım**: Logcat ekranını gözlemleyiniz (Görsel 3.25).
+<div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.25-logcat-ekrani.png)
+</div>
 
 >**SIRA SİZDE**:
 >
@@ -114,7 +124,7 @@ tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı s
 >
 >Çalışmalarınız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
->**KONTROL LİSTESİ**
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ               | EVET | HAYIR |
 >| ------------------------------------- | ---- | ----- |
@@ -129,12 +139,16 @@ tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı s
 Hata ayıklama yöntemlerinden biri de durak noktası (break-point) eklemektir. Durak noktası eklemek için ilgili kodun satır numarasının hemen yanına fare ile tıklamak yeterlidir. Kod satır numarasının yanında kırmızı bir daire belirir. Durak noktasına tekrar tıklandığında durak noktası silinir.
 
 Hata ayıklama modunda iken çalıştırılacak kod sırası durak noktası konulan yere geldiğinde uygulama çalışmaya ara verir. Uygulamanın o anki durumu hakkında Debug penceresinden bilgi verilir (Görsel 3.26). Variables bölümünde değişkenlerin durumu yer alır. 
+<div style="display:block;text-align:center">
 
 ![Durak noktası Debug ekranı](./temel-komutlar/gorsel-3.26-durak-noktasi-debug-ekrani.png)
+</div>
 
 Uygulamanın çalışmaya devam etmesi için Debug penceresinde Resume Program komutu veya klavyeden F9 tuşuna basılır. Programı adım adım çalıştırmak için Step Into ve Step Over düğmeleri kullanılır (Görsel 3.27).
+<div style="display:block;text-align:center">
 
 ![Adım adım çalıştırma düğmeleri](./temel-komutlar/gorsel-3.26-adim-adim-calistirma-dugmeleri.png)
+</div>
 
 ## 3.7.3. Değişken İzleme (Watch)
 Uygulama kodu durak noktasına geldiğinde Debug penceresinde Variables bölümünden değişkenlerin durumu izlenebilir. Buraya özellikle durumu izlenecek değişkenler eklenir. Kod ekranında izlenecek değişken üzerine sağ tıklanıp, Add to Watches komutu verilerek gözcü eklenir. 

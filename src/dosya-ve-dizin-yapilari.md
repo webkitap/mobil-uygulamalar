@@ -1,11 +1,13 @@
-## 1.5. DOSYA VE DİZİN YAPILARI
+# 1.5. DOSYA VE DİZİN YAPILARI
 Android uygulama geliştirilmeye başlanmadan önce temel dosya ve dizin yapıları iyi bilinmelidir. Bir Android projenin dosya yapısı farklı biçimlerde görüntülenebilir.
 
 Mobil uygulama geliştirme ortamı ekranının sol üst köşesindeki düğmeye tıklandığında açılan seçim kutusunda yer alan dosya hiyerarşisi görüntüleme biçimlerinden biri tercih edilebilir. Varsayılan olarak gelen ve Android uygulama geliştirme için kullanımı en kolay olan "Android" modudur (Görsel 1.32).
 
 "Android" modu seçildikten sonra Görsel 1.33’teki dosya ve dizin yapısı pencerenin sol üst kenarında görüntülenir.
+<div style="display:block;text-align:center">
 
-![](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.32-dosya-yapisi-goruntuleme-secenekleri-gorsel-1.33-android-modu-dosya-ve-dizin-yapisi)
+![Dosya yapısı görüntüleme seçenekleri  Android modu dosya ve dizin yapısı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.32-dosya-yapisi-goruntuleme-secenekleri-gorsel-1.33-android-modu-dosya-ve-dizin-yapisi)
+</div>
 
 Görsel 1.33’te yer alan daire içindeki simge tıklandığında dizinin içeriği görüntülenebilir. Aynı simge tıklandığında görüntülenen içerik kapatılır. Bir Android uygulamasındaki üç temel dizin şunlardır:
 
@@ -17,8 +19,10 @@ Görsel 1.33’te yer alan daire içindeki simge tıklandığında dizinin içer
 
 - drawable (Çizilebilir): Uygulamada kullanılacak resimleri içeren dizindir.
 - layout (Yerleşim): Uygulamanın nasıl görüneceğini belirleyen xml dosyası bu dizinde yer alır (Görsel 1.34).
+<div style="display:block;text-align:center">
 
 ![activity_main.xml dosyası](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.34-activity_main.xml-dosyasi.png)
+</div>
 
 - values (Değerler): Basit değerleri (metinler, tam sayılar, renkler vb.) içeren xml dosyalarıdır (Görsel 1.35). res/ alt dizininde yer alan XML kaynak dosyaları XML adına göre tek bir kaynak tanımlarken values/ dizinindeki dosyalar birden fazla kaynağı tanımlar. Bu dizinde oluşturulabilecek kaynaklar için bazı dosya adı kuralları şunlardır:
     - arrays.xml diziler için
@@ -26,5 +30,6 @@ Görsel 1.33’te yer alan daire içindeki simge tıklandığında dizinin içer
     - dimens.xml boyut değerleri için
     - strings.xml metin değerler için
     - styles.xml stiller için
+<div style="display:block;text-align:center">
 
-![values dizini](./mobil-uygulama-gelistirmeye-hazirlik/values-dizini.png)
+![values dizini](./mobil-uygulama-gelistirmeye-hazirlik/values-dizini.png)</div>
