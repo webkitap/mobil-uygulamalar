@@ -76,7 +76,7 @@ Değişkenin içindeki değerin değiştirilmesi işlemine **değişkene değer 
 Mobil uygulama geliştirme ortamında bir değişken tanımlanıp değişkenin içine bir değer atanmadığında program hata verir. Bunun nedeni, değişken tanımlandığında hafızada ayrılan bölümde daha önceden bir verinin var olma olasılığıdır. Java dili ile mobil programı yazılırken ilkel değişkenlere mutlaka bir değer ataması yapılmalıdır.
 <div style="display:block;text-align:center">
 
-![Gorsel 3.6a-b](./temel-komutlar/gorsel-3.6a-degisken-tanimlama-gorsel-3.6b-degiskene-deger-atama)
+![Gorsel 3.6a-b](./temel-komutlar/gorsel-3.6a-degisken-tanimlama-gorsel-3.6b-degiskene-deger-atama.png)
 </div>
 
 Değişken tanımlama ve değer atama işlemleri birlikte yapılabilir. 

@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
 **6. Adım**: Görsel 3.24’teki Logcat ekranında düğmeye tıklanma, EditText 
 tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı sayıya çevirme ve sayıya 2 eklemenin çalışmadığını, hatanın yazıyı sayıya çevirme işleminde olduğunu gözlemleyiniz.
+
 <div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.24-logcat-ekrani.png)
