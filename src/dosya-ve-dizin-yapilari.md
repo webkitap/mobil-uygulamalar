@@ -6,7 +6,7 @@ Mobil uygulama geliştirme ortamı ekranının sol üst köşesindeki düğmeye 
 "Android" modu seçildikten sonra Görsel 1.33’teki dosya ve dizin yapısı pencerenin sol üst kenarında görüntülenir.
 <div style="display:block;text-align:center">
 
-![Dosya yapısı görüntüleme seçenekleri  Android modu dosya ve dizin yapısı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.32-dosya-yapisi-goruntuleme-secenekleri-gorsel-1.33-android-modu-dosya-ve-dizin-yapisi)
+![Dosya yapısı görüntüleme seçenekleri  Android modu dosya ve dizin yapısı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.32-dosya-yapisi-goruntuleme-secenekleri-gorsel-1.33-android-modu-dosya-ve-dizin-yapisi.png)
 </div>
 
 Görsel 1.33’te yer alan daire içindeki simge tıklandığında dizinin içeriği görüntülenebilir. Aynı simge tıklandığında görüntülenen içerik kapatılır. Bir Android uygulamasındaki üç temel dizin şunlardır:
