@@ -63,6 +63,8 @@ C) match_parent\
 D) 400 dp \
 E) 0d
 
+**D) Aşağıdaki sorularda verilen boşlukları uygun şekilde doldurunuz.**
+
 **22. Code ekranından bir TextView oluşturmak için yazılması gereken kodları en, boy ve id değerlerini de girerek aşağıya yazınız.**
 
 **23. Mobil uygulamada internet kullanabilmek için AndroidManifest dosyasına eklenmesi gereken kodu aşağıya yazınız.**
