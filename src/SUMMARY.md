@@ -69,5 +69,5 @@
 
 - [UYGULAMA YAYIMLAMA](./uygulama-yayimlama.md)
     - [UYGULAMA MARKET GELİŞTİRİCİ AYARLARI](./uygulama-market-gelistirici-ayarlari.md)
-    - [UYGULAMA YAYIMLAMA](./uygulama-yayimlama.md)
+    - [UYGULAMA YAYIMLAMA](./uygulama-yayimlama2.md)
     - [ÖLÇME VE DEĞERLENDİRME](./9olcme-ve-degerlendirme.md)
