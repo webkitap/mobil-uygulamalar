@@ -16,11 +16,11 @@
 **B) Aşağıdaki cümlelerde boş bırakılan yerlere doğru sözcükleri yazınız.**
 
 |                   |                      |                |
-| ----------------- | -------------------- | -------------- |
-| Cursor            | openOrCreateDatabase | response       |
-| sharedPreferences | put                  | BaseAdapter    |
-| getInstance       | update               | getCurrentUser |
-|                   | execSQL              |                |
+| :---------------: | :------------------: | :------------: |
+|      Cursor       | openOrCreateDatabase |    response    |
+| sharedPreferences |         put          |  BaseAdapter   |
+|    getInstance    |        update        | getCurrentUser |
+|                   |       execSQL        |                |
 
 
 **11.** Mobil uygulamalarda basit veriler ........................... ile kaydedilir.<br>

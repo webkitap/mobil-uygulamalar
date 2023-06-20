@@ -16,9 +16,9 @@
 **B) Aşağıdaki cümlelerde boş bırakılan yerleri kutularda verilen ifadelerle tamamlayınız.**
 
 |                 |              |              |
-| --------------- | ------------ | ------------ |
+| :-------------: | :----------: | :----------: |
 | uses-permission | ViewBinding  | wrap_content |
-| Dangerous       | Intent       | return       |
+|    Dangerous    |    Intent    |    return    |
 |                 | Serializable |              |
 
 **11.** Dönüş tipi olan metotlarda değer döndürmeye yarayan koda ...................... adı verilir.\
