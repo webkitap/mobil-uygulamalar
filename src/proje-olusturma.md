@@ -1,4 +1,4 @@
-# 1.4. PROJE OLUŞTURMA
+<h1 style="color:#cd2d98;">1.4. PROJE OLUŞTURMA</h1>
 
 - <a href="#1.4.1.">1.4.1. Projenin Emülatörde Çalıştırılması</a> 
 - <a href="#1.4.2.">1.4.2. Android Studio Tasarım Ekranı</a> 
@@ -11,10 +11,15 @@ Empty Activity seçildikten sonra Next düğmesine basılınca proje ayarların�
 </div>
 
 - **Name (İsim)**: Projenin ismi bu kutuda belirlenir. Uygulamanın ismi de projeye verilen bu isim olur.
+
 - **Package name (Paket İsmi)**: Paket ismi otomatik olarak verilir. İstenirse sonradan değiştirilebilir.
+
 - **Save location (Kaydetme Dizini)**: Projenin yerel kaydetme dizini bu kutuda belirlenir.
+
 - **Language (Dil)**: Projenin hangi programlama dilinde kodlanacağı belirlenir. Java programlama dili seçilir.
+
 - **Minimum SDK (En Alt Yazılım Geliştirme Kiti)**: Bu kutuda seçilecek API düzeyiyle uygulamanın hangi cihazlarda çalışacağı, hangi cihazlarda destekleneceği belirlenir. API düzeyi düşük olursa piyasadaki çoğu cihazda uygulama çalışır. Örneğin API 21 düzeyi seçilirse piyasadaki cihazların %98'inde uygulama çalışır. "Help me choosed" (Seçim için yardım et) düğmesine tıklanarak, hangi API düzeyinin hangi yüzde ile kullanıldığı güncel olarak listelenebilir.
+
 - **Use legacy android.support.libraries (Eski Android Kütüphaneleri)** onay kutusu seçilirse son güncel servisler ve kütüphanelerin kullanılması engellenir.
 
 Finish düğmesine tıklanır. Açılan Tip of the Day (Günün ipucu) penceresi, Close (Kapat) düğmesi ile kapatılır (Görsel 1.27).
@@ -43,7 +48,7 @@ Finish düğmesine tıklanır. Açılan Tip of the Day (Günün ipucu) penceresi
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                  | EVET | HAYIR |
->| ----------------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------------- | ---- | ----- |
 >| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                       |
 >| 2. Karşılama ekranında New Project seçeneğine tıkladı.                  |
 >| 3. Templates bölümünden Phone and Tablet seçti.                         |
@@ -51,9 +56,9 @@ Finish düğmesine tıklanır. Açılan Tip of the Day (Günün ipucu) penceresi
 >| 5. Yeni gelen pencerede Name kutusuna TamEkranUygulamam yazdı.          |
 >| 6. Pencerenin sağ alt köşesindeki Finish düğmesine tıkladı.             |
 
-<h2 id="1.4.1.">1.4.1. Projenin Emülatörde Çalıştırılması</h2>
+<h2 id="1.4.1." style="color:#cd2d98;">1.4.1. Projenin Emülatörde Çalıştırılması</h2>
 
-"MobilUygulamalard" projesi oluşturulduktan sonra uygulama geliştirme ortamında Run 'app' simgesine veya Shift+F10 kısayol tuşlarına basılır (Görsel 1.28).
+"MobilUygulamalard" projesi oluşturulduktan sonra uygulama geliştirme ortamında <img src="./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png" alt="Launch this avd in the emulator" width="30px" height="30px"> Run 'app' simgesine veya Shift+F10 kısayol tuşlarına basılır (Görsel 1.28).
 <div style="display:block;text-align:center">
 
 ![Android Studio uygulama geliştirme ortamı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.28-android-studio-uygulama-gelistirme-ortami.png)
@@ -64,21 +69,21 @@ Daha önce oluşturulan sanal cihazda **Hello World!** yazısı görüntülenir 
 
 ![Sanal cihazda çalıştırılan "MobilUygulamalard" projesi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.29-sanal-cihazda-calistirilan-mobiluygulamalar-projesi.png)
 </div>
-<h2 id="1.4.2.">1.4.2. Android Studio Tasarım Ekranı</h2>
+<h2 id="1.4.2." style="color:#cd2d98;">1.4.2. Android Studio Tasarım Ekranı</h2>
 
-Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity.javad" dosyası varsayılan olarak seçili gelir. Bu dosyada tasarlanan mobil uygulamanın işlevleri kodlanır. Mobil uygulamanın ekran tasarımı, bir başka deyişle kullanıcı arayüzü tasarlanacaksa sol tarafındaki "activity_main.xmld" dosyası seçilir (Görsel 1.30).
+Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity.java" dosyası varsayılan olarak seçili gelir. Bu dosyada tasarlanan mobil uygulamanın işlevleri kodlanır. Mobil uygulamanın ekran tasarımı, bir başka deyişle kullanıcı arayüzü tasarlanacaksa sol tarafındaki "activity_main.xml" dosyası seçilir (Görsel 1.30).
 
-**Palette (1)**: Çeşitli View ve ViewGroup bileşenlerini içeren paneldir. Sürükle bırak yöntemiyle bu bileşenler tasarım ekranına yerleştirilir.\
+**Palette (1)**: Çeşitli View ve ViewGroup bileşenlerini içeren paneldir. Sürükle bırak yöntemiyle bu bileşenler tasarım ekranına yerleştirilir.
 
-**Component Tree (2)**: Tasarım ekranındaki bileşenin hiyerarşisini gösterir.\
+**Component Tree (2)**: Tasarım ekranındaki bileşenin hiyerarşisini gösterir.
 
-**Toolbar (3)**: Buradaki düğmeler kullanılarak tasarım ekranının görünümü ve özellikleri değiştirilebilir.\
+**Toolbar (3)**: Buradaki düğmeler kullanılarak tasarım ekranının görünümü ve özellikleri değiştirilebilir.
 
-**Design Editor (4)**: Tasarım ekranının görünümünü sadece Tasarım (Design), sadece Taslak (Blueprint) veya her ikisi aynı anda şeklinde ayarlanabilir.\
+**Design Editor (4)**: Tasarım ekranının görünümünü sadece Tasarım (Design), sadece Taslak (Blueprint) veya her ikisi aynı anda şeklinde ayarlanabilir.
 
-**Attributes (5)**: Seçili view nesnesinin niteliklerinin düzenlendiği paneldir.\
+**Attributes (5)**: Seçili view nesnesinin niteliklerinin düzenlendiği paneldir.
 
-**View mode (6)**: Tasarım ekranının Code (Kod), Design (Tasarım) ve Split (Böl) modunda gösterilmesini sağlar. Split modu hem Code hem de Design görünümünü aynı anda tek pencerede gösterir.\
+**View mode (6)**: Tasarım ekranının Code (Kod), Design (Tasarım) ve Split (Böl) modunda gösterilmesini sağlar. Split modu hem Code hem de Design görünümünü aynı anda tek pencerede gösterir.
 
 **Zoom and pan controls (7)**: Buradaki düğmeler yardımıyla ön izlemenin boyutu ve konumu editör içinde ayarlanabilir.
 <div style="display:block;text-align:center">
@@ -86,10 +91,10 @@ Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity
 ![Android Studio Tasarım Ekranı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.30-android-studio-tasarim-ekrani.png)
 </div>
 
-**UYARI**: Code, Split ve Design görünümleri arasında geçiş yapmak için klavyeden Alt+Shift+Sağ/Sol Ok
+<span style="color:#f00;font-weight:bold;">UYARI:</span> Code, Split ve Design görünümleri arasında geçiş yapmak için klavyeden Alt+Shift+Sağ/Sol Ok
 tuşları kullanılır.
 
-<h2 id="1.4.3.">1.4.3. Ön İzleme Görünümünü Değiştirmek</h2>
+<h2 id="1.4.3." style="color:#cd2d98;">1.4.3. Ön İzleme Görünümünü Değiştirmek</h2>
 
 Tasarım ekranının en üstündeki düğmeler editör içindeki ön izleme görünümlerini değiştirmek için kullanılır (Görsel 1.31).
 <div style="display:block;text-align:center">

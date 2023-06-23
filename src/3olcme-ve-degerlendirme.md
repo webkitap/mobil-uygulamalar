@@ -1,6 +1,6 @@
-<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
+<h1 style="text-align:center;color:#ffc034">ÖLÇME VE DEĞERLENDİRME</h1>
 
-**A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise “D”, yanlış ise “Y” yazınız.**
+**A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise "D", yanlış ise "Y" yazınız.**
 
 **1.** ( ) Değişkenler; değişken türü, adı, adresi ve değerinden oluşur.\
 **2.** ( ) char değişken türü, referans veri türüdür.\
@@ -52,7 +52,7 @@ C) >> <br>
 D) < <br>
 E) !=
 
-**13. Aşağıdaki mantıksal operatörlerden hangisi “ve” anlamına gelir?**
+**13. Aşağıdaki mantıksal operatörlerden hangisi "v"” anlamına gelir?**
 
 A) || <br>
 B) == <br>

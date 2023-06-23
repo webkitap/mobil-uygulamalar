@@ -1,4 +1,4 @@
-# 2.5. TEMEL GÖRÜNÜM SINIFLARI
+<h1 style="color:#00b9f2;">2.5. TEMEL GÖRÜNÜM SINIFLARI</h1>
 
 - <a href="#2.5.1.">2.5.1 TextView</a> 
 - <a href="#2.5.2.">2.5.2 EditText</a> 
@@ -15,7 +15,7 @@ En çok kullanılan görünüm sınıfları şunlardır:
 * CheckBox (Onay kutusu)
 * ProgressBar (İlerleme çubuğu)
 
-<h2 id="2.5.1.">2.5.1 TextView</h2>
+<h2 id="2.5.1." style="color:#00b9f2;">2.5.1 TextView</h2>
 
 TextView, en temel bileşenlerden biridir ve mobil cihazın ekranında metin göstermek için kullanılır. TextView görünümüne ait niteliklerden en çok kullanılanları Tablo 2.1’de verilmiştir.
 
@@ -99,7 +99,7 @@ XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa mavi
 >| 4. Kod ekranında TextView görünümünü düzenleyen XML kodlarını layout kodlarının arasına yazdı.                      |
 >| 5. Shift+F10 tuşlarıyla uygulamanın ön izlemesini çalıştırdı.                                                       |
 
-<h2 id="2.5.2.">2.5.2. EditText</h2>
+<h2 id="2.5.2." style="color:#00b9f2;">2.5.2. EditText</h2>
 
 EditText, bir çeşit TextView görünümü olmasına rağmen düzenlenebilir. EditText, TextView ile
 hemen hemen aynı niteliklere sahiptir. Kullanıcının mobil uygulamaya metin girmesi gereken durumlarda EditText kullanılır. EditText görünümüne hem tek satırlı hem de çok satırlı metin girişi
@@ -209,7 +209,7 @@ ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifreniz
 >| 4. Kod ekranında EditText görünümünü düzenleyen XML kodlarını layout kodlarının arasına yazdı.                      |      |       |
 >| 5. Shift+F10 tuşlarıyla uygulamanın ön izlemesini çalıştırdı.                                                       |      |       |
 
-<h2 id="2.5.3.">2.5.3. Button</h2>
+<h2 id="2.5.3." style="color:#00b9f2;">2.5.3. Button</h2>
 
 Düğme bileşeni, üzerine tıklandığında veya dokunulduğunda bir eylem gerçekleştirir. TextView bileşeniyle aynı niteliklere sahip olmakla beraber Button görünümünün kendine has bazı nitelikleri de vardır. Button görünümüne ait niteliklerden en çok kullanılanı Tablo 2.3’te verilmiştir.
 
@@ -253,7 +253,7 @@ Button XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılır
 >| 2. Shift+F10 tuşlarıyla uygulamanın ön izlemesini çalıştırdı.                                |
 >| 3. Emülatörde çalışan uygulamadaki Button görünümüne tıkladı.                                |
 
-<h2 id="2.5.4.">2.5.4. ImageView</h2>
+<h2 id="2.5.4." style="color:#00b9f2;">2.5.4. ImageView</h2>
 
 ImageView, kullanıcı arayüzünde resim gösterilmesi gerektiğinde kullanılan görünümdür. ImageView görünümüne ait niteliklerden en çok kullanılanları Tablo 2.4’te verilmiştir.
 
@@ -366,7 +366,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 >| 8. Klavyeden Shift+F10 tuşlarıyla ön izleme yaptı.                                                          |
 
 
-<h2 id="2.5.5.">2.5.5. CheckBox</h2>
+<h2 id="2.5.5." style="color:#00b9f2;">2.5.5. CheckBox</h2>
 
 Mobil uygulamada kullanıcıya onay kutuları sunarak bunlardan bir tanesini, birkaçını veya hepsini seçebilmesi gereken durumlarda kullanılan görünümdür. CheckBox görünümüne ait niteliklerden en çok kullanılanı Tablo 2.5’te verilmiştir.
 
@@ -415,7 +415,7 @@ ImageView görünümü kullanılarak mobil uygulamada resim gösterilmesi için 
 >| 3. Emülatörde çalışan uygulamadaki CheckBox görünümüne tıkladı.                              |
 
 
-<h2 id="2.5.6.">2.5.6. ProgressBar</h2>
+<h2 id="2.5.6." style="color:#00b9f2;">2.5.6. ProgressBar</h2>
 
 ProgressBar, bir işlemin ilerleme durumunu göstermek için kullanılan görünümdür. Varsayılan olarak ProgressBar, dönen bir çember şeklinde mobil uygulamasında görüntülenir. ProgressBar görünümüne ait niteliklerden en çok kullanılanları Tablo 2.6’da verilmiştir.
 

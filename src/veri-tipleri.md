@@ -1,4 +1,5 @@
-# 3.3. VERİ TİPLERİ
+<h1 style="color:#ffc034">3.3. VERİ TİPLERİ</h1>
+
 - <a href="#3.3.1.">3.3.1. İlkel (Temel) Veri Tipleri</a>
 - <a href="#3.3.2.">3.3.2. Referans Veri Tipleri</a>
   
@@ -10,7 +11,7 @@ Java'da ilkel (primitive) veri tipleri ve referans veri tipleri olmak üzere iki
 ![Değişken tipleri](./temel-komutlar/gorsel-3.7-degisken-tipleri.png)
 </div>
 
-<h2 id="3.3.1.">3.3.1. İlkel (Temel) Veri Tipleri</h2>
+<h2 id="3.3.1." style="color:#ffc034">3.3.1. İlkel (Temel) Veri Tipleri</h2>
 
 İlkel veri tipleri, içinde bir seferde tek bir değer tutan veri tipleridir. Java programlama dilinde ilkel veri tipleri program içinde ilk oluşturuldukları andan itibaren bir değere sahip olmak zorundadır
 
@@ -18,7 +19,8 @@ Java'da ilkel (primitive) veri tipleri ve referans veri tipleri olmak üzere iki
 
 >İlkel veri tipleri küçük harflerle yazılır. 
 
-### 3.3.1.1. Mantıksal Veri Tipi
+<h3 id="3.3.1." style="color:#ffc034">3.3.1.1. Mantıksal Veri Tipi</h3>
+
 Java'da boolean olarak isimlendirilen bir adet mantıksal veri tipi vardır.
 
 **boolean**: boolean veri tipinin true (doğru) ve false (yanlış) olmak üzere sadece iki değeri vardır. boolean veri tipi, evet veya hayır şeklinde cevaplanabilecek soruların cevapları şeklinde düşünülebilir. 
@@ -117,7 +119,7 @@ public class DenemeMantiksal {
 >
 >**DEĞERLENDİRME**
 >
->Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
+>Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
@@ -133,7 +135,8 @@ public class DenemeMantiksal {
 >| 8. Run with Coverage komutuyla uygulamayı çalıştırdı.      |
 >| 9. Cover penceresinde uygulama çıktısını gözlemledi.       |
 
-### 3.3.1.2. Tam Sayı Veri Tipleri
+<h3 style="color:#ffc034;">3.3.1.2. Tam Sayı Veri Tipleri</h3>
+
 Değer olarak tam sayıları içinde barındırabilen veri tipleridir. Büyüklüklerine göre farklı sayı aralıklarına sahiptirler. 
 
 **NOT**
@@ -148,14 +151,18 @@ Tam sayı veri türleri şunlardır (Tablo 3.1):
 
 - **byte**: Değeri -128 ile 127 arasında olabilen tam sayı veri tipidir. Hafızada 1 byte (8 bit) yer
 kaplar.
+
 - **short**: Değeri -32.768 ile 32.767 arasında olabilen tam sayı veri tipidir. Hafızada 2 byte yer
 kaplar.
+
 - **int**: Değeri -2.147.483.648 ile 2.147.483.647 arasında olabilen tam sayı veri tipidir. Hafızada 4 byte yer kaplar. Programcılıkta en çok kullanılan tam sayı veri tipidir.
+
 - **long**: Değeri -9.223.372.036.854.775.808 ile 9.223.372.036.854.775.807 arasında olabilen
 tam sayı veri tipidir. Hafızada 8 byte yer kaplar.
+
 - **char**: Türkçe karakter anlamına gelen İngilizce Character kelimesinin kısaltmasıdır. Bu değişken, içinde Unicode olarak sadece bir karakter barındırır. Değer aralığı 0 ile 65.535 arasındadır. Hafızada 2 byte yer kaplar. 
 
-**Tablo 3.1: Tam Sayı Veri Türleri**
+<div style="font-weight:bold;text-align:center;">Tablo 3.1: Tam Sayı Veri Türleri</div>
 
 | Tam Sayı Türü | Kapladığı Alan | Değer Aralığı                                  |
 | ------------- | -------------- | ---------------------------------------------- |
@@ -205,8 +212,7 @@ Değişkenin tipi, değişken üzerinde gerçekleştirilecek işlemleri de belir
 
 **2. UYGULAMA**: İşlem adımlarına göre tam sayı veri tiplerinin kullanıldığı bir uygulamayı tasarlayınız.
 
-**1. Adım**: "DenemeTamSayilar" adında yeni bir sınıf oluşturunuz.
-
+**1. Adım**: "DenemeTamSayilar" adında yeni bir sınıf oluşturunuz.\
 **2. Adım**: DenemeTamSayilar sınıfı içine şu kodu yazınız:
 
 ```java
@@ -269,16 +275,15 @@ public class DenemeTamSayilar {
 
 **3. UYGULAMA**: İşlem adımlarına göre char veri tipinin kullanıldığı bir uygulamayı tasarlayınız.
 
-**1. Adım**: "DenemeChar" adında yeni bir sınıf oluşturunuz.
-
+**1. Adım**: "DenemeChar" adında yeni bir sınıf oluşturunuz.\
 **2. Adım**: DenemeChar sınıfı içine şu kodu yazınız:
 
 ```java
 public class DenemeChar {
     public static void main(String[] args) {
-        char karakter = "A";
+        char karakter = 'A';
         System.out.println("Karakter: " + karakter);
-        karakter = "A" + 1;
+        karakter = 'A' + 1;
         System.out.println("Karakter: " + karakter);
     }
 }
@@ -294,7 +299,7 @@ Karakter: B
 
 >**SIRA SİZDE**
 >
->Üçüncü uygulamadaki toplama kısmında yer alan sayıyı artırarak çıkışı küçük harfle "a" olacak şekilde veren sayıyı bulunuz (25 ile 35 arasındaki sayıları deneyiniz.). 
+>Üçüncü uygulamadaki toplama kısmında yer alan sayıyı artırarak çıkışı küçük harfle 'a' olacak şekilde veren sayıyı bulunuz (25 ile 35 arasındaki sayıları deneyiniz.). 
 >
 >| Sayı |
 >| ---- |
@@ -307,20 +312,19 @@ Karakter: B
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ        | EVET | HAYIR |
->| ------------------------------ | ---- | ----- |
+>| :------------------------------ | ---- | ----- |
 >| 1. Toplam sayısını değiştirdi. |
 >| 2. Doğru sayıyı buldu.         |
 
 **4. UYGULAMA**: İşlem adımlarına göre char olarak verilen değişkenin ASCII kodunu bulan bir uygulamayı tasarlayınız.
 
-**1. Adım**: "CharAscii" adında yeni bir sınıf oluşturunuz.
-
+**1. Adım**: "CharAscii" adında yeni bir sınıf oluşturunuz.\
 **2. Adım**: CharAscii sınıfı içine şu kodu yazınız:
 
 ```java
 public class CharAscii {
     public static void main(String[] args) {
-        char karakter = "a";
+        char karakter = 'a';
         int ascii = (int) karakter;
         System.out.println("Karakter: " + karakter);
         System.out.println("ASCII kodu: " + ascii);
@@ -361,7 +365,7 @@ ASCII kodu: 97
 >| 12. Run …. With Coverage ile uygulamayı çalıştırdı.        |
 >| 13. Cover penceresinde uygulama çıktısını gözlemledi.      |
 
-### 3.3.1.3. Ondalık Veri Tipleri
+<h3 style="color:#ffc034;">3.3.1.3. Ondalık Veri Tipleri</h3>
 
 Değer olarak içinde ondalık sayıları barındıran veri tipleridir (Tablo 3.2).
 
@@ -377,8 +381,7 @@ Değer olarak içinde ondalık sayıları barındıran veri tipleridir (Tablo 3.
 
 **5. UYGULAMA**: İşlem adımlarına göre ondalık sayı veri tiplerinin kullanıldığı bir uygulamayı tasarlayınız.
 
-**1. Adım**: "DenemeOndalikliSayilar" adında yeni bir sınıf oluşturunuz.
-
+**1. Adım**: "DenemeOndalikliSayilar" adında yeni bir sınıf oluşturunuz.\
 **2. Adım**: DenemeOndalikliSayilar sınıfı içine şu kodu yazınız:
 
 ```java
@@ -396,8 +399,8 @@ public class DenemeOndalikliSayilar {
 komutuyla çalıştırınız.
 
 **Ekran Çıktısı**
->float: (1/3) = 0.33333334\
-double: (1/3) = 0.3333333333333333
+
+>float: (1/3) = 0.33333334 <br>double: (1/3) = 0.3333333333333333
 
 <h2 id="3.3.2.">3.3.2. Referans Veri Tipleri</h2>
 
@@ -415,7 +418,6 @@ Görsel 3.19'daki x değişkeni bir ilkel değişkendir ve stack hafıza içinde
 
 En çok kullanılan referans tipi, karakter dizisidir (String). String, içinde birden fazla karakter barındırabilen referans veri tipidir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFEEC4;">ÖRNEK</span>
 
 String isim = "Aziz Emir";
-

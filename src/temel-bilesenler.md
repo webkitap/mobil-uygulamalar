@@ -1,4 +1,5 @@
-# 1.1. TEMEL BİLEŞENLER
+<h1 style="color:#cd2d98;">1.1. TEMEL BİLEŞENLER</h1>
+
 <!--
 - [1.1.1. Java Software Development Kit (JDK) Kurulumu](./temel-bilesenler.html#java-software-development-kit-jdk-kurulumu)
 
@@ -21,17 +22,17 @@ mobil işletim sistemi kullanılan cihazlar denildiğinde ilk akla gelenler şun
 
 Taşınabilir cihazlarda yaygın olarak kullanılan işletim sistemleri Android ve IOS’tur. Mobil uygulama geliştirilirken tercih edilebilecek yöntemler şunlardır:
 
-- **Native (Yerel) Uygulama**: Belirli bir işletim sistemi veya cihaz için geliştirilen uygulamalardır. Bu uygulamalar, yazılımın tasarlandığı işletim sistemi ve cihazda çalışır, farklı işletim sistemi ve cihazda çalışmaz.
-- **Cross Platform (Çapraz Platform)** Uygulama: Birden fazla işletim sistemi veya cihazda çalışabilecek şekilde geliştirilen uygulamalardır.
+- **Native (Yerel) Uygulama:** Belirli bir işletim sistemi veya cihaz için geliştirilen uygulamalardır. Bu uygulamalar, yazılımın tasarlandığı işletim sistemi ve cihazda çalışır, farklı işletim sistemi ve cihazda çalışmaz.
+- **Cross Platform (Çapraz Platform) Uygulama:** Birden fazla işletim sistemi veya cihazda çalışabilecek şekilde geliştirilen uygulamalardır.
 
 Android işletim sistemi, Linux çekirdeğini kullanır ve açık kaynak kodludur. Bu işletim sistemi;
 taşınabilir cihazlarda, akıllı televizyonlarda ve oyun konsollarında yaygın kullanımı nedeniyle Java
 programlama diliyle birlikte tercih edilir.
 
-Android işletim sisteminde Java programlama diliyle mobil uygulama geliştirmek için **Java Software Development Kit ve Android Studio + SDK** olmak üzere iki temel programın bilgisayara kurulması gerekir.
+Android işletim sisteminde Java programlama diliyle mobil uygulama geliştirmek için **Java Software Development Kit** ve **Android Studio + SDK** olmak üzere iki temel programın bilgisayara kurulması gerekir.
 
 
-<h2 id="1.1.1.">1.1.1. Java Software Development Kit (JDK) Kurulumu</h2>
+<h2 id="1.1.1." style="color:#cd2d98;">1.1.1. Java Software Development Kit (JDK) Kurulumu</h2>
 
 Java Runtime Environment (JRE) ve Java Software Development Kit (JDK) olmak üzere iki farklı
 Java paketi vardır. JRE, Java programlama dilinde yazılmış programları çalıştırmak için kullanılırken JDK ise yazılımcıların Java programları geliştirmesinde kullanılır.
@@ -53,7 +54,7 @@ Dosya indirildikten sonra dosyanın üzerine tıklanarak çalıştırılır. JDK
 ![JDK kurulum karşılama penceresi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.2-jdk-kurulum-karsilama-penceresi.png)
 </div>
 
-Karşılama penceresinden sonra kullanıcıyı JDK programının hangi klasörlere kurulacağını ifade eden ve **Change (Değiştir)** düğmesi ile bu klasörlerin değiştirilebileceği ikinci bir pencere gelir
+Karşılama penceresinden sonra kullanıcıyı JDK programının hangi klasörlere kurulacağını ifade eden ve **Change (Değiştir)** düğmesi ile bu klasörlerin değiştirilebileceği ikinci bir pencere gelir.
 
 Öngörülen kurulum klasörleri zorunlu değilse değiştirilmemelidir. Next düğmesiyle bu pencere de geçilir (Görsel 1.3).
 
@@ -73,25 +74,25 @@ Bu pencerede yer alan **Close (Kapat)** düğmesine tıklanarak kurulum tamamlan
 
 >**SIRA SİZDE**: 
 >
-> Java Software Development Kit kurulumunu yapınız.
+>Java Software Development Kit kurulumunu yapınız.
 >
 >**DEĞERLENDİRME**:
 > 
-> Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
+>Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                  | EVET | HAYIR |
->| ----------------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------------- | ---- | ----- |
 >| 1. Java Software Development Kit programının web sayfasına gitti.       |
 >| 2. Java Software Development Kit programını indirdi.                    |
 >| 3. Java Software Development Kit kurulum programını çalıştırdı.         |
 >| 4. Java Software Development Kit programının kurulum aşamalarını yaptı. |
 
-<h2 id="1.1.2.">1.1.2. Android Studio ve Software Development Kit (SDK)Kurulumu</h2>
+<h2 id="1.1.2." style="color:#cd2d98;">1.1.2. Android Studio ve Software Development Kit (SDK)Kurulumu</h2>
 
 
-JDK kurulumu tamamlandıktan sonra Java diliyle mobil uygulama geliştirme ortamı olarak Android Studio programının kurulması gerekir. Android Studio programının güncel sürümünü [https://developer.android.com/studio](https://developer.android.com/studio "Android Studio Resmi Web Sitesi"){:target="_blank"} web adresinden indirmek mümkündür (Görsel 1.5).
+JDK kurulumu tamamlandıktan sonra Java diliyle mobil uygulama geliştirme ortamı olarak Android Studio programının kurulması gerekir. Android Studio programının güncel sürümünü [https://developer.android.com/studio](https://developer.android.com/studio "Android Studio Resmi Web Sitesi") web adresinden indirmek mümkündür (Görsel 1.5).
 
 <div style="display:block;text-align:center">
 

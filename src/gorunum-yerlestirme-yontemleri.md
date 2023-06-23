@@ -1,4 +1,5 @@
-# 2.4. GÖRÜNÜM YERLEŞTİRME YÖNTEMLERİ
+<h1 style="color:#00b9f2;">2.4. GÖRÜNÜM YERLEŞTİRME YÖNTEMLERİ</h1>
+
 - <a href="#2.4.1.">2.4.1. Görünüm Yerleştirmek İçin XML Kullanımı</a> 
 - <a href="#2.4.2.">2.4.2. Görünüm Yerleştirmek İçin Palette Kullanımı</a> 
 - <a href="#2.4.3.">2.4.3. Görünüm Yerleştirmek İçin Java Kullanımı</a> 
@@ -26,7 +27,8 @@ Genişlik ve yükseklik niteliklerine wrap_content ve match_parent önceden tan�
 
 Bir görünümün genişliği, XML kod olarak içeriği gösterecek kadar olsun istenirse **android:layout_width="wrap_content"** şeklinde yazılır veya görünümün genişliği 200 piksel olsun istenirse **android:layout_width="200px"** şeklinde yazılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#BCEEFF;">ÖRNEK</span>
+
 - **android:layout_width="20in"** XML kodu, görünüm genişliğinin 20 inç olmasını sağlar.
 - **android:layout_width="40mm"** XML kodu, görünüm genişliğinin 40 milimetre olmasını
 sağlar.
@@ -40,7 +42,7 @@ Görünümler, mobil uygulama ekranına yerleştirilirken üç farklı yöntem k
 
 3. Java kodlarını kullanarak görünüm yerleştirmek
 
-<h2 id="2.4.1.">2.4.1. Görünüm Yerleştirmek İçin XML Kullanımı</h2>
+<h2 id="2.4.1." style="color:#00b9f2;">2.4.1. Görünüm Yerleştirmek İçin XML Kullanımı</h2>
 
 Mobil uygulamada herhangi bir görünümü ekrana yerleştirmek için XML kodları kullanılır. XML kodları kullanılarak yapılan bu işlem, **Declarative Approach (Bildirimsel Yaklaşım)** olarak adlandırılır. Genellikle XML kodları **activity_main.xml** dosyasının içine yazılır.
 
@@ -63,7 +65,7 @@ XML kodlanırken dikkat edilecek özellikler şunlardır:
 - Görünüm, ekranda nasıl görünecekse bir nitelik ve değer kod olarak yazılır. Her görünümün kendine has nitelikleri vardır.
 - "/>" işaretleri kullanılarak görünüm ayarları kapatılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#BCEEFF;">ÖRNEK</span>
 
 Ekranda "Programlamayı seviyorum." metnini gösteren bir TextView görünümünün XML’de yazımı şu şekildedir:
 
@@ -78,7 +80,7 @@ Ekranda "Programlamayı seviyorum." metnini gösteren bir TextView görünümün
 
 Her görünüm, **android:layout_width (görünümün genişliği)** ve **android:layout_height (görünümün yüksekliği)** gibi en az iki niteliğe değer verilirse uygulama ekranında görüntülenir. Görünümün boyutları, bu niteliklere değer atanarak ayarlanır. Bu iki nitelik kullanılarak mobil uygulamadaki tüm görünüm çeşitlerinin boyutları ayarlanabilir.
 
-<h2 id="2.4.2.">2.4.2. Görünüm Yerleştirmek İçin Palette Kullanımı</h2>
+<h2 id="2.4.2." style="color:#00b9f2;">2.4.2. Görünüm Yerleştirmek İçin Palette Kullanımı</h2>
 
 Bir mobil uygulamada herhangi bir görünümü ekrana yerleştirmek için mobil uygulama geliştirme ortamında bulunan Palette panelindeki bileşenlerden biri sürükle bırak yardımıyla Design (Tasarım) bölümüne bırakılır. Projedeki activity_main.xml dosyası seçiliyken görünümlerden Design düğmesi tıklanır ve çalışma alanında Palette panelindeki görünümlerden istenen herhangi biri sürükle bırak yöntemiyle tasarım alanına bırakılır (Görsel 2.6).
 <div style="display:block;text-align:center">
@@ -118,7 +120,7 @@ Tasarım ekranında seçili görünümün nitelikleri, mobil uygulama geliştirm
 >
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                                          | EVET | HAYIR |
->| ----------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                                               |
 >| 2. Çalışma alanında activity_main.xml dosyasını seçti.                                          |
 >| 3. Palette panelinde Buttons seçti.                                                             |
@@ -150,17 +152,17 @@ ekranına yerleştirilmiş CheckBox görünümünün layout_width kutusuna 100 d
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                          | EVET | HAYIR |
->| --------------------------------------------------------------- | ---- | ----- |
+>| :--------------------------------------------------------------- | ---- | ----- |
 >| 1. Tasarım ekranındaki CheckBox görünümünü seçti.               |
 >| 2. Attributes panelindeki text kutusuna tıkladı.                |
 >| 3. Klavyeden "Bilişim Teknolojileri" yazdı.                     |
 >| 4. Shift+F10 tuşlarına basarak uygulamanın ön izlemesini yaptı. |
 
-<h2 id="2.4.3.">2.4.3. Görünüm Yerleştirmek İçin Java Kullanımı</h2>
+<h2 id="2.4.3." style="color:#00b9f2;">2.4.3. Görünüm Yerleştirmek İçin Java Kullanımı</h2>
 
 Görünümler, Java kodları kullanılarak da tanımlanır veya oluşturulur. Java kodlarıyla yapılan bu işlem, **Programmatic Approach (Programatik Yaklaşım)** olarak adlandırılır. Genellikle Java kodları MainActivity.java dosyası içine yazılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#BCEEFF;">ÖRNEK</span>
 
 TextView görünümünün metni Java kodlarıyla değiştirilmek istenirse şu kodlar yazılır:
 

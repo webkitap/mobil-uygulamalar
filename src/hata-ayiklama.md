@@ -1,4 +1,9 @@
-# 3.7. HATA AYIKLAMA
+<h1 style="color:#ffc034">3.7. HATA AYIKLAMA</h1>
+
+<a href="#3.7.1.">3.7.1. Logcat</a>\
+<a href="#3.7.2.">3.7.2. Durak Noktası</a>\
+<a href="#3.7.3.">3.7.3. Değişken İzleme (Watch)</a>
+
 Mobil uygulama geliştirirken çeşitli hatalardan dolayı uygulama istenen şekilde çalışmayabilir. Bu hatalar genellikle iki şekilde meydana gelir.
 
    1. **Yazım Yanlışı Hatası (Syntax Error)**: Bu hatalar mobil uygulama geliştirme programı tarafından otomatik olarak tespit edilir. Mobil uygulama geliştirme yazılımı uygulamanın çalıştırılmasına izin vermez. Öncelikle bu yazım yanlışı hatalarının giderilmesi gerekir.
@@ -15,7 +20,8 @@ Mobil uygulama geliştirirken çeşitli hatalardan dolayı uygulama istenen şek
 ![Hata ayıklama menü komutu](./temel-komutlar/gorsel-3.22-hata-ayiklama-menu-komutu.png)
 </div>
 
-## 3.7.1. Logcat
+<h2 id="3.7.1." style="color:#ffc034">3.7.1. Logcat</h2>
+
 Logcat, çalışma zamanında uygulama ile ilgili çıktıları izlemeye yarayan geliştirici aracıdır (Görsel 3.23). Logcat penceresini açmak için menüden View>Tool Windows>Logcat komutu seçilir.
 <div style="display:block;text-align:center">
 
@@ -24,7 +30,7 @@ Logcat, çalışma zamanında uygulama ile ilgili çıktıları izlemeye yarayan
 
 Görsel 3.23’te 1 numara ile gösterilen kısım, uygulamanın çalıştığı cihazı gösterir. 2 numaralı kısım, çalıştırılan uygulamayı gösterir. 3 numaralı kısım, log sınıfını gösterir (Tablo 3.7).
 
-**Tablo 3.7: Log Sınıfları**
+<div style="font-weight:bold;text-align:center">Tablo 3.7: Log Sınıfları</div>
 
 | Log Sınıfı | Anlamı        | Kullanımı                |
 | ---------- | ------------- | ------------------------ |
@@ -41,8 +47,7 @@ Log komutu iki kısımdan oluşur. Birinci bölüm, TAG (etiket) olarak adlandı
 **11. UYGULAMA**: İşlem adımlarına göre EditTexte girilen sayıya 2 ekleyen ve Logcat
 ekranında yapılan işlemleri gösteren bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: activity_main.xml içine şu kodu yazınız:
 
 ```xml
@@ -95,23 +100,19 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-**4. Adım**: Debug’a tıklayarak uygulamayı çalıştırınız.
-
-**5. Adım**: Metin kutusuna Merhaba yazıp İşlem Yap düğmesine tıklayınız.
-
-**6. Adım**: Görsel 3.24’teki Logcat ekranında düğmeye tıklanma, EditText 
-tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı sayıya çevirme ve sayıya 2 eklemenin çalışmadığını, hatanın yazıyı sayıya çevirme işleminde olduğunu gözlemleyiniz.
+**4. Adım**: Debug’a tıklayarak uygulamayı çalıştırınız.\
+**5. Adım**: Metin kutusuna Merhaba yazıp İşlem Yap düğmesine tıklayınız.\
+**6. Adım**: Görsel 3.24’teki Logcat ekranında düğmeye tıklanma, EditText tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı sayıya çevirme ve sayıya 2 eklemenin çalışmadığını, hatanın yazıyı sayıya çevirme işleminde olduğunu gözlemleyiniz.
 
 <div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.24-logcat-ekrani.png)
 </div>
 
-**7. Adım**: Debug modunda tekrar uygulamayı çalıştırınız.
-
-**8. Adım**: Metin kutusuna herhangi bir sayı yazıp İşlem Yap düğmesine tıklayınız.
-
+**7. Adım**: Debug modunda tekrar uygulamayı çalıştırınız.\
+**8. Adım**: Metin kutusuna herhangi bir sayı yazıp İşlem Yap düğmesine tıklayınız.\
 **9. Adım**: Logcat ekranını gözlemleyiniz (Görsel 3.25).
+
 <div style="display:block;text-align:center">
 
 ![Logcat ekranı](./temel-komutlar/gorsel-3.25-logcat-ekrani.png)
@@ -128,7 +129,7 @@ tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı s
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ               | EVET | HAYIR |
->| ------------------------------------- | ---- | ----- |
+>| :------------------------------------- | ---- | ----- |
 >| 1. Log.v komutunu kullandı.           |
 >| 2. Log.d komutunu kullandı.           |
 >| 3. Log.i komutunu kullandı.           |
@@ -136,7 +137,8 @@ tanımlama ve EditText içindeki yazı alınma çalıştığı hâlde yazıyı s
 >| 5. Log.e komutunu kullandı.           |
 >| 6. Logcat ekranında filtreleme yaptı. |
 
-## 3.7.2. Durak Noktası
+<h2 id="3.7.2." style="color:#ffc034">3.7.2. Durak Noktası</h2>
+
 Hata ayıklama yöntemlerinden biri de durak noktası (break-point) eklemektir. Durak noktası eklemek için ilgili kodun satır numarasının hemen yanına fare ile tıklamak yeterlidir. Kod satır numarasının yanında kırmızı bir daire belirir. Durak noktasına tekrar tıklandığında durak noktası silinir.
 
 Hata ayıklama modunda iken çalıştırılacak kod sırası durak noktası konulan yere geldiğinde uygulama çalışmaya ara verir. Uygulamanın o anki durumu hakkında Debug penceresinden bilgi verilir (Görsel 3.26). Variables bölümünde değişkenlerin durumu yer alır. 
@@ -148,8 +150,9 @@ Hata ayıklama modunda iken çalıştırılacak kod sırası durak noktası konu
 Uygulamanın çalışmaya devam etmesi için Debug penceresinde Resume Program komutu veya klavyeden F9 tuşuna basılır. Programı adım adım çalıştırmak için Step Into ve Step Over düğmeleri kullanılır (Görsel 3.27).
 <div style="display:block;text-align:center">
 
-![Adım adım çalıştırma düğmeleri](./temel-komutlar/gorsel-3.26-adim-adim-calistirma-dugmeleri.png)
+![Adım adım çalıştırma düğmeleri](./temel-komutlar/gorsel-3.27-adim-adim-calistirma-dugmeleri.png)
 </div>
 
-## 3.7.3. Değişken İzleme (Watch)
+<h2 id="3.7.3." style="color:#ffc034">3.7.3. Değişken İzleme (Watch)</h2>
+
 Uygulama kodu durak noktasına geldiğinde Debug penceresinde Variables bölümünden değişkenlerin durumu izlenebilir. Buraya özellikle durumu izlenecek değişkenler eklenir. Kod ekranında izlenecek değişken üzerine sağ tıklanıp, Add to Watches komutu verilerek gözcü eklenir. 

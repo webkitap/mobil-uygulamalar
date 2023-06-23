@@ -1,4 +1,4 @@
-# 2.3. VIEW
+<h1 style="color:#00b9f2;">2.3. VIEW</h1>
 
 Bir mobil uygulamada kullanıcıyla tüm etkileşim, kullanıcı arabirimi (user interface-UI) üzerinden olur. Kullanıcı arabirimi tasarlamak için Android SDK bir dizi hazır View (Görünüm) sağlar. Bu hazır görünümlerden bazıları; Button (Düğme), CheckBox (Onay kutusu), ProgressBar (İlerleme çubuğu) ve TextView (Metin görünümü) sınıflarıdır. Görünümler, aletler (widgets) veya bileşenler (components) isimleriyle de ifade edilir.
 

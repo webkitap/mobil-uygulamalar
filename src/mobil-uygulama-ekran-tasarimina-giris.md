@@ -1,4 +1,4 @@
-# 2.1. MOBİL UYGULAMA EKRAN TASARIMINA GİRİŞ
+<h1 style="color:#00b9f2;">2.1. MOBİL UYGULAMA EKRAN TASARIMINA GİRİŞ</h1>
 
 Android, taşınabilir cihazlarda yaygın olarak kullanılan bir işletim sistemidir. İngilizce Applications
 (Uygulamalar) kelimesinin kısaltılmış hâli olan **Apps**, bu işletim sisteminde çalışan mobil uygulamaları ifade etmek için kullanılır. Kurulum ve çalıştırılabilir dosyalara **Android Package Kit (APK)**
@@ -15,7 +15,7 @@ Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür
 ![Gorsel 2.1a-b-c](./ekran-tasarimi/gorsel-2.1a-home-screen-gorsel-2.1b-all-apps-gorsel-2.1c-recent-screen.png)
 </div>
 
-**UYARI**: Bu üç temel mobil cihaz ekranının dışında saatin, bildirimlerin, mesajların gösterilebildiği **Lock screen (Kilit ekranı)** de vardır.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> Bu üç temel mobil cihaz ekranının dışında saatin, bildirimlerin, mesajların gösterilebildiği **Lock screen (Kilit ekranı)** de vardır.
 
 >**SIRA SİZDE:**
 >
@@ -27,10 +27,10 @@ Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür
 >
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
->| DEĞERLENDİRME ÖLÇÜLERİ                                                                     | EVET | HAYIR |
->| ------------------------------------------------------------------------------------------ | ---- | ----- |
->| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                                          |
->| 2. Ön izleme yapmak için klavyeden Shift+F10 kısayol tuşlarına bastı.                      |
->| 3. Açılan cihaza ait çerçeve işlev düğmelerinden Ev (Home) düğmesine tıkladı.              |
->| 4. Açılan cihaza ait çerçeve işlev düğmelerinden Genel Bakış (Overview) düğmesine tıkladı. |
->| 5. Açılan cihazın işletim sisteminden Apps simgesine tıkladı.                              |
+>|  DEĞERLENDİRME ÖLÇÜLERİ                                                                     | EVET | HAYIR |
+>| :------------------------------------------------------------------------------------------ | ---- | ----- |
+>|  1. Mobil uygulama geliştirme ortamını çalıştırdı.                                          |
+>|  2. Ön izleme yapmak için klavyeden Shift+F10 kısayol tuşlarına bastı.                      |
+>|  3. Açılan cihaza ait çerçeve işlev düğmelerinden Ev (Home) düğmesine tıkladı.              |
+>|  4. Açılan cihaza ait çerçeve işlev düğmelerinden Genel Bakış (Overview) düğmesine tıkladı. |
+>|  5. Açılan cihazın işletim sisteminden Apps simgesine tıkladı.                              |
