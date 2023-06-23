@@ -1,6 +1,7 @@
-# 3. TEMEL KOMUTLAR
+<h1 style="color:#ffc034">3. TEMEL KOMUTLAR</h1>
 
-## NELER ÖĞRENECEKSİNİZ?
+<h2 style="color:#ffc034">NELER ÖĞRENECEKSİNİZ?</h2>
+
 - Java dilinde değişken kavramını tanımlama
 - Değişken türlerini sıralama
 - Değişkenleri, isimlendirme kurallarına uygun kullanma
@@ -14,10 +15,12 @@
 - Logcat panelini kullanma
 - Yakalanan hataları düzeltme
 
-### HAZIRLIK ÇALIŞMALARI
-1. Mobil programlar içinde kullanılan verilerin muhafaza edildiği yerler hakkındaki düşüncelerinizi arkadaşlarınızla paylaşınız.
-2. Kalıcı hafıza ile geçici hafıza arasındaki farklılıklar neler olabilir? Arkadaşlarınızla değerlendiriniz.
-3. Unicode ve ASCII tablosunu araştırınız. Edindiğiniz bilgileri arkadaşlarınızla paylaşınız.
+<h3 style="color:#ffc034">HAZIRLIK ÇALIŞMALARI</h3>
 
-### ANAHTAR KELİMELER
+<span style="font-weight:bold;color:#ffc034">1.</span> Mobil programlar içinde kullanılan verilerin muhafaza edildiği yerler hakkındaki düşüncelerinizi arkadaşlarınızla paylaşınız.\
+<span style="font-weight:bold;color:#ffc034">2.</span> Kalıcı hafıza ile geçici hafıza arasındaki farklılıklar neler olabilir? Arkadaşlarınızla değerlendiriniz.\
+<span style="font-weight:bold;color:#ffc034">3.</span> Unicode ve ASCII tablosunu araştırınız. Edindiğiniz bilgileri arkadaşlarınızla paylaşınız.
+
+<h3 style="color:#ffc034">ANAHTAR KELİMELER</h3>
+
 Aritmetiksel operatörler, Atama operatörleri, Değişken, Hata ayıklama, İlkel veri tipleri, Karşılaştırma operatörleri, Logcat, Mantıksal operatörler, Referans veri tipleri, Sabit, Veri, Veri tipleri

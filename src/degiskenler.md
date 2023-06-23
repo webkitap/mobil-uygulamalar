@@ -1,8 +1,9 @@
-# 3.2. DEĞİŞKENLER
+<h1 style="color:#ffc034">3.2. DEĞİŞKENLER</h1>
+
 - <a href="#3.2.1.">3.2.1. Değişken Yapısı</a>
 - <a href="#3.2.2.">3.2.2. Değişken Tanımlama ve Atama</a>
   
-Yazılım geliştirme sürecindeki en temel konulardan biri değişkenlerdir. Akıllı cihazlar işlem yapabilmek için verilere ihtiyaç duyar. Akıllı cihazlar bu verileri hafızlarında muhafaza etmelidir çünkü gerektiğinde bu verilere ulaşabilmeli, verilerin üzerinde işlem yapabilmeli ve gerektiğinde verileri değiştirebilmelidir. Hafızada tutulan, gerektiğinde değerleri değişebilen bilgilere programcılık dünyasında değişken adı verilir. Değişkenler, içinde verileri tutan kutular olarak düşünülebilir. Bu kutuların büyüklüğü, içine alacağı verilere göre değişir (Görsel 3.1). 
+Yazılım geliştirme sürecindeki en temel konulardan biri değişkenlerdir. Akıllı cihazlar işlem yapabilmek için verilere ihtiyaç duyar. Akıllı cihazlar bu verileri hafızlarında muhafaza etmelidir çünkü gerektiğinde bu verilere ulaşabilmeli, verilerin üzerinde işlem yapabilmeli ve gerektiğinde verileri değiştirebilmelidir. Hafızada tutulan, gerektiğinde değerleri değişebilen bilgilere programcılık dünyasında **değişken** adı verilir. Değişkenler, içinde verileri tutan kutular olarak düşünülebilir. Bu kutuların büyüklüğü, içine alacağı verilere göre değişir (Görsel 3.1). 
 <div style="display:block;text-align:center">
 
 ![Değişkenlerdeki veri farklılıkları](./temel-komutlar/gorsel-3.1-degiskenlerdeki-veri-farkliliklari.png)
@@ -10,10 +11,14 @@ Yazılım geliştirme sürecindeki en temel konulardan biri değişkenlerdir. Ak
 
 Değişkenlerin dört özelliği bulunur (Görsel 3.2). Bu özellikler şu şekilde sıralanır:
 
-- Değişkenin Türü: Kutuya konulacak verinin büyüklüğüne göre kutu tipi (sayı, yazı vb.)
-- Değişkenin Adı: Kutunun ismi (YAZILI1, İSİM1)
-- Değişkenin Değeri: Kutunun içeriği (90, ÖMER)
-- Değişkenin Adresi: Kutunun yeri (1 No.lu raf, 2 No.lu raf) 
+- **Değişkenin Türü**: Kutuya konulacak verinin büyüklüğüne göre kutu tipi (sayı, yazı vb.)
+
+- **Değişkenin Adı**: Kutunun ismi (YAZILI1, İSİM1)
+  
+- **Değişkenin Değeri**: Kutunun içeriği (90, ÖMER)
+
+- **Değişkenin Adresi**: Kutunun yeri (1 No.lu raf, 2 No.lu raf) 
+
 <div style="display:block;text-align:center">
 
 ![Değişkenler ve özellikleri](./temel-komutlar/gorsel-3.2-degiskenler-ve-ozellikleri.png)
@@ -41,7 +46,7 @@ Mobil cihazların hafızası bir marketin reyonlarına benzetilebilir (Görsel 3
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ     | EVET | HAYIR |
->| --------------------------- | ---- | ----- |
+>| :--------------------------- | ---- | ----- |
 >| 1. Değişken adını yazdı.    |
 >| 2. Değişken türünü yazdı.   |
 >| 3. Değişken değerini yazdı. |
@@ -55,7 +60,7 @@ Veri türlerinin farklılığından dolayı bu veriler üzerinde gerçekleştiri
 ![Sayısal ve metinsel işlemler](./temel-komutlar/gorsel-3.4-sayisal-ve-metinsel-islemler.png)
 </div>
 
-<h2 id="3.2.1.">3.2.1. Değişken Yapısı</h2>
+<h2 id="3.2.1." style="color:#ffc034">3.2.1. Değişken Yapısı</h2>
 
 Java kodlarıyla değişken tanımlama iki kısımdan oluşur. İlk kısım, saklanmak istenen bilgiye göre veri türüdür, ikinci kısım ise değişkenin adıdır (Görsel 3.5). 
 <div style="display:block;text-align:center">
@@ -63,11 +68,11 @@ Java kodlarıyla değişken tanımlama iki kısımdan oluşur. İlk kısım, sak
 ![Değişken yapısı](./temel-komutlar/gorsel-3.5-degisken-yapisi.png)
 </div>
 
-**NOT**
+**NOT:**
 
 >Java programlama dillinde noktalı virgül, derleyiciye talimatın nerede bittiğini gösterir. Böylelikle Java kodları bir satırda veya birden çok satırda yazılabilir.
 
-<h2 id="3.2.2.">3.2.2. Değişken Tanımlama ve Atama</h2>
+<h2 id="3.2.2." style="color:#ffc034">3.2.2. Değişken Tanımlama ve Atama</h2>
 
 Değişkenin adını ve türünü belirtmeye **değişken tanımlama (declaration)** denir (Görsel 3.6a). Değişken tanımlama yapıldığında hafızada değişken türüne göre boş bir yer ayrılır. Bu yerin adresi ile değişkenin adı aynı şeyi ifade eder.
 
@@ -80,12 +85,11 @@ Mobil uygulama geliştirme ortamında bir değişken tanımlanıp değişkenin i
 </div>
 
 Değişken tanımlama ve değer atama işlemleri birlikte yapılabilir. 
-<div style="display:block;text-align:center">
 
-![Değişken tanımlama örnek](./temel-komutlar/degisgen-tanimlama-ornek.png)
-</div>
+<img src="./temel-komutlar/degisgen-tanimlama-ornek.png" alt="Değişken tanımlama örnek" width="185px">
 
-**NOT**
+
+**NOT:**
 
 >Bazı programlama dillerinde değişken tanımlanması yapıldığında değişkenin ilk değeri, o değişken türüne göre otomatik olarak verilir. Sayısal veri türleri için bu varsayılan değer 0’dır.
 

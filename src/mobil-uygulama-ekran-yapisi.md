@@ -1,4 +1,4 @@
-# 2.2. MOBİL UYGULAMA EKRAN YAPISI
+<h1 style="color:#00b9f2;">2.2. MOBİL UYGULAMA EKRAN YAPISI</h1>
 
 Mobil uygulama geliştirilirken uygulama çalıştığında ekran yapısında bazı bileşenler yer alır. En üstte **status bar (durum çubuğu)**, onun hemen altında **action bar (i̇şlem çubuğu)** ve ekranın en altında ise **navigation bar (gezinti çubuğu)** bulunur. Uygulama çalıştığında ekranda görünmeyen activity (MainActivity) ve activity içinde kullanıcı ile etkileşime girecek bileşenlerin bulunduğu ViewGroup (Görünüm grubu) Görsel 2.2’de farklı renklerle gösterilmiştir. 
 <div style="display:block;text-align:center">

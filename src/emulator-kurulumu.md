@@ -1,4 +1,4 @@
-# 1.2. EMÜLATÖR KURULUMU
+<h1 style="color:#cd2d98;">1.2. EMÜLATÖR KURULUMU</h1>
 
 Farklı işletim sistemine ait programları yerel işletim sisteminde çalıştırmak için aracı yazılımlara ihtiyaç duyulur. Bu aracı yazılımlara emülatör ismi verilir. Android Studio içinde mobil işletim sistemine uygun emülatör programı kurulabilir. Geliştirilen uygulamalar bu emülatörde test edilebilir.
 
@@ -30,7 +30,7 @@ Açılan **Device Manager (Cihaz Yöneticisi)** penceresindeki **Create device (
 - **x86 Images**: x86 işlemcilerde çalışacak işletim sistemi imajları görüntülenir. 32 bitlik işlemciler için listede x86 olarak belirtilmişken 64 bitlik işlemciler için x86_64 olarak işletim sistemleri belirtilmiştir.
 - **Other Images**: Diğer işlemcilerde çalışacak işletim sistemi imajları görüntülenir
 
-**UYARI**: Her Android işletim sistemi sürümü için tek bir API düzeyi belirlenmiştir. Application Programming Interface (Uygulama Programlama Arayüzü) kelimelerinin baş harfleriyle API isimlendirilmesi yapılır. API, yazılımların kendi aralarında iletişim kurmasını sağlayan bir yapıdır. API düzeyi düştükçe yazılan uygulamanın çalışacağı cihaz sayısı artar ancak uygulamada kullanılacak özellikler azalır. API düzeyi yükseldikçe uygulamada kullanılacak özellikler artar ancak kapsadığı cihaz sayısı azalır.
+<span style="color:#f00;font-weight:bold">UYARI:</span> Her Android işletim sistemi sürümü için tek bir API düzeyi belirlenmiştir. Application Programming Interface (Uygulama Programlama Arayüzü) kelimelerinin baş harfleriyle API isimlendirilmesi yapılır. API, yazılımların kendi aralarında iletişim kurmasını sağlayan bir yapıdır. API düzeyi düştükçe yazılan uygulamanın çalışacağı cihaz sayısı artar ancak uygulamada kullanılacak özellikler azalır. API düzeyi yükseldikçe uygulamada kullanılacak özellikler artar ancak kapsadığı cihaz sayısı azalır.
 
 Recommended sekmesindeki Android işletim sistemlerinin isimlerinin hemen yanında Download düğmesi yer alır. Bu düğmeyle o işletim sisteminin imajı indirilir ve işletim sistemi seçime hazır hâle getirilir. Görsel 1.16 penceresinde Marshmallow (Android 6.0) işletim sistemi indirilmiş ve seçime hazır hâle getirilmiştir. Bu sürüm seçilir ve Next düğmesine tıklanır.
 
@@ -72,44 +72,78 @@ Sanal cihaz oluşturulduktan sonra pencerenin en üstünde Görsel 1.19’daki b
 
 Bu bilgilerde sanal cihazın ismi, sanal cihazda yüklü olan işletim sistemi, API düzeyi, yardımcı depolama biriminde kapladığı alan ve Actions (Eylemler) simgeleri yer alır. Bu simgeler şunlardır:
 
-![Launch this AVD in the emulator](./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png)
 
-**Launch this AVD in the emulator (Bu Android Sanal Cihazı emülatörde çalıştır)**: Bu simge tıklanarak sanal cihaz çalıştırılır.
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="margin:0px;padding:0px;"><img src="./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png" alt="Launch this AVD in the emulator"></td>
+    <td><span style="font-weight:bold">Launch this AVD in the emulator (Bu Android Sanal Cihazı emülatörde çalıştır)</span>: Bu simge tıklanarak sanal cihaz çalıştırılır.</td>
+  </tr>
+</tbody>
+</table>
 
-![Edit this AVD](./mobil-uygulama-gelistirmeye-hazirlik/edit-this-avd.png)
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="margin:0px;padding:0px;"><img src="./mobil-uygulama-gelistirmeye-hazirlik/edit-this-avd.png" alt="Edit this AVD"></td>
+    <td><span style="font-weight:bold">Edit this AVD (Bu Android Sanal Cihazı düzenle)</span>: Sanal cihazla ilgili değişiklik yapılması gerekirse bu simge tıklanır.</td>
+  </tr>
+</tbody>
+</table>
 
-**Edit this AVD (Bu Android Sanal Cihazı düzenle)**: Sanal cihazla ilgili değişiklik yapılması gerekirse bu simge tıklanır.
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="margin:0px;padding:0px;"><img src="./mobil-uygulama-gelistirmeye-hazirlik/acilir-menu.png" alt="Açılır menu"></td>
+    <td><span style="font-weight:bold">Edit this AVD (Bu Android Sanal Cihazı düzenle)</span>Bu simge tıklandığında açılır bir menü ile karşılaşılır (Görsel 1.20). Bu menüdeki seçenekler şunlardır: </td>
+  </tr>
+</tbody>
+</table>
 
-![Açılır menu](./mobil-uygulama-gelistirmeye-hazirlik/acilir-menu.png)
-
-Bu simge tıklandığında açılır bir menü ile karşılaşılır (Görsel 1.20). Bu menüdeki seçenekler
-şunlardır: 
-
-- **Duplicate (Çoğaltma)**: Sanal cihazın özelliklerine sahip ikinci bir kopya oluşturmak için kullanılır.
-- **Wipe Data (Verileri Sil)**: Sanal cihazı fabrika ayarlarına döndürmek için kullanılır. Sonradan düzenlenen verileri siler ve cihazı ilk açılış durumuna getirir.
-- **Cold Boot Now (Soğuk Önyükleme Şimdi)**: Sanal cihazın herhangi bir kaydedilmiş durumdan değil, en baştan açılmasını sağlar.
-- **Show on Disk (Disk Üzerinde Göster)**: Sanal cihazın dosyalarını bulunduğu klasörde gösterir.
-- **Delete (Sil)**: Sanal cihazın silinmesini sağlar.
 <div style="display:block;text-align:center">
 
 ![Açılır menü seçenekleri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.20-acilir-menu-secenekleri.png)
 </div>
 
+- **Duplicate (Çoğaltma)**: Sanal cihazın özelliklerine sahip ikinci bir kopya oluşturmak için kullanılır.
+  
+- **Wipe Data (Verileri Sil)**: Sanal cihazı fabrika ayarlarına döndürmek için kullanılır. Sonradan düzenlenen verileri siler ve cihazı ilk açılış durumuna getirir.
 
-<div style="display:block;text-align:center">
-Emülatörde sanal cihazı başlatmak için ![Launch this AVD in the emulator](./mobil-uygulama-gelistirmeye-hazirlik/
-</div>
+- **Cold Boot Now (Soğuk Önyükleme Şimdi)**: Sanal cihazın herhangi bir kaydedilmiş durumdan değil, en baştan açılmasını sağlar.
 
-launch-this-avd-in-the-emulator.png) simgesine tıklanır. Her şey doğru ayarlandıysa Android işletim sistemi yüklü bir cep telefonu cihaz penceresi ekranda belirir (Görsel 1.21).
+- **Show on Disk (Disk Üzerinde Göster)**: Sanal cihazın dosyalarını bulunduğu klasörde gösterir.
+
+- **Delete (Sil)**: Sanal cihazın silinmesini sağlar.
+
+
+
+Emülatörde sanal cihazı başlatmak için <img src="./mobil-uygulama-gelistirmeye-hazirlik/launch-this-avd-in-the-emulator.png" width="30px" height="30px" alt="Launch this AVD in the emulator"> simgesine tıklanır. Her şey doğru ayarlandıysa Android işletim sistemi yüklü bir cep telefonu cihaz penceresi ekranda belirir (Görsel 1.21).
+
 <div style="display:block;text-align:center">
 
 ![Sanal cihaz ve cihazın sağ yanında çerçeve işlev düğmeleri](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.21-sanal-cihaz-ve-cihazin-sag-yaninda-cerceve-islev-dugmeleri.png)
 </div>
 
-21-sanal-cihaz-ve-cihazin-sag-yaninda-cerceve-islev-dugmeleri.png)
 
-**1. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında 5.1 inch
-büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumunu yapınız.
+**1. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında 5.1 inch büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumunu yapınız.
 
 **1. Adım**: Mobil uygulama geliştirme programını çalıştırınız.\
 **2. Adım**: Karşılama ekranında More Actions seçeneğine tıklayınız.\
@@ -135,10 +169,10 @@ büyüklüğünde Android 6.0 işletim sistemi kullanan bir emülatör kurulumun
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
-><div style="text-align:center;"><b>KONTROL LİSTESİ</b>
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                                             | EVET | HAYIR |
->| ---------------------------------------------------------------------------------- | ---- | ----- |
+>| :--------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                                  |
 >| 2. Karşılama ekranında More Actions seçeneğine tıkladı.                            |
 >| 3. Açılan listeden Virtual Device Manager seçeneğine tıkladı.                      |

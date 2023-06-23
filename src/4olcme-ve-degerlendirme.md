@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
+<h1 style="text-align:center;color:#00b5bb;">ÖLÇME VE DEĞERLENDİRME</h1>
 
 **A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise "D", yanlış ise "Y" yazınız.**
 
@@ -65,9 +65,9 @@
 
 **9.** Eğer **sayi1** değişkeni **sayi2** değişkeninden büyük eşit ve **sayi3** değişkeninden de küçükse karar ifadesini Java diline uygun kod olarak oluşturunuz.
 
-**10.** Daha öncesinde tanımlanan ve içinde String veri tutan editText_Adi ögesindeki değer, adiSoyadi içindeki değere eşit ise karar ifadesini Java diline uygun kod olarak oluşturunuz.
+**10.** Daha öncesinde tanımlanan ve içinde String veri tutan **editText_Adi** ögesindeki değer, adiSoyadi içindeki değere eşit ise karar ifadesini Java diline uygun kod olarak oluşturunuz.
 
-**11.** Daha öncesinde tanımlanan ve içinde 10 değeri tutan sayac değişkeni vardır. 0’dan sayac değişkeninin içindeki değere kadar olan tam sayıları Logcat ekranına yazdıran programın kodlarını Java diline uygun bir biçimde oluşturunuz.
+**11.** Daha öncesinde tanımlanan ve içinde 10 değeri tutan **sayac** değişkeni vardır. 0’dan sayac değişkeninin içindeki değere kadar olan tam sayıları Logcat ekranına yazdıran programın kodlarını Java diline uygun bir biçimde oluşturunuz.
 
 **D) Aşağıdaki cümlelerde tasarlanması istenen kodları boş bırakılan yerlere yazınız.**
 

@@ -1,6 +1,8 @@
-# 3.5. İSİMLENDİRME KURALLARI
-Her programlama dilinde uyulması gereken isimlendirme kuralları ve standartları vardır. Kurallara mutlaka uyulması gerekirken standartlara uyulma zorunluluğu yoktur. İsimlendirme kurallarına uyulmadığında derleyici hatası meydana gelir ve uygulama çalışmaz. İsimlendirme standartlarına uyulmadığında herhangi bir hata ile karşılaşılmaz. İsimlendirme kuralları şunlardır:
+<h1 style="color:#ffc034">3.5. İSİMLENDİRME KURALLARI</h1>
 
+Her programlama dilinde uyulması gereken isimlendirme kuralları ve standartları vardır. Kurallara mutlaka uyulması gerekirken standartlara uyulma zorunluluğu yoktur. İsimlendirme kurallarına uyulmadığında derleyici hatası meydana gelir ve uygulama çalışmaz. İsimlendirme standartlarına uyulmadığında herhangi bir hata ile karşılaşılmaz. 
+
+İsimlendirme kuralları şunlardır:
 * İsimlerde boşluk kullanılmaz.
 * İsimlerde $ ve _ karakterleri dışında özel karakterler kullanılmaz.
 * İsimler sayı ile başlamaz.
@@ -9,27 +11,28 @@ Her programlama dilinde uyulması gereken isimlendirme kuralları ve standartlar
 
 Birçok isimlendirme standardı vardır. Bunlardan üç tanesi Java programlama dilinde sıklıkla kullanılır.
 
-**1. Camel Case (Deve Gösterimi)**: Devenin hörgücüne benzetilmesi dolayısıyla böyle bir isim verilmiştir. İlk harf küçük olacak şekilde diğer sözcüklerin ilk harfinin büyük yazılması ile elde edilir. 
+1. **Camel Case (Deve Gösterimi):** Devenin hörgücüne benzetilmesi dolayısıyla böyle bir isim verilmiştir. İlk harf küçük olacak şekilde diğer sözcüklerin ilk harfinin büyük yazılması ile elde edilir. 
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFEEC4;">ÖRNEK</span>
+
 
 kullanıcıAdıSoyadı, notOrtalaması, büyükKenar
 
-**2. Pascal Case (Paskal Gösterimi)**: Camel Case’e benzer. Tüm sözcüklerin ilk harfinin büyük yazılması ile elde edilir.
+2. **Pascal Case (Paskal Gösterimi):** Camel Case’e benzer. Tüm sözcüklerin ilk harfinin büyük yazılması ile elde edilir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFEEC4;">ÖRNEK</span>
+
 
 KullaniciAdiSoyadi, NotOrtalamasi, BuyukKenar
 
-**3. Screaming Snake Case (Çığlık Atan Yılan Gösterimi)**: Bütün harflerin büyük yazıldığı, sözcükler arası boşluk yerine _ kullanıldığı gösterim şeklidir.
+3. **Screaming Snake Case (Çığlık Atan Yılan Gösterimi):** Bütün harflerin büyük yazıldığı, sözcükler arası boşluk yerine _ kullanıldığı gösterim şeklidir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFEEC4;">ÖRNEK</span>
+
 
 PI_SAYISI, MAAS_KATSAYISI, SAAT_UCRETI
 
-İsimlendirme standartları kodun okunabilirliğini artırmak için getirilmiştir. Java kodları yazılırken
-
-kullanılan isimlendirme standartları şunlardır:
+İsimlendirme standartları kodun okunabilirliğini artırmak için getirilmiştir. Java kodları yazılırken kullanılan isimlendirme standartları şunlardır:
 
 - Türkçe karakter (ç, ğ, ı, ö, ş, ü, Ç, Ğ, İ, Ö, Ş, Ü) kullanmaktan kaçınılmalıdır.
 - Proje isimleri Pascal Case şeklinde olmalıdır.
@@ -61,7 +64,7 @@ kullanılan isimlendirme standartları şunlardır:
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                           | EVET | HAYIR |
->| ------------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. "Öğrenci Adı" değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.         |
 >| 2. "Araba Sınıfı" sınıfına isimlendirme kurallarına ve standartlarına uygun isim verdi.           |
 >| 3. "1. not" değişkenine isimlendirme kurallarına ve standartlarına uygun isim verdi.              |

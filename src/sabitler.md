@@ -1,4 +1,5 @@
-# 3.4. SABİTLER
+<h1 style="color:#ffc034">3.4. SABİTLER</h1>
+
 Sabit, değeri atandıktan sonra değeri değiştirilemeyen bir değişken türüdür. Sabit tanımlandığında atanan değer programın herhangi bir yerinde değiştirilemez, değiştirilmeye çalışıldığında program hata verir. Bir değişken türü olması nedeniyle aynı değişken gibi tanımlanır fakat başına **final** ayrılmış kelimesi (keyword) getirilir (Görsel 3.20).
 <div style="display:block;text-align:center">
 
@@ -11,8 +12,7 @@ Sabit, değeri atandıktan sonra değeri değiştirilemeyen bir değişken tür�
 
 **6. UYGULAMA**: İşlem adımlarına göre sabitin kullanıldığı bir uygulamayı tasarlayınız.
 
-**1. Adım**: "DenemeSabitler" adında yeni bir Java sınıfı tanımlayınız.
-
+**1. Adım**: "DenemeSabitler" adında yeni bir Java sınıfı tanımlayınız.\
 **2. Adım**: DenemeSabitler sınıfı içine şu kodu yazınız:
 
 ```java
@@ -20,7 +20,7 @@ public class DenemeSabitler {
     public static void main(String[] args) {
         final int PI = 3;
         int yariCap = 5;
-        System.out.println("Çevre = " + (2*PI*yariCap));
+        System.out.println("Çevre = " + (2 * PI * yariCap));
     }
 }
 ```

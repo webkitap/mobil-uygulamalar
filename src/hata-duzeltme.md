@@ -1,4 +1,4 @@
-# 3.8. HATA DÜZELTME
+<h1 style="color:#ffc034">3.8. HATA DÜZELTME</h1>
 
 Çalışma zamanı hatalarını düzeltmek için birçok yöntem vardır. Bunlardan en çok kullanılanı Try-Catch-Finally yapısıdır. Hata verebilecek kodlar Try (Dene) bloku içine alınır. Böylelikle herhangi bir istisna (Exception) meydana geldiğinde kod çalışmaya devam eder. Bir istisna meydana gelirse Catch (Yakala) bloku içindeki kodlar çalışır. Finally (En sonunda) bloku herhangi bir istisna oluşup oluşmadığına bakılmaksızın Try-Catch-Finally yapısında en son olarak çalıştırılacak kodların bulunduğu bölümdür. Finally blokunun kullanılması zorunlu değildir.
 
@@ -53,10 +53,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-**2. Adım**: Debug’a tıklayarak uygulamayı çalıştırınız.
-
-**3. Adım**: Metin kutusuna Merhaba yazıp İşlem Yap düğmesine tıklayınız.
-
+**2. Adım**: Debug’a tıklayarak uygulamayı çalıştırınız.\
+**3. Adım**: Metin kutusuna Merhaba yazıp İşlem Yap düğmesine tıklayınız.\
 **4. Adım**: Logcat ekranını gözlemleyiniz.
 <div style="display:block;text-align:center">
 
@@ -74,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                   | EVET | HAYIR |
->| ------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Uygulamaya iki adet EditText ekledi.                                   |
 >| 2. Uygulamaya bir adet TextView ekledi.                                   |
 >| 3. Uygulamaya bir adet Button ekledi.                                     |

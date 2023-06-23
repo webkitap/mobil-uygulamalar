@@ -1,4 +1,5 @@
-# 4.2. DÖNGÜ YAPILARI
+<h1 style="color:#00b5bb;">4.2. DÖNGÜ YAPILARI</h1>
+
 - <a href="#4.2.1.">4.2.1. Sayaçlar</a> 
 - <a href="#4.2.2.">4.2.2. for Döngüsü </a> 
 - <a href="#4.2.3.">4.2.3. while Döngüsü</a> 
@@ -10,7 +11,7 @@ Döngüler, uygulama oluşturma aşamasında belirli şartlara bağlı olarak ya
 
 >Uygulama parçacığı üretmekle uygulamanın bütününü oluşturmak arasında fark vardır. Uygulama parçacığı üretilirken yazılan kodlar az, oluşturulan yapılar kısa görünebilir ancak bir uygulamanın bütünü oluşturulurken binlerce satır kodlama yapılabilir. Her kod tek sefer çalışıp geçilirse veya istenen her bilgi için bir isteme kodu yazılırsa bu binlerce satırlık kod, on binlerce satırlık hâle dönüşür.
 
-<h2 id="4.2.1.">4.2.1. Sayaçlar</h2>
+<h2 id="4.2.1." style="color:#00b5bb;">4.2.1. Sayaçlar</h2>
 
 Döngülerin çalışma mekanizması içinde yapının kaç defa çalıştığının veya çalışacağının tutulması gerekir. Bu işlemi kontrol eden, döngünün çalışma aralığını veya kaç defa çalıştığını anlık olarak hafızasına alan yapıya **sayaç** adı verilir. Sayaçlar yapısı itibarıyla birer değişkendir. Tek fark, sayaç döngü yapısı içinde tanımlanırsa döngü dışına çıkıldığında tanımlanan sayaç yok olacak şekilde ayarlanır.
 
@@ -18,7 +19,7 @@ Sayaçlar, döngü içinde sürekli artan veya sürekli azalan bir yapıda olmal
 
 Tablo 4.2’de görüldüğü gibi bir değişkenin değerini artırmak veya azaltmak için birden fazla seçenek olabilir. Bu seçeneklerden uygun olanı seçilip sayaç için döngü yapısında uygulanır.
 
-**Tablo 4.2: Değişkenlerde Aritmetiksel İşlemler**
+<div style="font-weight:bold;text-align:center;">Tablo 4.2: Değişkenlerde Aritmetiksel İşlemler</div>
 
 | x değişkeninin değerini 1 artırmak için | x=x+1 | x+=1 | x++ |
 | --------------------------------------- | ----- | ---- | --- |
@@ -30,7 +31,7 @@ Tablo 4.2’de görüldüğü gibi bir değişkenin değerini artırmak veya aza
 
 >Sayaçlar yapı itibarıyla birer değişken olduğu için sayaçların isimlendirilmesinde değişken oluşturma kuralları geçerlidir ve sayaçlara verilecek isim önemli değildir. Sayaçlar isimlendirilirken uygun yöntem, programın akışına göre sayaçlara bir isim belirlemektir. Sayaçlar genellikle programlamada "i" veya "sayac" değişken ismi ile ifade edilir.
 
-<h2 id="4.2.2.">4.2.2. for Döngüsü</h2>
+<h2 id="4.2.2." style="color:#00b5bb;">4.2.2. for Döngüsü</h2>
 
 for, uygulama tasarımlarında en çok kullanılan döngü çeşididir. Genellikle tekrar sayısının belli ve net olduğu ifadelerde kullanılır. Döngü yapısı oluşturulurken üç parametre değerine ihtiyaç vardır. Bunlardan ilki, sayaç tanımlama parametresi; ikincisi, şart oluşturma parametresi; üçüncüsü de sayacın artırma veya azaltma işlemi olan parametredir. Şart ifadesinin sonucu "true" ol-
 duğu sürece for döngüsünün blokları tekrar tekrar çalışır. for döngüsü şu şekilde tanımlanır:
@@ -48,7 +49,7 @@ for( sayaç tanımlama; şart ifadesi; sayaç arttırma veya azaltma)
 ![for döngüsü](./karar-ve-dongu-yapilari/gorsel-4.21-for-dongusu.png)
 </div>
 
-Görsel 4.21’de olduğu gibi "int i=0" komutu ile i isminde bir sayaç tanımlanır. Döngü yapısında yer alan bloklar arasındaki kodlar, sayacın değeri 0’dan başlayarak 10’a eşit veya 10’dan küçük olduğu sürece "i<=0" komutu ile tekrar tekrar çalışır. Her çalışma sonucunda tekrar başa döndüğünde ise "i++" komutu ile sayaç 1 sayı artarak yeniden şart ifadesinde karşılaştırılır. Blok içine yazılan "System.out.println(i);" komutu da Logcat ekranında Görsel 4.22’de olduğu gibi 0 ile 10 arasındaki değerleri gösterir.
+Görsel 4.21’de olduğu gibi "```int i = 0```" komutu ile i isminde bir sayaç tanımlanır. Döngü yapısında yer alan bloklar arasındaki kodlar, sayacın değeri 0’dan başlayarak 10’a eşit veya 10’dan küçük olduğu sürece "```i <= 0```" komutu ile tekrar tekrar çalışır. Her çalışma sonucunda tekrar başa döndüğünde ise "```i++```" komutu ile sayaç 1 sayı artarak yeniden şart ifadesinde karşılaştırılır. Blok içine yazılan "```System.out.println(i);```" komutu da Logcat ekranında Görsel 4.22’de olduğu gibi 0 ile 10 arasındaki değerleri gösterir.
 <div style="display:block;text-align:center">
 
 ![Logcat ekran çıktısı](./karar-ve-dongu-yapilari/gorsel-4.22-logcat-ekran-ciktisi.png)
@@ -67,10 +68,8 @@ for( (1); (2); (3); )
 
 **7. UYGULAMA**: İşlem adımlarına göre 1’den 50’ye kadar olan sayıları Logcat ekranında gösteren mobil uygulamayı tasarlayınız.
 
-**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.
-
-**2. Adım**: MainActivity sınıfını açınız. "onResume" yaşam döngüsü metodunu oluşturunuz.
-
+**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.\
+**2. Adım**: MainActivity sınıfını açınız. "onResume" yaşam döngüsü metodunu oluşturunuz.\
 **3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz. Sayacı 1’den başlatıp sayaç 50’den küçük veya 50’ye eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 1 sayı artıran şekilde düzenleyiniz (Görsel 4.23).
 <div style="display:block;text-align:center">
 
@@ -91,10 +90,8 @@ for( (1); (2); (3); )
 
 **1. Yöntem**
 
-**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.
-
-**2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.
-
+**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.\
+**2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.\
 **3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz. Sayacı 0’dan başlatıp sayaç 100’den küçük veya 100’e eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 3 sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 <div style="display:block;text-align:center">
 
@@ -109,14 +106,11 @@ for( (1); (2); (3); )
 
 **2. Yöntem**
 
-**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.
-
-**2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.
-
+**1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.\
+**2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.\
 **3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz . Sayacı 0’dan başlatıp sayaç
 100’den küçük veya 100’e eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 1
-sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
-
+sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).\
 **4. Adım**: for döngüsünün blokları arasına if karar yapısı oluşturunuz. Gelen her "i" sayacının 3 ile modunu aldırınız. İşlemin sonucu "0" olduğu takdirde ekrana yazdırma işlemi yapacak kodu yazınız (Görsel 4.27).
 <div style="display:block;text-align:center">
 
@@ -171,7 +165,7 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 
 **10. Adım:** Tüm adımlar yapıldığına göre uygulamayı çalıştırınız. Uygulama çalıştırıldığında ve buttonlara tıklandığında çıkan sonuçlar da Görsel 4.33’te verilmiştir. Oluşturulan MainActivity’nin son şekli Görsel 4.34’te görülür.
 
-**UYARI:** View, Button, EditTextlerden birinin altı kırmızı çizgi ile çizilmişse ona ait sınıf MainActivity içine import edilmelidir. Bu işlem için uyarı verilen yazının üstüne gelinip **Alt+Enter** tuşlarına birlikte basılırsa çözüm sağlanır.
+<span style="font-weight:bold;color:#f00;">UYARI:</span> View, Button, EditTextlerden birinin altı kırmızı çizgi ile çizilmişse ona ait sınıf MainActivity içine import edilmelidir. Bu işlem için uyarı verilen yazının üstüne gelinip **Alt+Enter** tuşlarına birlikte basılırsa çözüm sağlanır.
 
 **NOT:**
 
@@ -206,7 +200,7 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).
 >| 7. for içinde if karar yapısını amacına uygun olacak bir biçimde oluşturdu.      |
 >| 8. Buttonlara tıklandığında ListView içinde sayıları doğru biçimde gösterdi.     |
 
-<h2 id= "4.2.3.">4.2.3. while Döngüsü</h2>
+<h2 id= "4.2.3." style="color:#00b5bb">4.2.3. while Döngüsü</h2>
 
 Bir veya birden fazla kod blokunun belirtilen şart sağlandığı sürece tekrar ettiği döngü yapısıdır. while içinde belirtilen şart sonucu **true** olduğu sürece bloklar (kaşlı ayraç içi) arasındaki kod tekrar tekrar çalışır. Bu döngü yapısında sayaç, for döngü yapısında olduğu gibi parantez içinde belirtilmez . while yapısından önce sayacın tanımlanması gerekir. Ayrıca sayacı artırma veya azaltma işlemleri de blok içindeki kodlarla birlikte yapılır. Bu nedenle de for döngüsünden ayrışır.Döngü yapısı, for döngüsüne göre daha esnek biçimde kurulur.
 
@@ -229,11 +223,14 @@ while(şart)
 
 >Bir sayının faktöriyeli, 1’den o sayıya kadar olan tüm sayıların çarpılması ile oluşur. Örneğin 5’in faktöriyeli, 1 x 2 x 3 x 4 x 5 = 120 şeklinde ifade edilebilir.
 
-**1. Adım:** Görsel 4.35’teki uygulama ekranını tasarlayınız. Bu tasarım ekranında bir adet EditTextNumber objesi, bir adet Button ve bir adet TextView bulunur. EditTextNumber objesinin id’sini editTextNumber_Sayi şeklinde, onayla buttonunun id’sini button_Onayla şeklinde, TextView’in id’sini de textView_Sonuc şeklinde yapınız. EditTextNumber objesinin hint özelliğine "Sayınızı Giriniz" şeklinde yazı yazınız. Buttonun da text özelliğine "ONAYLA" şeklinde, TextView’in text özelliğine de "Sonuç :" şeklinde yazınız. Button tıklandığında çalışacak olan metodu aktif etmek için buttonun onClick özelliğine "onayla" ifadesi ekleyiniz.
+**1. Adım:** Görsel 4.35’teki uygulama ekranını tasarlayınız. Bu tasarım ekranında bir adet EditTextNumber objesi, bir adet Button ve bir adet TextView bulunur. EditTextNumber objesinin id’sini **editTextNumber_Sayi** şeklinde, onayla buttonunun id’sini **button_Onayla** şeklinde, TextView’in id’sini de textView_Sonuc şeklinde yapınız. EditTextNumber objesinin hint özelliğine "Sayınızı Giriniz" şeklinde yazı yazınız. Buttonun da **text** özelliğine "ONAYLA" şeklinde, TextView’in text özelliğine de "Sonuç :" şeklinde yazınız. Button tıklandığında çalışacak olan metodu aktif etmek için buttonun **onClsick** özelliğine "onayla" ifadesi ekleyiniz.
 <div style="display:block;text-align:center">
 
 ![Girilen sayının faktöriyelini bulan uygulama](./karar-ve-dongu-yapilari/gorsel-4.35-girilen-sayinin-faktoriyelini-bulan-uygulama.png)
 </div>
+
+**2. Adım:** MainActivity içinde eklenen objelerin tanımlanması ve başlatılması işlemlerini yapınız. Class bloku altında TextView, EditText ve Buttonu tanımlayarak onCreate yaşam döngüsü içinde bunların başlatmasını yapınız.
+
 
 ```java
 EditText number;
@@ -291,7 +288,7 @@ MainActivity’nin son hâli Görsel 4.36’da yer alırken uygulamanın son ç�
 
 >Bu ve diğer uygulamalarda textView.setText metodunun içinde sadece int değer yazdırılmak istenirse uygulama çöker. Java yazılım dilinde bunu yapabilmenin yolu, String ifadeye integer ifadenin eklenmesidir. Bu nedenle sadece sonuç olarak gösterilmek istenirse setText parantezi içine **"" + sonuc** şeklinde belirtilmelidir.
 
-<h2 id="4.2.4.">4.2.4. do-while Döngüsü</h2>
+<h2 id="4.2.4." style="color:#00b5bb">4.2.4. do-while Döngüsü</h2>
 
 Bu döngü yapısı aslında **while** döngüsüne çok benzer . Tek fark, while döngüsünde blok içinde yazılan kodlar şarta bağlı olarak çalıştığı için şart sağlanmadıkça döngü çalışmaz. Doğal olarak döngünün hiç çalışmama ihtimali vardır. Yapı gereği **do-while** döngüsü ise blok içine yazılan kodları en az bir defa çalıştırır ve sonrasında şarta bakar. Şart sağlandığı sürece döngü çalışmaya devam eder. Bir başka deyişle do-while döngüsü, blokları arasındaki kodları en az bir defa çalıştırırken while döngüsü, blokları arasındaki kodları şart sonucu true olmazsa çalıştırmaz. 
 

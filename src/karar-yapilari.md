@@ -1,14 +1,13 @@
-# 4.1. KARAR YAPILARI
+<h1 style="color:#00b5bb;">4.1. KARAR YAPILARI</h1>
+
 - <a href="#4.1.1.">4.1.1. if Karar Yapısı</a> 
 - <a href="#4.1.2.">4.1.2. if-else Karar Yapısı </a> 
 - <a href="#4.1.3.">4.1.3. if-else-if Karar Yapısı</a> 
 - <a href="#4.1.4.">4.1.4. Switch-Case Yapısı </a> 
 
-## 4.1. KARAR YAPILARI
-
 Üst seviye yazılım geliştirme aşamalarının vazgeçilmezi olan karar ifadeleri, belirlenen koşul veya koşulların sonuçlarına göre yazılımların gidiş yolunu çizen yapılardır. Bu yapılar sayesinde oluş turulan uygulamalar daha esnektir. Örneğin not girişlerinin yapıldığı bir uygulamada, ortalama hesaplandıktan sonra öğrencinin dersi geçip geçmediğini belirlemek için ortalamanın, dersi geçme sınırından büyük mü yoksa küçük mü olduğu karşılaştırma operatörleri ile kontrol edilmelidir. Buna bağlı olarak öğrencinin dersi geçtiğine veya dersten kaldığına karar verilmelidir. Yazılım geliştirme ortamında Java programlama diliyle uygulama oluşturulurken "if" ve "switch-case" karar yapıları kullanılır.
 
-<h2 id="4.1.1.">4.1.1. if Karar Yapısı</h2>
+<h2 id="4.1.1." style="color:#00b5bb;">4.1.1. if Karar Yapısı</h2>
 
 Programlama dillerinde en sık kullanılan if karar yapısı kelime olarak **eğer** anlamına gelir. Yapı oluşturulacağı zaman blok içindeki kodlar çalıştırılmak istendiğinde "eğer şart sağlanıyorsa" ifadesi if karar yapısı ile karşılanır. Yazılan öncülün sonucunda evet (true) cevabı verilirse if karar yapısının blokları arasındaki işlem yapılır. Hayır (false) cevabı verilirse if karar yapısının blokları arasına uğramadan işlemlere devam edilir.
 
@@ -20,12 +19,9 @@ if(şart ifadesi){
 
 **1. UYGULAMA**: İşlem adımlarına göre TextView ögesine not girişi yapıp butona tıklandığında notun 100’den büyük olması durumunda "Yanlış Giriş" Toast mesajı veren bir uygulama tasarlayınız.
 
-**1. Adım**: Yazılım geliştirme ortamında Empty Activity açınız.
-
-**2. Adım**: İçeriye bir adet sadece sayı girilen "EditText" bir adet de "Button" ögesi ekleyiniz. Daha sonra "Infer Constraints" butonuna tıklayarak ögelerin yerini sabitleyiniz (Görsel 4.1).
-
-**3. Adım**: Button ögesinin "onClick" özelliğine "kontrolEt" yazınız (Butona tıklandığında çalışacak "kontrolEt" isimli metot sonradan yazılacaktır.).
-
+**1. Adım**: Yazılım geliştirme ortamında Empty Activity açınız.\
+**2. Adım**: İçeriye bir adet sadece sayı girilen "EditText" bir adet de "Button" ögesi ekleyiniz. Daha sonra "Infer Constraints" butonuna tıklayarak ögelerin yerini sabitleyiniz (Görsel 4.1).\
+**3. Adım**: Button ögesinin "onClick" özelliğine "kontrolEt" yazınız (Butona tıklandığında çalışacak "kontrolEt" isimli metot sonradan yazılacaktır.).\
 **4. Adım**: MainActivity’yi açınız ve eklenen ögeleri "findViewById" ile onCreate metoduna ait blokların içinde tanımlayınız.
 <div style="display:block;text-align:center">
 
@@ -54,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 public void kontrolEt(View view){
     int sayi = Integer.parseInt(number.getText().toString());
     if(sayi > 100){
-    Toast.makeText(this, "100’den Büyük Not Olamaz", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "100’den Büyük Not Olamaz", Toast.LENGTH_SHORT).show();
     }
 }
 ```
@@ -75,16 +71,14 @@ public void kontrolEt(View view){
 
 **2. UYGULAMA**: İşlem adımlarına göre mobil uygulama ekranında birinci ve ikinci sayı girişlerini yaparak bu sayılardan hangisinin büyük olduğunu bulan ve büyük sayıyı ekranda Toast mesajı ile gösteren uygulamayı tasarlayınız.
 
-**1. Adım**: Görsel 4.3’te görülen tasarımı Empty Activity açarak hazırlayınız.
-
+**1. Adım**: Görsel 4.3’te görülen tasarımı Empty Activity açarak hazırlayınız.\
 **2. Adım**: İçeriye iki adet sadece sayı girilen "EditText" ögesi, bir adet "Button" ögesi, iki adet de 1. Sayı ve 2. Sayı yazan "TextView" ögesi ekleyiniz. Daha sonra "Infer Constraints" butonuna tıklayarak ögelerin yerini sabitleyiniz (Görsel 4.3).
 <div style="display:block;text-align:center">
 
 ![Sayıları karşılaştırma uygulaması tasarımı](./karar-ve-dongu-yapilari/gorsel-4.3-sayilari-karsilastirma-uygulamasi-tasarimi.png)
 </div>
 
-**3. Adım**: Button ögesinin "onClick" özelliğine "kontrol" yazınız.
-
+**3. Adım**: Button ögesinin "onClick" özelliğine "kontrol" yazınız.\
 **4. Adım**: MainActivity’yi açınız ve eklenen ögeleri "findViewById" metodu ile "onCreate"i şu şekilde tanımlayınız:
 
 ```java
@@ -135,7 +129,7 @@ lamayı çalıştırınız.
 ![MainActivity sayfasında sayıların karşılaştırılması](./karar-ve-dongu-yapilari/gorsel-4.4-mainactivity-sayfasinda-sayilarin-karsilastirilmasi.png)
 </div>
 
-<h2 id="4.1.2.">4.1.2. if-else Karar Yapısı</h2>
+<h2 id="4.1.2." style="color:#00b5bb;">4.1.2. if-else Karar Yapısı</h2>
 
 Oluşturulan şartın "true" olması durumunda if karar yapısının blokları arasındaki işlem gerçekleşir. Şart sonucu "false" ise uygulamanın çalışma prensibi, oluşturulan if blokuna giriş yapılmadan sonrasındaki satırların çalışmaya devam etmesi şeklindedir. Buradaki problem, şart "true" olduğunda blok içine girilip işlemler yapıldıktan sonra blok dışındaki ifadelerin de çalıştırılmasıdır. "else" ifadesi **aksi hâlde** anlamı taşır. "if-else" karar yapısında ise "true" ve "false" durumları ayrı ayrı yazılır. Bu sayede "true" ile "false" işlemleri birbirinden tamamen ayrılıp iki farklı yolda işlenebilir.
 
@@ -150,7 +144,7 @@ else{
 
 **3. UYGULAMA:** İşlem adımlarına göre bir EditText ile kullanıcıdan "kullanıcı adı" ve "şifre" isteyiniz. Girilen kullanıcı adı ve şifresi, programın içinde belirtilen kullanıcı adı ve şifreye eşitse Toast mesajı ile "Giriş Başarılı", eşit değilse "Giriş Başarısız" mesajı veriniz.
 
-**4. Adım:** Yeni bir proje açıp Empty Activity ekleyiniz. Görsel 4.5’teki tasarımı oluşturunuz. Tasarıma bir adet "PlainText" ögesi, bir adet "Password" ögesi bir adet de "Button" ögesi ekleyiniz. PlainTextin id’sine "editText_KullaniciAdi", hint özelliğine de "Kullanıcı Adı :" yazınız. Password ögesinin id’sine "editText_Sifre", hint özelliğine de "Şifre :" yazınız. Buttonun id’sini "button_Onayla",text özelliğini ise "Onayla" şeklinde değiştiriniz. Ardından "Infer Constraints" seçeneğine tıklayınız.
+**1. Adım:** Yeni bir proje açıp Empty Activity ekleyiniz. Görsel 4.5’teki tasarımı oluşturunuz. Tasarıma bir adet "PlainText" ögesi, bir adet "Password" ögesi bir adet de "Button" ögesi ekleyiniz. PlainTextin id’sine "editText_KullaniciAdi", hint özelliğine de "Kullanıcı Adı :" yazınız. Password ögesinin id’sine "editText_Sifre", hint özelliğine de "Şifre :" yazınız. Buttonun id’sini "button_Onayla",text özelliğini ise "Onayla" şeklinde değiştiriniz. Ardından "Infer Constraints" seçeneğine tıklayınız.
 
 **NOT:** 
 
@@ -237,7 +231,7 @@ else {
 
 **4. UYGULAMA**: İşlem adımlarına göre mobil uygulama ekranına üç adet "switch" ögesi ekleyiniz. Birinci switch ögesi olan "Konum Servisleri" açık ise "Konum Bilgilerini Al" ve "Konum Bilgilerini Gönder" switchlerini kontrol ederek açık ve kapalı olanları Toast mesajında gösteren uygulamayı tasarlayınız.
 
-**1. Adım**: Üç adet switch ve bir adet button ile Görsel 4.7’yi oluşturunuz. Birinci switchi; id’si "switch_KonumServisi", layouth_with özelliği "match_parent", Left Margin özelliği ise 8 dp olacak şekilde ayarlayınız. İkinci switchi; id’si "switch_KonumAl", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız. Üçüncü switchi; id’si "switch_KonumGonder", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız.
+**1. Adım**: Üç adet switch ve bir adet button ile Görsel 4.7’yi oluşturunuz. Birinci switchi; id’si "<span style="color:#00b5bb" >switch_KonumServisi</span>", layouth_with özelliği "match_parent", Left Margin özelliği ise 8 dp olacak şekilde ayarlayınız. İkinci switchi; id’si "<span style="color:#00b5bb" >switch_KonumAl</span>", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız. Üçüncü switchi; id’si "<span style="color:#00b5bb" >switch_KonumGonder</span>", layouth_with özelliği "match_parent", Left Margin özelliği ise 50 dp olacak şekilde ayarlayınız.
 <div style="display:block;text-align:center">
 
 ![Konum servisleri tasarım ekranı](./karar-ve-dongu-yapilari/gorsel-4.7-konum-servisleri-tasarim-ekrani.png)
@@ -264,13 +258,13 @@ protected void onCreate(Bundle savedInstanceState) {
 ![Konum servisleri switchini kontrol kodu](./karar-ve-dongu-yapilari/gorsel-4.8-konum-servisleri-switchini-kontrol-kodu.png)
 </div>
 
-**4. Adım:** Yaşam döngülerinden olan "onResume" metodunu oluşturunuz. Konum servisleri switchi anlık olarak kapatılıp açıldığında alt switchlerin ona göre hareketler yapması istenir. Bunun için onCreate metodundan çıkılıp MainActivity sınıfı bloklarındayken onResume yazılırsa Görsel 4.9’da olduğu gibi bir görüntü elde edilir. Enter tuşuna basıldığında onResume yaşam döngüsü oluşturulur.
+**4. Adım:** Yaşam döngülerinden olan "<span style="color:#00b5bb" >onResume</span>" metodunu oluşturunuz. Konum servisleri switchi anlık olarak kapatılıp açıldığında alt switchlerin ona göre hareketler yapması istenir. Bunun için onCreate metodundan çıkılıp MainActivity sınıfı bloklarındayken onResume yazılırsa Görsel 4.9’da olduğu gibi bir görüntü elde edilir. Enter tuşuna basıldığında onResume yaşam döngüsü oluşturulur.
 <div style="display:block;text-align:center">
 
 ![onResume yaşam döngüsü](./karar-ve-dongu-yapilari/gorsel-4.9-onresume-yasam-dongusu.png)
 </div>
 
-**5. Adım:** Oluşturulan onResume içinde "konumServisleri" isimli switchin anlık durumunun değişimi kontrol edilmelidir. Bunun için de switchin "setOnCheckedChangeListener" metodu kullanılır. Bunlar tıpkı onCreate, onResume gibi interface’den gelen gövdeli metotlardır. Bu nedenle bunlar da override edilir. Kullanımı için "onResume" metodu blokları içindeyken "konumServisleri.setOnCheckedChangeListener()" yazınız. Parametre girmek için Görsel 4.10’da görüldüğü gibi new yazınız. Çıkan "onCheckedChangeListener" seçeneğine Enter tuşu ile basınız ve Görsel 4.11’de görülen yapıyı oluşturunuz.
+**5. Adım:** Oluşturulan onResume içinde "konumServisleri" isimli switchin anlık durumunun değişimi kontrol edilmelidir. Bunun için de switchin "**setOnCheckedChangeListener**" metodu kullanılır. Bunlar tıpkı onCreate, onResume gibi interface’den gelen gövdeli metotlardır. Bu nedenle bunlar da override edilir. Kullanımı için "onResume" metodu blokları içindeyken "konumServisleri.setOnCheckedChangeListener()" yazınız. Parametre girmek için Görsel 4.10’da görüldüğü gibi **new** yazınız. Çıkan "onCheckedChangeListener" seçeneğine Enter tuşu ile basınız ve Görsel 4.11’de görülen yapıyı oluşturunuz.
 <div style="display:block;text-align:center">
 
 ![setOnCheckedChangeListener seçimi](./karar-ve-dongu-yapilari/gorsel-4.10-setoncheckedchangelistener-secimi.png)
@@ -302,7 +296,7 @@ MainActivity içindeki kodların bütün hâli Görsel 4.14’te görülür.
 ![MainActivity sayfasının içeriği](./karar-ve-dongu-yapilari/gorsel-4.14-mainactivity-sayfasinin-icerigi.png)
 </div>
 
-<h2 id="4.1.3.">4.1.3. if-else-if Karar Yapısı</h2>
+<h2 id="4.1.3." style="color:#00b5bb">4.1.3. if-else-if Karar Yapısı</h2>
 
 Birden fazla şartın olduğu durumlarda "if-else-if" karar yapısı kullanılır. Örneğin dördüncü uygulama için onayla isimli metot içinde dört adet şart vardır (Görsel 4.14). Bunlar, tek tek "if" ile yazılabileceği gibi "if-else-if" yapısıyla da oluşturulabilir. "if-else-if" karar yapısı şu şekildedir:
 
@@ -324,12 +318,9 @@ if(şart){
 ![Not girişi uygulama tasarımı](./karar-ve-dongu-yapilari/gorsel-4.15-not-girisi-uygulama-tasarimi.png)
 </div>
 
-**2. Adım:** MainActivity sınıfında nesneleri tanımlayıp onCreate blokları içinde başlatınız.
-
-**3. Adım:** "onayla" isminde void tipteki metodu tanımlayarak View sınıfından view isimli bir parametre gönderiniz.
-
-**4. Adım**: Metot içinde integer tipte not1, not2, not3 isimlerindeki değişkenleri tanımlayınız . EditTextlerden gelen verileri integer veri tipine çevirerek oluşturulan değişkenlerin içlerine atınız. Float tipte ort isminde bir değişken tanımlayıp girilen üç notun hesaplamasını bu değişkende yapınız.
-
+**2. Adım:** MainActivity sınıfında nesneleri tanımlayıp onCreate blokları içinde başlatınız.\
+**3. Adım:** "onayla" isminde void tipteki metodu tanımlayarak View sınıfından view isimli bir parametre gönderiniz.\
+**4. Adım**: Metot içinde integer tipte **not1**, **not2**, **not3** isimlerindeki değişkenleri tanımlayınız . EditTextlerden gelen verileri integer veri tipine çevirerek oluşturulan değişkenlerin içlerine atınız. Float tipte **ort** isminde bir değişken tanımlayıp girilen üç notun hesaplamasını bu değişkende yapınız.\
 **5. Adım**: if-else-if karar yapısını oluşturarak Görsel 4.16’daki gibi şartları yazınız.
 <div style="display:block;text-align:center">
 
@@ -346,11 +337,11 @@ if(şart){
 ![MainActivity sayfasında ders notu girişi 2. kısım](./karar-ve-dongu-yapilari/gorsel-4.17b-mainactivity-sayfasinda-ders-notu-girisi-2-kisim.png)
 </div>
 
-<h2 id="4.1.4.">4.1.4. Switch-Case Yapısı</h2>
+<h2 id="4.1.4." style="color:#00b5bb;">4.1.4. Switch-Case Yapısı</h2>
 
 Switch-case, bir başka karar yapısıdır. Burada olay, switch içinde verilen ifadenin değeri hangi case içinde yer alırsa o case blokunun çalışması üzerine kuruludur. Her case ifadesi "break" komutuyla bitirilir. "break" komutu, işlem bittikten sonra bir alt case ifadesi çalıştırılmadan switch-case yapısından çıkmak için kullanılır. C dili zamanından bu yana değişiklik göstermeyen bu karar yapısı,birçok farklı dilde aynı şekilde kullanılır (Tablo 4.1). Switch ifadesinde belirtilen parametrenin veri türü ile case içinde belirtilen verinin türü aynı olmak zorundadır.
 
-**Tablo 4.1: Switch-Case Kullanımı**
+<div style="font-weight:bold;text-align:center;">Tablo 4.1: Switch-Case Kullanımı</div>
 
 <table>
 
@@ -430,7 +421,7 @@ Switch-case, bir başka karar yapısıdır. Burada olay, switch içinde verilen 
 ![Ögelerin initialize yapılması](./karar-ve-dongu-yapilari/gorsel-4.19-ogelerin-initialize-yapilmasi.png)
 </div>
 
-**5. Adım:** onayla isimli buttona tıklandığı zaman çalışacak metodu Görsel 4.20’de olduğu gibi hazırlayınız. Görselde sayfa ikiye ayrılmış durumdadır. Bu ayrılma kodlama esnasında yapılmaz,case 7 ifadesi case 6’dan sonra alt alta yazılarak işleme devam edilir. "onayla" isimli metodun içinde switch-case oluşturulur. Metot içinde önce sayı okutulur sonra switch ile karşılaştırma yapılır. Case olarak gelebilecek değerler 1 ile 12 arasında değişir. Bunlar dışında bir değer gelirse de default olarak ayrılan bölüm çalışır. Buttona her tıklamada number nesnesinin içeriğinin de silinmesi için "number.setText("");" kodunu yazınız ve metot bittikten sonra uygulamayı çalıştırınız.
+**5. Adım:** onayla isimli buttona tıklandığı zaman çalışacak metodu Görsel 4.20’de olduğu gibi hazırlayınız. Görselde sayfa ikiye ayrılmış durumdadır. Bu ayrılma kodlama esnasında yapılmaz,case 7 ifadesi case 6’dan sonra alt alta yazılarak işleme devam edilir. "onayla" isimli metodun içinde switch-case oluşturulur. Metot içinde önce sayı okutulur sonra switch ile karşılaştırma yapılır. Case olarak gelebilecek değerler 1 ile 12 arasında değişir. Bunlar dışında bir değer gelirse de default olarak ayrılan bölüm çalışır. Buttona her tıklamada number nesnesinin içeriğinin de silinmesi için "```number.setText("");```" kodunu yazınız ve metot bittikten sonra uygulamayı çalıştırınız.
 <div style="display:block;text-align:center">
 
 !["onayla" isimli metodun içeriği](./karar-ve-dongu-yapilari/gorsel-4.20-onayla-isimli-metodun-icerigi.png)
@@ -448,7 +439,7 @@ Switch-case, bir başka karar yapısıdır. Burada olay, switch içinde verilen 
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                     | EVET | HAYIR |
->| ------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Palette menüsünü kullanarak yaş bilgisini girmek için EditText ögesi oluşturdu.          |
 >| 2. Palette menüsünü kullanarak ehliyet kursu tamamlama bilgisi için switch ögesi oluşturdu. |
 >| 3. Palette menüsünü kullanarak Button ögesi oluşturdu.                                      |

@@ -1,4 +1,4 @@
-# 1.3. TASARIM YAPILARI (ACTIVITY TEMPLATES)
+<h1 style="color:#cd2d98;">1.3. TASARIM YAPILARI (ACTIVITY TEMPLATES)</h1>
 
 - <a href="#1.3.1.">1.3.1. Activity</a> 
 - <a href="#1.3.2.">1.3.2. Activity Çeşitleri</a> 
@@ -10,10 +10,13 @@ Emülatör kurulumu tamamlanıp pencereler kapatıldıktan sonra Android Studio 
 
 ![Yeni Proje simgesi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.23-yeni-proje-simgesi.png)
 </div>
+
 Bu ekrandaki simgeler şunlardır:
 
 - **New Project (Yeni Proje)**: En baştan yeni bir proje oluşturulacaksa bu simge tıklanır.
+
 - **Open (Aç)**: Daha önce yerel sürücüye proje kaydedildiyse projeyi açmak için kullanılır.
+
 - **Get from VCS (Sürüm Kontrol Sistemlerinden Yükle)**: Git, GitHub gibi sitelerde proje geliştirilirse buradan proje yüklenebilir.
 
 New Project simgesi tıklandıktan sonra Templates (Şablonlar) bölümünden Phone and Tablet
@@ -29,7 +32,7 @@ Uygulama geliştirilmek istenen cihaz olarak Phone and Tablet seçilir ve hazır
 
 >**SIRA SİZDE**: 
 >
->Mobil uygulama geliştirme ortamında “Fullscreen Activity” tasarım yapısını seçerek uygulama geliştirmeye başlayınız.
+>Mobil uygulama geliştirme ortamında "Fullscreen Activity" tasarım yapısını seçerek uygulama geliştirmeye başlayınız.
 >
 >**DEĞERLENDİRME**:
 >
@@ -38,18 +41,18 @@ Uygulama geliştirilmek istenen cihaz olarak Phone and Tablet seçilir ve hazır
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜLERİ                                            | EVET | HAYIR |
->| ----------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------- | ---- | ----- |
 >| 1. Mobil uygulama geliştirme ortamını çalıştırdı.                 |
 >| 2. Karşılama ekranında More Actions seçeneğine tıkladı.           |
 >| 3. Açılan pencerede Phone and Tablet seçeneğine tıkladı.          |
 >| 4. Pencerenin sağ tarafındaki bölümden Fullscreen Activity seçti. |
 >| 5. Next düğmesine tıkladı.                                        |
 
-<h2 id="1.3.1.">1.3.1. Activity</h2>
+<h2 id="1.3.1." style="color:#cd2d98;">1.3.1. Activity</h2>
 
 Activity, bir Android uygulamasında kullanıcıya gösterilen ve üzerinde kullanıcı arayüz bileşenleri (düğmeler, onay kutuları, radyo düğmeleri vb.) yer alan ekran olarak tanımlanabilir. Activity, işletim sistemlerinde bulunan pencerelerle benzerlikler taşır. Bir Android uygulaması bir veya daha fazla activity içerebilir. Bu durum, uygulamanın bir veya daha fazla ekrana sahip olması anlamın gelir.Android uygulaması geliştirilirken bir activity seçilip projeye dâhil edilir çünkü Android uygulamaları kullanıcıya göstermek için bir veya daha fazla kullanıcı arayüz bileşeni içerir. Kullanıcı, bu bileşenler sayesinde uygulama ile etkileşime girer.
 
-<h2 id="1.3.2.">1.3.2. Activity Çeşitleri</h2>
+<h2 id="1.3.2." style="color:#cd2d98;">1.3.2. Activity Çeşitleri</h2>
 
 Yeni bir proje oluşturulurken hazır activitylerden biri seçilmelidir. Hazır activitylerden bazıları şunlardır:
 - **No Activity (Activity Yok)**: Yeni bir boş proje oluşturmak anlamına gelir. Bu activity seçildiğinde ne bir XML dosyası ne de bir Java dosyası oluşturulur. Hiçbir dosya otomatik oluşturulmaz.
@@ -59,7 +62,7 @@ Yeni bir proje oluşturulurken hazır activitylerden biri seçilmelidir. Hazır 
 - **Fullscreen Activity (Tam Ekran Activity)**: Genellikle tam ekran çalışması gereken mobil uygulamalarda kullanılır. Sistem kullanıcı arabiriminin ve eylem çubuğunun görünürlüğünü değiştirir. Birçok uygulama slayt göstermek, video göstermek vb. için ekranın tamamını kullanır. Bu activity için uygun dosyalar otomatik olarak oluşturulur.
 - **Login Activity (Giriş Activity)**: Oturum açma mobil uygulaması geliştirmek için kullanılan activitydir. E-posta ve şifre girmek için alanlar ile bu alanları onaylamak için düğme bileşenleri ekranda yer alır. Bu activity için uygun dosyalar otomatik olarak oluşturulur.
 
-<h2 id="1.3.3.">1.3.3. Activity Yaşam Döngüsü</h2>
+<h2 id="1.3.3." style="color:#cd2d98;">1.3.3. Activity Yaşam Döngüsü</h2>
 
 Android uygulaması içinde activitylerin bir yaşam döngüsü vardır. Program yazılırken yaşam döngüsünün iyi bilinmesi işleri kolaylaştırır.
 
@@ -70,12 +73,14 @@ Bir Android uygulaması ilk başlatıldığında main (ana) activity oluşturulu
 </div>
 
 - Main activity, başka herhangi bir activity açarsa yeni açılan activityler de OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarından geçer.
+
 - Bir A activity başka bir B activity açarsa A activity durumu **DURAKLATILDI (PAUSED)** hâline geçer. Kullanıcı, telefonun Geri (Back) tuşuna basarsa A activitye döner ve durumu SÜRDÜRÜLDÜ olur.
+
 - Kullanıcı, Android cihazın ana ekranına dönerse tüm activityler önce DURAKLATILDI durumuna daha sonra da **DURDURULDU (STOPPED)** durumuna geçer. Kullanıcı, uygulamaya geri dönerse activity BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarından geçer. Android cihazının hafızaya ihtiyacı olursa activitylerin durumu **YOK EDİLDİ (DESTROYED)** durumuna geçer. Bu sayede hafıza boşaltılır.
 
-**UYARI**: Durumlar, Görsel 1.25’te yer alan okları takip eder. Bir activity OLUŞTURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz.Sırasıyla OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarını geçer. Activityler SÜRDÜRÜLDÜ durumundan DURAKLATILDI durumuna geçebilir veya DURAKLATILDI durumundan SÜRDÜRÜLDÜ durumuna geçebilir.DURAKLATILDI durumundan DURDURULDU durumuna geçebilir ve oradan da BAŞLATILDI durumuna geçebilir fakat asla DURDURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz. 
+<span style="color:#f00;font-weight:bold;">UYARI:</span> Durumlar, Görsel 1.25’te yer alan okları takip eder. Bir activity OLUŞTURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz.Sırasıyla OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarını geçer. Activityler SÜRDÜRÜLDÜ durumundan DURAKLATILDI durumuna geçebilir veya DURAKLATILDI durumundan SÜRDÜRÜLDÜ durumuna geçebilir.DURAKLATILDI durumundan DURDURULDU durumuna geçebilir ve oradan da BAŞLATILDI durumuna geçebilir fakat asla DURDURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz. 
 
-<h2 id="1.3.4.">1.3.4. Activity Yaşam Döngüsü Metotları</h2>
+<h2 id="1.3.4." style="color:#cd2d98;">1.3.4. Activity Yaşam Döngüsü Metotları</h2>
 
 Java programlama dilinde programlar main() metoduyla başlar. Android uygulamalarda ise çok benzer şekilde çalıştırılan activitynin onCreate() metodunu çağırmasıyla OLUŞTURULDU durumuna geçilir. Tablo 1.1’de durumlar ve karşılığında çağrılacak metotlar verilmiştir.
 
