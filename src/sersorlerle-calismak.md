@@ -1,7 +1,7 @@
 # 8.7. SENSÖRLERLE ÇALIŞMAK
 
-<a href="#8.7.1.">8.7.1. Tüm Sensörlere Erişmek </a>\
-<a href="#8.7.2.">8.7.2. Sensör Olaylarıyla Çalışmak </a>
+- <a href="#8.7.1.">8.7.1. Tüm Sensörlere Erişmek </a>
+- <a href="#8.7.2.">8.7.2. Sensör Olaylarıyla Çalışmak </a>
 
 Mobil cihazlarda kullanıcının çevresindeki değişikleri ölçebilen algılayıcılar bulunur. Mobil uygulama geliştirme ortamı, sensörlerden gelen verileri alarak bu verilerin uygulama içinde kullanılmasını sağlar. Kullanılabilen sensör türleri şunlardır:
 - **Hareket Sensörleri:** Bu sensörler, cihazın yer değiştirmesini tespit eder. İvmeölçer, jiroskop ve yerçekimi sensörleri bu tür sensörlerdendir.

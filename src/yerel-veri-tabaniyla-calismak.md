@@ -1,14 +1,14 @@
 # 7.2. YEREL VERİ TABANIYLA ÇALIŞMAK
 
-<a href="#7.2.1."> 7.2.1. Sorgulama Komutları </a>\
-<a href="#7.2.2."> 7.2.2. Mobil Uygulama Geliştirme Ortamında Yerel Veri Tabanı Kullanmak </a>\
-<a href="#7.2.3."> 7.2.3. Mobil Uygulama Geliştirme Ortamında Kayıt Eklemek</a>\
-<a href="#7.2.4."> 7.2.4. Mobil Uygulama Geliştirme Ortamında Kayıt Silmek </a>\
-<a href="#7.2.5."> 7.2.5. Mobil Uygulama Geliştirme Ortamında Kayıt Güncellemek </a>\
-<a href="#7.2.6."> 7.2.6. Mobil Uygulama Geliştirme Ortamında Tüm Kayıtları Listelemek  </a>\
-<a href="#7.2.7."> 7.2.7. Özel Adaptör Kullanmak  </a>\
-<a href="#7.2.8."> 7.2.8. Model Oluşturmak </a>\
-<a href="#7.2.9."> 7.2.9. ArrayAdapter Sınıfıyla Özel Adaptör Oluşturmak </a>
+- <a href="#7.2.1."> 7.2.1. Sorgulama Komutları </a>
+- <a href="#7.2.2."> 7.2.2. Mobil Uygulama Geliştirme Ortamında Yerel Veri Tabanı Kullanmak </a>
+- <a href="#7.2.3."> 7.2.3. Mobil Uygulama Geliştirme Ortamında Kayıt Eklemek</a>
+- <a href="#7.2.4."> 7.2.4. Mobil Uygulama Geliştirme Ortamında Kayıt Silmek </a>
+- <a href="#7.2.5."> 7.2.5. Mobil Uygulama Geliştirme Ortamında Kayıt Güncellemek </a>
+- <a href="#7.2.6."> 7.2.6. Mobil Uygulama Geliştirme Ortamında Tüm Kayıtları Listelemek  </a>
+- <a href="#7.2.7."> 7.2.7. Özel Adaptör Kullanmak  </a>
+- <a href="#7.2.8."> 7.2.8. Model Oluşturmak </a>
+- <a href="#7.2.9."> 7.2.9. ArrayAdapter Sınıfıyla Özel Adaptör Oluşturmak </a>
 
 Her ne kadar bazı veriler sharedPrefrences kullanılarak kaydedilebilse de bazı durumlarda sharedPreferences tek başına yeterli olmaz. Daha karmaşık verilerin kaydedilmesi gerekirse daha fazlası kullanmalıdır. Bunlardan bir tanesi, yerel bir veri tabanı kullanılmasıdır. Mobil işletim sisteminde yerel veri tabanı olarak SQLite kullanılır. SQLite kurmak için herhangi bir işlem yapılmasına gerek yoktur. SQLite, işletim sisteminde kurulu olarak gelir.
 

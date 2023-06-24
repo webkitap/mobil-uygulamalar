@@ -1,7 +1,7 @@
 # 8.4. BAŞKA UYGULAMALARLA ETKİLEŞİM KURMAK
 
-<a href="#8.4.1.">8.4.1. Paylaş Butonuyla Diğer Uygulamalardan Veri Almak </a>\
-<a href="#8.4.2.">8.4.2. BroadcastReceiver Kullanarak Uygulamaların Arasında Haberleşmek </a>
+- <a href="#8.4.1.">8.4.1. Paylaş Butonuyla Diğer Uygulamalardan Veri Almak </a>
+- <a href="#8.4.2.">8.4.2. BroadcastReceiver Kullanarak Uygulamaların Arasında Haberleşmek </a>
 
 Implicit Intent kullanımı, mobil uygulama geliştirme ortamında başka uygulamalarla iletişim kurabilmek için kullanılan en kolay yöntemdir. Örneğin internet tarayıcısı ile iletişim şu şekilde kurulur:
 

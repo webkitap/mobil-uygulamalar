@@ -1,10 +1,10 @@
 # 8.6. WORKMANAGERLE ÇALIŞMAK
 
-<a href="#8.6.1.">8.6.1. Kısıtlamaları Tanımlamak </a>\
-<a href="#8.6.2.">8.6.2. Görevi Gecikmeli Başlatmak  </a>\
-<a href="#8.6.3.">8.6.3. Zincirleme Çalışmak </a>\
-<a href="#8.6.4.">8.6.4. Görevleri İzlemek </a>\
-<a href="#8.6.5.">8.6.5. Görevlere Dışarıdan Veri Göndermek  </a>
+- <a href="#8.6.1.">8.6.1. Kısıtlamaları Tanımlamak </a>
+- <a href="#8.6.2.">8.6.2. Görevi Gecikmeli Başlatmak  </a>
+- <a href="#8.6.3.">8.6.3. Zincirleme Çalışmak </a>
+- <a href="#8.6.4.">8.6.4. Görevleri İzlemek </a>
+- <a href="#8.6.5.">8.6.5. Görevlere Dışarıdan Veri Göndermek  </a>
 
 Bazı uygulamalarda periyodik olarak bazı görevlerin yapılması gerekebilir. Bu tür işlemleri yapabilmek için mobil uygulama geliştirme ortamında birçok araç bulunur. WorkManager, zamanlanmış görev işlemlerinin çok kolay bir şekilde yapılması için oldukça uygundur. WorkManager; ertelenebilir görevler, anında yapılan görevler, periyodik olarak çalışan görevler olmak üzere üç türlü çalışmayı sağlar.
 

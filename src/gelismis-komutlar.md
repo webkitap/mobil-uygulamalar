@@ -1,5 +1,7 @@
-# 5. GELİŞMİŞ KOMUTLAR
-## NELER ÖĞRENECEKİNİZ?
+<h1 style="color:#ff5432;">5. GELİŞMİŞ KOMUTLAR</h1>
+
+<h2 style="color:#ff5432;">NELER ÖĞRENECEKİNİZ?</h2>
+
 - Metot yapıları
 - Metotlara parametre gönderme
 - Metotlar için aşırı yükleme
@@ -15,9 +17,11 @@
 - Kalıtım yapısı
 - Alt ve üst sınıf yapısı
 
-### HAZIRLIK ÇALIŞMALARI
-1. Mobil uygulamada ve günlük hayatta karşılaşılan problemlerin çözümündeki ortak noktalar neler olabilir? Düşüncelerinizi arkadaşlarınızla paylaşınız.
-2. Uygulama geliştirilirken neden farklı yöntemler vardır? Arkadaşlarınızla değerlendiriniz.
+<h3 style="color:#ff5432;">HAZIRLIK ÇALIŞMALARI</h3>
 
-### ANAHTAR KELİMELER
+<span style="color:#ff5432;font-weight:bold;">1.</span> Mobil uygulamada ve günlük hayatta karşılaşılan problemlerin çözümündeki ortak noktalar neler olabilir? Düşüncelerinizi arkadaşlarınızla paylaşınız.
+
+<span style="color:#ff5432;font-weight:bold;">2.</span> Uygulama geliştirilirken neden farklı yöntemler vardır? Arkadaşlarınızla değerlendiriniz.
+
+<h3 style="color:#ff5432;">ANAHTAR KELİMELER</h3>
 Alt sınıf, Getter, Private, ArrayList, Kalıtım, Protected, Aşırı yükleme, Kapsülleme, Public, Çokbiçimlilik, Metot, Setter, Dizi, Nesne, Sınıf, DRY, Parametre, Üst sınıf, Yapıcı metotlar

@@ -1,10 +1,10 @@
 # 8.5. SERVİSLERLE ÇALIŞMAK
 
-<a href="#8.5.1.">8.5.1. Arka Plan Servislerle Çalışmak </a>\
-<a href="#8.5.2.">8.5.2. Ön Plan Servislerle Çalışmak </a>\
-<a href="#8.5.3.">8.5.3. Sticky Servislerle Çalışmak </a>\
-<a href="#8.5.4.">8.5.4. Bound Servislerle Çalışmak  </a>\
-<a href="#8.5.5.">8.5.5. IntentServislerle Çalışmak </a>
+- <a href="#8.5.1.">8.5.1. Arka Plan Servislerle Çalışmak </a>
+- <a href="#8.5.2.">8.5.2. Ön Plan Servislerle Çalışmak </a>
+- <a href="#8.5.3.">8.5.3. Sticky Servislerle Çalışmak </a>
+- <a href="#8.5.4.">8.5.4. Bound Servislerle Çalışmak  </a>
+- <a href="#8.5.5.">8.5.5. IntentServislerle Çalışmak </a>
 
 Servisler, uygulamanın arabiriminden bağımsız çalışan ve arabirimi olmayan uygulamalardır. Servisler genellikle arka planda çalışmak için kullanılır. Örneğin veri tabanının yedeklenmesi veya internetten veri indirmek gibi uzun sürecek bir işlem varsa bu işlemler servisler yardımıyla yapılır. Servislerin çalışması için manifest dosyasına kaydedilmesi gereklidir. Manifest dosyasına eklenmemiş bir servis çalışmaz. Bir servis şu şekilde manifest dosyasına eklenir:
 

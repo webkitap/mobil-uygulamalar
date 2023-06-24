@@ -1,4 +1,5 @@
-# 5.5. ÇOKBİÇİMLİLİK (POLYMORPHISM)
+<h1 style="color:#ff5432">5.5. ÇOKBİÇİMLİLİK (POLYMORPHISM)</h1>
+
 - <a href="#5.5.1.">5.5.1. Çokbiçimlilik Yapısı</a>
   
 Çokbiçimlilik, yapılacak tek bir eylemin farklı şekillerde gerçekleştirilmesini sağlayan özelliklerden biridir. Bir başka deyişle bir nesnenin birden farklı nesne gibi davranmasıdır. Örneğin orduda birçok sınıf bulunur. Bu sınıflardan bazıları topçular ve tankçılardır. Topçular, top atarak savaşan ve topun başından ayrılmayan askerlerdir. Tankçılar ise tank kullanarak savaşan askerlerdir. Topçu ve tankçı askerler, ateş et emri aldıklarında farklı davranışlar sergiler. Topçular, top ile ateş ederken tankçılar, tank ile ateş eder. Görsel 5.22’de asker sınıfından türetilmiş topçu ve tankçı sınıfları verilmiştir. Çokbiçimliliğe ait bir kavram olan metot geçersiz kılma (method overriding) ile kalıtım yoluyla türemiş sınıflarda aynı isimli metotlar farklı komutlar çalıştırabilir. Askerler, topçular ve tankçılar aynı emri alırlar fakat farklı davranışlar sergiler.
@@ -8,10 +9,10 @@
 ![Asker sınıfından Topcu ve Tankci sınıflarının türetilmesi](./gelismis-komutlar/gorsel-5.22-asker-sinifindan-topcu-ve-tankci-siniflarinin-turetilmesi.png)
 </div>
 
-<h2 id = "5.5.1.">5.5.1. Çokbiçimlilik Yapısı</h2>
+<h2 id = "5.5.1." style="color:#ff5432">5.5.1. Çokbiçimlilik Yapısı</h2>
 Üst sınıftan bir alt sınıf türetilirken metotların geçersiz kılınması için @Override anahtar kelimesi kullanılmalıdır.
 
-**ÖRNEK** 
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 <table>
   <thead>
@@ -47,7 +48,7 @@ Asker sınıfında atesEt metodu mevcuttur. Asker sınıfından türetilmiş Tan
 
 Türetilecek alt sınıflarda bazı metotların geçersiz kılınmasının engellenmesi gerekebilir. Bunun için üst sınıftaki metodun erişim belirleyicisine final anahtar kelimesi eklenmelidir.
 
-**ÖRNEK** 
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 <table>
   <thead>
@@ -73,8 +74,7 @@ Türetilecek alt sınıflarda bazı metotların geçersiz kılınmasının engel
 
 **10. UYGULAMA**: İşlem adımlarına göre asker sınıfından türetilmiş tankçı sınıfıyla nesne oluşturan bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında iki Button ve bir TextView oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -104,8 +104,7 @@ Türetilecek alt sınıflarda bazı metotların geçersiz kılınmasının engel
 </LinearLayout>
 ```
 
-**3. Adım:** "Asker" adıyla yeni bir sınıf oluşturunuz.
-
+**3. Adım:** "Asker" adıyla yeni bir sınıf oluşturunuz.\
 **4. Adım:** Asker.java dosyasına şu kodu yazınız:
 
 ```java
@@ -116,10 +115,8 @@ return "Asker ateş etti";
 }
 ```
 
-**5. Adım:** "Tankci" adıyla yeni bir sınıf oluşturunuz.
-
-**6. Adım:** Tankci.java dosyasını açınız.
-
+**5. Adım:** "Tankci" adıyla yeni bir sınıf oluşturunuz.\
+**6. Adım:** Tankci.java dosyasını açınız.\
 **7. Adım:** Tankci sınıfını Asker sınıfından türetecek şu kodu yazınız:
 
 ```java
@@ -206,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                     | EVET | HAYIR |
->| ------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Open Project komutunu tıkladı.                                                           |
 >| 2. Onuncu uygulama projesini açtı.                                                          |
 >| 3. Uygulama tasarım ekranına buttonTopcu adında bir Button ekledi.                          |

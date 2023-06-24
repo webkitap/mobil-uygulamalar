@@ -1,8 +1,8 @@
 <h1 style="color:#ffc034">3.7. HATA AYIKLAMA</h1>
 
-<a href="#3.7.1.">3.7.1. Logcat</a>\
-<a href="#3.7.2.">3.7.2. Durak Noktası</a>\
-<a href="#3.7.3.">3.7.3. Değişken İzleme (Watch)</a>
+- <a href="#3.7.1.">3.7.1. Logcat</a>
+- <a href="#3.7.2.">3.7.2. Durak Noktası</a>
+- <a href="#3.7.3.">3.7.3. Değişken İzleme (Watch)</a>
 
 Mobil uygulama geliştirirken çeşitli hatalardan dolayı uygulama istenen şekilde çalışmayabilir. Bu hatalar genellikle iki şekilde meydana gelir.
 

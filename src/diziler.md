@@ -1,6 +1,7 @@
-# 5.6. DİZİLER
+<h1 style="color:#ff5432">5.6. DİZİLER</h1>
+
 - <a href="#5.6.1.">5.6.1. Diziye Değer Atama</a>
-- <a href="#5.6.1.">5.6.2. ArrayList</a>
+- <a href="#5.6.2.">5.6.2. ArrayList</a>
   
 Diziler, içinde birden fazla değer barındırabilen değişkenlerdir. Uygulama geliştirilirken birçok değer ile işlem yapılması gerekebilir. Her değer için ayrı bir değişken tanımlamak zordur. Diziler sayesinde tek değişken tanımlanarak bu değişken içinde birden fazla değer kaydedilir.
 
@@ -13,7 +14,7 @@ Diziler bir değişken gibi tanımlanır. Değişken türünün yanına köşeli
 
 Dizilerin türü, ilkel veri türü olabileceği gibi herhangi bir sınıf da olabilir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 Asker[] askerler = new Asker[10];
@@ -21,10 +22,10 @@ Asker[] askerler = new Asker[10];
 ```
 Dizilerin boyutu oluşturulduktan sonra değiştirilemez, sabittir. Dizilerin içindeki her bir elemanın konumunu bildiren bir sıra numarası verilir. Bu sıra numarasına indis adı verilir. Java’da indisler 0’dan başlar.
 
-<h2 id = "5.6.1.">5.6.1. Diziye Değer Atama</h2>
+<h2 id = "5.6.1." style="color:#ff5432">5.6.1. Diziye Değer Atama</h2>
 Dizilere değer atamanın birden fazla yöntemi mevcuttur. İlk yöntem, dizi oluşturulurken değer atamasının yapılmasıdır. Bu yöntemde dizinin boyut değeri girilmez. Girilen elemanların sayısına göre dizinin boyutu otomatik olarak ayarlanır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 Integer[ ] sayilar = new Integer[]{1,3,5,7,9}; //Dizinin boyutu 5’tir.
@@ -32,7 +33,7 @@ Integer[ ] sayilar = new Integer[]{1,3,5,7,9}; //Dizinin boyutu 5’tir.
 
 Dizilere değer atamanın diğer yöntemi ise dizi oluşturulduktan sonra değer atamaktır. Dizinin elamanına değer atamak için dizi indis numarası kullanılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 Integer[ ] sayilar = new Integer[5]; //Dizinin boyutu 5’tir.
@@ -45,8 +46,7 @@ sayilar[4] = 10; //Dizinin 4’üncü elemanı
 
 **11. UYGULAMA**: İşlem adımlarına göre diziler ile 6 sayıyı toplayan bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında iki TextView, bir EditText ve iki Button oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
 **4. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.
 
-<h2 id="5.6.2.">5.6.2. ArrayList</h2>
+<h2 id="5.6.2." style="color:#ff5432">5.6.2. ArrayList</h2>
 
 Dizilerin boyutu sabittir. Uygulama çalışırken dizilerin boyutu artırılamaz ve azaltılamaz. Mobiluygulama geliştirilirken uygulama çalışma zamanı esnasında boyutu daha önceden tahmin edilemeyecek dizi yapılarına ihtiyaç duyulur. Bu ihtiyacı karşılayacak birçok yapı vardır. Bunlardanen çok kullanılanı ArrayList yapısıdır. ArrayList, istenen sayıda öge eklenen veya silinen dinamikyapıdır. ArrayList yapısını kullanmak için uygulama paketine import komutu ile java.util.ArrayListeklenmelidir. ArrayList yapısına öge olarak sadece nesneler eklenebilir, ilkel veri türleri eklenemez. ArrayList tanımlaması Görsel 5.26’da verilmiştir.
 
@@ -160,11 +160,11 @@ Dizilerin boyutu sabittir. Uygulama çalışırken dizilerin boyutu artırılama
 ![ArrayList yapısı](./gelismis-komutlar/gorsel-5.26-arraylist-yapisi.png)
 </div>
 
-### 5.6.2.1. ArrayList Yapısına Öge Ekleme (Add)
+<h3 id="5.6.2." style="color:#ff5432">5.6.2.1. ArrayList Yapısına Öge Ekleme (Add)</h3>
 
 ArrayList yapısının sonuna öge eklemek için add metodu kullanılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
@@ -176,7 +176,7 @@ aListesi.add(6);
 
 ArrayList yapısında araya öge eklemek için add metodunda iki parametre gönderilir. Birinci parametre eklenecek indis sırası, ikinci parametre ise eklenecek nesnedir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
@@ -187,11 +187,11 @@ aListesi.add(1,3); //1 No.lu indise 3 sayısını ekler.
 //aListesi içinde sırasıyla 2, 3, 4 ve 6 vardır.
 ```
 
-### 5.6.2.2. ArrayList Yapısından Öge Silme (Remove)
+<h3 id="5.6.2." style="color:#ff5432">5.6.2.2. ArrayList Yapısından Öge Silme (Remove)</h3>
 
 ArrayList yapısından öge silmek için remove metodu kullanılır. Remove metodu iki farklı şekilde gerçekleştirilir. İlk kullanımda parametre olarak listeden çıkarılacak öge verilir. İkinci kullanımda ise parametre olarak çıkarılacak ögenin indisi verilir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
@@ -202,7 +202,7 @@ aListesi.remove(1); //1 No.lu indisteki 4 sayısı listeden çıkartılır.
 //aListesi içinde sırasıyla 2 ve 6 vardır.
 ```
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 ArrayList<Ogrenci> ogrenciler= new ArrayList< >();
@@ -213,11 +213,11 @@ ogrenciler.remove(ogrenci2);
 //Öğrenciler listesi içinde sırasıyla ogrenci1 ve ogrenci3 vardır.
 ```
 
-### 5.6.2.3. ArrayList Yapısını Temizleme (Clear)
+<h3 id="5.6.2." style="color:#ff5432">5.6.2.3. ArrayList Yapısını Temizleme (Clear)</h3>
 
 ArrayList içindeki tüm ögeleri silmek için clear metodu kullanılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
 aListesi.add(2);
@@ -227,10 +227,11 @@ aListesi.clear();
 //aListesi içinde hiçbir öge yoktur.
 ```
 
-### 5.6.2.4. ArrayList Yapısında Arama (Contains)
+<h3 id="5.6.2." style="color:#ff5432">5.6.2.4. ArrayList Yapısında Arama (Contains)</h3>
+
 ArrayList içindeki bir ögeyi aramak için contains metodu kullanılır. Contains metoduna parametre olarak aranacak nesne gönderilir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
@@ -243,10 +244,11 @@ else
     System.out.println("Yok");
 ```
 
-### 5.6.2.5. ArrayList Yapısını Kopyalama (Clone)
+<h3 id="5.6.2." style="color:#ff5432">5.6.2.5. ArrayList Yapısını Kopyalama (Clone)</h3>
+
 ArrayList yapısının tam olarak bir kopyasını almak için clone metodu kullanılır. Clone metodunu kullanmak için tip dönüşümü yapılmalıdır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java 
 ArrayList<Integer> aListesi = new ArrayList< >();
@@ -258,8 +260,7 @@ ArrayList<Integer> aListeKopyasi = (ArrayList<Integer>) aListesi.clone();
 
 **12. UYGULAMA:** İşlem adımlarına göre eklenen isimleri ListViewde gösteren ve ListViewde tıklanan ismi listeden silen bir uygulama tasarlayınız.
 
-**1. Adım:** Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım:** Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım:** Görsel 5.27’de verilen uygulama ekranını oluşturan şu kodu activity_main.xml içine yazınız.
 
 <div style='display:block;text-align:center'>
@@ -355,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                           | EVET | HAYIR |
->| ----------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------- | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                                  |
 >| 2. Empty Activity proje türünü seçti.                             |
 >| 3. Uygulama adını belirledi.                                      |
@@ -375,8 +376,7 @@ public class MainActivity extends AppCompatActivity {
 
 **13. UYGULAMA:** İşlem adımlarına göre asker, tankçı ve topçu nesnelerini kullanarak iki kişilik basit bir oyun uygulaması tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Görsel 5.28’de verilen uygulama ekranını oluşturan şu kodu activity_main.xml dosyası içine yazınız.
 
 <div style='display:block;text-align:center'>
@@ -501,8 +501,7 @@ public class MainActivity extends AppCompatActivity {
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-**3. Adım:** Asker sınıfı oluşturunuz.
-
+**3. Adım:** Asker sınıfı oluşturunuz.\
 **4. Adım:** Asker.java dosyasına şu kodu yazınız:
 
 ```java
@@ -537,8 +536,7 @@ public class Asker {
 }
 ```
 
-**5. Adım:** Tankci sınıfını oluşturunuz.
-
+**5. Adım:** Tankci sınıfını oluşturunuz.\
 **6. Adım:** Tankci.java dosyasına şu kodu yazınız:
 
 ```java
@@ -550,8 +548,7 @@ public class Tankci extends Asker {
 }
 ```
 
-**7. Adım:** Topcu sınıfını oluşturunuz.
-
+**7. Adım:** Topcu sınıfını oluşturunuz.\
 **8. Adım:** Topcu.java dosyasına şu kodu yazınız:
 
 ```java
@@ -589,8 +586,7 @@ public class Topcu extends Asker{
 }
 ```
 
-**9. Adım:**Oyuncu sınıfını oluşturunuz.
-
+**9. Adım:**Oyuncu sınıfını oluşturunuz.\
 **10. Adım:** Oyuncu.java dosyasına şu kodu yazınız:
 
 ```java
@@ -703,4 +699,3 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 **12. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.
-

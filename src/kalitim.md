@@ -1,4 +1,4 @@
-# 5.4. KALITIM (INHERITANCE)
+<h1 style="color:#ff5432">5.4. KALITIM (INHERITANCE)</h1>
 
 Bir sınıf yapısının özellik ve metotlarını farklı bir sınıfa aktarma işlemine kalıtım denir. Kalıtım, çocukların ebeveynlerinden saç rengi, boy, göz rengi vb. özellikleri almaları gibi düşünülebilir. Örneğin trafikteki araçlar ile ilgili bir uygulama yapılması istenirse bazı araçlar (araba, traktör,minibüs ve kamyon) sınıf olarak modellenmelidir. Her araç için ayrı bir sınıf tanımlanmalıdır. Görsel 5.19’da bu sınıflara ait özellikler ve metotlar verilmiştir. Buradaki bazı özellik ve metotlar ortaktır. Sınıfların bu şekilde oluşturulması kod tekrarına neden olur.
 
@@ -29,8 +29,7 @@ public class AltSınıf extends ÜstSınıf {
 
 **8. UYGULAMA:** İşlem adımlarına göre trafik araçlarını kalıtım kullanarak modelleyen bir uygulama tasarlayınız.
 
-**1. Adım:** Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım:** Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım:** Uygulama ekranında bir TextView, sekiz Button oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -90,8 +89,7 @@ public class AltSınıf extends ÜstSınıf {
 </LinearLayout>
 ```
 
-**3. Adım:** "Arac" adıyla yeni bir sınıf oluşturunuz.
-
+**3. Adım:** "Arac" adıyla yeni bir sınıf oluşturunuz.\
 **4. Adım:** Arac.java dosyasına şu kodu yazınız:
 
 ```java
@@ -123,8 +121,7 @@ public class Arac {
 }
 ```
 
-**5. Adım:** "Araba" adıyla yeni bir sınıf oluşturunuz.
-
+**5. Adım:** "Araba" adıyla yeni bir sınıf oluşturunuz.\
 **6. Adım:** Araba.java dosyasına şu kodu yazınız:
 
 ```java
@@ -136,9 +133,7 @@ public class Araba extends Arac {
 }
 ```
 
-
-**7. Adım:** "Minibus" adıyla yeni bir sınıf oluşturunuz.
-
+**7. Adım:** "Minibus" adıyla yeni bir sınıf oluşturunuz.\
 **8. Adım:** Minibus.java dosyasına şu kodu yazınız:
 
 ```java
@@ -241,8 +236,7 @@ public class MainActivity extends AppCompatActivity {
 
 **9. UYGULAMA:** İşlem adımlarına göre kalıtım ile eşkenar üçgen ve karenin çevresini bulan bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında bir EditText, iki Button ve bir TextView oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -278,9 +272,8 @@ public class MainActivity extends AppCompatActivity {
 </LinearLayout>
 ```
 
-**1. Adım:** "Sekil" adıyla yeni bir sınıf oluşturunuz.
-
-**2. Adım:** Sekil.java dosyasına şu kodu yazınız:
+**3. Adım:** "Sekil" adıyla yeni bir sınıf oluşturunuz.\
+**4. Adım:** Sekil.java dosyasına şu kodu yazınız:
 
 ```java
 package com.example.geometriksekiller;
@@ -293,8 +286,7 @@ public class Sekil {
 }
 ```
 
-**5. Adım:** "Ucgen" adıyla yeni bir sınıf oluşturunuz.
-
+**5. Adım:** "Ucgen" adıyla yeni bir sınıf oluşturunuz.\
 **6. Adım:** Ucgen.java dosyasına şu kodu yazınız:
 
 ```java
@@ -307,8 +299,7 @@ public class Ucgen extends Sekil{
 }
 ```
 
-**7. Adım:** "Kare" adıyla yeni bir sınıf oluşturunuz.
-
+**7. Adım:** "Kare" adıyla yeni bir sınıf oluşturunuz.\
 **8. Adım:** Kare.java dosyasına şu kodu yazınız:
 
 ```java
