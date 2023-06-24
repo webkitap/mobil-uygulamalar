@@ -1,5 +1,5 @@
 # 8.3. BİLDİRİMLERLE ÇALIŞMAK
-<a href="#8.3.1.">8.3.1. Bildirimlerden Veri Almak</a>
+- <a href="#8.3.1.">8.3.1. Bildirimlerden Veri Almak</a>
 
 Bildirimler, kullanıcı ile etkileşime geçmenin en kısa yoludur. Bildirimler, kullanıcılar açısından çok büyük bir kolaylık sağladığı için hemen her uygulamada kullanılır. Kullanıcı, uygulamayı açmadan da uygulamadan bildirimler alabilir.
 

@@ -1,6 +1,7 @@
 # 8.2. SMS VE İLETİ GÖNDERMEK
-<a href="#8.2.1.">8.2.1. SMS Okumak</a>\
-<a href="#8.2.2.">8.2.2. İleti Göndermek </a>
+
+- <a href="#8.2.1.">8.2.1. SMS Okumak</a>
+- <a href="#8.2.2.">8.2.2. İleti Göndermek </a>
 
 SMS gönderme işlemleri SmsManager sınıfı ile yapılır. SMS gönderilirken tehlikeli izinler için kullanıcıdan mutlaka izin alınmalıdır. SmsManager kullanılarak şu şekilde SMS gönderilir:
 

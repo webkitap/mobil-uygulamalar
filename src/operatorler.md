@@ -1,9 +1,9 @@
 <h1 style="color:#ffc034">3.6. OPERATÖRLER</h1>
 
-<a href="#3.6.1.">3.6.1. Aritmetik Operatörler </a>\
-<a href="#3.6.2.">3.6.2. Atama Operatörleri</a>\
-<a href="#3.6.3.">3.6.3. Karşılaştırma Operatörleri </a>\
-<a href="#3.6.4.">3.6.4. Mantıksal Operatörler  </a>
+- <a href="#3.6.1.">3.6.1. Aritmetik Operatörler </a>
+- <a href="#3.6.2.">3.6.2. Atama Operatörleri</a>
+- <a href="#3.6.3.">3.6.3. Karşılaştırma Operatörleri </a>
+- <a href="#3.6.4.">3.6.4. Mantıksal Operatörler  </a>
 
 Java dilinde kullanılan operatörlerin bazıları şunlardır:
 
@@ -93,7 +93,7 @@ komutuyla çalıştırınız.
 >| 6. Artırma tahminini ve uygulama çıktısını doğru olarak buldu.  |
 >| 7. Azaltma tahminini ve uygulama çıktısını doğru olarak buldu.  |
 
-<h2 id="3.6.2." style="color:#ffc034">3.6.2. Atama Operatörleri</div>
+<h2 id="3.6.2." style="color:#ffc034">3.6.2. Atama Operatörleri</h2>
 
 Değişkenlere değer atama için atama operatörleri kullanılır (Tablo 3.4.).
 

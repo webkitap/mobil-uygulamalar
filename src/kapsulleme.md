@@ -1,4 +1,5 @@
-# 5.3. KAPSÜLLEME (ENCAPSULATION)
+<h1 style="color:#ff5432">5.3. KAPSÜLLEME (ENCAPSULATION)</h1>
+
 - <a href="#5.3.1.">5.3.1. Kapsülleme Yapısı</a>
 - <a href="#5.3.2.">5.3.2. Getter ve Setter Metotları</a>
   
@@ -93,15 +94,18 @@ uygulama hata verir.
 </table>
 
 Kapsülleme; kodun yeniden kullanılabilirliğini, esnekliğini ve sürdürebilirliğini artıran avantajlara sahiptir.
-- Esneklik: Kapsüllenmiş kodu yeni gereksinimlere göre değiştirmek esnek ve kolaydır. Örneğin bir kişinin maaş bilgisini belirleme gereksinimi değişirse setMaas() Setter metodunu
-değiştirmek yeterlidir.
-- Yeniden Kullanılabilirlik: Aynı veya farklı uygulamalarda kapsüllenmiş kod yeniden kullanılabilir.
-- Sürdürülebilirlik: Kapsüllenmiş uygulama kodu üzerindeki bir değişiklik, uygulamanın diğer bölümlerini etkilemez.
 
-<h2 id="5.3.1.">5.3.1. Kapsülleme Yapısı</h2>
+- **Esneklik:** Kapsüllenmiş kodu yeni gereksinimlere göre değiştirmek esnek ve kolaydır. Örneğin bir kişinin maaş bilgisini belirleme gereksinimi değişirse **setMaas()** Setter metodunu değiştirmek yeterlidir.
+
+- **Yeniden Kullanılabilirlik:** Aynı veya farklı uygulamalarda kapsüllenmiş kod yeniden kullanılabilir.
+
+- **Sürdürülebilirlik:** Kapsüllenmiş uygulama kodu üzerindeki bir değişiklik, uygulamanın diğer bölümlerini etkilemez.
+
+<h2 id="5.3.1." style="color:#ff5432">5.3.1. Kapsülleme Yapısı</h2>
 
 Kapsülleme iki adımda gerçekleştirilir. Bu adımlar şunlardır:
 - Sınıf içindeki özelliklerin erişim belirleyicisi private olarak ayarlanır.
+  
 - Bu private üyelere erişmek ve değerlerini değiştirmek için sırasıyla public Getter ve Setter yöntemleri tanımlanır.
 
 <table>
@@ -134,7 +138,7 @@ Kapsülleme iki adımda gerçekleştirilir. Bu adımlar şunlardır:
     </tbody>
 </table>
 
-<h2 id="5.3.2.">5.3.2. Getter ve Setter Metotları</h2>
+<h2 id="5.3.2." style="color:#ff5432">5.3.2. Getter ve Setter Metotları</h2>
 
 Mobil uygulama hazırlama programı, Getter ve Setter metotlarını tanımlamaya yardımcı olur. Getter ve Setter eklenecek sınıf dosyası açıkken Code menüsünden Generate komutu seçilir veya klavyeden Alt+Ins tuşlarına basılır. Ekrana gelen Generate penceresinden Getter and Setter seçilir (Görsel 5.18). İstenen özellikler seçilerek OK düğmesine tıklanır.
 
@@ -143,7 +147,7 @@ Mobil uygulama hazırlama programı, Getter ve Setter metotlarını tanımlamaya
 ![Getter ve Setter metotlarını oluşturma](./gelismis-komutlar/gorsel-5.18-getter-ve-setter-metotlarini-olusturma.png)
 </div>
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
 
 ```java
 public class Personel {
@@ -159,8 +163,7 @@ public class Personel {
 
 Setter metodu parametresi ile kapsüllenen özellik aynı adı taşır. Kod içinde karışıklık yaşanmaması için this deyimi kullanılır. This, üzerinde işlem yapılan nesneyi ifade eder. Sınıf içinde yer alan "this.ad" kodu, sınıfın private ile kapsüllenmiş ad özelliğidir. Getter metodu, kapsüllenmiş özelliğin değerini almaya yarar. Getter metodunda özellik değiştirilmeden alınabileceği gibi manipüle ederek de alınabilir.
 
-**ÖRNEK**
-
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>\
 Personel sınıfında ad bilgisine ulaşılırken ad bilgisi büyük harfe çevrilerek alınır.
 
 ```java
@@ -174,8 +177,7 @@ public class Personel {
 
 Setter metodu, kapsüllenmiş özelliğin değerini girmeye yarar. Setter metodu da manipüle edilmeye açıktır.
 
-**ÖRNEK**
-
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>\
 Personel sınıfında ad bilgisi girilirken adın başına Sayın kelimesi getirilir.
 
 ```java
@@ -189,8 +191,7 @@ public class Personel {
 
 **7. UYGULAMA**: İşlem adımlarına göre personel yaş bilgisinin girildiği bir uygulama tasarlayınız. Personel sınıfının yaş özelliğini kapsülleyiniz. Personel sınıfının yaş özelliğini 18’den küçük, 55’ten büyük girilmeyecek şekilde ayarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında bir EditText, bir Button ve bir TextView oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -222,8 +223,7 @@ public class Personel {
 </LinearLayout>
 ```
 
-**3. Adım:** "Personel" adıyla yeni bir sınıf oluşturunuz.
-
+**3. Adım:** "Personel" adıyla yeni bir sınıf oluşturunuz.\
 **4. Adım:** Personel.java dosyasına şu kodu yazınız:
 
 ```java
@@ -233,8 +233,7 @@ public class Personel {
 }
 ```
 
-**5. Adım:** Alt+Ins tuşlarına basarak Generate penceresinden Getter and Setter komutunu çalıştırınız.
-
+**5. Adım:** Alt+Ins tuşlarına basarak Generate penceresinden Getter and Setter komutunu çalıştırınız.\
 **6. Adım:** setYas metodunu şu kod ile değiştiriniz:
 
 ```java
@@ -278,8 +277,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-**8. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.
-
+**8. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.\
 **9. Adım:** Değerleri girerek KAYDET düğmesine tıklayınız.
 
 >**SIRA SİZDE:**
@@ -293,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                               | EVET | HAYIR |
->| --------------------------------------------------------------------- | ---- | ----- |
+>| :--------------------------------------------------------------------- | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                                      |
 >| 2. Empty Activity proje türünü seçti.                                 |
 >| 3. Uygulama adını belirledi.                                          |

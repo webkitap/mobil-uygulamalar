@@ -1,17 +1,17 @@
 # 7.3 UZAK VERİ TABANIYLA ÇALIŞMAK
 
-<a href="#7.3.1.">7.3.1. JSON Veri Düzeni </a>\
-<a href="#7.3.2.">7.3.2. Mobil Uygulama Geliştirme Ortamında Uzak Sunucu Yapılandırması </a>\
-<a href="#7.3.3.">7.3.3. Uzak Veri Tabanı Yönetimi</a>\
-<a href="#7.3.4.">7.3.4. Firestore Veri Tabanı Oluşturmak </a>\
-<a href="#7.3.5.">7.3.5. Uzak Veri Tabanında Yetkilendirme İşlemleri </a>\
-<a href="#7.3.6.">7.3.6. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanıyla Çalışmak </a>\
-<a href="#7.3.7.">7.3.7. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesiyle Çalışmak </a>\
-<a href="#7.3.8.">7.3.8. Uzak Veri Tabanından Veri Getirmek </a>\
-<a href="#7.3.9.">7.3.9. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanına Veri Eklemek </a>\
-<a href="#7.3.10.">7.3.10. Uzak Veri Tabanından Veri Silmek </a>\
-<a href="#7.3.11.">7.3.11. Uzak Veri Tabanında Veri Güncellemek </a>\
-<a href="#7.3.12.">7.3.12. Firestore Veri Tabanında Kurallarla Çalışmak </a>
+- <a href="#7.3.1.">7.3.1. JSON Veri Düzeni </a>
+- <a href="#7.3.2.">7.3.2. Mobil Uygulama Geliştirme Ortamında Uzak Sunucu Yapılandırması </a>
+- <a href="#7.3.3.">7.3.3. Uzak Veri Tabanı Yönetimi</a>
+- <a href="#7.3.4.">7.3.4. Firestore Veri Tabanı Oluşturmak </a>
+- <a href="#7.3.5.">7.3.5. Uzak Veri Tabanında Yetkilendirme İşlemleri </a>
+- <a href="#7.3.6.">7.3.6. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanıyla Çalışmak </a>
+- <a href="#7.3.7.">7.3.7. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesiyle Çalışmak </a>
+- <a href="#7.3.8.">7.3.8. Uzak Veri Tabanından Veri Getirmek </a>
+- <a href="#7.3.9.">7.3.9. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanına Veri Eklemek </a>
+- <a href="#7.3.10.">7.3.10. Uzak Veri Tabanından Veri Silmek </a>
+- <a href="#7.3.11.">7.3.11. Uzak Veri Tabanında Veri Güncellemek </a>
+- <a href="#7.3.12.">7.3.12. Firestore Veri Tabanında Kurallarla Çalışmak </a>
 
 Uygulama marketinde en popüler uygulamalar genellikle paylaşımın çok kolay olduğu uygulamalardır. Mobil cihazlarda herhangi resim, yazı veya videoyu paylaşabilmenin en kolay yolu bunları bir sunucuya göndermek ve buradan diğer kullanıcıların almasını sağlamaktır.
 

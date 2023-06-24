@@ -1,11 +1,16 @@
-# 5.1. METOT
+<h1 style="color:#ff5432;">5.1. METOT</h1>
+
 - <a href="#5.1.1.">5.1.1. Metot Yapısı</a> 
 - <a href="#5.1.2.">5.1.2. Değer Döndürmeyen Metotlar</a> 
 - <a href="#5.1.3.">5.1.3. Değer Döndüren Metotlar</a> 
 - <a href="#5.1.4.">5.1.4. Parametre Alan Metotlar </a> 
 - <a href="#5.1.5.">5.1.5. Metotlarda Aşırı Yükleme </a> 
 
-Programlama dünyasında birçok avantaja sahip yazılım prensipleri vardır. Bu ilkelerden en çok bilineni DRY (Don’t Repeat Yourself) "kendini tekrar etme" prensibidir. DRY prensibinin amacı,kod tekrarını önlemektir. Aynı görevleri gerçekleştiren kodlar birden çok yerde yazıldığında bu görevdeki değişiklik, kodların tamamında değişiklik yapılması anlamına gelir (Görsel 5.1a). Bu durum, daha uzun kod satırlarına, daha uzun süreye ve hata yapma ihtimalinin artmasına neden olur.Aynı görevleri gerçekleştiren kodların bir blok hâline getirilmesi ve buna uygulama içinde referans verilmesiyle DRY prensibi uygulanır (Görsel 5.1b). Bu kod bloku içinde herhangi bir değişiklik yapılması durumunda uygulama kodunda düzenlemeye gerek kalmaz.
+Programlama dünyasında birçok avantaja sahip yazılım prensipleri vardır. Bu ilkelerden en çok bilineni DRY (Don’t Repeat Yourself) "kendini tekrar etme" prensibidir. DRY prensibinin amacı,kod tekrarını önlemektir.
+
+Aynı görevleri gerçekleştiren kodlar birden çok yerde yazıldığında bu görevdeki değişiklik, kodların tamamında değişiklik yapılması anlamına gelir (Görsel 5.1a). Bu durum, daha uzun kod satırlarına, daha uzun süreye ve hata yapma ihtimalinin artmasına neden olur.
+
+Aynı görevleri gerçekleştiren kodların bir blok hâline getirilmesi ve buna uygulama içinde referans verilmesiyle DRY prensibi uygulanır (Görsel 5.1b). Bu kod bloku içinde herhangi bir değişiklik yapılması durumunda uygulama kodunda düzenlemeye gerek kalmaz.
 <div style="display:block;text-align:center">
 
 ![DRY prensibi uygulanmadan kod yazımı](./gelismis-komutlar/gorsel-5.1a-dry-prensibi-uygulanmadan-kod-yazimi.png)
@@ -14,24 +19,29 @@ Programlama dünyasında birçok avantaja sahip yazılım prensipleri vardır. B
 
 Aynı kod satırlarının tekrar tekrar yazılmasına gerek kalmadan çağrılabileceği kullanışlı kod parçalarına **metot** denir. Metot, belirli bir görevi yerine getiren bağımsız kod bloku olarak da ifade edilir. Metotlar, birçok kod satırı içerebilen uygulamadaki büyük ve karmaşık hesapları daha yönetilebilir parçalara böler.
 
-<h2 id="5.1.1.">5.1.1 Metot Yapısı</h2>
+<h2 id="5.1.1." style="color:#ff5432;">5.1.1 Metot Yapısı</h2>
 Bir metot genellikle altı bölümden oluşur (Görsel 5.2).
 
-- Erişim Belirleyici (Düzeyleri): Metoda uygulama içinden nerelerden erişebileceğini ifade eder.
-- Geri Dönüş Tipi: Metodun geriye döndüreceği tip değeridir. Geri dönüş tipi olarak void belirlenmişse geriye bir değer döndürmez.
-- Metot Adı: Metoda verilen isimdir. Java isimlendirme standartlarına göre Camel Case şeklinde yazılır.
-- Parametre Listesi: Metoda gönderilecek değerleri ifade eder. Birden fazla değer gönderilecek ise aralarına virgül kullanılır. Metoda değer gönderilmeyecek ise parantez içine herhangi bir şey yazılmaz.
-- Metot Gövdesi: Küme parantezleri arasındaki kısımdır. Bu bölüme metodun amaçladığı işi gerçekleştirilecek kodlar yazılır.
-- Geri Dönüş Değeri: Metot işlevini yerine getirdikten sonra çağrıldığı yere geri döndüreceği değerin yazıldığı kısımdır. Geri dönüş değerinden önce return komutu yazılır. Metot herhangi bir değer geri döndürmüyor ise return komutunun kullanılması zorunlu değildir.
+- **Erişim Belirleyici (Düzeyleri):** Metoda uygulama içinden nerelerden erişebileceğini ifade eder.
+
+- **Geri Dönüş Tipi:** Metodun geriye döndüreceği tip değeridir. Geri dönüş tipi olarak void belirlenmişse geriye bir değer döndürmez.
+
+- **Metot Adı:** Metoda verilen isimdir. Java isimlendirme standartlarına göre Camel Case şeklinde yazılır.
+
+- **Parametre Listesi:** Metoda gönderilecek değerleri ifade eder. Birden fazla değer gönderilecek ise aralarına virgül kullanılır. Metoda değer gönderilmeyecek ise parantez içine herhangi bir şey yazılmaz.
+
+- **Metot Gövdesi:** Küme parantezleri arasındaki kısımdır. Bu bölüme metodun amaçladığı işi gerçekleştirilecek kodlar yazılır.
+
+- **Geri Dönüş Değeri:** Metot işlevini yerine getirdikten sonra çağrıldığı yere geri döndüreceği değerin yazıldığı kısımdır. Geri dönüş değerinden önce return komutu yazılır. Metot herhangi bir değer geri döndürmüyor ise return komutunun kullanılması zorunlu değildir.
 <div style="display:block;text-align:center">
 
 ![Metot yapısı](./gelismis-komutlar/gorsel-5.2-metot-yapisi.png)
 </div>
-<h2 id="5.1.2.">5.1.2. Değer Döndürmeyen Metotlar</h2>
+<h2 id="5.1.2." style="color:#ff5432;">5.1.2. Değer Döndürmeyen Metotlar</h2>
 
 Bir metot, yaptığı işlem sonucunda herhangi bir değer geri döndürmüyor ise bu metoda değer döndürmeyen metot denir. Bir metodu değer döndürmeyen metot şeklinde tanımlamak için geri dönüş tipi olarak void yazılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFE5DF;">ÖRNEK</span>
 
 ```java
 private void selamVer() {
@@ -41,9 +51,8 @@ private void selamVer() {
 
 **1. UYGULAMA**: İşlem adımlarına göre Buttonlara tıklandığında Toast mesaja "Merhaba" yazan bir uygulama tasarlayınız.
 
-**2. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
-**3. Adım**: activity_main.xml içine şu kodu yazınız:
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
+**2. Adım**: activity_main.xml içine şu kodu yazınız:
 
 ```xml
 <LinearLayout
@@ -104,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-**4. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.
+**4. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.\
 **5. Adım:** SELAM VER düğmesine tıklayınız.
 
 >**SIRA SİZDE:**
@@ -118,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                       | EVET | HAYIR |
->| ------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------- | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                              |
 >| 2. Empty Activity proje türünü seçti.                         |
 >| 3. Uygulama adını belirledi.                                  |
@@ -130,11 +139,11 @@ public class MainActivity extends AppCompatActivity {
 >| 9. Toplama sonucunu Toast mesajına doğru olarak yazdı.        |
 >| 10. Run düğmesiyle uygulamayı çalıştırdı.                     |
 
-<h2 id="5.1.3.">5.1.3 Değer Döndüren Metotlar</h2>
+<h2 id="5.1.3." style="color:#ff5432;">5.1.3 Değer Döndüren Metotlar</h2>
 
 Bazı metotların yaptığı işlem sonucunda çağrıldığı yere değer döndürmesi gerekir. Metot, geri döndüreceği değerin türüne göre tanımlanmalıdır. Değer geri döndürmek için metot içinde return ifadesi kullanılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFE5DF;">ÖRNEK</span>
 
 ```java
 private int topla() {
@@ -144,8 +153,7 @@ private int topla() {
 
 **2. UYGULAMA**: İşlem adımlarına göre butona tıklandığında Toast mesaja iki sayının toplamını yazan bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında iki EditText ve bir Button oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -215,11 +223,12 @@ public class MainActivity extends AppCompatActivity {
 
 **5. Adım:** TOPLA düğmesine tıklayınız.
 
-<h2 id="5.1.4.">5.1.3 Parametre Alan Metotlar</h2>
+<h2 id="5.1.4." style="color:#ff5432">5.1.4 Parametre Alan Metotlar</h2>
 
 Bazı metotların işlem yapabilmesi için metot dışından bilgi alması gerekir. Metodun aldığı bu bilgilere parametre denir. Parametre, metot isminden sonra parantez içine bir değişken tanımlama gibi yazılır. Birden fazla parametre varsa parametreler arasına virgül kullanılır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFE5DF;">ÖRNEK</span>
+
 ```java
 private int topla(int sayi1, int sayi2) {
     return sayi1 + sayi2;
@@ -228,15 +237,15 @@ private int topla(int sayi1, int sayi2) {
 
 Metot çağrılırken parametreler girilmelidir.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFE5DF;">ÖRNEK</span>
+
 ```java
 topla(5,10);
 ```
 
 **3. UYGULAMA**: İşlem adımlarına göre iki sayının toplamını parametre kullanan metot ile gerçekleştiren bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında iki EditText ve bir Button oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -304,8 +313,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-**4. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.
-
+**4. Adım:** Run düğmesine tıklayarak uygulamayı çalıştırınız.\
 **5. Adım:** TOPLA düğmesine tıklayınız.
 
 >**SIRA SİZDE**:
@@ -317,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                   | EVET | HAYIR |
->| ------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------- | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                                          |
 >| 2. Empty Activity proje türünü seçti.                                     |
 >| 3. Uygulama adını belirledi.                                              |
@@ -337,11 +345,13 @@ public class MainActivity extends AppCompatActivity {
 >| 16. Sonucu Toast mesajına doğru olarak yazdı.                             |
 >| 17. Run düğmesine tıklayarak uygulamayı çalıştırdı.                       |
 
-<h2 id="5.1.5.">5.1.5. Metotlarda Aşırı Yükleme</h2>
+<h2 id="5.1.5." style="color:#ff5432">5.1.5. Metotlarda Aşırı Yükleme</h2>
 
-Uygulama geliştirme standartları açısından metot adları önemlidir. Metotlar, yapacakları işlemlere göre isimlendirilmelidir. Bu standart, kod okunabilirliğini artırır. Örneğin topla adlı bir metodun yapacağı işin toplama olacağı tahmin edilebilir fakat bu metodun ismi islemYap şeklinde yazılırsa metodun yapacağı işin tahmin edilmesi güçtür. Bu nedenle metodun yapacağı işi anlamak için metodun koduna bakılmalıdır. Benzer işlemleri yapan metotlara isim verilirken zorluklar yaşanabilir. Örneğin iki sayının toplamını yapan metoda topla ismi verildiğinde üç sayının toplamını bulan başka bir metoda isim verilirken zorluk yaşanır. Bu uygulamada metotlar daha fazla sayı toplayan şeklinde düşünüldüğünde kodlama işlemi güçleşir. Bu tür problemleri çözmek için **Metot Aşırı Yükleme (Method Overloading)** kavramı devreye girer. Metot aşırı yükleme, aynı isme sahip metot tanımlamaya izin verir. Metotları birbirinden ayırmak için parametre sayısı ve tipleri kullanılır.
+Uygulama geliştirme standartları açısından metot adları önemlidir. Metotlar, yapacakları işlemlere göre isimlendirilmelidir. Bu standart, kod okunabilirliğini artırır. Örneğin topla adlı bir metodun yapacağı işin toplama olacağı tahmin edilebilir fakat bu metodun ismi islemYap şeklinde yazılırsa metodun yapacağı işin tahmin edilmesi güçtür. Bu nedenle metodun yapacağı işi anlamak için metodun koduna bakılmalıdır. 
 
-**ÖRNEK**
+Benzer işlemleri yapan metotlara isim verilirken zorluklar yaşanabilir. Örneğin iki sayının toplamını yapan metoda topla ismi verildiğinde üç sayının toplamını bulan başka bir metoda isim verilirken zorluk yaşanır. Bu uygulamada metotlar daha fazla sayı toplayan şeklinde düşünüldüğünde kodlama işlemi güçleşir. Bu tür problemleri çözmek için **Metot Aşırı Yükleme (Method Overloading)** kavramı devreye girer. Metot aşırı yükleme, aynı isme sahip metot tanımlamaya izin verir. Metotları birbirinden ayırmak için parametre sayısı ve tipleri kullanılır.
+
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#FFE5DF;">ÖRNEK</span>
 
 <br>
 
@@ -353,8 +363,7 @@ Uygulama geliştirme standartları açısından metot adları önemlidir. Metotl
 
 **4. UYGULAMA**: İşlem adımlarına göre iki ve üç sayının toplamını metot aşırı yükleme ile gerçekleştiren bir uygulama tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.
-
+**1. Adım**: Mobil uygulama geliştirme programında Empty Activity olacak şekilde bir proje oluşturunuz.\
 **2. Adım**: Uygulama ekranında üç EditText ve iki Button oluşturan şu kodu activity_main.xml içine yazınız:
 
 ```xml
@@ -469,12 +478,13 @@ public class MainActivity extends AppCompatActivity {
 ><div style="display:block;text-align:center"> <img src="/gelismis-komutlar/gorsel-5.3-uygulama-tasarimi.png" alt="Uygulama tasarimi"> </div>
 >
 >**DEĞERLENDİRME:** 
->Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.,
+>
+>Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir.Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                           | EVET | HAYIR |
->| ----------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------- | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                                  |
 >| 2. Empty Activity proje türünü seçti.                             |
 >| 3. Uygulama adını belirledi.                                      |

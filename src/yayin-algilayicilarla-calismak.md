@@ -1,7 +1,7 @@
 # 8.1. YAYIN ALGILAYICILARLA ÇALIŞMAK
 
-<a href="#8.1.1.">8.1.1. BroadcastReceiver Sınıfı Oluşturmak  </a>\
-<a href="#8.1.2.">8.1.2. Kodla Yayın Algılayıcıları Tetiklemek </a>
+- <a href="#8.1.1.">8.1.1. BroadcastReceiver Sınıfı Oluşturmak  </a>
+- <a href="#8.1.2.">8.1.2. Kodla Yayın Algılayıcıları Tetiklemek </a>
 
 Android işletim sistemi; cihazın uçak moduna alınması, şarj edilmeye başlanması veya pil durumunun kritik seviyeye gelmesi gibi durumlarda tüm sisteme mesajlar gönderir. Bu mesajlara Broadcast Mesaj denir. Broadcast, yayın anlamına gelir. Uygulamalar bu mesajları alarak duruma göre davranışlarını değiştirebilir. Örneğin pil durumu düşük olan bir cihazda arka plan işlemlerine başlanmaz.
 
