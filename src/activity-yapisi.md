@@ -1,4 +1,5 @@
-# 6.3 ACTIVITY YAPISI
+<h1 style="color:#a8d14f">6.3 ACTIVITY YAPISI</h1>
+
 - <a href="#6.3.1.">6.3.1. Activity Yaşam Döngüleri (Activity Life Cycle)</a>
 - <a href="#6.3.2.">6.3.2. Çoklu Aktiviteler</a>
   
@@ -9,7 +10,7 @@ Activity, bir kullanıcı arayüzüne (UI) sahip mobil uygulama ekranını temsi
 ![Main Activity değiştirme](./uygulama-tasarimi/gorsel-6.31-main-activity-degistirme.png)
 </div>
 
-<h2 id="6.3.1.">6.3.1. Activity Yaşam Döngüleri (Activity Life Cycle)</h2>
+<h2 id="6.3.1." style="color:#a8d14f">6.3.1. Activity Yaşam Döngüleri (Activity Life Cycle)</h2>
 
 Activityler, belirli bir döngü içinde çalışan yapılardır. Ekranın çevrilmesi, uygulamanın arka planına bakılması, başka bir Activity açılması, geri tuşuna basılması vb. eylemler sırasında uygulamanın arka planında yaşam döngüsü denilen bir yapıya göre işlemler yapılır. Yaşam döngüsünde yer alan her bir işleme yönelik bir metot bulunur. Bu metotlar, Görsel 6.32’de verilmiştir.
 
@@ -18,32 +19,30 @@ Activityler, belirli bir döngü içinde çalışan yapılardır. Ekranın çevr
 ![Activity yaşam döngüsü](./uygulama-tasarimi/gorsel-6.32-activity-yasam-dongusu.png)
 </div>
 
-### 6.3.1.1. onCreate()
+<h3 style="color:#a8d14f">6.3.1.1. onCreate()</h3>
 
 onCreate(), bir Activity çağrıldığı zaman arka planda ilk olarak devreye giren metottur. Yapı itibarıyla constructera (kurucu metot) benzetilebilir. Uygulama çalışır çalışmaz Activity içinde gerçekleşmesi istenen her olay onCreate metoduna yazılır. Activity her başlatıldığında yalnızca bir defa çalışır.
-### 6.3.1.2. onStart()
+<h3 style="color:#a8d14f">6.3.1.2. onStart()</h3>
 
 onStart(), onCreate() metodu çalıştıktan sonra veya Activity tekrar çalıştırıldıktan sonra devreye girer. Arka plandaki başka bir uygulamaya geçip tekrar mobil uygulamada Activity’ye dönüldüğünde de çalıştırılır.
-### 6.3.1.3. onResume()
+<h3 style="color:#a8d14f">6.3.1.3. onResume()</h3>
 
 onResume(), onStart() metodundan sonra kullanıcının odağı Activity’den uzaklaşıncaya kadar çalışan bölümdür. Örneğin telefon çalarsa, arka plandaki uygulamalar kontrol edilirse, Activity’den çıkılırsa, başka uygulamalara geçiş yapılırsa bu metottan çıkılır. İlgili mobil uygulamada Activity’ye dönülürse onResume() metodu tekrar çalıştırılır.
 
-**onPause()**
+<span style="color:#a8d14f">onPause()</span>
 
 onPause(), Activity arka plana alındığı zaman çalışacak metottur. Uygulama içinde bir olayın arkaplana alındığında çalışması istenirse onPause() metodu kullanılır. Uygulama arka plana her alındığında tekrar tekrar çalışır.
-### 6.3.1.5. onStop()
+<h3 style="color:#a8d14f">6.3.1.5. onStop()</h3>
 
 onStop(), Activity arka plana alındığında onPause() metodundan hemen sonra çalışır. onStop() metodu çalıştıktan sonra ya Activity’ye tekrar dönülür ve sırasıyla onStart(), onResume() metotları çalıştırılır ya da Activity kapatılır ve onDestroy() metodu çalıştırılır.
-### 6.3.1.6. onDestroy()
+<h3 style="color:#a8d14f">6.3.1.6. onDestroy()</h3>
 
 onDestroy(), mobil uygulama veya Activity tamamen yok edildiğinde (kapatıldığında) çalışan metottur.
 
 **12. UYGULAMA**: İşlem adımlarına göre yaşam döngüsü metotları çalıştığında Logcat ekranında uyarı veren uygulamayı tasarlayınız.
 
-**1. Adım**: Mobil uygulama geliştirme platformundan yeni bir proje açarak Empty Activity seçiniz.
-
-**2. Adım**: Uygulama ismini My Application olarak bırakınız.
-
+**1. Adım**: Mobil uygulama geliştirme platformundan yeni bir proje açarak Empty Activity seçiniz.\
+**2. Adım**: Uygulama ismini My Application olarak bırakınız.\
 **3. Adım:** Uygulama tasarım ekranına bir şey eklemeden MainActivity.java ekranında onStart() metodunu tanımlayınız. Bunun için onCreate() metodunun dışına çıkarak "onStart" yazılırsa otomatik tamamlama gelir. Görsel 6.33’te işaretlenen önerinin üzerine gelerek Enter tuşuna basınız.
 
 <div style='display:block;text-align:center'>
@@ -132,13 +131,13 @@ protected void onDestroy() {
 
 >Uygulamada belirtilen Activity tamamen kapatıldıktan sonra yeniden çalıştırılırsa onCreate() metodu tekrar çalışır ve Activity yeniden kurulur.
 
-<h2 id="6.3.2.">6.3.2. Çoklu Aktiviteler</h2>
+<h2 id="6.3.2." style="color:#a8d14f">6.3.2. Çoklu Aktiviteler</h2>
 
 Mobil uygulamalar için vazgeçilemez bir yapı olan aktiviteler, bir mobil uygulamada sadece bir tane olabileceği gibi sınırsız sayıda da olabilir. Oluşturulan her Activity’nin AndroidManifest.xml dosyası içinde tanımlanması gerekir. Ayrıca ana aktivite de "**\<intent-filter>**" etiketleri arasında tanımlanmalıdır. Bu intent-filter etiketi içinde ise "action" olarak "MAIN" özelliği, "category" olarak da "LAUNCHER" özelliği almalıdır.
 
 Bir uygulama birden fazla aktivite içerirse zorunlu olan husus, aktiviteler birbirleri arasında bilgi alışverişi yapmasıdır. Örneğin kullanıcı adı ve şifresiyle uygulamaya giriş yapacak kullanıcı önce giriş ekranındaki aktivite ile ilgilenirken kullanıcı adı ve şifresi doğruysa mobil uygulama bir sonraki aktiviteye tüm bilgileri aktarmalıdır. Bu aktarım için de birden fazla yol bulunur.
 
-### 6.3.2.1. Intent Yöntemiyle Activityler Arası Veri Taşıma
+<h3 style="color:#a8d14f">6.3.2.1. Intent Yöntemiyle Activityler Arası Veri Taşıma</h3>
 
 Intent, aktiviteler arasında veri taşımada en yaygın olarak bilinen yöntemdir. Kolay bir kullanımı olmakla birlikte Java dilinde sadece "Primitive değişken" olarak adlandırılan değişken türlerini taşıyabilir (int, short, byte, long, float, double, String, boolean, char). Object veya referans tipler için bu veri taşıma yöntemi uygulanamaz. Doğal olarak daha büyük projelerde bu veri taşıma yolu çok fazla tercih edilmez.
 
@@ -152,7 +151,7 @@ startActivity(intent);
 
 **NOT:**
 
->Intent sınıfından üretilen intent nesnesine referans olarak gönderilen this, Context’i işaret eder. Key, datanın anahtar ismini, data ise verinin tutulduğu değişkeni veya veriyi ifade eder.
+>Intent sınıfından üretilen intent nesnesine referans olarak gönderilen **this**, Context’i işaret eder. **Key**, datanın anahtar ismini, **data** ise verinin tutulduğu değişkeni veya veriyi ifade eder.
 
 İkinci Activity ise gelen verileri karşılamalıdır. Bunun için açılan ikinci Activity’de Intent sınıfından bir nesne üretilmeli fakat bu nesne new ile tanımlanmamalıdır. Bu nesne, getIntent metodu kullanılarak tanımlanmalıdır. Tanımlanan nesne sıfır bir nesne değil, ilk Activity’den gelen veriyi alacak bir nesnedir. Daha sonra da getStringExtra, getIntExtra, getBooleanExtra vb. metotlarla karşılanmalıdır. Kullanılan metoda göre referans değişir. getStringExtra metodunda sadece verinin anahtar adını isterken getIntExtra metodunda hem verinin anahtar ismini hem de default değerini ister. Gelen verileri almak için Intent yönteminin kullanımı şu şekildedir:
 
@@ -276,7 +275,7 @@ Uygulama çalıştırıldığında ortaya çıkacak sonuç Görsel 6.44’te ver
 ><div style="text-align:center; font-weight:bold;">KONTROL LİSTESİ</div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                         | EVET | HAYIR |
->| ----------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :----------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. "MainActivity" isimli bir sınıf oluşturdu.                                                   |
 >| 2. "DetayActivity" isimli yeni bir sınıf ve bu sınıfa ait bir layout dosyası oluşturdu.         |
 >| 3. activity_main içinde gereken görsel tasarımları oluşturdu.                                   |
@@ -288,7 +287,7 @@ Uygulama çalıştırıldığında ortaya çıkacak sonuç Görsel 6.44’te ver
 >| 9. MainActivity üzerinden intent ile gönderilen verileri DetayActivity üzerinden yakaladı.      |
 >| 10. activity_detay üzerinde verileri görüntüledi.                                               |
 
-### 6.3.2.2. Singleton Sınıfıyla Activityler Arası Veri Taşıma
+<h3 style="color:#a8d14f">6.3.2.2. Singleton Sınıfıyla Activityler Arası Veri Taşıma</h3>
 Singleton sınıfı sadece bir objeye sahip olan sınıf yapısıdır. Contructerlar yapısı itibarıyla diğer sınıflar üzerinden erişim sağlanabilmesi için normalde public tanımlanmalıdır. Singleton sınıfında ise constructerlar private tanımlanır. Yalnızca tek obje oluşturulduğu için bu sınıf üzerinden erişim sağlanmak istendiğinde yanlışlıkla başka bir objeye erişim sağlama ihtimali bulunmaz. Singleton ile veri taşıyabilmek için öncelikle Singleton özelliğine sahip bir sınıf tasarımı yapmak gerekir. Bu işlem için şu şekilde bir sınıf oluşturulur:
 
 ```java
@@ -410,7 +409,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                 | EVET | HAYIR |
->| --------------------------------------------------------------------------------------- | ---- | ----- |
+>| :--------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. "MainActivity" isimli bir sınıf oluşturdu.                                           |
 >| 2. "DetayActivity" isimli yeni bir sınıf ve bu sınıfa ait bir layout dosyası oluşturdu. |
 >| 3. DetayActivity içinde alanlar ve Constructer yapıları oluşturdu.                      |
@@ -422,7 +421,7 @@ protected void onCreate(Bundle savedInstanceState) {
 >| 9. Singleton ile verileri "DetayActivity"e gönderdi.                                    |
 >| 10. DetayActivity üzerinden verileri görüntüledi.                                       |
 
-### 6.3.2.3. Serializable Yöntemiyle Activityler Arası Veri Taşıma
+<h3 style="color:#a8d14f">6.3.2.3. Serializable Yöntemiyle Activityler Arası Veri Taşıma</h3>
 
 "Primitive" değişkenler (int, String, bool, char vb.) nasıl ki intent ile aktiviteler arası gönderilirse object bir türde öge göndermek istendiğinde de Serializable yöntemi kullanılır. Serializable aslında bir interfacedir. Öncelikle nesnesi oluşturulan bir sınıfa implement edilmesi gerekir. Bu implement edilen interface sayesinde sınıf içindeki nesneler (intence) bir paket hâline dönüşür. Serializable yöntemi kullanılırken veriler intent ile gönderilir fakat bu kez bir paket şeklinde gönderilir. Bu paket, aktiviteler arasında gönderildiğinde ise gittiği Activity’de "**getSerializableExtra()**" metodu ile alınır ve serialize işlemi yapılmış sınıf veri türünden bir değişkene atılır. Burada dikkat edilmesi gereken husus, gelen veri Serializable ama atılan Class tipi olduğu için Casting (tip dönüşümü) işleminin gerekliliğidir. Casting işlemi uygulanır ve paket açılır. Paket içindeki veriler tek tek alınabilir duruma gelir.
 

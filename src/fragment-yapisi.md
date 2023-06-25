@@ -1,4 +1,4 @@
-# 6.5. FRAGMENT YAPISI
+<h1 style="color:#a8d14f">6.5. FRAGMENT YAPISI</h1>
 
 Mobil uygulama geliştirirken çoklu aktivite ile birden fazla sayfa kullanmak yerine tek Activity içinde birden fazla sayfa kullanmak mümkündür. Bu tasarımı ortaya koyan yapıya Fragment denir. Bu yapılar alt Activity gibi düşünülebilir. Fragment yapılarının da tıpkı aktiviteler gibi kendine ait bir yaşam döngüsü vardır (Görsel 6.54).
 
@@ -10,15 +10,16 @@ Mobil uygulama geliştirirken çoklu aktivite ile birden fazla sayfa kullanmak y
 Görseldeki metotlardan çoğu, Activity yaşam döngülerindeki metotlarla aynı işleve sahiptir. Farklı
 olan onAttach(), onCreateView(), onDestroyView() metotlarının açıklaması şu şekildedir:
 - **onAttach()**: Mobil uygulama için sistem hiçbir şey yaratmadan önce bu metot çağrılır ve Fragment için yer ayrılır.
+
 - **onCreateView()**: Bir Fragment’ı oluştururken layout tanımı yapmak için bu metot kullanılır. Fragment’ı ayakta tutmak için kullanılan tek callback metodu budur. Burada view değişkenleri atanabilir.
+
 - **onActivityCreated()**: Her şey tamamlandıktan sonra en son başlatılması istenen işlemler için kullanılan metottur. onCreateView() metodundan hemen sonra çalıştırılır.
 
 Her Fragment’in kendine özel bir sınıfı ve kendine özel de bir layout dosyası vardır. Ayrıca Fragment oluşturmanın da birden fazla yöntemi bulunur.
 
 **18. UYGULAMA:** İşlem adımlarına göre bir Activity içinde bulunan iki adet buttondan birincisine tıklandığında birinci Fragment’i açıp ekranda "1.Fragment Ekranı", ikincisine tıklanınca da ikinci Fragment’i açarak "2. Fragment Ekranı" yazan uygulamayı tasarlayınız (Görsel 6.55).
 
-**1. Adım**: Yeni bir proje açınız ve Empty Activity seçiniz.
-
+**1. Adım**: Yeni bir proje açınız ve Empty Activity seçiniz.\
 **2. Adım**: "activity_main.xml" layout dosyasını açınız ve Code ekranına geçiniz. Gerekli tüm eklemeleri Code ekranında yapınız.
 
 <div style='display:block;text-align:center'>
@@ -336,7 +337,7 @@ public class BirinciFragment extends Fragment {
 
 **7. Adım:** BirinciFragment sınıfının içinde ViewModel yapısının tanıtılıp başlatılması gerekir. Yaşam döngülerinin dışına çıkınız ve onCreate metodunun üstüne geliniz. PageViewModel sınıfından pageViewModel nesnesini oluşturunuz. Bu nesneyi de onCreate yaşam döngüsünün içinde initialize ediniz. Initialize işlemi "`pageViewModel = new ViewModelProvider(requireActivity()).get(PageViewModel.class);`" şeklinde olacaktır. Bu kodda ViewModelProvider yapısını kullanarak geçerli olan Activity üzerine PageViewModel içindeki dataların bağlanması belirtilir.
 
-**8. Adım:** onCreatedView metodunu tanımlayınız. Tüm metotların dışına çıkarak onCreatedView yazınız ve çıkan öneriye Enter tuşu ile basınız. Bu metot içinde, metoda ait layout dosyasında bulunan ögelerin tanımlanması ve işleme alınması uygulamalarını gerçekleştiriniz. Bir başka deyişle fragment_birinci.xml dosyasında yer alan editText_KullaniciAdi ve ditText_KullaniciSifresi’nin tanımlamalarını yapınız. Ardından bu editTextteki anlık değişimleri kontrol eden metodu uygulayınız. Bunun için de "**addTextChangedListener**" metodu kullanılır. Bu metoda parametre olarak istenen "**TextWatcher**" ögesi new ile yazılır ve "**new TextWatcher**" şeklinde gönderilir. EditText ögesine ait tanımlanan EditText nesnesi kullanılarak oluşturulan addTextChangedListener metodu üç ayrı metot döndürerek override edecektir. Bunlar; text değişmeden önce, text değişmeden sonra ve text değişirken yapılacak işlemlere ait metotlardır.
+**8. Adım:** **onCreatedView** metodunu tanımlayınız. Tüm metotların dışına çıkarak onCreatedView yazınız ve çıkan öneriye Enter tuşu ile basınız. Bu metot içinde, metoda ait layout dosyasında bulunan ögelerin tanımlanması ve işleme alınması uygulamalarını gerçekleştiriniz. Bir başka deyişle fragment_birinci.xml dosyasında yer alan editText_KullaniciAdi ve ditText_KullaniciSifresi’nin tanımlamalarını yapınız. Ardından bu editTextteki anlık değişimleri kontrol eden metodu uygulayınız. Bunun için de "**addTextChangedListener**" metodu kullanılır. Bu metoda parametre olarak istenen "**TextWatcher**" ögesi new ile yazılır ve "**new TextWatcher**" şeklinde gönderilir. EditText ögesine ait tanımlanan EditText nesnesi kullanılarak oluşturulan addTextChangedListener metodu üç ayrı metot döndürerek override edecektir. Bunlar; text değişmeden önce, text değişmeden sonra ve text değişirken yapılacak işlemlere ait metotlardır.
 
 **NOT:**
 
@@ -475,7 +476,7 @@ public class IkinciFragment extends Fragment {
 
 >Bu kodlar arasındaki **observe()**, yeni bir metottur. LiveData türünün en önemli özelliği de buradaki observe() metodudur. Bu metot sayesinde anlık olarak diğer Fragment’teki değişim takip edilir, TextWatcher parametresi ile izlenir. BirinciFragment ögesinden dönen kullaniciAdi bilgisi doğru ise kullaniciSifresi bilgisine anlık olarak bakılır ve o da doğru olduğu takdirde IkinciFragment ögesine PageViewModel sınıfı üzerinden veriler getirilip kullaniciAdi bilgisi IkinciFragment’teki TextViewe yazılır. Bu şart gerçekleşmezse TextViewde "Kullanici Bilgileri" yazar.
 
-**12. Adım:** TabbedActivity ile otomatik gelen Tab1, Tab2 isimlendirmesi SectionsPagerAdapter sınıfı içinde TAB_TITLES ile verilmiş olsa da elemanlara tıklandığında da görüleceği gibi dizinin elemanları strings.xml üzerinden gelir. İsimleri strings.xml üzerine giderek "Kullanıcı Girişi" ve "Ana Sayfa" şeklinde düzenleyiniz. Daha sonra uygulamayı çalıştırarak Görsel 6.65’tekine benzer bir görüntü alınız.
+**12. Adım:** **TabbedActivity** ile otomatik gelen Tab1, Tab2 isimlendirmesi **SectionsPagerAdapter** sınıfı içinde **TAB_TITLES** ile verilmiş olsa da elemanlara tıklandığında da görüleceği gibi dizinin elemanları strings.xml üzerinden gelir. İsimleri strings.xml üzerine giderek "Kullanıcı Girişi" ve "Ana Sayfa" şeklinde düzenleyiniz. Daha sonra uygulamayı çalıştırarak Görsel 6.65’tekine benzer bir görüntü alınız.
 
 <div style='display:block;text-align:center'>
 
