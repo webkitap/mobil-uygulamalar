@@ -1,9 +1,9 @@
-# 6.6. MOBİL UYGULAMADA İZİNLER VE İZİN YAPISI
+<h1 style="color:#a8d14f">6.6. MOBİL UYGULAMADA İZİNLER VE İZİN YAPISI</h1>
+
 - <a href="#6.6.1.">6.6.1. İzin Tanımlamaları Yapısı</a>
 - <a href="#6.6.2.">6.6.2. İzin Onayları Almak</a>
   
-Mobil uygulama platformunda "Android 6.0" (API level 23) sürümüne kadar sadece mobil uy-
-gulama indirilirken kullanılacak durumlar için izinler sorulurdu. Onun dışında uygulama, kullanıcı tarafından kullanılırken izin sorulmaya gerek duyulmazdı. Bu durum, 6.0 ile birlikte değişiklik göstermiş ve tehlikeli izin olarak adlandırılan (dangerous permissions) izinlerin uygulama içinde de sorulması ve izin verilmedikçe kullanılmaması şartı getirilmiştir. Bu durum; rehbere erişim, kamera kullanımı, fotoğraf galerisine erişim, konum paylaşımı gibi olaylarda kullanıcının ekstra izin vermesi gerekliliğini ortaya çıkartmıştır. Kullanıcılar tarafından farkındalık düzeyi artırılarak sakıncalı olabilecek durumların önüne geçilmesi ve veri gizliliğinin sağlanması amaçlanmıştır.
+Mobil uygulama platformunda "Android 6.0" (API level 23) sürümüne kadar sadece mobil uygulama indirilirken kullanılacak durumlar için izinler sorulurdu. Onun dışında uygulama, kullanıcı tarafından kullanılırken izin sorulmaya gerek duyulmazdı. Bu durum, 6.0 ile birlikte değişiklik göstermiş ve tehlikeli izin olarak adlandırılan (dangerous permissions) izinlerin uygulama içinde de sorulması ve izin verilmedikçe kullanılmaması şartı getirilmiştir. Bu durum; rehbere erişim, kamera kullanımı, fotoğraf galerisine erişim, konum paylaşımı gibi olaylarda kullanıcının ekstra izin vermesi gerekliliğini ortaya çıkartmıştır. Kullanıcılar tarafından farkındalık düzeyi artırılarak sakıncalı olabilecek durumların önüne geçilmesi ve veri gizliliğinin sağlanması amaçlanmıştır.
 
 İzinler için isimlendirilen dört seviye mevcuttur.
 
@@ -29,7 +29,7 @@ SignatureOrSystem izni, birden çok satıcının bir sistem görüntüsünde yer
 
 Kullanılan mobil cihaz API level 23 ve daha üst bir sürüm ise marketten indirme aşamasında herhangi bir izin için onay kutucuğu göstermez fakat dangerious seviye olan izinler için uygulama içinde mecburi onay almak gerekir.
 
-<h2 id="6.6.1.">6.6.1. İzin Tanımlamaları Yapısı</h2>
+<h2 id="6.6.1." style="color:#a8d14f">6.6.1. İzin Tanımlamaları Yapısı</h2>
 
 Mobil uygulamada kullanılan yapılara ait özelliklerin izninin hangi seviyede olursa olsun uygulama içinde belirtilmesi gerekir. Bunun için de "androidManifest.xml" dosyası kullanılır. Bu dosya içinde **\<manifest>** etiketi arasında **\<uses-permission>** etiketi kullanılarak izin tanımlaması yapılır (Görsel 6.66).
 
@@ -44,7 +44,7 @@ Kullanılan izin yapısı; doküman tarafından seviye olarak normal şeklinde t
 
 >İzin çeşitleri hakkında daha detaylı bilgi için [https://developer.android.com/reference/android/Manifest.permission](https://developer.android.com/reference/android/Manifest.permission "Android Studio Resmi WEB sitesi") doküman sayfasını inceleyiniz. Doküman içinde tüm izinlerin nasıl kullanılacağı, ne amaçla kullanılacağı ve hangi düzeyde olduğu belirtilir.
 
-<h2 id="6.6.2.">6.6.2. İzin Onayları Almak</h2>
+<h2 id="6.6.2." style="color:#a8d14f">6.6.2. İzin Onayları Almak</h2>
 
 Oluşturulan mobil uygulama içinde normal izin seviyesinde olan izinler için sadece androidManifest.xml dosyası içinde tanımlamak yeterliyken tehlikeli olarak nitelendirilen izinler için hem androidManifest.xml’de tanımlanması hem de kullanım içinde Görsel 6.67’de olduğu gibi **"İzin ver"**,**"Reddet"** buttonlarının olduğu bir diyalog ekranı ile izin alınması gerekir.
 
@@ -161,13 +161,13 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-7. Adım: Intent ile galeriye erişim için "galeri" nesnesi oluşturulup henüz bu nesne kullanılmamıştır. Bu nedenle **metotIzinlerResultActivity** içinde, Intent ile nesnesi oluşturulan satırın bir alt satırında şu kodu kullanarak galeriye gidiniz:
+**7. Adım:** Intent ile galeriye erişim için "galeri" nesnesi oluşturulup henüz bu nesne kullanılmamıştır. Bu nedenle **metotIzinlerResultActivity** içinde, Intent ile nesnesi oluşturulan satırın bir alt satırında şu kodu kullanarak galeriye gidiniz:
 
 ```java
 galeryResultLauncher.launch(galeri);
 ```
 
-Aynı kodu galeriyeGit metodu içinde yazılan Intent’in bir alt satırına da ekleyiniz. Bu kod ile galeriye erişiniz.
+Aynı kodu **galeriyeGit** metodu içinde yazılan Intent’in bir alt satırına da ekleyiniz. Bu kod ile galeriye erişiniz.
 
 **8. Adım:** Önceki adımlarda izin istenecek bölümlere yorum satırı eklenmiştir. Yorum satırı eklenen galeriyeGit metodunda izin istemek için şu kodu yazınız:
 
@@ -177,7 +177,7 @@ izinlerResultLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE);
 
 **9. Adım:** ImageView ögesini ister binding yöntemi ister findViewById ile tanımlayınız. Burada öncelikle tek öge olduğu için findViewById ile tanımlanır. MainActivity sınıfının içine "`ImageView imageView;`" ekleyiniz. onCreate() metoduna da "`imageView=findViewById(R.id.imageViewSecim);`" şeklinde kodu ekleyerek imageView ögesini initialize ediniz.
 
-**10. Adım:** Mobil uygulama geliştirme platformunun yeni güncellemesinde imageView nesnelerine öge atanmadığında ekranda göstermeme durumları oluşur. Ekranda imageView görünmediyse drawable klasörü içine uygun olan herhangi bir görsel ögesi koyarak onCreate içinde "`imageView.setImageResource(R.drawable.gorselsecim);`" görsel içeriğini atayınız.
+**10. Adım:** Mobil uygulama geliştirme platformunun yeni güncellemesinde imageView nesnelerine öge atanmadığında ekranda göstermeme durumları oluşur. Ekranda imageView görünmediyse **drawable** klasörü içine uygun olan herhangi bir görsel ögesi koyarak onCreate içinde "`imageView.setImageResource(R.drawable.gorselsecim);`" görsel içeriğini atayınız.
     
 **11. Adım:** Alınan verinin imageView içine gömülmesi gerekir. Bunun için **metotGaleryForResult()** metodu içinde fotoVeri değişkenini çektiğiniz satırın altına "`imageView.setImageURI(fotoVeri);`" kodunu ekleyerek seçilen görselin imageView içine yüklenmesini sağlayınız. Uygulamayı alıştırdığınızda Görsel 6.69’daki gibi bir görüntü ortaya çıkar.
 

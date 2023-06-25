@@ -1,4 +1,4 @@
-# 6.1. PROJE YAPILANDIRMA AYARLARI
+<h1 style="color:#a8d14f;">6.1. PROJE YAPILANDIRMA AYARLARI</h1>
 
 - <a href="#6.1.1." >6.1.1. AndroidManifest.xml Dosya Yapısı</a>
 - <a href="#6.1.2." >6.1.2. MainActivity </a>
@@ -12,9 +12,9 @@ Proje olarak yeni bir mobil uygulama tasarımı oluşturulduğunda Project alan�
 ![Mobil uygulama geliştirme için Project alanı](./uygulama-tasarimi/gorsel-6.1-mobil-uygulama-gelistirme-icin-project-alani.png)
 </div>
 
-<h2 id="6.1.1.">6.1.1. AndroidManifest.xml Dosya Yapısı</h2>
+<h2 id="6.1.1." style="color:#a8d14f;">6.1.1. AndroidManifest.xml Dosya Yapısı</h2>
 
-AndroidManifest, **manifest** klasörünün içinde yer alan ve mobil uygulama geliştirme ortamında tasarlanan uygulamalar için vazgeçilmez dosya yapısıdır. Bu dosya içinde Activity, Service, eceiver vb. sınıfları ve projeye ait temel bilgiler bulunur. Dosya uzantısı, xml formatında uzantı olduğu için okunması ve değiştirilmesi oldukça kolaydır. Görsel 6.2’de yeni oluşturulmuş bir mobil uygulama geliştirme projesinin AndroidManifest.xml dosya içeriği verilmiştir. Burada kodlar "Tag" (etiket) denilen < > işaretleri arasında yazılır. Bu etiketler < > şeklinde başlayıp </> şeklinde kapatılır. Görsel 6.2’de kodlar içinde etiketler verilmiştir.
+AndroidManifest, **manifest** klasörünün içinde yer alan ve mobil uygulama geliştirme ortamında tasarlanan uygulamalar için vazgeçilmez dosya yapısıdır. Bu dosya içinde Activity, Service, eceiver vb. sınıfları ve projeye ait temel bilgiler bulunur. Dosya uzantısı, xml formatında uzantı olduğu için okunması ve değiştirilmesi oldukça kolaydır. Görsel 6.2’de yeni oluşturulmuş bir mobil uygulama geliştirme projesinin AndroidManifest.xml dosya içeriği verilmiştir. Burada kodlar "Tag" (etiket) denilen **< >** işaretleri arasında yazılır. Bu etiketler **< >** şeklinde başlayıp **</>** şeklinde kapatılır. Görsel 6.2’de kodlar içinde etiketler verilmiştir.
 
 <div style='display:block;text-align:center'>
 
@@ -28,7 +28,7 @@ Bu etiket ile uygulamaların versiyon numaraları, paket isimleri, uygulama izin
 
 - **package**
 
-Uygulamanın paket adının bulunduğu yapı türüdür. Genellikle mobil uygulamalar Görsel 6.2’de görüldüğü gibi "com.atilimciftci.denemeuygulamasi" şeklinde bir domain olarak verilir. Bunun amacı, paket isminin **unique** (benzersiz) olarak tanımlanmasıdır.
+Uygulamanın paket adının bulunduğu yapı türüdür. Genellikle mobil uygulamalar Görsel 6.2’de görüldüğü gibi "<span style="color:#a8d14f">com.atilimciftci.denemeuygulamasi</span>" şeklinde bir domain olarak verilir. Bunun amacı, paket isminin **unique** (benzersiz) olarak tanımlanmasıdır.
 
 **NOT:**
 
@@ -54,7 +54,7 @@ Uygulama çalıştırıldığında ilk olarak çalışacak sınıfı belirtir. B
 
 >AndroidManifest.xml içinde verilen özellikler; manifest, package, application, activity, intent-filter, action ile sınırlı değildir. İzinler, Servisler, Broadcast Receiver vb. kullanılmak istenen yapıya göre o yapının etiketleri de AndroidManifest.xml içine eklenmelidir.
 
-<h2 id="6.1.2.">6.1.2. MainActivity</h2>
+<h2 id="6.1.2." style="color:#a8d14f;">6.1.2.  MainActivity</h2>
 
 Mobil uygulama geliştirme ortamında oluşturulan projenin ana activitysinin java uzantılı kodlama dosyasıdır. MainActivity, **java** klasörünün içindeki **paket adı** ile gösterilen klasörde yer alır. Geliştirilen  uygulamanın bu activity için gerekli olan java kodları bu dosya içine yazılır. Activityler aynı zamanda birer **xml** uzantıya sahip, dizayn (tasarım) dosyaları ile ilişkilidir. Açılan her activity için java uzantılı kod dosyası ve xml uzantılı tasarım dosyası bulunur. MainActivity için olan tasarım dosyası da **res** klasörü içinde bulunan **layout** klasöründeki **activity_main.xml** dosyasıdır.
 
@@ -84,7 +84,7 @@ Activity Name alanına paket isminin altında yer alacak java uzantılı Activit
 ![DenemeSayfasi Activity](./uygulama-tasarimi/gorsel-6.6-denemesayfasi-activity.png)
 </div>
 
-<h2 id="6.1.3.">6.1.3. res</h2>
+<h2 id="6.1.3." style="color:#a8d14f;">6.1.3. res</h2>
 
 res klasörü, **resources (kaynak)** kelimesinin kısaltılmış biçimi olarak adlandırılır. İçeriğinde yer alan dosya ve klasörler, mobil uygulamanın içerdiği ana dosyaları oluşturur (Görsel 6.7).
 
@@ -95,18 +95,25 @@ res klasörü, **resources (kaynak)** kelimesinin kısaltılmış biçimi olarak
 
 Resources klasörünün altında yer alan klasörlerin her biri farklı bir amaca hizmet eder. Buraya dışarıdan da ekleme yapılabilir.
 
-### 6.1.3.1. drawable
+<h3 style="color:#a8d14f;">6.1.3.1. drawable</h3>
 
 Geliştirilen mobil uygulamaya ait bitmap (.png, .jpg, .gif) ve xml dosyaları drawable klasörü içine konumlandırılır. Yüklenen resimler, farklı ekran boyutlarında kullanılmak üzere şu şekilde klasörlenir:
-- /drawable-ldpi: Düşük yoğunluklu ekranlar için
-- /drawable-mdpi: Orta yoğunluklu ekranlar için
-- /drawable-hdpi: Yüksek yoğunluklu ekranlar için
-- /drawable-xhdpi: Ekstra yüksek yoğunluklu ekranlar için
-- /drawable-xxhdpi: Ekstra-ekstra yüksek yoğunluklu ekranlar için
-- /drawable-xxxhdpi: Ekstra-ekstra-ekstra yüksek yoğunluklu ekranlar için
 
-### 6.1.3.2. layout
-layout, mobil geliştirme platformunda geliştirilen uygulamanın görsel arayüzlerinin bulunduğu bölümdür. Oluşturulan bu arayüzler xml formattadır. Bu xml dosyaları Görsel 6.8’de görüldüğü gibi Code, Split veya Desing şekilde düzenlenebilir.
+- **/drawable-ldpi:** Düşük yoğunluklu ekranlar için
+
+- **/drawable-mdpi:** Orta yoğunluklu ekranlar için
+
+- **/drawable-hdpi:** Yüksek yoğunluklu ekranlar için
+
+- **/drawable-xhdpi:** Ekstra yüksek yoğunluklu ekranlar için
+
+- **/drawable-xxhdpi:** Ekstra-ekstra yüksek yoğunluklu ekranlar için
+
+- **/drawable-xxxhdpi:** Ekstra-ekstra-ekstra yüksek yoğunluklu ekranlar için
+
+<h3 style="color:#a8d14f;">6.1.3.2. layout</h3>
+
+layout, mobil geliştirme platformunda geliştirilen uygulamanın görsel arayüzlerinin bulunduğu bölümdür. Oluşturulan bu arayüzler xml formattadır. Bu xml dosyaları Görsel 6.8’de görüldüğü gibi **Code**, **Split** veya **Desing** şekilde düzenlenebilir.
 
 <div style='display:block;text-align:center'>
 
@@ -131,7 +138,7 @@ Desing ekranında düzenleme istenirse Palette bölümünden ögeler seçilerek 
 
 Üç tasarım ekranı da zaman zaman farklı şekillerde kullanılması uygun olan yapıdadır. Farklı işlemler, farklı şekillerde daha portatif çalışabilir.
 
-### 6.1.3.3. mipmap
+<h3 style="color:#a8d14f;">6.1.3.3. mipmap</h3>
 
 mipmap, mobil geliştirme ortamında geliştirilen uygulamanın başlatma simgelerinin yerleştirildiği bölümdür. Görsel 6.11’de görüldüğü gibi **ic_launcher** isimli default iconu farklı şekillerde kaydedilmiştir. Bu kayıtlar, drawable klasörleme biçimine benzer şekilde ve farklı yoğunluktaki (dp) ekran modlarına göre ayrı ayrı çalışır.
 
@@ -142,7 +149,7 @@ mipmap, mobil geliştirme ortamında geliştirilen uygulamanın başlatma simgel
 
 Burada eklenen iconlar, AndroidManifest içinde şu şekilde çağrılır:
 
-### 6.1.3.4. values
+<h3 style="color:#a8d14f;">6.1.3.4. values</h3>
 
 ```xml
 android:icon="@mipmap/ic_launcher"
@@ -215,7 +222,7 @@ strings.xml, mobil uygulama geliştirme platformunda geliştirilen mobil uygulam
 
 >values klasörü içine default değerler dışında dimension.xml (boyut değerleri için), bool. xml (bool tipi değerler için), integer.xml (int veri tipinde değerler tutmak için), integer_array.xml (birden fazla integer tipte sabit değerler için), typed_array.xml (birden fazla farklı tipte sabit değerler için) dosyaları da kullanılabilir ve layout içinden aynı şekilde ulaşılabilir.
 
-<h2 id="6.1.4.">6.1.4. Gradle Scripts</h2>
+<h2 id="6.1.4." style="color:#a8d14f;">6.1.4. Gradle Scripts</h2>
 
 Mobil yazılım geliştirme ortamında Gradle Scripts; geliştirilen uygulamalar için test, inşa, dağıtım gibi yapı sistemini oluşturur. Oluşturulan Gradle dosyaları, proje geliştirme aşamasında yazılım geliştiriciye büyük kolaylıklar sağlar. Gradle dosyaları, apk imzaları ekleyebilir ve hata ayıklama modları düzenleyebilir. Gradle Scripts altında default olarak **build.gradle (Project)**, **build.gradle (Module)** dosyaları bulunur (Görsel 6.12). Bu dosyalar içinde Gradle Scripts’e ait konfigürasyon yapısı bulunur. Project ve Module olan build dosyaları birbiriyle karıştırılmamalıdır.
 
@@ -224,7 +231,7 @@ Mobil yazılım geliştirme ortamında Gradle Scripts; geliştirilen uygulamalar
 ![Gradle Scripts](./uygulama-tasarimi/gorsel-6.12-gradle-scripts.png)
 </div>
 
-### 6.1.4.1. build.gradle (Project)
+<h3 style="color:#a8d14f;">6.1.4.1. build.gradle (Project)</h3>
 
 Procet isimli build.gradle, geliştirilen projeye ait build dosyasıdır. Bu dosya içinde yapılacak herhangi bir değişiklik, mobil uygulama projesindeki tüm modüllere uygulanır. Açılan uygulama, Görsel 6.13’teki yapıya benzer şekildedir.
 
@@ -237,7 +244,7 @@ Procet isimli build.gradle, geliştirilen projeye ait build dosyasıdır. Bu dos
 
 >Gradle, sürekli güncellenir. Bu nedenle Görsel 6.13’teki classpath ile başlayan 7.0.4 zamanla değişiklik gösterir ve ileri versiyonlar uygulama tarafından önerilir.
 
-### 6.1.4.2. build.gradle (Module)
+<h3 style="color:#a8d14f;">6.1.4.2. build.gradle (Module)</h3>
 
 Bu dosya, mobil geliştirme ortamında geliştirilen projenin her modülünde yer alır. Bu dosya içinde yapılacak değişiklikler, belirli bir uygulama modülünde geçerli olur. İçeriğinde geçerli modül için uygulama kimliği, sürüm adı, sürüm kodları, minimum ve maksimum sdk sürümleri, paket adları vb. içerir. Görsel 6.14’te açılan bir build.gradle (Module) içeriği yer alır.
 
@@ -251,10 +258,14 @@ Bu dosya, mobil geliştirme ortamında geliştirilen projenin her modülünde ye
   
 - **defaultConfig**: Geliştirilen mobil uygulamanın default konfigürasyon ayarlarını yapılandırmak için kullanılır.
     - **applicationId**: Geliştirilen mobil uygulamayı yayınlama sırasında kullanılan benzersiz kimliği tanımlamak için kullanılır.
+    
     - **minSdk**: Geliştirilen mobil uygulamayı çalıştırabilmek için gereken en düşük API seviyesini belirtir.
+    
     - **targetSdk**: Geliştirilen mobil uygulamayı test etmek için kullanılan API seviyesini belirtir.
+    
     - **versionCode**: Geliştirilen mobil uygulamanın sürüm kodudur. Her güncellemede sürüm kodunun bir veya daha fazla artırılması gerekir.
-    - **versionName**: Geliştirilen mobil uygulamanın sürüm adını tanımlar. Her güncellemede rastgele bir oranda artırılması gerekir.
+    
+    - **versionName**: Geliştirilen mobil uygulamanın sürüm adını tanımlar. Her güncellemede rastgele bir oranda artırılması sgerekir.
 
 - **buildTypes**: Mobil uygulamalar geliştirilirken, derlenirken ve imzalı versiyon hazırlanırken Gradle’ın kullandığı bazı özelliklerin düzenlenmesini ve kullanılacak bazı konfigürasyonların daha kolay yönetilmesini sağlar.
     - **release**: Geliştirilen mobil uygulamada açılan buildTypes, iki adet buildTypes tanımlar. Bunlardan biri release iken diğeri debugtır. Daha çok geliştirme aşamasında kullanılan debug modu, standart olarak açıkça gösterilmez. Release ise pro guard ayarlar uygulayıp standart güvenlik önlemi almayı sağlar.
@@ -262,7 +273,7 @@ Bu dosya, mobil geliştirme ortamında geliştirilen projenin her modülünde ye
 - **compileOptions**: Geliştirilen mobil uygulamada java derleme seçeneklerinin yer aldığı bölümdür.
 - **Dependencies**: Mobil uygulama geliştirme platformunda tasarlanan projenin beraberinde derlenmesi gereken kaynakları içeren bölümdür. Geliştirilen mobil uygulamada kullanılması istenen paketler vb. burada projeye implement edilir.
 
-**UYARI:**
+<span style="color:#f00;font-weight:bold;">UYARI:</span>
 
 >Projede gradle içinde güncelleme varsa build.gradle içine girildiğinde güncellenmesi gereken paket, Görsel 6.15’te olduğu gibi sarı bir arka plan ile belirir
 

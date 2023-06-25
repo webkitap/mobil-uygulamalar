@@ -1,4 +1,4 @@
-# 6.2 VIEW BINDING
+<h1 style="color:#a8d14f">6.2 VIEW BINDING</h1>
 
 View Binding, kullanıcı arayüzü (UI) bileşenlerini içinde barındıran layout dosyası ile ".java" uzantılı kod dosyasını birbirine bağlamayı hızlı ve kolay bir biçimde sağlayan Google’a ait bir kütüpha nedir. Bu tarz kütüphanelere de Jetpack ögesi ismi verilmiştir. Görsel 6.18’e benzer bir biçimde, UI’deki (kullanıcı arayüzü) tüm farklı görsel ögelerin bir kütüphanede belirli bir düzen içinde tutulması mantığı ile çalışır.
 
@@ -28,7 +28,7 @@ android {
 
 **NOT:**
 
->viewBinding kodu hâlihazırda android bloklarının arasına eklenir. Yeniden bir android bloku açmaya gerek yoktur. Ayrıca buildFeatures blokları da varsa tekrar bu bloku açmaya gerek yoktur. buildFeatures blokları içine viewBinding true yazılması yeterlidir.
+>viewBinding kodu hâlihazırda android bloklarının arasına eklenir. Yeniden bir android bloku açmaya gerek yoktur. Ayrıca buildFeatures blokları da varsa tekrar bu bloku açmaya gerek yoktur. buildFeatures blokları içine **viewBinding true** yazılması yeterlidir.
 
 View Binding için doküman sayfasında aşağıya inildiğinde Activity’de kullanımın nasıl olduğu belirtilir. Bu bölümde Java’ya tıklandığında şu kodlarla karşılaşılır:
 
@@ -56,7 +56,7 @@ Kod içindeki ResultProfileBinding bölümü, build.gradle dosyasına eklenen vi
 </div>
 
 
-Sonrasında mobil uygulamanın içinde bulunulan Activity’ye ait "onCreate" yaşam döngüsünde değişiklik yapılması istenir. "`super.onCreate(savedInstance);`" kodu yerinde kalmakla birlikte, `setContentView(R.layout.activity_deneme_sayfasi);` kodunun değiştirilmesi gerekir. Uygulamanın default düzeyinde contentView, layout üzerinde yer alan xml uzantılı kullanıcı arayüzüne bağlanır fakat bu bağlantı kopartılarak yeni bir bağlantı oluşturulur. Activity’nin onCreate yaşam döngüsü blokları arasında bulunan setContentView(R.layout.activity_deneme_sayfasi); silinerek "`super.onCreate(savedInstanceState);`" altına kodlar şu şekilde eklenir:
+Sonrasında mobil uygulamanın içinde bulunulan Activity’ye ait "onCreate" yaşam döngüsünde değişiklik yapılması istenir. "`super.onCreate(savedInstance);`" kodu yerinde kalmakla birlikte, `setContentView(R.layout.activity_deneme_sayfasi);` kodunun değiştirilmesi gerekir. Uygulamanın default düzeyinde contentView, layout üzerinde yer alan xml uzantılı kullanıcı arayüzüne bağlanır fakat bu bağlantı kopartılarak yeni bir bağlantı oluşturulur. Activity’nin onCreate yaşam döngüsü blokları arasında bulunan ```setContentView(R.layout.activity_deneme_sayfasi);``` silinerek "`super.onCreate(savedInstanceState);`" altına kodlar şu şekilde eklenir:
 
 ```java
 binding = ActivityDenemeSayfasiBinding.inflate(getLayoutInflater());
@@ -235,10 +235,10 @@ gorselArrayList.size() metodu, ArrayListin içindeki eleman sayısını verir. Y
 >
 >Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
 >
-><div style="text-align:center;"><b>KONTROL LİSTESİ</b></b>
+><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                                                 | EVET | HAYIR |
->| ------------------------------------------------------------------------------------------------------- | ---- | ----- |
+>| :------------------------------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. "Arkadaslar" isimli yeni bir sınıf oluşturdu.                                                        |
 >| 2. "Arkadaslar" isimli sınıfta belirtilen alanları oluşturdu.                                           |
 >| 3. "Arkadaslar" isimli sınıfta Constructor oluşturdu.                                                   |
