@@ -1,9 +1,10 @@
-# 7.1. sharedpreferences KULLANIMI
-Mobil uygulama geliştirme ortamında her zaman basit verileri kaydetmek gerekebilir. Örneğin kullanıcıdan alınan çeşitli bilgilerin yerel cihazda kaydedilip uygulama tekrar açıldığında kullanıcıya gösterilmesi gerekebilir. Bu tür basit veri kayıt işlemleri için sharedPreferences nesnesi kullanılabilir. Daha gelişmiş veri tabanları da kullanılabilir ancak basit bir veriyi kaydetmek için karmaşık bir veri tabanı kullanmaya gerek yoktur.
+<h1 style="color:#632896">7.1. sharedpreferences KULLANIMI</h1>
 
-sharedPreferences ile \<ANAHTAR>=\<DEĞER> türünde kayıtlar yapılır. Bu durum, bir ayar paneli veya geçici olarak kaydedilmesi gereken veriler için oldukça uygundur.
+Mobil uygulama geliştirme ortamında her zaman basit verileri kaydetmek gerekebilir. Örneğin kullanıcıdan alınan çeşitli bilgilerin yerel cihazda kaydedilip uygulama tekrar açıldığında kullanıcıya gösterilmesi gerekebilir. Bu tür basit veri kayıt işlemleri için **sharedPreferences** nesnesi kullanılabilir. Daha gelişmiş veri tabanları da kullanılabilir ancak basit bir veriyi kaydetmek için karmaşık bir veri tabanı kullanmaya gerek yoktur.
 
-Uygulama geliştirme ortamında sharedPrefrences iki şekilde kullanılır. Birden fazla dosyaya ihtiyaç varsa getSharedPreferences() ile çağrılır, sadece basit bir veri saklanacaksa getPreferences() kullanılmalıdır. Bir ayar paneli varsa ve birden fazla sekmeden oluşuyorsa her bir paneli farklı bir dosyaya kaydetmek için getSharedPreferences ile veri saklama işlemi gerçekleştirilebilir.
+sharedPreferences ile **\<ANAHTAR>=\<DEĞER>** türünde kayıtlar yapılır. Bu durum, bir ayar paneli veya geçici olarak kaydedilmesi gereken veriler için oldukça uygundur.
+
+Uygulama geliştirme ortamında sharedPrefrences iki şekilde kullanılır. Birden fazla dosyaya ihtiyaç varsa getSharedPreferences() ile çağrılır, sadece basit bir veri saklanacaksa **getPreferences()** kullanılmalıdır. Bir ayar paneli varsa ve birden fazla sekmeden oluşuyorsa her bir paneli farklı bir dosyaya kaydetmek için getSharedPreferences ile veri saklama işlemi gerçekleştirilebilir.
 
 `sharedPreferences sharedPref=this.getSharedPreferences("menu1.ds",Context.MODE_PRIVATE);` şeklinde kullanıldığında ilk parametre olarak mutlaka bir dosya ismi girilmelidir. Bu nesne ile yapılan kayıtların hepsi belirtilen dosyaya kaydedilir.
 
@@ -61,8 +62,7 @@ Veri çağrılırken de saklanan verinin türüne göre bir metot kullanılmalı
 
 **1. UYGULAMA:** İşlem adımlarına göre Kullanıcı Adı yazıp Kaydet buttonuna tıkladıktan sonra veriyi dosyaya kaydetme işlemini yapınız. Daha sonra uygulamayı tekrar başlatıp, bu veriyi dosyadan okuyarak EditText kutusuna yazınız.
 
-**1. Adım:** Mobil uygulama geliştirme ekranında Empty Activity seçerek yeni bir proje oluşturunuz.
-
+**1. Adım:** Mobil uygulama geliştirme ekranında Empty Activity seçerek yeni bir proje oluşturunuz.\
 **2. Adım:** MainActivity ekranına bir tane EditText, bir tane TextView ve bir tane Button ekleyerek Görsel 7.1’deki gibi yerleştiriniz. EditText için **kullaniciEdit** id bilgisini giriniz. Gerekli bilgiler değiştirildikten sonra **Infer Constraints** buttonuna tıklayınız ve otomatik olarak Constraints ayarlarının yapılmasını sağlayınız. Buttonun **Text** özelliğini "KAYDET", **onClick** özelliğini "btnKaydetClick" olarak ayarlayınız.
 
 <div style='display:block;text-align:center'>
@@ -71,7 +71,7 @@ Veri çağrılırken de saklanan verinin türüne göre bir metot kullanılmalı
 </div>
 
 **3. Adım:** MainActivity.java dosyasına gelip bir EditText değişkeni oluşturunuz.
-
+ 
 **4. Adım:** onCreate metodu içinde EditText nesnesini **findViewById** metodu ile bağlayınız. Daha sonra bir sharedPreferences nesnesi oluşturunuz. sharedPrefrences ile kaydettiğiniz veriyi okuyup herhangi bir veri yoksa EditText nesnesindeki veriyi yazınız.
 
 **5. Adım:** Button nesnesi için public void btnKaydetClick(View view) metodunu yazarak kaydetme işlemlerine başlayınız. Bir String nesnesi oluşturarak EditText nesnesindeki veriyi alınız. Daha sonra bir sharedPrefrences nesnesi oluşturarak veri yazmaya hazırlık yapınız. sharedPrefrences ile bir Editör nesnesi oluşturarak EditTextten gelen veriyi yazınız.
@@ -113,7 +113,12 @@ public void btnKaydetClick(View view){
 
 **1. Adım**: Mobil uygulama geliştirme ekranında Empty Activity seçerek yeni bir proje oluşturunuz.
 
-**2. Adım**: Ekran tasarım moduna geçmek için app>res>layout altında bulunan main_activity.xml dosyasını açınız. Görsel 7.3’teki gibi ana ekranınızı hazırlayınız. Bir radioGrup oluşturarak içine iki adet RadioButton yerleştiriniz. Birinci RadioButton için Text özelliğini "Açık Tema" ve id bilgisini radioAcik olarak ayarlayınız. İkinci RadioButton için Text özelliğini "Koyu Tema" ve id bilgisini radioKaranlik olarak ayarlayınız.
+**2. Adım**: Ekran tasarım moduna geçmek için app>res>layout altında bulunan **main_activity.xml** dosyasını açınız. Görsel 7.3’teki gibi ana ekranınızı hazırlayınız. Bir radioGrup oluşturarak içine iki adet RadioButton yerleştiriniz. Birinci RadioButton için Text özelliğini "Açık Tema" ve id bilgisini radioAcik olarak ayarlayınız. İkinci RadioButton için Text özelliğini "Koyu Tema" ve id bilgisini radioKaranlik olarak ayarlayınız.
+
+<div style='display:block;text-align:center'>
+
+![Açık tema](./veritabani-islemleri/gorsel-7.3-acik-tema.png)
+</div>
 
 **3. Adım**: MainActivity.java dosyasını açarak sharedPrefrences ve sharedPreferences.Editor nesnelerini global olarak tanımlayınız.
 
@@ -122,11 +127,6 @@ public void btnKaydetClick(View view){
 **5. Adım**: sharedPreferences ve Editor nesnelerini oluşturunuz.
 
 **6. Adım**: Editor nesnesi ile "tema" isimli bir kayıt olup olmadığına bakınız. Herhangi bir değer yoksa varsayılan olarak AppcompatDelegate.MODE_NIGHT_NO değerini ayarlayınız.
-
-<div style='display:block;text-align:center'>
-
-![Açık tema](./veritabani-islemleri/gorsel-7.3-acik-tema.png)
-</div>
 
 **7. Adım:** Gelen veri MODE_NIGHT_NO ise radioAcik nesnesini seçili hâle getiriniz. Gelen veri MODE_NIGHT_NO değilse radioKaranlik nesnesini şu şekilde aktifleştiriniz:
 
@@ -140,22 +140,22 @@ else
 **8. Adım:** RadioButtonların davranışlarını kontrol etmek için onRadioClicked isimli metodu şu şekilde oluşturunuz:
 
 ```java
-    public void onRadioClicked(View view){
+public void onRadioClicked(View view){
     boolean checked=((RadioButton)view).isChecked();
     switch (view.getId()){
         case R.id.radioAcik:
-        if(checked){
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            editor.putInt("tema",AppCompatDelegate.MODE_NIGHT_NO);
-            editor.apply();
-        }
+            if(checked){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                editor.putInt("tema",AppCompatDelegate.MODE_NIGHT_NO);
+                editor.apply();
+            }
         break;
         case R.id.radioKaranlik:
-        if(checked){
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            editor.putInt("tema",AppCompatDelegate.MODE_NIGHT_YES);
-            editor.apply();
-        }
+            if(checked){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                editor.putInt("tema",AppCompatDelegate.MODE_NIGHT_YES);
+                editor.apply();
+            }
         break;
     }
 }
@@ -196,4 +196,3 @@ protected void onDestroy() {
 >| 5. sharedPreferences nesnesinden veri gelip gelmediğini kontrol etti.  |
 >| 6. sharedPreferences ile gelen veri varsa EditText nesnelerine yazdı.  |
 >| 7. sharedPreferences nesnesi ile veri kayıt işlemini yaptı.            |
-

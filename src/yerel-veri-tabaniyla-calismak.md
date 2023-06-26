@@ -1,4 +1,4 @@
-# 7.2. YEREL VERİ TABANIYLA ÇALIŞMAK
+<h1 style="color:#632896">7.2. YEREL VERİ TABANIYLA ÇALIŞMAK</h1>
 
 - <a href="#7.2.1."> 7.2.1. Sorgulama Komutları </a>
 - <a href="#7.2.2."> 7.2.2. Mobil Uygulama Geliştirme Ortamında Yerel Veri Tabanı Kullanmak </a>
@@ -16,7 +16,7 @@ Yerel veri tabanları birçok veriyi kaydetmek için oldukça elverişlidir anca
 
 Mobil işletim sisteminde varsayılan olarak SQLite veri tabanı kullanılır. SQLite veri tabanı tamamen SQL sorgu komutları ile işlem yapar. Mobil uygulama geliştirme ortamı, bu komutları kendi derleyicisinden geçirmez. Veri tabanı için yazılan sorgulama komutları düşük seviye bir sisteme aktarılır. Burada çalıştırılır ve sonucu döndürülür. Bundan dolayı sorgulama komutlarında herhangi bir hata yapılsa bile derleyici hata vermez. Bu durum, yerel veri tabanının en dezavantajlı hâlidir. Sorgulama komutları yazılırken çok dikkat edilmelidir. Uygulama çalıştırıldıktan sonra herhangi bir sonuç alınmazsa sorgulama komutlarından birinde hata yapılmıştır.
 
-<h2 id="7.2.1."> 7.2.1. Sorgulama Komutları</h2>
+<h2 id="7.2.1." style="color:#632896"> 7.2.1. Sorgulama Komutları</h2>
 
 Veri tabanı sorgu komutları OLUŞTURMA, OKUMA, GÜNCELLEME, SİLME (CREATE, READ, UPDATE, DELETE) olmak üzere dört temel unsur üzerine çalışır (Tablo 7.3).
 
@@ -53,7 +53,8 @@ Okulda veya sınıfta bulunan öğrenciler bir veri tabanına kaydedilmek isteni
 
 Verilerin kaydedileceği tablolar oluşturulurken birincil anahtar (Primary Key) belirlemeye dikkat edilmelidir. Bir tablodaki boş olmayan herhangi bir sütun, birincil anahtar olabilir. Birincil anahtar olarak belirlenecek alandaki kayıtların hepsi birbirinden farklı olmalıdır. Örneğin ad soyad alanı birincil anahtar yapılırsa aynı isimli birden fazla öğrenci ile karşılaşılabilir. Bu da çok büyük problemlere neden olabilir. Ülkemizde yaşayan her vatandaşın bir T.C. Kimlik Numarası vardır. Aynı isimli birden fazla vatandaş olsa bile T.C. Kimlik Numarası ile vatandaşlar birbirinden ayırt edilebilir. Veri tabanlarındaki birincil anahtar da bu amaçla kullanılır.
 
-### 7.2.1.1. Yerel Veri Tabanında Tablo Oluşturmak
+<h3 style="color:#632896">7.2.1.1. Yerel Veri Tabanında Tablo Oluşturmak</h3>
+
 Sorgu dilinde bir tablo oluşturmak için CREATE TABLE komutu kullanılır. Sorgu komutlarını denemek için on-line birçok internet sitesi bulunur. Bunlardan herhangi biri ile sorgular test edilebilir. CREATE TABLE komutunun kullanımı şu şekildedir:
 
 ```sql
@@ -64,13 +65,13 @@ CREATE TABLE [IF NOT EXISTS] <tablo ismi> ( <sütun adı> <veri türü> , <diğe
 
 >IF NOT EXISTS, tablo oluşturulmamış ise tabloyu oluştur anlamına gelir. Kullanma zorunluluğu yoktur.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#dad0e7;">ÖRNEK</span>
 
 ```sql
 CREATE TABLE IF NOT EXISTS urunler(id INTEGER PRIMARY KEY,
                                             urunadi TEXT,
                                             fiyat DOUBLE,
-                                            adet INTEGER);
+                                            adet INTEGER)
 ```
 
 **NOT:**
@@ -81,7 +82,8 @@ CREATE TABLE IF NOT EXISTS urunler(id INTEGER PRIMARY KEY,
 
 >Sorgu komutu yazılırken temel komutlar büyük harflerle yazılmalıdır.
 
-### 7.2.1.2. Yerel Veri Tabanına Veri Eklemek
+<h3 style="color:#632896">7.2.1.2. Yerel Veri Tabanına Veri Eklemek</h3>
+
 
 Yerel veri tabanına veri eklemek için INSERT ifadesi kullanılır. INSERT komutunda önce tablo adı ve veri eklenecek alanlar belirtilir. Daha sonra VALUES anahtar kelimesi ile yazılması gereken ve riler eklenir. Örnek bir veri ekleme komutu şu şekilde yazılır:
 
@@ -89,13 +91,14 @@ Yerel veri tabanına veri eklemek için INSERT ifadesi kullanılır. INSERT komu
 INSERT INTO <tablo ismi> ( <sütun adı>, <diğer sütunlar>...) values(<değerler>)
 ```
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#dad0e7;">ÖRNEK</span>
 
 ```sql
 INSERT INTO urunler(urunadi,fiyat,adet) VALUES("Televizyon",12500.00,12)
 ```
 
-### 7.2.1.3. Yerel Veri Tabanında Veri Sorgulamak
+<h3 style="color:#632896">7.2.1.3. Yerel Veri Tabanında Veri Sorgulamak</h3>
+
 
 SQL komutları içinde en kapsamlı olanı veri sorgulama komutlarıdır. Sadece SELECT komutu ile yapılmasına rağmen çok farklı şekillerde sorgular yazılabilir. SELECT komutunun kullanımı şu şekildedir:
 
@@ -121,7 +124,7 @@ SELECT komutunun en çok tercih edilen kullanımları Tablo 7.6’da verilmişti
 | SELECT urunadi FROM urunler ORDER BY urunadi ASC         | Tüm kayıtları ürün ismine göre küçükten büyüğe doğru sıralayarak listeler. |
 | SELECT urunadi FROM urunler ORDER BY urunadi DESC        | Tüm kayıtları ürün ismine göre büyükten küçüğe doğru sıralayarak listeler. |
 
-<h2 id="7.2.2."> 7.2.2. Mobil Uygulama Geliştirme Ortamında Yerel Veri Tabanı Kullanmak</h2>
+<h2 id="7.2.2." style="color:#632896"> 7.2.2. Mobil Uygulama Geliştirme Ortamında Yerel Veri Tabanı Kullanmak</h2>
 
 Mobil uygulama geliştirme ortamı, SQLite yerel veri tabanını destekler. Mobil uygulama geliştirme ortamı, yerel veri tabanı kullanmak için **SQLiteDatabase** nesnesine sahiptir. Bu nesne ile tüm veri tabanı işlemleri yapılabilir.
 
@@ -142,7 +145,7 @@ Veri tabanı nesnesi **Context** aracılığı ile oluşturulur. Context nesnesi
 - İkinci parametre ile veri tabanının başka uygulamalara açılıp açılmayacağı belirlenir. Genellikle her uygulamanın özel bir veri tabanı olduğu için bu parametre **MODE_PRIVATE** olarak ayarlanır.
 - Üçüncü parametre gelen bir imleç verisi varsa bunu almak için gerekli ayarlamalar yapılır. Böyle bir durum yoksa bu değer **null** olarak ayarlanır.
 
-**ÖRNEK**
+<span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#dad0e7;">ÖRNEK</span>
 
 ```java
 String TABLO = "CREATE TABLE IF NOT EXISTS urunler(id INTEGER PRIMARY KEY,";
@@ -168,14 +171,14 @@ Tablo oluşturulduktan sonra dosyanın nerede bulunduğuna bakılır. Bunun içi
 ![Device File Explorer menüsü](./veritabani-islemleri/gorsel-7.6-device-file-explorer-menusu.png)
 </div>
 
-Açılan pencereden Data>Data klasörüne gidilir. Data klasörü içinde Görsel 7.7’deki gibi uygulama için verilen paket ismi bulunur. Paket ismi ile başlayan klasörün içindeki **databases** klasöründe yerel veri tabanı dosyaları vardır. Herhangi bir sorun çıktığında buradaki dosya silinebilir veya uygulama tamamen silinip mobil uygulama geliştirme ortamında yeniden çalıştırılabilir.
+Açılan pencereden **Data>Data** klasörüne gidilir. Data klasörü içinde Görsel 7.7’deki gibi uygulama için verilen paket ismi bulunur. Paket ismi ile başlayan klasörün içindeki **databases** klasöründe yerel veri tabanı dosyaları vardır. Herhangi bir sorun çıktığında buradaki dosya silinebilir veya uygulama tamamen silinip mobil uygulama geliştirme ortamında yeniden çalıştırılabilir.
 
 <div style='display:block;text-align:center'>
 
 ![Device File Explorer ürünler tablosu dosyası](./veritabani-islemleri/gorsel-7.7-device-file-explorer-urunler-tablosu-dosyasi.png)
 </div>
 
-<h2 id="7.2.3.">7.2.3. Mobil Uygulama Geliştirme Ortamında Kayıt Eklemek</h2>
+<h2 id="7.2.3." style="color:#632896">7.2.3. Mobil Uygulama Geliştirme Ortamında Kayıt Eklemek</h2>
 
 Yerel veri tabanına bir kayıt eklemek için bir sorgu komutu oluşturulup gerekli parametreler bir SQLStatement nesnesi ile sorgu komutuna eklenmelidir. Daha sonra SQLStatement nesnesinin execute metodu çağrılır. Kayıt eklendikten sonra **id** numarası otomatik verilir. Mobil uygulama geliştirme ortamında herhangi bir kayıt şu şekilde eklenir:
 
@@ -197,7 +200,7 @@ Kodlar yazılıp çalıştırıldıktan sonra ekranda herhangi bir işlem olmaz 
 ![App Inspection eklenen kayıt](./veritabani-islemleri/gorsel-7.8-app-inspection-eklenen-kayit.png)
 </div>
 
-<h2 id="7.2.4.">7.2.3. Mobil Uygulama Geliştirme Ortamında Kayıt Silmek</h2>
+<h2 id="7.2.4." style="color:#632896">7.2.4. Mobil Uygulama Geliştirme Ortamında Kayıt Silmek</h2>
 
 Veri silmek için sorgu komutu hazırlanıp gerekli parametreler SQLStatement ile sorguya eklenir (Görsel 7.9).
 
@@ -222,7 +225,7 @@ Diğer alanlarda aynı veriler olabilir ancak birincil anahtarda kesinlikle ayn�
 ![App Inspection silinen veri](./veritabani-islemleri/gorsel-7.10-app-inspection-silinen-veri.png)
 </div>
 
-<h2 id="7.2.5.">7.2.5. Mobil Uygulama Geliştirme Ortamında Kayıt Güncellemek</h2>
+<h2 id="7.2.5." style="color:#632896">7.2.5. Mobil Uygulama Geliştirme Ortamında Kayıt Güncellemek</h2>
 
 Güncelleme yapılması için bir sorgu komutu hazırlanıp SQLStatement nesnesi ile veriler sorguya dâhil edilir. Görsel 7.10’daki verilerden id numarası 3 olan kaydın fiyat bilgisi 145 olarak şu şekilde değiştirilir:
 
@@ -241,7 +244,7 @@ Kodlar hazırlandıktan sonra uygulama çalıştırıldığında App Inspection 
 ![App Inspection güncellenen veri](./veritabani-islemleri/gorsel-7.11-app-inspection-guncellenen-veri.png)
 </div>
 
-<h2 id="7.2.6.">7.2.5. Mobil Uygulama Geliştirme Ortamında Tüm Kayıtları Listelemek</h2>
+<h2 id="7.2.6." style="color:#632896">7.2.6. Mobil Uygulama Geliştirme Ortamında Tüm Kayıtları Listelemek</h2>
 
 Kayıt listelemek için bir sorgu hazırlanıp Cursor nesnesi ile verilere ulaşılır. Cursor nesnesi, tabloda bulunan tüm kayıtlar üzerinde gezinmeyi sağlar. Cursor nesnesi bir satır veri aldıktan sonra hangi kolona ait verinin okunması istenirse bunu belirtmek yeterlidir. Tüm verileri okumak için şu şekilde bir düzenleme yapılmalıdır:
 
@@ -281,11 +284,11 @@ Bir sonraki adımda kolonların indeks numaraları bulunur. Cursor nesnesinin ge
 ![Tüm kayıtların listelenmesi](./veritabani-islemleri/gorsel-7.12-tum-kayitlarin-listelenmesi.png)
 </div>
 
-<h2 id="7.2.7.">7.2.7. Özel Adaptör Kullanmak</h2>
+<h2 id="7.2.7." style="color:#632896">7.2.7. Özel Adaptör Kullanmak</h2>
 
 Adaptörler, veri kaynağındaki verileri okur ve View nesnelerine bağlar. ListView nesnesi, hangi verinin hangi View nesnesine bağlanacağını bilemez. Mobil uygulama geliştiriciler adaptör kullanarak verileri View nesnelerine bağlar. Özel adaptör kullanabilmek için öncelikle bir veri modeli oluşturmak gereklidir.
 
-<h2 id="7.2.8.">7.2.8. Model Oluşturmak </h2>
+<h2 id="7.2.8." style="color:#632896">7.2.8. Model Oluşturmak </h2>
 
 Tabloda bulunan her veri bir sınıf ile temsil edilebilir. Bu sınıfa **model** denir. Oluşturulacak model, tablodaki tüm veriler ile uygun olmalıdır. Örneğin tabloda bir sütun int türünden ise modelin bu özelliği de int türünden olmalıdır. Üçüncü uygulamada kullanılan tablo için örnek bir model şu şekilde oluşturulur:
 
@@ -431,12 +434,9 @@ Görsel 7.20’deki pencereden layout dosyasına bir isim verilir. Bu isim önem
 ![Ürünler veri tabanı uygulaması ekranları Görsel 7.22: Ürünler veri tabanı uygulaması MainActivity tasarım ekranı](./veritabani-islemleri/gorsel-7.21-urunler-veri-tabani-uygulamasi-ekranlari-gorsel-7.22-urunler-veri-tabani-uygulamasi-mainactivity-tasarim-ekrani.png)
 </div>
 
-**4. Adım:** Tasarım ekranına bir tane ListView, bir tane de button ekleyiniz.
-
-**5. Adım:** ListView için id bilgisi urunListe, button için btnYeniKayitEkle değerlerini veriniz.
-
-**6. Adım:** Yeni bir java sınıfı oluşturunuz ve adını Urun.java veriniz.
-
+**4. Adım:** Tasarım ekranına bir tane ListView, bir tane de button ekleyiniz.\
+**5. Adım:** ListView için id bilgisi urunListe, button için btnYeniKayitEkle değerlerini veriniz.\
+**6. Adım:** Yeni bir java sınıfı oluşturunuz ve adını Urun.java veriniz.\
 **7. Adım:** Urun.java dosyasını şu şekilde kodlayınız:
 
 ```java
@@ -486,8 +486,7 @@ public class Urun {
 }
 ```
 
-**8. Adım:** UrunlerAdapter isimli yeni bir sınıf oluşturunuz.
-
+**8. Adım:** UrunlerAdapter isimli yeni bir sınıf oluşturunuz.\
 **9. Adım:** UrunlerAdapter sınıfını şu şekilde kodlayınız:
 
 ```java
@@ -591,16 +590,13 @@ public class UrunlerAdapter extends BaseAdapter {
 </LinearLayout>
 ```
 
-**12. Adım:** Uygulamaya yeni bir Empty Activity ekleyiniz ve adını UrunKayit veriniz.
-
-**13. Adım:** Uygulamaya yeni bir Empty Activity ekleyiniz ve adını UrunDetay veriniz.
-
+**12. Adım:** Uygulamaya yeni bir Empty Activity ekleyiniz ve adını UrunKayit veriniz.\
+**13. Adım:** Uygulamaya yeni bir Empty Activity ekleyiniz ve adını UrunDetay veriniz.\
 **14. Adım:** Uygulamayı çalıştırınız ve App Inspection penceresinden veri ekleyerek uygulamayı test ediniz.
 
 **4. UYGULAMA:** İşlem adımlarına göre üçüncü uygulamadaki projeye veri kayıt bölümü ekleyiniz.
 
-**1. Adım**: Üçüncü uygulamada yaptığınız projeyi açınız.
-
+**1. Adım**: Üçüncü uygulamada yaptığınız projeyi açınız.\
 **2. Adım**: activity_urun_kayit.xml dosyasını açınız. Activity’yi Görsel 7.24’teki gibi tasarlayınız.
 
 <div style='display:block;text-align:center'>
@@ -688,10 +684,8 @@ public class UrunKayit extends AppCompatActivity {
 ![Ürünler veri tabanı uygulaması UrunDetay ekranı tasarımı](./veritabani-islemleri/gorsel-7.25-urunler-veri-tabani-uygulamasi-urundetay-ekrani-tasarimi.png)
 </div>
 
-**2. Adım:** Bir tane ImageView, dört tane button ekleyiniz.
-
-**3. Adım:** ImageView için urunResim id bilgisini, buttonlar için btnResimEkle, btnDegistir, btnSil ve btnGeri id bilgilerini veriniz.
-
+**2. Adım:** Bir tane ImageView, dört tane button ekleyiniz.\
+**3. Adım:** ImageView için urunResim id bilgisini, buttonlar için btnResimEkle, btnDegistir, btnSil ve btnGeri id bilgilerini veriniz.\
 **4. Adım:** UrunDetay.java dosyasını açıp şu şekilde kodlayınız:
 
 ```java
@@ -855,11 +849,10 @@ public class UrunKayit extends AppCompatActivity {
 }
 ```
 
-**5. Adım:** Uygulamayı çalıştırınız ve veri tabanına veri ekleyiniz.
-
+**5. Adım:** Uygulamayı çalıştırınız ve veri tabanına veri ekleyiniz.\
 **6. Adım:** Eklenen kayıtlara galeriden görsel seçerek kayıtları güncelleyiniz.
 
-<h2 id="7.2.9.">7.2.9. ArrayAdapter Sınıfıyla Özel Adaptör Oluşturmak</h2>
+<h2 id="7.2.9." style="color:#632896">7.2.9. ArrayAdapter Sınıfıyla Özel Adaptör Oluşturmak</h2>
  
 Özel adaptör olarak BaseAdapter sınıfından türetilen bir sınıf kullanılabileceği gibi ArrayAdapter sınıfından da türetilebilir. İki sınıfın da yöntemleri benzerdir ve en önemli işleri iki sınıf da getView metodu ile yapar. ListView ile çok fazla veri göstermek uygulamanın hızını düşürebilir. Mobil uygulama geliştirme ortamında tasarım kısmının XML olması sistem kaynaklarını tüketir. Adaptör ile yapılan her bir satırlık işlemde mobil uygulama geliştirme ortamı, XML dosyasını tarayarak Viewları bulur. XML dosyalarını tarama işlemi zaman alır. Listelenmesi gereken çok sayıda veri varsa uygulama yavaşlar. Yavaşlamaya neden olan durumu ortadan kaldırmak için ViewHolder nesnesi veya mobil uygulama geliştirme ortamının sunduğu RecyclerView kullanılır.
 

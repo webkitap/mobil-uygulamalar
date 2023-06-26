@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
+<h1 style="text-align:center;color:#632896">ÖLÇME VE DEĞERLENDİRME</h1>
 
 **A) Aşağıdaki cümlelerde parantez içine yargılar doğru ise "D", yanlış ise "Y" yazınız.**
 
