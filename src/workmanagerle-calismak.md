@@ -1,10 +1,10 @@
-# 8.6. WORKMANAGERLE ÇALIŞMAK
+<h1 style="color:#0073c0">8.6. WORKMANAGERLE ÇALIŞMAK</h1>
 
-- <a href="#8.6.1.">8.6.1. Kısıtlamaları Tanımlamak </a>
-- <a href="#8.6.2.">8.6.2. Görevi Gecikmeli Başlatmak  </a>
-- <a href="#8.6.3.">8.6.3. Zincirleme Çalışmak </a>
-- <a href="#8.6.4.">8.6.4. Görevleri İzlemek </a>
-- <a href="#8.6.5.">8.6.5. Görevlere Dışarıdan Veri Göndermek  </a>
+- <a href="#8.6.1.">8.6.1. Kısıtlamaları Tanımlamak</a>
+- <a href="#8.6.2.">8.6.2. Görevi Gecikmeli Başlatmak</a>
+- <a href="#8.6.3.">8.6.3. Zincirleme Çalışmak</a>
+- <a href="#8.6.4.">8.6.4. Görevleri İzlemek</a>
+- <a href="#8.6.5.">8.6.5. Görevlere Dışarıdan Veri Göndermek</a>
 
 Bazı uygulamalarda periyodik olarak bazı görevlerin yapılması gerekebilir. Bu tür işlemleri yapabilmek için mobil uygulama geliştirme ortamında birçok araç bulunur. WorkManager, zamanlanmış görev işlemlerinin çok kolay bir şekilde yapılması için oldukça uygundur. WorkManager; ertelenebilir görevler, anında yapılan görevler, periyodik olarak çalışan görevler olmak üzere üç türlü çalışmayı sağlar.
 
@@ -34,7 +34,9 @@ public class YedekWorker extends Worker {
 
 Worker sınıfında asıl işi yapan doWork metodudur. Görevde gerekli tüm işler burada yapılır. Yapılması gereken tüm işlemler geliştirici tarafından belirtilmelidir. Görev sonunda bir sonuç gönderilmelidir. Görev sonuç çeşitleri şunlardır:
 - **Result.success():** Görev başarılı olmuştur.
+
 - **Result.failure():** Görev başarısız olmuştur.
+
 - **Result.retry():** Görev başarısız olmuştur ancak tekrar başlatılabilir.
 
 Görev tanımladıktan sonra WorkRequest nesnesi tanımlanır. WorkRequest, görev türünün nasıl olacağını belirler. Tek seferlik görev için OneTimeWorkRequest nesnesi, periyodik görevler için PeriodicWorkRequest nesnesi seçilir. Bir WorkRequest nesnesi şu şekilde tanımlanır:
@@ -48,7 +50,7 @@ WorkRequest yedekleWorkRequest = new OneTimeWorkRequest
 Günde bir defa çalışacak periyodik bir görev şu şekilde oluşturulur:,
 
 ```java
-WorkRequest yedekPerioadic=new PeriodicWorkRequest
+WorkRequest yedekPerioadic = new PeriodicWorkRequest
     .Builder(yedekWork.class,1,TimeUnit.DAYS)
     .build();
 ```
@@ -75,7 +77,7 @@ WorkManager.getInstance(this).cancelWorkById(yedekleWorkRequest.getId());
 WorkManager.getInstance(this).cancelAllWorkByTag("yedekle");
 ```
 
-<h2 id="8.6.1.">8.6.1. Kısıtlamaları Tanımlamak</h2>
+<h2 id="8.6.1." style="color:#0073c0">8.6.1. Kısıtlamaları Tanımlamak</h2>
 
 Görevler tanımlanırken görevin çalışması esnasında bazı kısıtlar tanımlanabilir. Örneğin görevin düşük batarya seviyesinde çalışması istenmeyebilir veya sunucuya yedek gönderilirken ağa bağlı olması istenebilir. Bu tür kısıtlar koymak için Constraints nesnesi kullanılır. Bir Constraints nesnesi şu şekilde oluşturulur:
 
@@ -103,7 +105,7 @@ Birçok kısıtlama özelliği vardır. Tüm kısıtlamalara [https://developer.
 | **setRequiresStorageNotLow** | Cihazda yeterince depolama alanı varsa görevin yapılmasını sağlar. |
 | **setRequiredNetworkType**   | Cihaz istenen ağa bağlıysa görevin yapılmasını sağlar.             |
 
-<h2 id="8.6.2.">8.6.2. Görevi Gecikmeli Başlatmak</h2>
+<h2 id="8.6.2." style="color:#0073c0">8.6.2. Görevi Gecikmeli Başlatmak</h2>
 
 Görevler istendiği kadar gecikmeli başlatılabilir. Görevler gecikmeli olarak şu şekilde başlatılır:
 
@@ -128,7 +130,7 @@ Görevlerde zaman birimleri TimeUnit ile belirlenir. Gecikme tek seferlik görev
 | **HOURS**        | Saat        |
 | **DAYS**         | Gün         |
 
-<h2 id="8.6.3.">8.6.3. Zincirleme Çalışmak</h2>
+<h2 id="8.6.3." style="color:#0073c0">8.6.3. Zincirleme Çalışmak</h2>
 
 WorkManager nesnesi ile zincirleme işlemler yapılabilir. Bir görev başlatıldıktan sonra görevin bitmesi takip edilerek başka bir görevin çalıştırılması sağlanabilir. Zincir görevler sadece OneTimeWorkRequest görevleri ile yapılır. Periyodik görevler zincire eklenemez. Zincir bir görev şu şekilde oluşturulur:
 
@@ -142,7 +144,7 @@ WorkManager
 ```
 Zincirleme görevlerde ilk görev bitinceye kadar diğer görevlerin talepleri engellenir. Görevler Result.success() ile biterse bir sonraki göreve geçilir. Herhangi bir görev başarısız olursa sonraki göreve geçilmez. Zincir görev esnasında sırası gelen görev, kısıtlardan birine takılırsa beklemeye alınır. Sonraki göreve geçilmez.
 
-<h2 id="8.6.4.">8.6.4. Görevleri İzlemek</h2>
+<h2 id="8.6.4." style="color:#0073c0">8.6.4. Görevleri İzlemek</h2>
 Görevleri izlemek için WorkManager nesnesinin observe özelliği kullanılır. Bu özellik, mevcut tüm görevler hakkında bilgi alınmasını sağlar. Hangi görevin ne aşamada olduğu observe sayesinde görüntülenir. Observer özelliği şu şekilde kullanılır:
 
 ```java
@@ -160,7 +162,7 @@ WorkManager
 
 Görevler ile ilgili tüm bilgilere WorkInfo nesneleri ile ulaşılabilir.
 
-<h2 id="8.6.5.">8.6.5. Görevlere Dışarıdan Veri Göndermek</h2>
+<h2 id="8.6.5." style="color:#0073c0">8.6.5. Görevlere Dışarıdan Veri Göndermek</h2>
 
 Görevlere dışarıdan veri göndermek için Data sınıfı kullanılır. Data sınıfı ile göreve veri şu şekilde gönderilir:
 
@@ -182,16 +184,17 @@ public Result doWork() {
 }
 ```
 
-17. UYGULAMA: İşlem adımlarına göre bir WorkManager tanımlayarak Worker sınıfına rastgele bir sayı gönderiniz. Görev isteği için şu kısıtları tanımlayarak WorkManager ile her 15 dakikada periyodik görevler yapan uygulamayı yazınız:
+**17. UYGULAMA:** İşlem adımlarına göre bir WorkManager tanımlayarak Worker sınıfına rastgele bir sayı gönderiniz. Görev isteği için şu kısıtları tanımlayarak WorkManager ile her 15 dakikada periyodik görevler yapan uygulamayı yazınız:
+
 - Batarya düşük olduğunda çalışmasın.
+
 - Cihaz şarj edilirken görev çalışsın.
+
 - Cihaz bir ağa bağlı olduğu zaman görev çalışsın.
 
 
-**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "WorkManagerApp" yapınız.
-
-**2. Adım:** YedekWork.java dosyası oluşturunuz ve sınıfı Worker sınıfından türetiniz.
-
+**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "WorkManagerApp" yapınız.\
+**2. Adım:** YedekWork.java dosyası oluşturunuz ve sınıfı Worker sınıfından türetiniz.\
 **3. Adım:** YedekWork.java dosyasını şu şekilde kodlayınız:
 
 ```java
@@ -248,8 +251,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-**5. Adım:** Uygulamayı çalıştırıp emülatörde Gelişmiş Kontroller penceresini açınız.
-
+**5. Adım:** Uygulamayı çalıştırıp emülatörde Gelişmiş Kontroller penceresini açınız.\
 **6. Adım:** Battery sekmesini açarak cihazın ayarlarını Görsel 8.28’deki gibi yapınız.
 
 <div style='display:block;text-align:center'>
@@ -259,20 +261,20 @@ protected void onCreate(Bundle savedInstanceState) {
 
 **7. Adım:** 15 dakika bekleyip bildirim çıkmasını gözlemleyiniz.
 
-**SIRA SİZDE:**
-
-Bir tane OneTImeWorkRequest oluşturup zincir şeklinde üç defa çalıştıran uygulamayı yazınız.
-
-**DEĞERLENDİRME:**
-
-Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
-
-<div style="text-align:center;font-weight:bold;">KONTOL LİSTESİ</div>
-
-| DEĞERLENDİRME ÖLÇÜTLERİ                                  | EVET | HAYIR |
-| -------------------------------------------------------- | ---- | ----- |
-| 1. Yeni Empty Activity ile proje oluşturdu.              |
-| 2. Worker sınıfından bir sınıf oluşturdu.                |
-| 3. Yeni bir OneTimeWorkRequest nesnesi oluşturdu.        |
-| 4. WorkManager nesnesi oluşturdu.                        |
-| 5. Görevleri zincir olarak WorkManager nesnesine ekledi. |
+>**SIRA SİZDE:**
+>
+>Bir tane OneTImeWorkRequest oluşturup zincir şeklinde üç defa çalıştıran uygulamayı yazınız.
+>
+>**DEĞERLENDİRME:**
+>
+>Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
+>
+><div style="text-align:center;font-weight:bold;">KONTOL LİSTESİ</div>
+>
+>| DEĞERLENDİRME ÖLÇÜTLERİ                                  | EVET | HAYIR |
+>| :------------------------------------------------------- | ---- | ----- |
+>| 1. Yeni Empty Activity ile proje oluşturdu.              |
+>| 2. Worker sınıfından bir sınıf oluşturdu.                |
+>| 3. Yeni bir OneTimeWorkRequest nesnesi oluşturdu.        |
+>| 4. WorkManager nesnesi oluşturdu.                        |
+>| 5. Görevleri zincir olarak WorkManager nesnesine ekledi. |

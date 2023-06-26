@@ -1,4 +1,5 @@
-# 8.3. BİLDİRİMLERLE ÇALIŞMAK
+<h1 style="color:#0073c0">8.3. BİLDİRİMLERLE ÇALIŞMAK</h1>
+
 - <a href="#8.3.1.">8.3.1. Bildirimlerden Veri Almak</a>
 
 Bildirimler, kullanıcı ile etkileşime geçmenin en kısa yoludur. Bildirimler, kullanıcılar açısından çok büyük bir kolaylık sağladığı için hemen her uygulamada kullanılır. Kullanıcı, uygulamayı açmadan da uygulamadan bildirimler alabilir.
@@ -59,18 +60,12 @@ NotificationManager.cancel(1000);
 
 **6. UYGULAMA:** İşlem adımlarına göre mobil uygulama ekranına bir buton ekleyip uygulama oluşturunuz. Butona basıldığında basit bir bildirim yayınlayacak kodları yazınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BildirimBasit" veriniz.
-
-**2. Adım:** activity_main.xml dosyasını açarak ekrana sadece bir tane Button yerleştiriniz. Button nesnesinin id bilgisini btnGonder olarak değiştiriniz.
-
-**3. Adım:** app>values>strings.xml dosyasını açıp uygulamanın adını "Basit Bildirim Uygulaması" yapınız.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**5. Adım:** drawable klasörüne sağ tıklayıp menüden New>Vector Assets seçeneğini seçiniz.
-
-**6. Adım:** Açılan pencereden Android simgesi seçiliyken diğer ayarları Görsel 8.11’deki gibi yapınız.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BildirimBasit" veriniz.\
+**2. Adım:** activity_main.xml dosyasını açarak ekrana sadece bir tane Button yerleştiriniz. Button nesnesinin id bilgisini btnGonder olarak değiştiriniz.\
+**3. Adım:** app>values>strings.xml dosyasını açıp uygulamanın adını "Basit Bildirim Uygulaması" yapınız.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**5. Adım:** drawable klasörüne sağ tıklayıp menüden New>Vector Assets seçeneğini seçiniz.\
+**6. Adım:** Açılan pencereden Android simgesi seçiliyken diğer ayarları Görsel 8.11’deki gibi yapınız.\
 **7. Adım:** MainActivity.java dosyasını açınız. viewBinding nesnesi tanımlayıp gerekli ayarlamaları yapınız.
 
 <div style='display:block;text-align:center'>
@@ -106,7 +101,7 @@ notificationManager.notify(1000,builder.build());
 ![Basit Bildirim Uygulaması ekranı](./gelismis-uygulama-tasarlama/gorsel-8.12-basit-bildirim-uygulamasi-ekrani.png)
 </div>
 
-<h2 id ="8.3.1.">8.3.1. Bildirimlerden Veri Almak</h2>
+<h2 id ="8.3.1." style="color:#0073c0">8.3.1. Bildirimlerden Veri Almak</h2>
 
 Bildirimlerden veriler intent nesneleri kullanılarak alınabilir. Bu nesneler genellikle aktiviteler arasında dolaşmak veya servisleri başlatmak için kullanılır. Android sistemi, işi biter bitmez intent nesnelerini yok eder. Hemen yok olan bir nesneden veri almak mümkün değildir. PendingIntent nesneleri, intent nesnelerinin aksine hemen yok olmaz. Bu nesneler, kullanıcı bir işlem yapıncaya kadar bekler. Bundan dolayı bildirim mesajlarında bu nesneler kullanılır. Bildirim mesajı, kullanıcıdan bir eylem gelinceye kadar bildirim ekranında kalır.
 
@@ -135,8 +130,7 @@ PendingIntent nesnesi Notification.Builder sınıfına setContentIntent metodu i
 
 **7. UYGULAMA:** İşlem adımlarına göre mobil uygulama ekranına bir EditText ve Button nesnesi ekleyerek bildirim alanına gizli bir mesaj gönderiniz. Kullanıcı, mesajı tıklayınca mesajdaki gizli bilgiyi yakalayan uygulamayı yazınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BildirimPending" veriniz.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BildirimPending" veriniz.\
 **2. Adım:** activity_main.xml dosyasını açarak ekrana sadece bir EditText ve Button yerleştiriniz (Görsel 8.13).
 
 <div style='display:block;text-align:center'>
@@ -144,18 +138,12 @@ PendingIntent nesnesi Notification.Builder sınıfına setContentIntent metodu i
 ![Bildirim Pending uygulaması tasarımı](./gelismis-uygulama-tasarlama/gorsel-8.13-bildirim-pending-uygulamasi-tasarimi.png)
 </div>
 
-**3. Adım:** EditText nesnesinin id bilgisini "editMesaj" olarak ayarlayınız. Button nesnesinin id bilgisini "button" olarak ayarlayınız.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**5. Adım:** drawable klasörüne sağ tıklayıp menüden New>Vector Assets seçeneğini seçiniz.
-
-**6. Adım:** Açılan pencereden Android simgesini seçip diğer ayarları Görsel 8.11’deki gibi yapınız.
-
-**7. Adım:** MainActivity.java dosyasını açınız. viewBinding nesnesi tanımlayıp gerekli ayarlamaları yapınız.
-
-**8. Adım:** Button nesnesine bir onClickListener tanımlayınız.
-
+**3. Adım:** EditText nesnesinin id bilgisini "editMesaj" olarak ayarlayınız. Button nesnesinin id bilgisini "button" olarak ayarlayınız.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**5. Adım:** drawable klasörüne sağ tıklayıp menüden New>Vector Assets seçeneğini seçiniz.\
+**6. Adım:** Açılan pencereden Android simgesini seçip diğer ayarları Görsel 8.11’deki gibi yapınız.\
+**7. Adım:** MainActivity.java dosyasını açınız. viewBinding nesnesi tanımlayıp gerekli ayarlamaları yapınız.\
+**8. Adım:** Button nesnesine bir onClickListener tanımlayınız.\
 **9. Adım:** Button nesnesinin onClick olayını şu şekilde yazınız:
 
 ```java
@@ -211,18 +199,12 @@ protected void onCreate(Bundle savedInstanceState) {
 
 **8. UYGULAMA:** İşlem adımlarına göre mobil uygulama ekranında çeşitli bildirimler göstermeyi sağlayınız.
 
-**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "Bildirimler" yapınız.
-
-**2. Adım:** app>drawable klasörüne sağ tıklayıp New>Vector Asset seçeneğini seçiniz.
-
-**3. Adım:** Asset Studio penceresinde bir mail simgesi bulup ic_base_email ismiyle kaydediniz.
-
-**4. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**5. Adım:** activity_main.xml dosyasını açarak ekrana bir tane buton yerleştiriniz.
-
-**6. Adım:** Butonun id bilgisini button olarak değiştiriniz.
-
+**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "Bildirimler" yapınız.\
+**2. Adım:** app>drawable klasörüne sağ tıklayıp New>Vector Asset seçeneğini seçiniz.\
+**3. Adım:** Asset Studio penceresinde bir mail simgesi bulup ic_base_email ismiyle kaydediniz.\
+**4. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**5. Adım:** activity_main.xml dosyasını açarak ekrana bir tane buton yerleştiriniz.\
+**6. Adım:** Butonun id bilgisini button olarak değiştiriniz.\
 **7. Adım:** MainActivity.java dosyasını açınız ve setKanal() isimli bir metot oluşturup şu şekilde kodlarını yazınız:
 
 ```java
@@ -240,18 +222,15 @@ private void Kanal () {
 }
 ```
 
-**8. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi tanımlayıp gerekli ayarlamaları yapınız.
-
+**8. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi tanımlayıp gerekli ayarlamaları yapınız.\
 **9. Adım:** MainActivity.java dosyasındaki onCreate olayında setKanal metodunu şu şekilde yazınız:
 
 ```java
 Kanal();
 ```
 
-**10. Adım:** Telif hakkı olmayan bir bayrak görselini drawable klasörüne kopyalayınız. Bitmap nesnesi oluştururken görsel adına dikkat ediniz.
-
-**11. Adım:** Button için onClickListener yazınız.
-
+**10. Adım:** Telif hakkı olmayan bir bayrak görselini drawable klasörüne kopyalayınız. Bitmap nesnesi oluştururken görsel adına dikkat ediniz.\
+**11. Adım:** Button için onClickListener yazınız.\
 **12. Adım:** onClick olayını şu şekilde yazınız:
 
 ```java
@@ -333,7 +312,7 @@ notificationManager.notify(1, notification.build());
 ><div style="text-align:center;font-weight:bold;">KONTOL LİSTESİ</div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                            | EVET | HAYIR |
->| -------------------------------------------------- | ---- | ----- |
+>| :-------------------------------------------------- | ---- | ----- |
 >| 1. Yeni Empty Activity ile proje oluşturdu.        |
 >| 2. Tasarım ekranına üç tane Button yerleştirdi.    |
 >| 3. Buttonlar için ayrı ayrı onClickListener yazdı. |

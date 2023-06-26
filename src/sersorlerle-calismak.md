@@ -1,11 +1,13 @@
-# 8.7. SENSÖRLERLE ÇALIŞMAK
+<h1 style="color:#0073c0">8.7. SENSÖRLERLE ÇALIŞMAK</h1>
 
 - <a href="#8.7.1.">8.7.1. Tüm Sensörlere Erişmek </a>
 - <a href="#8.7.2.">8.7.2. Sensör Olaylarıyla Çalışmak </a>
 
 Mobil cihazlarda kullanıcının çevresindeki değişikleri ölçebilen algılayıcılar bulunur. Mobil uygulama geliştirme ortamı, sensörlerden gelen verileri alarak bu verilerin uygulama içinde kullanılmasını sağlar. Kullanılabilen sensör türleri şunlardır:
 - **Hareket Sensörleri:** Bu sensörler, cihazın yer değiştirmesini tespit eder. İvmeölçer, jiroskop ve yerçekimi sensörleri bu tür sensörlerdendir.
+
 - **Çevre Sensörleri:** Bu sensörler; sıcaklık, basınç, ışık ve nem değişimlerini tespit eder.
+
 - **Konum Sensörleri:** Bu sensörler, cihazın konumunu tespit eder. Gerekli bilgileri manyetik sensörlerden alır.
 
 
@@ -46,7 +48,7 @@ Mobil uygulama geliştirme ortamında bulunan sensörlerin bazıları yazılım 
 | **TYPE_ROTATION_VECTOR**     | Y/D | Cihazın dönüş vektörünün üç ögesini sağlayarak bir cihazın yönünü ölçer.           | Hareket algılama        |
 | **TYPE_TEMPERATURE**         | D   | Cihazın sıcaklığını santigrat derece cinsinden ölçer.                              | Sıcaklık                |
 
-<h2 id="8.7.1.">8.7.1. Tüm Sensörlere Erişmek</h2>
+<h2 id="8.7.1." style="color:#0073c0">8.7.1. Tüm Sensörlere Erişmek</h2>
 
 Sistemde tanımlı tüm sensörler şu şekilde alınır:
 
@@ -81,7 +83,7 @@ if (sensor == null) {
 
 Bir sensörden veri almak için öncelikle cihazın, sensörü destekleyip desteklemediği tespit edilmelidir. Cihaz, sensörü desteklemezse uygulama çökebilir.
 
-<h2 id="8.7.2.">8.7.2. Sensör Olaylarıyla Çalışmak</h2>
+<h2 id="8.7.2." style="color:#0073c0">8.7.2. Sensör Olaylarıyla Çalışmak</h2>
 
 Sensör olayları kullanılarak sensörlerden gelen veriler eş zamanlı olarak elde edilir. Gelen verileri sağlıklı bir şekilde kullanmak için SensorEventListener arabirimi uygulanır. Arabirim ile onAccuracyChanged ve onSensorChanged metotları eklenir.
 
@@ -104,7 +106,9 @@ protected void onPause() {
 
 Kayıt işleminde üçüncü parametre olarak sensörün çalışma sıklığı belirlenir. Sensörler ne kadar yüksek çalışma sıklığında ölçüm yaparsa daha hatasız sonuçlar elde eder. Ancak yüksek çalışma sıklığı pilin çok çabuk bitmesine neden olur. Bundan dolayı bir sensörü yüksek çalışma sıklığında çalıştırmak için özel izin almak gereklidir.
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> Olayların çalışması için uygulama başladığında kayıt yapılması gereklidir. Uygulama kapandığında ise kayıt işlemi onlandırılmalıdır. Kayıt işlemi sonlandırılmazsa sensör yine veri göndermeye devam eder. Bu durum, sensörün çok fazla pil tüketmesine neden olur.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>Olayların çalışması için uygulama başladığında kayıt yapılması gereklidir. Uygulama kapandığında ise kayıt işlemi onlandırılmalıdır. Kayıt işlemi sonlandırılmazsa sensör yine veri göndermeye devam eder. Bu durum, sensörün çok fazla pil tüketmesine neden olur.
 
 Sensörün yüksek çalışma sıklığında olmasını sağlamak için manifest dosyasında şu değişiklik yapılarak izin alınır:
 
@@ -114,24 +118,18 @@ Sensörün yüksek çalışma sıklığında olmasını sağlamak için manifest
 
 **18. UYGULAMA:** İşlem adımlarına göre bir ışık sensörü tanımlayarak sensörden gelen verileri okuyunuz.
 
-**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "LightSensorApp" yapınız.
-
-**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**3. Adım:** main_activity.xml dosyasını açarak sadece bir tane TextView bırakınız. TextView nesnesine txtView id ismini veriniz.
-
-**4. Adım:** MainActivity.java dosyasını açıp viewBinding nesnesi tanımlayınız ve viewBinding için gerekli ayarlamaları yapınız.
-
-**5. Adım:** MainActivity.java dosyasını açarak SensorManager ve Sensor nesnelerini tanımlayınız.
-
+**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "LightSensorApp" yapınız.\
+**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**3. Adım:** main_activity.xml dosyasını açarak sadece bir tane TextView bırakınız. TextView nesnesine txtView id ismini veriniz.\
+**4. Adım:** MainActivity.java dosyasını açıp viewBinding nesnesi tanımlayınız ve viewBinding için gerekli ayarlamaları yapınız.\
+**5. Adım:** MainActivity.java dosyasını açarak SensorManager ve Sensor nesnelerini tanımlayınız.\
 **6. Adım:** MainActivity sınıfına SensorEventListener arabirimini şu şekilde tanımlayınız:
 
 ```java
 public class MainActivity extends AppCompatActivity implements SensorEventListener
 ```
 
-**7. Adım:** SensorEventListener metotlarının sınıf içinde oluşmasını sağlayınız.
-
+**7. Adım:** SensorEventListener metotlarının sınıf içinde oluşmasını sağlayınız.\
 **8. Adım:** MainActivity.java dosyasını şu şekilde düzenleyiniz:
 
 ```java
@@ -174,8 +172,7 @@ protected void onPause() {
 }
 ```
 
-**11. Adım:** Uygulamayı çalıştırıp emülatörde Gelişmiş Kontroller penceresini açınız.
-
+**11. Adım:** Uygulamayı çalıştırıp emülatörde Gelişmiş Kontroller penceresini açınız.\
 **12. Adım:** Gelişmiş Kontroller penceresinde Görsel 8.29’daki Virtual sensors sekmesini açınız. Additional sensors sekmesinde Light ayarları ile ayarlamalar yapınız.
 
 <div style='display:block;text-align:center'>
@@ -190,19 +187,19 @@ protected void onPause() {
 ![Sensör uygulaması](./gelismis-uygulama-tasarlama/gorsel-8.30-sensor-uygulamasi.png)
 </div>
 
-**SIRA SİZDE:**
-
-TYPE_AMBIENT_TEMPERATURE sensörünü kullanan bir uygulama yazınız.
-
-**DEĞERLENDİRME:**
-
-Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
-
-<div style="text-align:center;font-weight:bold;">KONTOL LİSTESİ</div>
-
-| DEĞERLENDİRME ÖLÇÜTLERİ                                                          | EVET | HAYIR |
-| :-------------------------------------------------------------------------------- | ---- | ----- |
-| 1. Yeni Empty Activity ile proje oluşturdu.                                      |
-| 2. SensorManager tanımlandı.                                                     |
-| 3. SensorManager ile TYPE_AMBIENT_TEMPERATURE değerlerinin dinlenmesini sağladı. |
-| 3. SensorManager sınıfını aktiviteye kaydetti.                                   |
+>**SIRA SİZDE:**
+>
+>TYPE_AMBIENT_TEMPERATURE sensörünü kullanan bir uygulama yazınız.
+>
+>**DEĞERLENDİRME:**
+>
+>Çalışmanız aşağıda yer alan kontrol listesi kullanılarak değerlendirilecektir. Çalışmanızı yaparken değerlendirme ölçütlerini dikkate alınız.
+>
+><div style="text-align:center;font-weight:bold;">KONTOL LİSTESİ</div>
+>
+>| DEĞERLENDİRME ÖLÇÜTLERİ                                                          | EVET | HAYIR |
+>| :------------------------------------------------------------------------------- | ---- | ----- |
+>| 1. Yeni Empty Activity ile proje oluşturdu.                                      |
+>| 2. SensorManager tanımlandı.                                                     |
+>| 3. SensorManager ile TYPE_AMBIENT_TEMPERATURE değerlerinin dinlenmesini sağladı. |
+>| 3. SensorManager sınıfını aktiviteye kaydetti.                                   |

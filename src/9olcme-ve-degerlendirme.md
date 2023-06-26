@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">ÖLÇME VE DEĞERLENDİRME</h1>
+<h1 style="text-align:center;color:#ff2e47;">ÖLÇME VE DEĞERLENDİRME</h1>
 
 **Aşağıdaki soruları dikkatlice okuyarak doğru seçeneği işaretleyiniz.**
 
