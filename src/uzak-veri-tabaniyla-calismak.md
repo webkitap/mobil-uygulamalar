@@ -1,4 +1,4 @@
-# 7.3 UZAK VERİ TABANIYLA ÇALIŞMAK
+<h1 style="color:#632896">7.3 UZAK VERİ TABANIYLA ÇALIŞMAK</h1>
 
 - <a href="#7.3.1.">7.3.1. JSON Veri Düzeni </a>
 - <a href="#7.3.2.">7.3.2. Mobil Uygulama Geliştirme Ortamında Uzak Sunucu Yapılandırması </a>
@@ -15,9 +15,11 @@
 
 Uygulama marketinde en popüler uygulamalar genellikle paylaşımın çok kolay olduğu uygulamalardır. Mobil cihazlarda herhangi resim, yazı veya videoyu paylaşabilmenin en kolay yolu bunları bir sunucuya göndermek ve buradan diğer kullanıcıların almasını sağlamaktır.
 
-Mobil uygulama geliştirme ortamı uzak veri tabanları ile çalışmaya olanak verir. Mobil uygulama geliştirme ortamında birçok uzak veri tabanı kullanılabilir ancak Firebase veri tabanına tam destek verilir. İlişkisel veri tabanında tablolar bulunur ve veri bu tablolara yazılır. Firebase veri tabanı ise **NoSQL** adı verilen bir veri tabanı türüdür. NoSQL veri tabanlarına doküman veri tabanı adı da verilir. Bu veri tabanının en önemli özelliği çok hızlı olmasıdır. İlişkisel veri tabanlarında tablolar arasında ilişkilere bakılıp, tüm veriler birleştirilerek geri gönderilir. NoSQL veri tabanında ise böyle bir işlem yapılmaz, veri olduğu gibi geri gönderilir. İlişkisel veri tabanları tüm veri işlemlerini SQL sorgusu ile yapar. Örneğin veri almak için "SELECT" ile başlayan bir SQL sorgusu yazılmalıdır. NoSQL veri tabanlarında SQL sorguları yoktur. Sunucudan bir veri almak için koleksiyon adını ve verinin uid numarasını bilmek yeterlidir. Gelen veri düzenlenir ve aynı uid numarası ile gönderilirse sunucu bunu "UPDATE" işlemi olarak kabul eder. Gönderilen verinin uid numarası yoksa bu işlem de "INSERT" olarak kabul edilir ve koleksiyona yeni bir kayıt eklenir. NoSQL veri tabanlarında veriler Javascript Nesne Gösterimi (JavaScript Object Notation) **JSON** formatına göre kaydedilir. Herhangi bir veri **"anahtar":"değer"** şeklinde gönderilirse NoSQL veritabanlarına kaydedilir.
+Mobil uygulama geliştirme ortamı uzak veri tabanları ile çalışmaya olanak verir. Mobil uygulama geliştirme ortamında birçok uzak veri tabanı kullanılabilir ancak Firebase veri tabanına tam destek verilir. İlişkisel veri tabanında tablolar bulunur ve veri bu tablolara yazılır. Firebase veri tabanı ise **NoSQL** adı verilen bir veri tabanı türüdür. NoSQL veri tabanlarına doküman veri tabanı adı da verilir. Bu veri tabanının en önemli özelliği çok hızlı olmasıdır. İlişkisel veri tabanlarında tablolar arasında ilişkilere bakılıp, tüm veriler birleştirilerek geri gönderilir. NoSQL veri tabanında ise böyle bir işlem yapılmaz, veri olduğu gibi geri gönderilir. İlişkisel veri tabanları tüm veri işlemlerini SQL sorgusu ile yapar. Örneğin veri almak için "SELECT" ile başlayan bir SQL sorgusu yazılmalıdır. NoSQL veri tabanlarında SQL sorguları yoktur. Sunucudan bir veri almak için koleksiyon adını ve verinin uid numarasını bilmek yeterlidir. Gelen veri düzenlenir ve aynı uid numarası ile gönderilirse sunucu bunu "UPDATE" işlemi olarak kabul eder. Gönderilen verinin uid numarası yoksa bu işlem de "INSERT" olarak kabul edilir ve koleksiyona yeni bir kayıt eklenir. 
 
-<h2 id = "7.3.1.">7.3.1. JSON Veri Düzeni</h2>
+NoSQL veri tabanlarında veriler Javascript Nesne Gösterimi (JavaScript Object Notation) **JSON** formatına göre kaydedilir. Herhangi bir veri **"anahtar":"değer"** şeklinde gönderilirse NoSQL veritabanlarına kaydedilir.
+
+<h2 id = "7.3.1." style="color:#632896">7.3.1. JSON Veri Düzeni</h2>
 
 JSON günümüzde en sık kullanılan dosya kaydetme ve taşıma formatıdır. Tamamen metin tabanlı olarak çalıştığı için kullanımı çok kolay ve hızlıdır. Tüm veriler "anahtar":"değer" şeklindedir. Örnek bir JSON verisi şu şekildedir:
 
@@ -70,7 +72,7 @@ JSON dosyaları; Sayı (Number), Metin (String), Koleksiyon (Array), Doğru/Yanl
 
 JSON dosyalarında tür bağımlılığı yoktur. Örneğin { "deger" : "mobil" } gibi bir JSON dokümanı tanımlandığında bu veri daha sonra { "deger" : null } yapılabilir. Hatta { "deger" : 0,5 } gibi çok değişik bir tür ataması bile yapılabilir. Veri hangi şekilde NoSQL veri tabanına gönderilirse gönderilsin son hâli ile kaydedilir.
 
-<h2 id = "7.3.2.">7.3.2. Mobil Uygulama Geliştirme Ortamında Uzak Sunucu Yapılandırması</h2>
+<h2 id = "7.3.2." style="color:#632896">7.3.2. Mobil Uygulama Geliştirme Ortamında Uzak Sunucu Yapılandırması</h2>
 
 Firebase veri tabanını kullanmak için mutlaka bir Google hesabına ihtiyaç vardır. Veri tabanı hizmetinin verildiği [https://firebase.google.com/](https://firebase.google.com/ "Firebase Resmi WEB sitesi") internet sitesine gidilerek Google hesabı ile oturum açılmalıdır. Oturum açıldıktan sonra veri tabanı yönetim konsoluna gidilerek bir proje oluşturulur. Proje için gerekli ayarlamaların yapıldığı bir ayar dosyası indirilerek mobil uygulamageliştirme ortamında doğru yere yüklenmelidir. İndirilen dosyanın isminde veya uzantısında herhangi bir değişiklik yapılmamalıdır.
 
@@ -133,7 +135,7 @@ Firebase veri tabanını kullanmak için mutlaka bir Google hesabına ihtiyaç v
 ![Konfigürasyon dosyasının elde edilmesi](./veritabani-islemleri/gorsel-7.36-konfigurasyon-dosyasinin-elde-edilmesi.png)
 </div>
 
-**10. Adım:** google-service.json dosyasını indirildiği yerde bulunuz. Dosyanın üzerine sağ tıklayıp Kopyala seçeneğini seçiniz. Tekrar mobil uygulama geliştirme ortamını açınız. Proje dosyaları bölümünde Görsel 7.37'deki işaretlenmiş kısımdan görünüm modunu Project'e geçiriniz.
+**10. Adım:** google-service.json dosyasını indirildiği yerde bulunuz. Dosyanın üzerine sağ tıklayıp **Kopyala** seçeneğini seçiniz. Tekrar mobil uygulama geliştirme ortamını açınız. Proje dosyaları bölümünde Görsel 7.37'deki işaretlenmiş kısımdan görünüm modunu Project'e geçiriniz.
 
 <div style='display:block;text-align:center'>
 
@@ -147,7 +149,7 @@ Firebase veri tabanını kullanmak için mutlaka bir Google hesabına ihtiyaç v
 ![Proje dosyalarının Project görünümü](./veritabani-islemleri/gorsel-7.38-proje-dosyalarinin-project-gorunumu.png)
 </div>
 
-**12. Adım:** Firebase kütüphanelerini projenize ekleyiniz. İnternet sitesinde çıkan yönergeleri yapınız. Mobil uygulama geliştirme ortamında bulid.gradle (Project) dosyasını açınız. build.gradle dosyasının en üstüne şu kodları ekleyiniz:
+**12. Adım:** Firebase kütüphanelerini projenize ekleyiniz. İnternet sitesinde çıkan yönergeleri yapınız. Mobil uygulama geliştirme ortamında **bulid.gradle (Project)** dosyasını açınız. build.gradle dosyasının en üstüne şu kodları ekleyiniz:
 
 ```json
 buildscript {
@@ -190,7 +192,7 @@ Tüm kodları yazdıktan sonra projeyi kaydedip ekranın sağ üst köşesinde b
 ![Coloud Firestore aracı](./veritabani-islemleri/gorsel-7.40-coloud-firestore-araci.png)
 </div>
 
-<h2 id = "7.3.3.">7.3.3. Uzak Veri Tabanı Yönetimi</h2>
+<h2 id = "7.3.3." style="color:#632896">7.3.3. Uzak Veri Tabanı Yönetimi</h2>
 
 Uzak veri tabanını kullanmak için konsolda çeşitli ayarlamalar yapılmalıdır. Yönetim konsolu Görsel 7.41'de görülen seçeneklerden oluşur.
 
@@ -235,7 +237,7 @@ Function bölümü, Typescript veya Javascript ile yazılmış kodların tetikle
 
 Machine Learning, uzak veri tabanına gelen veriler üzerinde yapay zekâ teknikleri kullanarak çeşitli analizler yapılmasını sağlar.
 
-<h2 id="7.3.4.">7.3.4. Firestore Veri Tabanı Oluşturmak</h2>
+<h2 id="7.3.4." style="color:#632896">7.3.4. Firestore Veri Tabanı Oluşturmak</h2>
 
 Uzak veri tabanı kullanabilmek için öncelikle bir Firestore veri tabanı oluşturulmalıdır. Firestore Database bölümü açıldığında herhangi bir veri tabanı oluşturulmamışsa Görsel 7.42'deki ekran görülür.
 
@@ -260,7 +262,7 @@ Sadece geliştirme amaçlı olarak **Start in test mode** seçeneği seçilmelid
 
 Görsel 7.44'te veri tabanının oluşturulacağı yer seçilir. Bu seçeneklerden coğrafi olarak en yakın bölge seçilebilir. Coğrafi bölge seçiminden sonra Enable buttonuna basılarak veri tabanı oluşturulur.
 
-### 7.3.4.1. Uzak Veri Tabanında Koleksiyon ve Doküman Oluşturmak
+<h3 style="color:#632896">7.3.4.1. Uzak Veri Tabanında Koleksiyon ve Doküman Oluşturmak</h3>
 
 Uzak veri tabanı sisteminde koleksiyon ve dokümanlar kod kullanılarak oluşturulabilir ancak uzak veri tabanı sisteminde de koleksiyon ve dokümanların nasıl oluşturulduğu bilinmelidir. Örneğin mobil uygulama geliştirme ortamında koleksiyon silmek için herhangi bir metot yoktur. Koleksi yonların yönetimi mecburen veri tabanı yöneticisi tarafından el ile yapılmalıdır. Start collection buttonuna basılarak yeni bir koleksiyon oluşturulur. Koleksiyona bir isim verildikten sonra Next buttonuna basılır. Bir sonraki adımda doküman oluşturma ekranı ile karşılaşılır (Görsel 7.45).
 
@@ -285,11 +287,11 @@ Görsel 7.47'deki Add Document buttonuna basılarak sınırsız sayıda doküman
 ![Koleksiyonlar](./veritabani-islemleri/gorsel-7.47-koleksiyonlar.png)
 </div>
 
-### 7.3.4.2. Uzak Veri Tabanında Koleksiyon ve Doküman Silmek
+<h3 style="color:#632896">7.3.4.2. Uzak Veri Tabanında Koleksiyon ve Doküman Silmek</h3>
 
 Uzak veri tabanından koleksiyon silmek için Görsel 7.47'deki işaretli menü açılıp **Delete collection** seçeneği seçilir. Doküman silmek için ise aynı şekilde dokümanların üst tarafında bulunan menü simgesi açılarak açık olan doküman silinir.
 
-<h2 id="7.3.5.">7.3.5. Uzak Veri Tabanında Yetkilendirme İşlemleri</h2>
+<h2 id="7.3.5." style="color:#632896">7.3.5. Uzak Veri Tabanında Yetkilendirme İşlemleri</h2>
 
 Uzak veri tabanları internet üzerinde çalıştığı için internete bağlı her cihaz kullanabilir. Veri tabanı oluşturulduktan sonra internete bağlı her kullanıcının veri tabanına müdahale etmesi istenmez. Sadece yetkili kişilerin veri tabanına ulaşması için Authetication bölümü kullanılır. Herhangi bir yetkilendirme işlemi yapılmamışsa Görsel 7.48'deki ekranla karşılaşılır.
 
@@ -312,7 +314,7 @@ Yetkilendirme işlemlerinde giriş metotlarından biri seçilir. Sosyal medya he
 ![Email/Password yetkilendirme metodunu aktifleştirme](./veritabani-islemleri/gorsel-7.50-emailpassword-yetkilendirme-metodunu-aktiflestirme.png)
 </div>
 
-### 7.3.5.1. Uzak Veri Tabanına Kullanıcı Eklemek ve Kullanıcı İşlemleri
+<h3 style="color:#632896">7.3.5.1. Uzak Veri Tabanına Kullanıcı Eklemek ve Kullanıcı İşlemleri</h3>
 
 Firestore veri tabanında özellikle bir kullanıcı hakkındaki işlemler Users bölümünde yapılır. Görsel 7.51'deki Users bölümünde kullanıcılar oluşturulabilir.
 
@@ -329,7 +331,7 @@ Bir kullanıcı oluşturulduktan sonra Görsel 7.52'deki gibi sisteme kaydedilir
 ![User UID bilgisi](./veritabani-islemleri/gorsel-7.52-user-uid-bilgisi.png)
 </div>
 
-### 7.3.5.2. Uzak Veri Tabanında Doğrulama E-Postalarını Yönetmek
+<h3 style="color:#632896">7.3.5.2. Uzak Veri Tabanında Doğrulama E-Postalarını Yönetmek</h3>
 
 Uzak veri tabanı sisteminde e-posta ve şifre ile yetkilendirme yapmak, iyi niyetli olmayan kişilerin sorumsuzca sistemi kullanmalarına neden olabilir. İyi niyetli olmayan kullanıcılar sahte bir e-posta adresi ile sisteme giriş yapabilir. Firebase veri tabanı sisteminde yetkisiz e-posta adreslerini engellemek için e-posta doğrulama servisi vardır. Kullanıcı, sisteme kaydolduktan sonra mobil uygulama geliştirici tarafından kullanıcıya doğrulama e-postası gönderilir. Bu arada mobil uygulama geliştirici isterse doğrulanmamış e-postaların sisteme girişini de engelleyebilir.
 
@@ -367,7 +369,7 @@ Doğrulama e-postasının şablonu değiştirilebilir. Görsel 7.54'teki düzenl
 
 Gerekli değişikler yapıldıktan sonra Save buttonuna basılarak şablon düzenlenir. Şifre sıfırlama ve e-posta değiştirme şablonları da aynı şekilde değiştirilir.
 
-<h2 id="7.3.6."> 7.3.6. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanıyla Çalışmak </h2>
+<h2 id="7.3.6." style="color:#632896"> 7.3.6. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanıyla Çalışmak </h2>
 
 Mobil uygulama geliştirme ortamında Firebase veri tabanını kullanmak için çeşitli Firebase kütüphanelerinin yüklenmesi gereklidir. Firebase kütüphanelerinin tüm listesine [https://firebase.google.com/docs/android/setup#available-libraries](https://firebase.google.com/docs/android/setup#available-libraries "Firebase Resmi WEB sitesi") adresinden ulaşılabilir. Mobil uygulama geliştiriciler bu listeden ihtiyacı olan kütüphaneyi uygulamaya ekleyerek kullanabilir. 
 
@@ -381,12 +383,12 @@ implementation 'com.google.firebase:firebase-firestore'
 implementation 'com.google.firebase:firebase-storage'
 ```
 
-### 7.3.6.1. Mobil Uygulama Geliştirme Ortamında Kullanıcı İşlemleri
+<h3 style="color:#632896">7.3.6.1. Mobil Uygulama Geliştirme Ortamında Kullanıcı İşlemleri</h3>
 Mobil uygulama geliştirme ortamında Firebase veri tabanı kullanıcı işlemlerinin tamamı **FirebaseAuth** nesnesi ile yapılır.
 
 Firebase nesnelerinin tümü asenkron olarak çalışır. Mobil uygulama geliştirme ortamında ise yazılan tüm kodlar senkron olarak çalışır. Bir başka deyişle satır sırasına göre önce yazılan komut bitmeden sonraki komut çalışmaz. Herhangi bir kod asenkron çalıştığında ise diğer kodların beklemesine gerek yoktur. Sonuç ne zaman gelirse ondan sonra veri kullanılabilir. Uzak veri tabanları internette çalıştığı için verinin sunucudan tekrar cihaza getirilmesi zaman alır. Veri getirme işlemleri senkron olarak yapılırsa sonuç daha gelmeden bir sonraki kod çalışmaz ve sonuç görünmez veya bir hatanın çıkmasına yol açar.
 
-### 7.3.6.2. Mobil Uygulama Ortamında Kullanıcı Kaydetmek
+<h3 style="color:#632896">7.3.6.2. Mobil Uygulama Ortamında Kullanıcı Kaydetmek</h3>
 
 FirebaseAuth nesnesi ile yeni bir kullanıcı **createUserWithEmailAndPassword** metodu kullanılarak oluşturulur. Metot, e-posta adresi ve şifre olmak üzere iki parola alır. İşlem sonucu asenkron çalışacağı için işlemin başarılı olması durumunda **onSuccess** olayı çalışır, işlemin başarısız olması durumunda ise **onFailure** olayı aktif olur. Örneğin "<u>test@test.com</u>" ve "123456" şifresine sahip bir kullanıcı kaydı şu şekilde yapılır:
 
@@ -406,7 +408,7 @@ FirebaseAuth.getInstance()
 });
 ```
 
-### 7.3.6.3. Mobil Uygulama Geliştirme Ortamında Kullanıcı Giriş İşlemleri
+<h3 style="color:#632896">7.3.6.3. Mobil Uygulama Geliştirme Ortamında Kullanıcı Giriş İşlemleri</h3>
 
 FirebaseAuth nesnesi ile kullanıcı giriş işlemi **signInWithEmailAndPassword** metodu kullanılarak yapılır. Metot, e-posta adresi ve şifre olmak üzere iki tane parametre alır. İşlem sonucu asenkron olarak gelir. Sonuç başarılı olursa onSuccess olayı çalışır, sonuç başarısız olursa onFailure olayı çalışır. "<u>test@test.com</u>" e-posta adresi ve "123456" şifresine sahip bir hesabın giriş işlemleri şu şekilde yapılır:
 
@@ -426,7 +428,7 @@ FirebaseAuth.getInstance()
 });
 ```
 
-### 7.3.6.4. Mobil Uygulama Geliştirme Ortamında Oturum Kapatmak
+<h3 style="color:#632896">7.3.6.4. Mobil Uygulama Geliştirme Ortamında Oturum Kapatmak</h3>
 
 Mobil uygulama geliştirme ortamında oturum kapatmak için FirebaseAuth nesnesi şu şekilde kullanılır:
 
@@ -434,7 +436,7 @@ Mobil uygulama geliştirme ortamında oturum kapatmak için FirebaseAuth nesnesi
 FirebaseAuth.getInstance().signOut();
 ```
 
-### 7.3.6.5. Mobil Uygulama Geliştirme Ortamında Doğrulama İletisi Göndermek
+<h3 style="color:#632896">7.3.6.5. Mobil Uygulama Geliştirme Ortamında Doğrulama İletisi Göndermek</h3>
 
 Mobil uygulama geliştirme ortamında doğrulama e-postası gönderebilmek için kullanıcının oturum açması gerekir. FirebaseAuth nesnesinin getCurrentuser metodu, oturum açmış kullanıcıyı verir. Oturum açmış kullanıcıya doğrulama e-postası şu şekilde gönderilir:
 
@@ -455,7 +457,7 @@ FirebaseAuth.getInstance()
 });
 ```
 
-### 7.3.6.6. Mobil Uygulama Geliştirme Ortamında Şifre Sıfırlamak
+<h3 style="color:#632896">7.3.6.6. Mobil Uygulama Geliştirme Ortamında Şifre Sıfırlamak</h3>
 
 Kullanıcılar belli bir süre sonra şifresini unutabilir. Uygulama içinde kullanıcıya şifre hatırlatması için birtakım seçenekler mutlaka verilmelidir. Mobil uygulama geliştirme ortamında Firebase şifre sıfırlama işlemleri şu şekilde yapılır:
 
@@ -475,7 +477,7 @@ FirebaseAuth.getInstance()
 });
 ```
 
-### 7.3.6.7. Mobil Uygulama Geliştirme Ortamında Şifre Değiştirmek
+<h3 style="color:#632896">7.3.6.7. Mobil Uygulama Geliştirme Ortamında Şifre Değiştirmek</h3>
 
 Mobil uygulama geliştirme ortamında kullanıcıların şifrelerinin değiştirilmesi işlemi, FirebaseAuth nesnesinin **updatePassword** metodu ile yapılır. Mobil uygulama geliştirme ortamında kullanıcılar şifrelerini şu şekilde değiştirebilir:
 
@@ -496,7 +498,7 @@ FirebaseAuth.getInstance()
 });
 ```
 
-### 7.3.6.8. Mobil Uygulama Geliştirme Ortamında Kullanıcı Silmek
+<h3 style="color:#632896">7.3.6.8. Mobil Uygulama Geliştirme Ortamında Kullanıcı Silmek</h3>
 
 Mobil uygulama geliştirme ortamında kullanıcı silmek için FirebaseAuth nesnesinin **delete** metodu kullanılır. Bir kullanıcının silinebilmesi için yakın zamanda oturum açmış olması gerekir. Kullanıcı yakın zamanda oturum açmamışsa silme işlemi başarısız olur. Kullanıcı silme işlemi şu şekilde yapılır:
 
@@ -539,8 +541,7 @@ AuthCredential authCredential = EmailAuthProvider
 
 **8. UYGULAMA:** İşlem adımlarına göre yedinci uygulama ile bağlantı kurulan projeyi açarak bir kullanıcı giriş formu oluşturunuz. Kullanıcı kaydı yaparak giriş işlemi sağlayınız. Giriş işlemi başarılı ise sonraki Activity'nin açılmasını sağlayan uygulamayı hazırlayınız.
 
-**1. Adım**: Yedinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak yedinci uygulamayı gerçekleştiriniz.
-
+**1. Adım**: Yedinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak yedinci uygulamayı gerçekleştiriniz.\
 **2. Adım**: build.gradle dosyasını açarak şu kodları **dependencies** bölümüne ekleyiniz:
 
 ```groovy
@@ -616,8 +617,7 @@ buildFeatures{
 ![Ürünler uygulaması giriş ekranı](./veritabani-islemleri/gorsel-7.55-urunler-uygulamasi-giris-ekrani.png)
 </div>
 
-**8. Adım:** EditTextlerin id bilgilerini editEposta ve editSifre veriniz. Buttonlar için btnGiris, btnKayit ve btnSifremiUnuttum id bilgilerini veriniz. Alt tarafta bulunan TextView için ise txtDurum id bilgisini veriniz.
-
+**8. Adım:** EditTextlerin id bilgilerini editEposta ve editSifre veriniz. Buttonlar için btnGiris, btnKayit ve btnSifremiUnuttum id bilgilerini veriniz. Alt tarafta bulunan TextView için ise txtDurum id bilgisini veriniz.\
 **9. Adım:** MainActivity.java dosyasını açarak viewBinding özelliğini şu şekilde aktifleştiriniz:
 
 ```java
@@ -631,7 +631,9 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> View nesnesini android.view.View; kütüphanesinden import ediniz.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>View nesnesini android.view.View; kütüphanesinden import ediniz.
 
 **10. Adım:** btnKayit buttonuna bir onClickListener ekleyip onClick olayını şu şekilde yazınız:
 
@@ -710,14 +712,10 @@ public void onClick(View view) {
 }
 ```
 
-**13. Adım:** Uygulamayı çalıştırınız ve geçerli bir e-posta hesabı ile kayıt yapınız.
-
-**14. Adım:** Uygulama çalışırken Firebase konsolunu açınız ve kullanıcı kaydının yapılıp yapılmadığını kontrol ediniz.
-
-**15. Adım:** Uygulamayı kapatıp tekrar açarak kullanıcı adını, şifresini yanlış veya eksik yazarak gelen hata mesajlarını Görsel 7.56'daki gibi kontrol ediniz.
-
-**16. Adım:** Uygulamayı tekrar açınız. Yeni bir Empty Activity ekleyiniz. Activity'nin adını UrunListele veriniz.
-
+**13. Adım:** Uygulamayı çalıştırınız ve geçerli bir e-posta hesabı ile kayıt yapınız.\
+**14. Adım:** Uygulama çalışırken Firebase konsolunu açınız ve kullanıcı kaydının yapılıp yapılmadığını kontrol ediniz.\
+**15. Adım:** Uygulamayı kapatıp tekrar açarak kullanıcı adını, şifresini yanlış veya eksik yazarak gelen hata mesajlarını Görsel 7.56'daki gibi kontrol ediniz.\
+**16. Adım:** Uygulamayı tekrar açınız. Yeni bir Empty Activity ekleyiniz. Activity'nin adını UrunListele veriniz.\
 **17. Adım:** UrunListele.java dosyasını açıp viewBinding işlemleri için şu kodları yazınız:
 
 ```java
@@ -762,14 +760,16 @@ public void onSuccess(AuthResult authResult) {
 }
 ```
 
-<h2 id="7.3.7.">7.3.7. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesiyle Çalışmak</h2>
+<h2 id="7.3.7." style="color:#632896">7.3.7. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesiyle Çalışmak</h2>
 
 RecyclerView, mobil uygulama geliştirme ortamında bulunan en gelişmiş listeleme nesnesidir. Daha önce kullanılan ListView nesnesinden çok daha hızlı çalışır. RecyclerView veri bağdaştırıcısına ne kadar veri gönderilirse gönderilsin sadece ekrana sığacak kadar veri gösterilir. Örneğin cihazın çözünürlüğüne ve ekran boyutuna bağlı olarak RecyclerView on satır veri gösterebilirse listeden sadece sıradaki on kayıt alınıp gösterilir. Bundan dolayı hem bellek tasarrufu sağlanır hem de çok büyük verilerde herhangi bir yavaşlama olmaz.
 
 RecyclerView içinde veriler gösterilirken bir bağdaştırıcı kullanmak gereklidir. Nesne grubu bir XML dosyasında tanımlanarak bağdaştırıcı sayesinde RecyclerView içinde gösterilir. ListView nesnesinden farklı RecyclerView için bir LayoutManager tanımlanmalıdır. LayoutManager nesnesine göre veriler istenirse satır satır veya bir ızgara şeklinde gösterilir. RecyclerView için tanımlanabilecek LayoutManager nesneleri şunlardır:
 
 - **LinearLayoutManager**: Verilerin satır satır görüntülenmesini sağlar.
+
 - **GridLayoutManager**: Verilerin iki sütunlu bir ızgara şeklinde görüntülenmesini sağlar. Tüm satır ve sütunlar birbirine eşit olacak şekilde listelenir.
+
 - **StaggeredGridLayoutManager**: GridLayoutManager ile benzer çalışır. Burada satır ve sütunların eşit olması zorunluluğu yoktur.
   
 Aynı verilere sahip bir RecyclerView nesnesiyle LayoutManager nesneleri arasındaki farklar Görsel 7.57'de verilmiştir.
@@ -779,7 +779,7 @@ Aynı verilere sahip bir RecyclerView nesnesiyle LayoutManager nesneleri arasın
 ![Recyclerview LayoutManager görünümleri](./veritabani-islemleri/gorsel-7.57-recyclerview-layoutmanager-gorunumleri.png)
 </div>
 
-### 7.3.7.1. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesi Tanımlamak
+<h3 style="color:#632896">7.3.7.1. Mobil Uygulama Geliştirme Ortamında RecyclerView Nesnesi Tanımlamak</h3>
 
 Mobil uygulama geliştirme ortamında RecyclerView nesnesiyle verileri göstermek için her bir LayoutManager nesnesine ekran tasarlamak gereklidir. res>layout bölümünde her bir LayoutManager için ayrı ayrı ekran tasarlanır. Daha sonra Recyclerview.Adapter sınıfından türemiş bir nesne ile verilerin tasarlanan ekranlardaki View nesnelerine bağlanması sağlanır.
 
@@ -803,24 +803,26 @@ StaggeredGridLayoutManager nesnesi için iki parametre verilir. Birinci parametr
 binding.recyclerView.setLayoutManager(new StaggeredGridLayoutManager( 2, StaggeredGridLayoutManager.VERTICAL));
 ```
 
-### 7.3.7.2. RecyclerView Adapter Tanımlamak
+<h3 style="color:#632896">7.3.7.2. RecyclerView Adapter Tanımlamak</h3>
 
 Recyclerview.Adapter kullanımı, BaseAdapter ve ArrayAdapter kullanımından daha kolaydır. Recyclerview.Adapter metotları şunlardır:
 
 - **onCreateViewHolder()**: Bağdaştırıcı bir liste ögesi oluşturacağı zaman ilk olarak bu metot çalışır. onCreateViewHolder metodu yeni bir ViewHolder nesnesi oluşturur. Bağdaştırıcı ile birlikte Inner Class olarak da bir ViewHolder nesnesi oluşturulur. ViewHolder nesnesinde liste ögesinin bağlanacağı tüm View nesneleri tanımlanır.
+
 - **onBindViewHolder()**: onCreateViewHolder metodu çalıştıktan sonra oluşturulan ViewHolder nesnesi onBindViewHolder metoduna gönderilir. Bu metotta listedeki veriler View nesnelerine bağlanır.
+
 - **getItemCount()**: Veri listesinde kaç tane kayıt olduğu bu metotla tespit edilir.Temel bir Recyclerview.Adapter şu şekilde tanımlanır:
 
 ```java
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
-private String[] veriler;
-/*
-Her bir liste ögesinin bağlanacağı View nesnesi ViewHolder içinde
-tanımlanır. Örnekte sadece String türünden veri olduğu için
-sadece bir tane TextView tanımlanmıştır.
-*/
-public static class ViewHolder extends RecyclerView.ViewHolder {
-    private final TextView textView;
+    private String[] veriler;
+    /*
+    Her bir liste ögesinin bağlanacağı View nesnesi ViewHolder içinde
+    tanımlanır. Örnekte sadece String türünden veri olduğu için
+    sadece bir tane TextView tanımlanmıştır.
+    */
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        private final TextView textView;
         public ViewHolder(View view) {
             super(view);
             // View nesnesine click olayı yazılacaksa burada yazılabilir.
@@ -858,11 +860,11 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
 }
 ```
 
-<h2 id="7.3.8.">7.3.8. Uzak Veri Tabanından Veri Getirmek</h2>
+<h2 id="7.3.8." style="color:#632896">7.3.8. Uzak Veri Tabanından Veri Getirmek</h2>
 
 Firestore veri tabanında tek seferlik veya canlı olmak üzere iki türlü veri okunabilir. Canlı veri okuma, dokümanlarda herhangi bir değişiklik olduğunda tüm verileri getirir. Bundan dolayı uzak veritabanı ile çok fazla iletişim kurulmasını gerektirir. Firebase veri tabanının verdiği ücretsiz kullanım kotasının çok hızlı tükenmesine neden olur. Tek seferlik veri okuma da ise veriler gerektiği zaman uzak veri tabanından getirilir.
 
-### 7.3.8.1. get() Metoduyla Veri Getirmek
+<h3 style="color:#632896">7.3.8.1. get() Metoduyla Veri Getirmek</h3>
 
 Tek seferlik veri okuma şu şekilde yapılır:
 
@@ -893,7 +895,7 @@ FirebaseFirestore.getInstance()
     });
 ```
 
-### 7.3.8.2. addSnapshotLisnener() Metoduyla Veri Getirmek
+<h3 style="color:#632896">7.3.8.2. addSnapshotLisnener() Metoduyla Veri Getirmek</h3>
 
 Canlı veri işlemi, addSnapshotListener metodunun tanımlanması ile şu şekilde gerçekleştirilir:
 
@@ -922,7 +924,7 @@ FirebaseFirestore.getInstance()
     });
 ```
 
-### 7.3.8.3. Verileri Sıralamak
+<h3 style="color:#632896">7.3.8.3. Verileri Sıralamak</h3>
 
 Firestore veri tabanında veriler orderBy metodu ile sıralanır. Herhangi bir sıralama şekli belirtilmezse varsayılan olarak küçükten büyüğe doğru veriler sıralanır. Veriler "urunadi" alanına göre küçükten büyüğe şu şekilde sıralanır:
 
@@ -965,7 +967,7 @@ FirebaseFirestore.getInstance()
     ...
 ```
 
-### 7.3.8.4. Verileri Limitlemek
+<h3 style="color:#632896">7.3.8.4. Verileri Limitlemek</h3>
 
 Firestore veri tabanında verileri limitlemek için limit() metodu kullanılır. Firestore veri tabanındaki ilk üç kaydın alınması şu şekilde yapılır:
 
@@ -978,7 +980,7 @@ FirebaseFirestore.getInstance()
     ...
 ```
 
-### 7.3.8.5. Verileri Filtrelemek
+<h3 style="color:#632896">7.3.8.5. Verileri Filtrelemek</h3>
 
 Verileri sunucu üzerinde filtrelemek için where ile başlayan sorgulama metotları kullanılır (Tablo 7.10).
 
@@ -1058,7 +1060,7 @@ FirebaseFirestore.getInstance()
     . . .
 ```
 
-### 7.3.8.6. SearchView Nesnesi Kullanarak Filtreleme Yapmak
+<h3 style="color:#632896">7.3.8.6. SearchView Nesnesi Kullanarak Filtreleme Yapmak</h3>
 
 Her ne kadar sunucu üzerinde filtreleme yapmak çok büyük kolaylık sağlasa da uygulama sonuçta internet trafiğini kullanır. Cihaza alınmış veriler üzerinde filtreleme işlemi yapmak, internet trafiğini olumlu yönde etkiler ve daha hızlı sonuç verir. SearchView metin kutusu kullanılarak basit bir filtreleme işlemi şu şekilde yapılır:
 
@@ -1093,8 +1095,7 @@ public void setData(ArrayList<Urun> liste){
 
 **9. UYGULAMA:** İşlem adımlarına göre sekizinci uygulama ile giriş işlemleri tamamlanmış uygulamaya kayıt listeleme işlemlerini ekleyiniz.
 
-**1. Adım:** Sekizinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tümadımları tekrarlayarak sekizinci uygulamayı gerçekleştiriniz.
-
+**1. Adım:** Sekizinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tümadımları tekrarlayarak sekizinci uygulamayı gerçekleştiriniz.\
 **2. Adım:** Uygulamaya Urun isimli bir sınıf ekleyerek veri modelinizi şu şekilde tanımlayınız:
 
 ```java
@@ -1138,8 +1139,7 @@ public class Urun implements Serializable {
 }
 ```
 
-**3. Adım:** Yeni bir sınıf oluşturunuz ve sınıfın adını DataAdaptor.class veriniz.
-
+**3. Adım:** Yeni bir sınıf oluşturunuz ve sınıfın adını DataAdaptor.class veriniz.\
 **4. Adım:** DataAdaptor sınıfını şu şekilde tanımlayınız:
 
 ```java
@@ -1195,12 +1195,9 @@ public class DataAdaptor extends RecyclerView.Adapter<DataAdaptor.ViewHolder> {
 }
 ```
 
-**5. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını UrunDetay veriniz.
-
-**6. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını UrunEkle veriniz.
-
-**7. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını Ayarlar veriniz.
-
+**5. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını **UrunDetay** veriniz.\
+**6. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını **UrunEkle** veriniz.\
+**7. Adım:** Projeye yeni bir Empty Activity ekleyiniz ve Activity adını **Ayarlar** veriniz.\
 **8. Adım:** Manifests dosyasını açıp dosyada şu değişiklikleri yapınız:
 
 ```xml
@@ -1240,11 +1237,9 @@ public class DataAdaptor extends RecyclerView.Adapter<DataAdaptor.ViewHolder> {
 ![urun_ekle_xml tasarım ekranı](./veritabani-islemleri/gorsel-7.60-uruneklexml-tasarim-ekrani.png)
 </div>
 
-**12. Adım:** Vector Assets menüsünden Asset Studio'yu açarak simge seçme ekranına geçiniz.
-
-**13. Adım:** Açılan pencereden image yazarak boş resim için kullanılacak simgeyi seçiniz.
-
-**14. Adım:** Resmi seçtikten sonra resmin rengini Görsel 7.61'deki gibi düzenleyip, bos_resim ismini vererek kaydediniz.
+**12. Adım:** Vector Assets menüsünden Asset Studio'yu açarak simge seçme ekranına geçiniz.\
+**13. Adım:** Açılan pencereden **image** yazarak boş resim için kullanılacak simgeyi seçiniz.\
+**14. Adım:** Resmi seçtikten sonra resmin rengini Görsel 7.61'deki gibi düzenleyip, **bos_resim** ismini vererek kaydediniz.
 
 <div style='display:block;text-align:center'>
 
@@ -1258,11 +1253,11 @@ public class DataAdaptor extends RecyclerView.Adapter<DataAdaptor.ViewHolder> {
 ![Android Resource Directory penceresi](./veritabani-islemleri/gorsel-7.62-android-resource-directory-penceresi.png)
 </div>
 
-**16. Adım:** SearchView id bilgisini editArama, RecyclerView nesnesinin id bilgisini recyclerView veriniz.
-**17. Adım:** res klasörü üstünde sağ tıklayarak New menüsünden Android Resource Directory seçeneğini seçiniz.
-**18. Adım:** Açılan pencereden Görsel 7.62'deki gibi menu seçeneğini seçiniz.
-**19. Adım:** menu dizini geldikten sonra bu dizine sağ tıklayarak New menüsünden Menu Resource File seçeneğini seçiniz.
-**20. Adım:** Açılan pencereden dosyaya urunlistemenu adını veriniz. Dosyayı şu şekilde tanımlayınız:
+**16. Adım:** SearchView id bilgisini **editArama**, RecyclerView nesnesinin id bilgisini **recyclerView** veriniz.\
+**17. Adım:** res klasörü üstünde sağ tıklayarak New menüsünden **Android Resource Directory** seçeneğini seçiniz.\
+**18. Adım:** Açılan pencereden Görsel 7.62'deki gibi **menu** seçeneğini seçiniz.\
+**19. Adım:** menu dizini geldikten sonra bu dizine sağ tıklayarak New menüsünden **Menu Resource File** seçeneğini seçiniz.\
+**20. Adım:** Açılan pencereden dosyaya **urunlistemenu** adını veriniz. Dosyayı şu şekilde tanımlayınız:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1367,16 +1362,11 @@ public class UrunListele extends AppCompatActivity {
 
 **10. UYGULAMA:** İşlem adımlarına göre dokuzuncu uygulama ile tamamlanan UrunListele Activity uygulamasının Kullanıcı Ayarları bölümünü yapınız.
 
-**1. Adım:** Dokuzuncu uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak dokuzuncu uygulamayı gerçekleştiriniz.
-
-**2. Adım:** activity_ayarlar.xml dosyasını açınız. Kullanıcı Ayarları bölümünün ekranını Görsel 7.63'teki gibi tasarlayınız.
-
-**3. Adım:** İki tane editText ve iki tane button ekleyiniz. editTextlerin adlarını **editAyarlarSifre** ve **editAyarlarYeniSifre** veriniz.
-
-**4. Adım:** Buttonların adlarını **btnAyarlarSifreDegistir** ve **btnAyarlarDogrulamaEposta** veriniz.
-
-**5. Adım:** Buttonların id bilgilerini **btnAyarlarSifreDegistir** ve **btnAyarlarDogrulamaEposta** veriniz.
-
+**1. Adım:** Dokuzuncu uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak dokuzuncu uygulamayı gerçekleştiriniz.\
+**2. Adım:** activity_ayarlar.xml dosyasını açınız. Kullanıcı Ayarları bölümünün ekranını Görsel 7.63'teki gibi tasarlayınız.\
+**3. Adım:** İki tane editText ve iki tane button ekleyiniz. editTextlerin adlarını **editAyarlarSifre** ve **editAyarlarYeniSifre** veriniz.\
+**4. Adım:** Buttonların adlarını **btnAyarlarSifreDegistir** ve **btnAyarlarDogrulamaEposta** veriniz.\
+**5. Adım:** Buttonların id bilgilerini **btnAyarlarSifreDegistir** ve **btnAyarlarDogrulamaEposta** veriniz.\
 **6. Adım:** Ayarlar.java dosyasını açarak dosyayı şu şekilde tanımlayınız:
 
 ```java
@@ -1442,15 +1432,14 @@ public class Ayarlar extends AppCompatActivity {
 }
 ```
 
-**6. Adım:** Uygulamayı çalıştırınız. UrunListele bölümündeyken menüden Ayarları açınız ve şifrenizi değiştiriniz.
-
+**6. Adım:** Uygulamayı çalıştırınız. UrunListele bölümündeyken menüden Ayarları açınız ve şifrenizi değiştiriniz.\
 **7. Adım:** Menüden Oturumu Kapat seçeneğini seçip uygulamaya yeniden giriş yapınız.
 
-<h2 id="7.3.9.">7.3.9. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanına Veri Eklemek</h2>
+<h2 id="7.3.9." style="color:#632896">7.3.9. Mobil Uygulama Geliştirme Ortamında Uzak Veri Tabanına Veri Eklemek</h2>
 
 Firestore veri tabanına **add** ve **set** metotları kullanılarak veri eklenebilir. Add metodu her ne olursa olsun veriyi dokümana ekler. Set metodu ise veri dokümanda yoksa ekleme yapar, veri dokümanda varsa var olan veriyi değiştirir. Kaydedilmek istenen veriler bir HashMap veya nesne modeli kullanılarak dokümana eklenir.
 
-### 7.3.9.1. Nesne Modelini Kullanarak Veri Eklemek
+<h3 style="color:#632896">7.3.9.1. Nesne Modelini Kullanarak Veri Eklemek</h3>
 
 Set metodu kullanarak veri eklemek için bir nesne modeli gereklidir. Nesne modelinin boş bir yapılandırıcı metodu mutlaka olmalıdır.
 
@@ -1488,7 +1477,7 @@ FirebaseFirestore.getInstance().collection("sehirler")
         });
 ```
 
-### 7.3.9.2. HashMap Kullanarak Veri Eklemek
+<h3 style="color:#632896">7.3.9.2. HashMap Kullanarak Veri Eklemek</h3>
 
 HashMap kullanılarak dokümana şu şekilde veri eklenir:
 
@@ -1513,8 +1502,7 @@ FirebaseFirestore.getInstance().collection("sehirler")
 
 **11. UYGULAMA:** İşlem adımlarına göre onuncu uygulama ile tamamlanan uygulamada veri ekleme bölümünü oluşturunuz.
 
-**1. Adım:** Onuncu uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak onuncu uygulamayı gerçekleştiriniz.
-
+**1. Adım:** Onuncu uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak onuncu uygulamayı gerçekleştiriniz.\
 **2. Adım:** activity_urun_ekle.xml dosyasını açınız. Activity'nin görünümünü Görsel 7.63'teki gibi tasarlayınız.
 
 <div style='display:block;text-align:center'>
@@ -1522,10 +1510,8 @@ FirebaseFirestore.getInstance().collection("sehirler")
 ![UrunEkle Activity tasarım ekranı](./veritabani-islemleri/gorsel-7.63-urunekle-activity-tasarim-ekrani.png)
 </div>
 
-**3. Adım:** Üç adet EditText ve bir button ekleyiniz. EditTextlerin id bilgilerini editUrunadi, editFiyat ve editAdet veriniz.
-
-**4. Adım:** Eklenen buttonun adını btnUrunEkle veriniz.
-
+**3. Adım:** Üç adet EditText ve bir button ekleyiniz. EditTextlerin id bilgilerini **editUrunadi**, **editFiyat** ve **editAdet** veriniz.\
+**4. Adım:** Eklenen buttonun adını **btnUrunEkle** veriniz.\
 **5. Adım:** UrunEkle.java dosyasını şu şekilde kodlayınız:
 
 ```java
@@ -1601,7 +1587,7 @@ public class UrunEkle extends AppCompatActivity {
 }
 ```
 
-<h2 id="7.3.10.">7.3.10. Uzak Veri Tabanından Veri Silmek</h2>
+<h2 id="7.3.10." style="color:#632896">7.3.10. Uzak Veri Tabanından Veri Silmek</h2>
 
 Firestore veri tabanından veri silme işlemi, aslında doküman silme işlemidir. Silme işlemleri de asenkron olarak çalışır. Uzak veri tabanından veri silme işlemi şu şekilde yapılır:
 
@@ -1643,7 +1629,7 @@ FirebaseFirestore.getInstance()
     });
 ```
 
-<h2 id="7.3.11.">7.3.11. Uzak Veri Tabanında Veri Güncellemek</h2>
+<h2 id="7.3.11." style="color:#632896">7.3.11. Uzak Veri Tabanında Veri Güncellemek</h2>
 
 Firestore veri tabanında güncelleme işlemleri update metodu ile yapılır. Update metoduna verilen HashMap türünde veriler dokümanda varsa değiştirilir, HashMap nesnesinden gelen veriler uzak veri tabanında yoksa olmayan veriler eklenir. Uzak veri tabanında güncelleme işlemi şu şekilde yapılır:
 
@@ -1688,8 +1674,7 @@ FirebaseFirestore.getInstance().collection("urunler")
 
 **12. UYGULAMA:** İşlem adımlarına göre on birinci uygulama ile tamamlanan uygulamaya veri detay gösterme ve güncelleme bölümlerini ekleyiniz.
 
-**1. Adım:** On birinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak on birinci uygulamayı gerçekleştiriniz.
-
+**1. Adım:** On birinci uygulama ile yapılan projeyi açınız. Kaydedilmiş bir uygulama yoksa tüm adımları tekrarlayarak on birinci uygulamayı gerçekleştiriniz.\
 **2. Adım:** urun_detay_xml dosyasını açarak güncelleme işlemi detay ekranını Görsel 7.64'teki gibi tasarlayınız.
 
 <div style='display:block;text-align:center'>
@@ -1845,7 +1830,7 @@ public class UrunDetay extends AppCompatActivity {
 }
 ```
 
-<h2 id="7.3.12.">7.3.12. Firestore Veri Tabanında Kurallarla Çalışmak</h2>
+<h2 id="7.3.12." style="color:#632896">7.3.12. Firestore Veri Tabanında Kurallarla Çalışmak</h2>
 
 Bu bölüme kadar bütün işlemler bir test veri tabanında yapılmıştır. Test veri tabanları internete açıktır. Veri tabanında bulunan kayıtlara sadece yetkili kullanıcılar erişebilmelidir. Firestore veri tabanı Firebase internet sitesinden açılarak **Rules** bölümünde kısıtlama işlemleri yapılabilir.
 
@@ -1890,7 +1875,9 @@ Verilen izinler şunlardır:
     - delete
     - create
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> Kurallarda write ile izin verilmişse altta kalan diğer izinlerin hiçbir hükmü yoktur.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>Kurallarda write ile izin verilmişse altta kalan diğer izinlerin hiçbir hükmü yoktur.
 
 Örnek kuralda write ile yazma izni verilmiş ancak update izni kapatılmıştır. Verilen örnekte write izni olduğu için update ile izin verilmemesinin hiçbir hükmü yoktur.
 
@@ -1966,12 +1953,9 @@ service cloud.firestore {
 
 **13. UYGULAMA:** İşlem adımlarına göre on ikinci uygulamada tamamlanan uygulama için Firestore veri tabanında kurallar yazarak veri tabanını güvenli hâle getiriniz.
 
-**1. Adım:** Firebase internet sitesini açarak konsola gidiniz.
-
-**2. Adım:** Urunlerfirebase veri tabanını açınız.
-
-**3. Adım:** Firestore veri tabanını açıp Rules bölümüne geçiniz.
-
+**1. Adım:** Firebase internet sitesini açarak konsola gidiniz.\
+**2. Adım:** Urunlerfirebase veri tabanını açınız.\
+**3. Adım:** Firestore veri tabanını açıp Rules bölümüne geçiniz.\
 **4. Adım:** Rules bölümünü şu şekilde yazınız:
 
 ```Firestore Security Rules
