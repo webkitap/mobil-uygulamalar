@@ -1,4 +1,4 @@
-# 8.1. YAYIN ALGILAYICILARLA ÇALIŞMAK
+<h1 style="color:#0073c0">8.1. YAYIN ALGILAYICILARLA ÇALIŞMAK</h1>
 
 - <a href="#8.1.1.">8.1.1. BroadcastReceiver Sınıfı Oluşturmak  </a>
 - <a href="#8.1.2.">8.1.2. Kodla Yayın Algılayıcıları Tetiklemek </a>
@@ -7,7 +7,7 @@ Android işletim sistemi; cihazın uçak moduna alınması, şarj edilmeye başl
 
 Mesajları alabilmek için manifest dosyasına kaydolmak gereklidir. Bazı mesajlar, kayda rağmen alınmayabilir. Bu tür mesajlar için izin alınmalıdır. Özellikle tehlikeli (dangerous) olarak işaretlenmiş izinler kullanıcıdan izin alınarak dinlenebilir.
 
-<h2 id="8.1.1.">8.1.1. BroadcastReceiver Sınıfı Oluşturmak</h2>
+<h2 id="8.1.1." style="color:#0073c0">8.1.1. BroadcastReceiver Sınıfı Oluşturmak</h2>
 
 Mesaj kaydı, manifest dosyasında tanımlanır. Örneğin pil seviyesi ile ilgili mesajları almak için manifest dosyasına şu eklemeler yapılır:
 
@@ -75,40 +75,30 @@ Charge level sürgü kontrolü %15 ve altına çekildiğinde emülatörde Görse
 
 **1. UYGULAMA:** İşlem adımlarına göre bir yayın alıcı sınıf tanımlayıp pil seviyesi düşük olduğunda kullanıcıyı Toast mesajı ile uyarınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "PilSeviyesiAlgilayiciApp" veriniz.
-
-**2. Adım:** Yeni bir java dosyası oluşturunuz, adını "PilSeviyesiAlgilayici.java" olarak veriniz.
-
-**3. Adım:** PilSeviyesiAlgilayici.java dosyasını açıp BroadcastReceiver sınıfından türetiniz ve gerekli metotları oluşturunuz.
-
-**4. Adım:** PilSeviyesiAlgilayici.java dosyasında onReceive metoduyla Toast mesajı tanımlayınız.
-
-**5. Adım:** Manifest dosyasını açarak yayın algılayıcı sınıfını kaydediniz.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "PilSeviyesiAlgilayiciApp" veriniz.\
+**2. Adım:** Yeni bir java dosyası oluşturunuz, adını "PilSeviyesiAlgilayici.java" olarak veriniz.\
+**3. Adım:** PilSeviyesiAlgilayici.java dosyasını açıp BroadcastReceiver sınıfından türetiniz ve gerekli metotları oluşturunuz.\
+**4. Adım:** PilSeviyesiAlgilayici.java dosyasında onReceive metoduyla Toast mesajı tanımlayınız.\
+**5. Adım:** Manifest dosyasını açarak yayın algılayıcı sınıfını kaydediniz.\
 **6. Adım:** MainActivity dosyasını açınız. Yayın algılayıcı sınıfından şu şekilde bir nesne oluşturunuz:
 
 ```java
 PilSeviyesiAlgilayici pilSeviyesiAlgilayici;
 ```
 
-**7. Adım:** onCreate metodunda pilSeviyesiAlgilayici nesnesini oluşturunuz.
-
-**8. Adım**: onCreate metodunda gerekli izinleri alınız.
-
-**9. Adım**: onResume metodunda yayın alıcıyı kaydediniz.
-
-**10. Adım**: onStop metodunda yayın alıcının kaydını iptal ediniz.
-
+**7. Adım:** onCreate metodunda pilSeviyesiAlgilayici nesnesini oluşturunuz.\
+**8. Adım**: onCreate metodunda gerekli izinleri alınız.\
+**9. Adım**: onResume metodunda yayın alıcıyı kaydediniz.\
+**10. Adım**: onStop metodunda yayın alıcının kaydını iptal ediniz.\
 **11. Adım**: Uygulamayı çalıştırıp emülatörü açınız ve Gelişmiş Kontroller panelini kullanarak gerekli gözlemleri yapınız.
 
-<h2 id="8.1.2.">8.1.2. Kodla Yayın Algılayıcıları Tetiklemek</h2>
+<h2 id="8.1.2." style="color:#0073c0">8.1.2. Kodla Yayın Algılayıcıları Tetiklemek</h2>
 
 Yayın algılayıcılar gerektiği zaman harekete geçirilebilir. sendBroadcast metoduna bir Intent ve rilerek yayın alıcının çalışması sağlanır. Intent nesnesine herhangi bir veri eklenerek sendBroadcast metodu ile yayın alıcıya iletilebilir. onReceive metodu parametre olarak Context ve Intent nesnelerini alır.
 
 **2. UYGULAMA:** İşlem adımlarına göre yeni bir sınıf oluşturarak BroadcastReceiver ’dan türetiniz. Uygulamanızdan bir EditText kutusuna mesaj yazıp oluşturduğunuz sınıfa gönderiniz.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BroadcastGonder" veriniz.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "BroadcastGonder" veriniz.\
 **2. Adım:** activity_main.xml dosyasını açarak Görsel 8.3’teki gibi bir EditText, bir de Button ekleyiniz.
 
 <div style='display:block;text-align:center'>
@@ -116,19 +106,16 @@ Yayın algılayıcılar gerektiği zaman harekete geçirilebilir. sendBroadcast 
 ![BroadcastGonder uygulaması ekran tasarımı](./gelismis-uygulama-tasarlama/gorsel-8.3-broadcastgonder-uygulamasi-ekran-tasarimi.png)
 </div>
 
-**3. Adım:** EditText nesnesine "editMesaj", Button nesnesine "btnGonder" adını veriniz.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**5. Adım:** MesajAlgilayici isimli bir sınıf oluşturunuz ve bu sınıfı BroadcastReceiver sınıfından türetiniz.
-
+**3. Adım:** EditText nesnesine "editMesaj", Button nesnesine "btnGonder" adını veriniz.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**5. Adım:** MesajAlgilayici isimli bir sınıf oluşturunuz ve bu sınıfı BroadcastReceiver sınıfından türetiniz.\
 **6. Adım:** MesajAlgilayici.java dosyasında onReceive metodunu şu şekilde düzenleyiniz:
 
 ```java
 public class MesajAlgilayici extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        String mesaj=intent.getStringExtra("mesaj");
+        String mesaj = intent.getStringExtra("mesaj");
         Toast.makeText(context, mesaj, Toast.LENGTH_LONG).show();
     }
 }

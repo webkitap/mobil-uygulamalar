@@ -1,4 +1,4 @@
-# 8.4. BAŞKA UYGULAMALARLA ETKİLEŞİM KURMAK
+<h1 style="color:#0073c0">8.4. BAŞKA UYGULAMALARLA ETKİLEŞİM KURMAK</h1>
 
 - <a href="#8.4.1.">8.4.1. Paylaş Butonuyla Diğer Uygulamalardan Veri Almak </a>
 - <a href="#8.4.2.">8.4.2. BroadcastReceiver Kullanarak Uygulamaların Arasında Haberleşmek </a>
@@ -13,7 +13,7 @@ startActivity(intent);
 
 Implicit Intent kullanımında seçilen IntentFilter nesnesi önemlidir. Veriler, intenti çalıştıracak IntentFilter nesnesine uygun bir şekilde ayarlanmalıdır.
 
-<h2 id="8.4.1.">8.4.1. Paylaş Butonuyla Diğer Uygulamalardan Veri Almak</h2>
+<h2 id="8.4.1." style="color:#0073c0">8.4.1. Paylaş Butonuyla Diğer Uygulamalardan Veri Almak</h2>
 
 Günümüzde hemen her uygulamada Paylaş butonu bulunur. Paylaş butonu sayesinde bir uygulama kullanılırken beğenilen bir içerik başka bir uygulamaya gönderilebilir. Mobil uygulama geliştirme ortamında IntentFilter nesnesi sayesinde bu özelliğin kullanımı sağlanır. Paylaşılan verinin türüne göre Paylaş menüsünde uygulamalar görüntülenir. Örneğin bir resim paylaşılırsa resim işleyebilen uygulamalar Paylaş menüsünde görünür. PDF paylaşılacağı zaman da bu listede PDF açabilen uygulamalar görünür. Bu özellik, IntentFilter nesneleri ile sağlanır.
 
@@ -31,8 +31,11 @@ Manifest dosyasında yazılan IntentFilter, herhangi bir uygulamada Paylaş buto
 
 Diğer MIME tipleri şunlardır:
 - **Text Dosyaları:** text/plain, text/rtf, text/html, text/json ve tüm türler için text/* kullanılır.
+
 - **Resim Dosyaları:** image/jpg, image/png, image/gif ve tüm resim dosyası türleri için image/* kullanılır.
+
 - **Video Dosyaları:** video/mp4, video/3gp ve tüm video dosya türleri için video/* kullanılır.
+
 - **Özel Dosyalar:** Uygulamaların dosya türleri kayıt altına alınmışsa application/pdf şekilde kullanılır.
   
 Uygulamaya dosya gönderilirse şu şekilde alınır:
@@ -48,10 +51,8 @@ if (action.equals(Intent.ACTION_SEND) && type != null) {
 
 **9. UYGULAMA:** İşlem adımlarına göre mobil uygulama ekranına bir ImageView yerleştirerek uygulama arabirimi tasarımı yapınız. Uygulamanın başka bir dosyadan resim dosyası almasını ve gelen resmi göstermesini sağlayınız.
 
-**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "DigerApp" yapınız.
-
-**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.
-
+**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "DigerApp" yapınız.\
+**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.\
 **3. Adım:** activity_main.xml dosyasını açarak şu şekilde düzenleyiniz:
 
 ```xml
@@ -88,8 +89,7 @@ if (action.equals(Intent.ACTION_SEND) && type != null) {
 </intent-filter>
 ```
 
-**5. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturarak gerekli ayarlamaları yapınız.
-
+**5. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturarak gerekli ayarlamaları yapınız.\
 **6. Adım:** dosyaAl isimli bir metot oluşturarak metodun kodlarını şu şekilde yazınız:
 
 ```java
@@ -116,8 +116,7 @@ if (action.equals(Intent.ACTION_SEND) && type != null) {
 }
 ```
 
-**8. Adım:** Uygulamayı çalıştırınız. Emülatörde uygulama açıldıktan sonra uygulamayı kapatıp fotoğraf uygulamasını açınız. Emülatörde herhangi bir görsel dosyası yoksa internetten telifsiz bir görsel indiriniz.
-
+**8. Adım:** Uygulamayı çalıştırınız. Emülatörde uygulama açıldıktan sonra uygulamayı kapatıp fotoğraf uygulamasını açınız. Emülatörde herhangi bir görsel dosyası yoksa internetten telifsiz bir görsel indiriniz.\
 **9. Adım:** Fotoğraf uygulamasında bir görsel seçip Paylaş butonuna basınız. Paylaş menüsü açıldıktan sonra listede geliştirilen uygulamayı seçiniz (Görsel 8.17).
 
 <div style='display:block;text-align:center'>
@@ -141,7 +140,7 @@ if (action.equals(Intent.ACTION_SEND) && type != null) {
 >| 2. Video almak için gerekli kodları yazdı.                   |
 >| 3. Manifest dosyasına gerekli IntentFilter ayarlarını girdi. |
 
-<h2 id="8.4.2.">8.4.2. BroadcastReceiver Kullanarak Uygulamaların Arasında Haberleşmek</h2>
+<h2 id="8.4.2." style="color:#0073c0">8.4.2. BroadcastReceiver Kullanarak Uygulamaların Arasında Haberleşmek</h2>
 
 BroadcastReceiver sınıfları her ne kadar dinleme işlemi yapsa da veri gönderip almak için de kullanılır. Bir Broadcast sınıfı oluşturulurken parametre olarak Context ve Intent kullanılır. Intent nesneleri veri taşımak için elverişli nesnelerdir. putExtra metotları kullanılarak Intent nesneleri ile veri taşıma Görsel 8.18’deki gibi yapılır.
 
@@ -186,10 +185,8 @@ Broadcast sınıfında onReceive metodu ile mesaj alınıp Intent nesnesi ile ge
 
 **10. UYGULAMA:** İşlem adımlarına göre alıcı ve verici şeklinde iki tane uygulama oluşturarak bir uygulamadan diğer uygulamaya veri gönderen uygulamaları yazınız.
 
-**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "Uygulama01" yapınız.
-
-**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.
-
+**1. Adım:** Empty Activity şablonunu kullanarak yeni bir proje oluşturunuz. Projenin adını "Uygulama01" yapınız.\
+**2. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.\
 **3. Adım:** activity_main.xml dosyasını şu şekilde düzenleyiniz:
 
 ```xml
@@ -214,16 +211,14 @@ Broadcast sınıfında onReceive metodu ile mesaj alınıp Intent nesnesi ile ge
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-**4. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturup gerekli ayarlamaları yapınız.
-
+**4. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturup gerekli ayarlamaları yapınız.\
 **5. Adım:** binding nesnesini static olarak şu şekilde tanımlayınız:
 
 ```java
 static ActivityMainBinding binding;
 ```
 
-**6. Adım:** Broadcasting.java dosyası oluşturunuz ve Broadcasting sınıfını BroadcastReceiver sınıfından türetiniz.
-
+**6. Adım:** Broadcasting.java dosyası oluşturunuz ve Broadcasting sınıfını BroadcastReceiver sınıfından türetiniz.\
 **7. Adım:** Manifest dosyasına şu bilgileri giriniz:
 
 ```xml
@@ -235,12 +230,9 @@ static ActivityMainBinding binding;
 </receiver>
 ```
 
-**8. Adım:** Uygulamayı çalıştırınız.
-
-**9. Adım:** Yeni bir proje daha oluşturunuz. Empty Activity seçip uygulamanın adını "Uygulama02" yapınız.
-
-**10. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.
-
+**8. Adım:** Uygulamayı çalıştırınız.\
+**9. Adım:** Yeni bir proje daha oluşturunuz. Empty Activity seçip uygulamanın adını "Uygulama02" yapınız.\
+**10. Adım:** build.gradle dosyasını açarak viewBinding özelliğini aktif ediniz.\
 **11. Adım:** activity_main.xml dosyasını şu şekilde düzenleyiniz:
 
 ```xml
@@ -267,10 +259,8 @@ static ActivityMainBinding binding;
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-**12. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturup gerekli ayarlamaları yapınız.
-
-**14. Adım:** Button nesnesi için bir onClickListener tanımlayınız.
-
+**12. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnesi oluşturup gerekli ayarlamaları yapınız.\
+**14. Adım:** Button nesnesi için bir onClickListener tanımlayınız.\
 **15. Adım:** onClick olayına şu kodları yazınız:
 
 ```java
@@ -288,8 +278,7 @@ sendBroadcast(intent,"com.example.broadcast.app.permission");
 <permission android:name="com.example.broadcast.app.permission" android:protectionLevel="signature"/>
 ```
 
-**17. Adım:** Uygulamayı çalıştırınız. Uygulama01’in açık olduğundan emin olunuz.
-
+**17. Adım:** Uygulamayı çalıştırınız. Uygulama01’in açık olduğundan emin olunuz.\
 **18. Adım:** Uygulama02 açıkken butona basınız. Hem bir Toast mesajı ekranda görülür hem de Görsel 8.19’daki gibi Intent ile gönderilen veri, Uygulama01'de yer alan TextView nesnesinde gösterilir.
 
  
@@ -297,4 +286,3 @@ sendBroadcast(intent,"com.example.broadcast.app.permission");
 
 ![Broadcast yayının alınması ve TextView nesnesinde gösterilmesi](./gelismis-uygulama-tasarlama/gorsel-8.19-broadcast-yayinin-alinmasi-ve-textview-nesnesinde-gosterilmesi.png)
 </div>
-

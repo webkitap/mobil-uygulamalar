@@ -1,4 +1,4 @@
-# 9.1. UYGULAMA MARKET GELİŞTİRİCİ AYARLARI
+<h1 style="color:#ff2e47">9.1. UYGULAMA MARKET GELİŞTİRİCİ AYARLARI</h1>
 
 Mobil uygulama geliştirme platformu üzerinden tasarlanan uygulamalar her zaman taslak hâlindedir. **\*.apk** olarak çıktı alınmadıkça üzerinde değişiklikler yapılabilir. Geliştirilen mobil uygulamanın .apk uzantılı çıktısının alınması, başka bir Android işletim sistemine sahip cihazda kullanılmasını sağlar. Bu .apk dosyası herhangi bir yol ile başka bir Android cihaza gönderilebilir. Uygulama paketi çalışır hâldedir fakat bunun en işlevsel ve yayılmaya uygun yolu, market üzerinde uygulamanın yayımlanmasıdır.
 
@@ -71,4 +71,3 @@ Uygulamaların yayımlanmasını sağlamak için Android market web sitesi kulla
 
 ![Kurulum seçenekleri ekranı](./uygulama-yayimlama/gorsel-9.10-kurulum-secenekleri-ekrani.png)
 </div>
-

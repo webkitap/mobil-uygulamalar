@@ -1,4 +1,4 @@
-# 8.2. SMS VE İLETİ GÖNDERMEK
+<h1 style="color:#0073c0">8.2. SMS VE İLETİ GÖNDERMEK</h1>
 
 - <a href="#8.2.1.">8.2.1. SMS Okumak</a>
 - <a href="#8.2.2.">8.2.2. İleti Göndermek </a>
@@ -10,18 +10,16 @@ SmsManager sm = SmsManager.getDefault();
 sm.sendTextMessage(<NUMARA>, null, <MESAJ>.toString(), null, null);
 ```
 
-<span style="font-weight:bold;color:#f00;">UYARI:</span> Android işletim sisteminde varsayılan olarak SMS gönderme işlemleri SmsManager ile yapılır. Ancak bazı cihaz üreticileri müşterilerinin mağdur olmaması için SmsManager ile SMS gönderilmesini engellemiştir. SMS ile ilgili kodlar emülatörde çalışır ancak gerçek bir cihazda çalışmayabilir.
+<span style="font-weight:bold;color:#f00;">UYARI:</span> 
+
+>Android işletim sisteminde varsayılan olarak SMS gönderme işlemleri SmsManager ile yapılır. Ancak bazı cihaz üreticileri müşterilerinin mağdur olmaması için SmsManager ile SMS gönderilmesini engellemiştir. SMS ile ilgili kodlar emülatörde çalışır ancak gerçek bir cihazda çalışmayabilir.
 
 **3. UYGULAMA:** İşlem adımlarına göre yeni bir uygulama oluşturarak uygulama ekranına iki adet editText nesnesi ve bir adet Button nesnesi yerleştiriniz. Button nesnesine tıkladığınızda istediğiniz numaraya SMS gönderen uygulamayı yazınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "SmsGonder" veriniz.
-
-**2. Adım:** activity_main.xml dosyasını açarak Görsel 8.4’teki gibi tasarlayınız. Numara yazılan EditTexte editTextNumara, mesaj yazılan EditTexte editTextMesaj adını veriniz.
-
-**3. Adım:** Button nesnesinin id bilgisine btnGonder adını veriniz.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "SmsGonder" veriniz.\
+**2. Adım:** activity_main.xml dosyasını açarak Görsel 8.4’teki gibi tasarlayınız. Numara yazılan EditTexte editTextNumara, mesaj yazılan EditTexte editTextMesaj adını veriniz.\
+**3. Adım:** Button nesnesinin id bilgisine btnGonder adını veriniz.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
 **5. Adım:** Manifest dosyasını açarak şu şekilde SMS izinleri alınız:
 
 ```xml
@@ -69,14 +67,14 @@ binding.btnGonder.setOnClickListener(new View.OnClickListener() {
 ![Emülatör Mesajlar uygulaması](./gelismis-uygulama-tasarlama/gorsel-8.5-emulator-mesajlar-uygulamasi.png)
 </div>
 
-<h2 id="8.2.1.">8.2.1. SMS Okumak</h2>
+<h2 id="8.2.1." style="color:#0073c0">8.2.1. SMS Okumak</h2>
 
 SMS okuma işlemi, yayın alıcılar tam olarak kullanılmadan yapılamaz. Cihaza SMS gönderildiği zaman işletim sistemi SMS geldiğine dair bir SMS_RECEIVED Broadcast mesajı yayınlar. Uygulamada yapılması gereken husus, SMS_RECEIVED mesajını dinlemek ve mesaj geldiğinde Intent ile SMS’leri okumaktır. Broadcast sınıfı ile SMS okuyup bir View ile göstermek çok kolay değildir. Broadcast sınıfında MainActivity dosyasında bulunan nesnelere doğrudan ulaşılamaz. SMS mesajlarını okuyup MainActivity dosyasında göstermek için Broadcast sınıfı MainActivity içinde şu şekilde tanımlanmalıdır:
 
 ```java
 public class MainActivity extends AppCompatActivity{
-        .
-        .
+    .
+    .
     public static class SmsAlici extends BroadcastReceiver {
         .
         .
@@ -103,8 +101,7 @@ Sisteme gelen SMS mesajları Intent nesnesine eklenir. Intent nesnesinde veriler
 
 **4. UYGULAMA:** İşlem adımlarına göre yeni bir uygulama oluşturarak iki adet editText nesnesi yerleştiriniz. SMS mesajlarını yakalayan bir sınıf yazarak gelen mesajları editText nesnelerinde gösteren uygulamayı yazınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "SmsOkuma" veriniz
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "SmsOkuma" veriniz\
 **2. Adım:** activity_main.xml dosyasını açarak Görsel 8.6’daki gibi tasarlayınız. EditText nesnesinin id bilgisine editTextGelenNumara adını veriniz. Mesaj EditText nesnesinin id bilgisini editTextSmsMesaj olarak veriniz.
 
 <div style='display:block;text-align:center'>
@@ -112,10 +109,8 @@ Sisteme gelen SMS mesajları Intent nesnesine eklenir. Intent nesnesinde veriler
 ![SMS Okuma Uygulaması Tasarım Ekranı](./gelismis-uygulama-tasarlama/gorsel-8.6-sms-okuma-uygulamasi-tasarim-ekrani.png)
 </div>
 
-**3. Adım:** activity_main.xml dosyasında numara yazılan EditTexte editTextNumara, mesaj yazılan EditTexte editTextMesaj adını veriniz.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
+**3. Adım:** activity_main.xml dosyasında numara yazılan EditTexte editTextNumara, mesaj yazılan EditTexte editTextMesaj adını veriniz.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
 **5. Adım:** Manifest dosyasını açarak gerekli izinleri şu şekilde isteyiniz:
 
 ```xml
@@ -123,18 +118,15 @@ Sisteme gelen SMS mesajları Intent nesnesine eklenir. Intent nesnesinde veriler
 <uses-permission android:name="android.permission.READ_SMS"/>
 ```
 
-**6. Adım:** MainActivity.java dosyasını açarak viewBinding nesnesi oluşturunuz. Gerekli ayarlamaları yapınız.
-
+**6. Adım:** MainActivity.java dosyasını açarak viewBinding nesnesi oluşturunuz. Gerekli ayarlamaları yapınız.\
 **7. Adım:** SMS göndermek için kullanıcıdan şu şekilde izin alınız:
 
 ```java
 ActivityCompat.requestPermissions(this,new String[]{ Manifest.permission.READ_SMS,Manifest.permission.ECEIVE_SMS},PackageManager.PERMISSION_GRANTED);
 ```
 
-**8. Adım:** static MainActivity nesnesi tanımlayınız. Tanımladığınız nesneyi gönderen getInstance isimli bir metot oluşturunuz.
-
-**9. Adım:** MainActivity sınıfı içinde bir tane BroadcastReceiver sınıfından türemiş bir sınıf oluşturup sınıfın adını "SmsAlici" veriniz.
-
+**8. Adım:** static MainActivity nesnesi tanımlayınız. Tanımladığınız nesneyi gönderen getInstance isimli bir metot oluşturunuz.\
+**9. Adım:** MainActivity sınıfı içinde bir tane BroadcastReceiver sınıfından türemiş bir sınıf oluşturup sınıfın adını "SmsAlici" veriniz.\
 **10.  Adım:** Manifest dosyasını açınız ve Broadcast sınıfını şu şekilde kaydediniz:
 
 ```xml
@@ -171,8 +163,7 @@ public void onReceive(Context context, Intent intent) {
 }
 ```
 
-**12. Adım:** Uygulamayı çalıştırınız. Emülatörden Gelişmiş Kontroller penceresini açınız.
-
+**12. Adım:** Uygulamayı çalıştırınız. Emülatörden Gelişmiş Kontroller penceresini açınız.\
 **13. Adım:** Görsel 8.7’deki Gelişmiş Kontroller penceresinde Phone sekmesini açınız ve SMS message kutusuna bir mesaj yazarak Send Message butonuna basınız.
 
 <div style='display:block;text-align:center'>
@@ -181,7 +172,7 @@ public void onReceive(Context context, Intent intent) {
 </div>
 
 **14. Adım:** Uygulamanızı kontrol ediniz.
-- MainActivity.java
+- **MainActivity.java**
 
 ```java
 public class MainActivity extends AppCompatActivity{
@@ -227,7 +218,7 @@ public class MainActivity extends AppCompatActivity{
 }
 ```
 
-<h2 id="8.2.2.">8.2.2. İleti Göndermek</h2>
+<h2 id="8.2.2." style="color:#0073c0">8.2.2. İleti Göndermek</h2>
 
 Mobil uygulama geliştirme ortamında SMTP (e-posta sunucusu) kullanarak e-posta göndermek için herhangi bir sınıf veya komut yoktur. Mutlaka e-posta göndermek gerekirse çeşitli kütüphaneler vardır. Mobil uygulama geliştirme ortamında e-posta göndermek için Gmail servisleri kullanılır. Bir Intent nesnesi hazırlanarak gönderilecek e-posta adresi, e-postanın başlığı ve mesajın içeriği nesneye eklenir. Intent için ACTION_SEND IntentFilter nesnesi seçilir. setType özelliği olarak "message/rfc822" seçilir. İleti gönderme işlemi şu şekilde yapılır:
 
@@ -245,8 +236,7 @@ startActivity(intent);
 
 **5. UYGULAMA:** İşlem adımlarına göre e-posta gönderebileceğiniz bir ekran tasarlayarak herhangi bir kullanıcıya ileti gönderen uygulamayı yazınız.
 
-**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "MailGonderApp" veriniz.
-
+**1. Adım:** Empty Activity seçerek yeni bir proje oluşturunuz. Projenin adını "MailGonderApp" veriniz.\
 **2. Adım:** activity_main.xml dosyasını açarak Görsel 8.8’deki gibi tasarlayınız. Mail adresi EditText nesnesinin id bilgisine editTextEmail adını veriniz. Konu EditText nesnesinin id bilgisini editTextKonu yapınız. Mesaj EditText nesnesinin id bilgisini editMesaj olarak veriniz.
 
 <div style='display:block;text-align:center'>
@@ -254,12 +244,9 @@ startActivity(intent);
 ![MailGönder uygulaması tasarım ekranı](./gelismis-uygulama-tasarlama/gorsel-8.8-mailgonder-uygulamasi-tasarim-ekrani.png)
 </div>
 
-**3. Adım:** Tasarım ekranına bir tane Button ekleyip id bilgisini btnGonder yapınız.
-
-**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.
-
-**5. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnelerini tanımlayıp gerekli ayarlamaları yapınız.
-
+**3. Adım:** Tasarım ekranına bir tane Button ekleyip id bilgisini btnGonder yapınız.\
+**4. Adım:** gradle.build dosyasını açarak viewBinding özelliğini aktif ediniz.\
+**5. Adım:** MainActivity.java dosyasını açınız ve viewBinding nesnelerini tanımlayıp gerekli ayarlamaları yapınız.\
 **6. Adım:** btnGonder butonu için onClickListener metodunu şu şekilde yazınız:
 
 ```java
