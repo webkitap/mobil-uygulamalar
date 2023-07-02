@@ -3,7 +3,9 @@
 Arayüz, kullanıcıların tasarlanan uygulamaları kullandıkları esnada gördükleri veya etkileşime girdikleri ögelerin ve bu ögelerin barındırdığı tasarımların genel ismidir. Mobil uygulama tasarım programı, tasarım esnasında birden fazla arayüz tasarım yolu sunar. Bu tasarım yolları şunlardır:
 
 - Desing
+
 - Code
+
 - Split
   
 Desing; şimdiye kadar kullanılan, sürükle bırak mantığı ile çalışan ve ögelerin bire bir görülüp özelliklerinin değiştirilebildiği tasarım ekranıdır (Görsel 6.48). Bu ekran için herhangi bir kod yazılmaz. Eklenen ögelerin özellikleri de ögelerin üzerine tıklanıp seçim yapıldıktan sonra "Attributes" penceresinden düzenlenir.

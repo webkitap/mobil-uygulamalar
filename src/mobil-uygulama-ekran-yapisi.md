@@ -7,5 +7,7 @@ Mobil uygulama geliştirilirken uygulama çalıştığında ekran yapısında ba
 </div>
 
 - **Status Bar**: Mobil cihaz ekranının en üstünde yer alan bu çubukta pil durumu, saat, ağ bağlantı simgesi gibi bildirimler bulunur.
+
 - **Action Bar**: Bu çubuk activitynin üst tarafında yer alır. Uygulama ismi, activity ismi veya simgeleri, ek görünümler ve etkileşimli nesneler bu çubukta bulunabilir. Ayrıca gezinti yapmak için işlem çubuğuna simgeler yerleştirilebilir.
+
 - **Navigation Bar**: Alt gezinti çubuğu olarak da isimlendirilen, uygulama ekranının altında görünen çubuktur. Ekranlar ve uygulamalar arasında temel gezinme işlemleri buradaki simgelerden yapılır. 

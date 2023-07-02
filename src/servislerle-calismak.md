@@ -27,7 +27,9 @@ Servisler de aktiviteler gibi bir yaşam döngüsüne sahiptir. Bazı önemli se
 
  
 1. **Arka Plan Servisleri:** Bu servisler tamamen arka planda çalışır. Kullanıcılar bu servisleri göremezler. Arka plan servisleri tüm işlerini herhangi bir görsel bileşen kullanmadan yapar.İnternetten veri alma gibi işlemler çok sık yapılıyorsa genellikle arka plan hizmetleri tercih edilir.
+
 2. **Ön Plan Servisleri**: Bir görsel bileşen ile çalışan servislerdir. Örneğin bir müzik çalar servisi kurularak uygulama kapansa bile müziğin çalışması sağlanır. Bazı ön plan servisleri Toast mesajı veya bir bildirim vererek çalışmayı durdurabilir.
+
 3. **Bağlı Servisler**: Görsel bileşenin onBind metodu ile servise bağlandığı servislerdir. Görsel bileşen ile bağlantı koptuğunda servis otomatik olarak yok edilir. 
    
 Servisler sadece startService metodunun kullanılması ile çalışmaya başlar. stopService ile durduruluncaya kadar çalışmaya devam eder. Arka planda bir servis çalıştığında uzun süreli bir işlem yapılacaksa mutlaka yeni bir iş parçacığı üzerinde gerçekleştirilmelidir. Servisler her ne kadar arkaplanda çalışsa da ana aktivitenin iş parçacığı üzerine işlem yapar. Uzun süren bir işlem, ayrı bir iş parçacığı üzerinde çalıştırılmazsa uygulama kilitlenir. Bir servis şu şekilde oluşturulur:
@@ -765,4 +767,3 @@ public class intentService extends IntentService {
 >| 3. Ekran tasarımına bir tane Button ekledi.   |
 >| 4. IntentServisi yazdı.                       |
 >| 5. Verileri servise gönderip sonucu aldı.     |
-

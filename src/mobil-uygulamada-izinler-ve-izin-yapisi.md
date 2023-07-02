@@ -110,9 +110,7 @@ ActivityResultLauncher<Intent> galeryResultLauncher;
 ActivityResultLauncher<String> izinlerResultLauncher;
 ```
 
-Burada oluşturulan "galeryResultLauncher", izin alındığı takdirde galeriye gitmesi için yazılan nes-
-nedir. Intent ile gönderim yapılacağı için de dönüş tipi Intent’tir. "izinlerResultLauncher" nesnesi
-ise izin istemek için yazılır ve String tipte olmalıdır. Oluşturulan bu nesneler onCreate içinde tanımlanmalıdır fakat içerik biraz karışık olacağı için ayrı birer metotta bunları başlatıp sonrasında bu oluşturulan metotları onCreate() içinde çağırmak daha mantıklıdır. Galeriye gidebilmesi için gereken metodu ve bu metot kodlarını MainActivity içinde oluşturunuz. Nesne içeriği yazılırken öneri olarak seçenekler çıktığında Enter tuşuna basılırsa otomatik şekilde override edilir. **RESULT_OK**, galeride OK tuşuna basılarak dönüldüyse anlamını taşır ve gelen veri de boş değilse (null) veriyi URI sınıfından bir fotoVeri değişkenine kaydeder. Bu işlem için yazılması gereken kodlar şu şekildedir:
+Burada oluşturulan "galeryResultLauncher", izin alındığı takdirde galeriye gitmesi için yazılan nesnedir. Intent ile gönderim yapılacağı için de dönüş tipi Intent’tir. "izinlerResultLauncher" nesnesi ise izin istemek için yazılır ve String tipte olmalıdır. Oluşturulan bu nesneler onCreate içinde tanımlanmalıdır fakat içerik biraz karışık olacağı için ayrı birer metotta bunları başlatıp sonrasında bu oluşturulan metotları onCreate() içinde çağırmak daha mantıklıdır. Galeriye gidebilmesi için gereken metodu ve bu metot kodlarını MainActivity içinde oluşturunuz. Nesne içeriği yazılırken öneri olarak seçenekler çıktığında Enter tuşuna basılırsa otomatik şekilde override edilir. **RESULT_OK**, galeride OK tuşuna basılarak dönüldüyse anlamını taşır ve gelen veri de boş değilse (null) veriyi URI sınıfından bir fotoVeri değişkenine kaydeder. Bu işlem için yazılması gereken kodlar şu şekildedir:
 
 ```java
 public void metotGaleryResultLauncher(){
@@ -137,9 +135,9 @@ public void metotIzinlerResultLauncher(){
     izinlerResultLauncher = registerForActivityResult(new ActivityResultContracts.RequestPermission(), new ActivityResultCallback<Boolean>() {
         @Override
         public void onActivityResult(Boolean result) {
-            if(result==true){
+            if(result == true){
                 //İzin var, galeriye gidilecektir.
-                Intent galeri =new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent galeri = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             }else{
                 //İzin istenmesi gerekecektir.
                 Toast.makeText(MainActivity.this, "İzin vermeniz gerekir.", Toast.LENGTH_SHORT).show();

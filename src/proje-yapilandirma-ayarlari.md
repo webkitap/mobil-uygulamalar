@@ -152,9 +152,9 @@ Burada eklenen iconlar, AndroidManifest içinde şu şekilde çağrılır:
 <h3 style="color:#a8d14f;">6.1.3.4. values</h3>
 
 ```xml
-android:icon="@mipmap/ic_launcher"
-android:label="@string/app_name"
-android:roundIcon="@mipmap/ic_launcher_round"
+android:icon = "@mipmap/ic_launcher"
+android:label = "@string/app_name"
+android:roundIcon = "@mipmap/ic_launcher_round"
 ```
 
 values klasörü içinde, mobil uygulama geliştirme ortamında geliştirilen projede kullanılan sabit değerler tutulur. Bir mobil uygulama geliştirildiğinde themes.xml, colors.xml, strings.xml şeklinde default olarak üç dosya oluşur. Tutulan değerler, klasik olarak "Anahtar ↔ Değer" mantığı ile tutulur. Tutulan bu değerlere daha sonra uygulama tasarım ekranlarından (layout) veya Activity-
@@ -271,6 +271,7 @@ Bu dosya, mobil geliştirme ortamında geliştirilen projenin her modülünde ye
     - **release**: Geliştirilen mobil uygulamada açılan buildTypes, iki adet buildTypes tanımlar. Bunlardan biri release iken diğeri debugtır. Daha çok geliştirme aşamasında kullanılan debug modu, standart olarak açıkça gösterilmez. Release ise pro guard ayarlar uygulayıp standart güvenlik önlemi almayı sağlar.
 
 - **compileOptions**: Geliştirilen mobil uygulamada java derleme seçeneklerinin yer aldığı bölümdür.
+
 - **Dependencies**: Mobil uygulama geliştirme platformunda tasarlanan projenin beraberinde derlenmesi gereken kaynakları içeren bölümdür. Geliştirilen mobil uygulamada kullanılması istenen paketler vb. burada projeye implement edilir.
 
 <span style="color:#f00;font-weight:bold;">UYARI:</span>

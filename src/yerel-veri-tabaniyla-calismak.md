@@ -142,7 +142,9 @@ database = this.openOrCreateDatabase(<Veri Tabanı Adı>, MODE_PRIVATE, null);
 
 Veri tabanı nesnesi **Context** aracılığı ile oluşturulur. Context nesnesinin openOrCreateDatabase metodu ile gerekli parametreler verilerek nesne elde edilir.
 - İlk parametre ile yerel veri tabanında kullanılacak dosya ismi belirtilir. Burada verilen isimle başka bir activity içinde yerel veri tabanına ulaşılabilir.
+
 - İkinci parametre ile veri tabanının başka uygulamalara açılıp açılmayacağı belirlenir. Genellikle her uygulamanın özel bir veri tabanı olduğu için bu parametre **MODE_PRIVATE** olarak ayarlanır.
+
 - Üçüncü parametre gelen bir imleç verisi varsa bunu almak için gerekli ayarlamalar yapılır. Böyle bir durum yoksa bu değer **null** olarak ayarlanır.
 
 <span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#dad0e7;">ÖRNEK</span>
@@ -230,8 +232,8 @@ Diğer alanlarda aynı veriler olabilir ancak birincil anahtarda kesinlikle ayn�
 Güncelleme yapılması için bir sorgu komutu hazırlanıp SQLStatement nesnesi ile veriler sorguya dâhil edilir. Görsel 7.10’daki verilerden id numarası 3 olan kaydın fiyat bilgisi 145 olarak şu şekilde değiştirilir:
 
 ```java
-String SORGU="UPDATE ürünler SET fiyat=? WHERE id=?";
-SQLiteStatement durumlar=database.compileStatement(SORGU);
+String SORGU = "UPDATE ürünler SET fiyat=? WHERE id=?";
+SQLiteStatement durumlar = database.compileStatement(SORGU);
 durumlar.bindString(1,145);
 durumlar.bindLong(2,3);
 durumlar.execute();
@@ -1063,4 +1065,3 @@ public class MainActivity extends AppCompatActivity {
 >| 5. Yerel veri tabanına kayıt işlemlerini yaptı.         |
 >| 6. Verilerin silme ve güncelleme işlemlerini tanımladı. |
 >| 7. Özel adaptör oluşturarak verileri gösterdi.          |
-

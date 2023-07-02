@@ -218,6 +218,7 @@ ogrenciler.remove(ogrenci2);
 ArrayList içindeki tüm ögeleri silmek için clear metodu kullanılır.
 
 <span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#ffdcce;">ÖRNEK</span>
+
 ```java
 ArrayList<Integer> aListesi = new ArrayList< >();
 aListesi.add(2);

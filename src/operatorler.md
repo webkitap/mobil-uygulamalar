@@ -8,8 +8,11 @@
 Java dilinde kullanılan operatörlerin bazıları şunlardır:
 
 - Aritmetik operatörler
+
 - Atama operatörleri
+
 - Karşılaştırma operatörleri
+
 - Mantıksal operatörler
 
 <h2 id="3.6.1." style="color:#ffc034">3.6.1. Aritmetik Operatörler</h2>
@@ -228,7 +231,7 @@ komutuyla çalıştırınız.
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                      | EVET | HAYIR |
->| ------------------------------------------------------------ | ---- | ----- |
+>| :------------------------------------------------------------ | ---- | ----- |
 >| 1. "= =" tahminini ve uygulama çıktısını doğru olarak buldu. |
 >| 2. "!=" tahminini ve uygulama çıktısını doğru olarak buldu.  |
 >| 3. ">" tahminini ve uygulama çıktısını doğru olarak buldu.   |

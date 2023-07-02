@@ -42,7 +42,7 @@ public class DenemeSabitler {
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                | EVET | HAYIR |
->| ------------------------------------------------------ | ---- | ----- |
+>| :------------------------------------------------------ | ---- | ----- |
 >| 1. New Project komutunu tıkladı.                       |
 >| 2. Empty Activity proje türünü seçti.                  |
 >| 3. Uygulama adını belirledi.                           |

@@ -247,7 +247,9 @@ public class DenemeTamSayilar {
 >
 >İşlem adımlarına göre ikinci uygulamayı yeniden tasarlayınız.
 >- Uygulamadaki uzunSayi adlı değişkenin değerini 255 şeklinde değiştirip çalıştırınız.
+>
 >- Uygulamadaki uzunSayi adlı değişkenin değerini 2147483648 şeklinde değiştirip çalıştırınız.
+>
 >- Uygulamadaki uzunSayi adlı değişkenin değerini 2147483648L şeklinde değiştirip çalıştırınız.
 >
 >Sonuçları tabloya yazınız.
@@ -336,8 +338,7 @@ public class CharAscii {
 
 **Ekran Çıktısı**
 
->Karakter:  a\
-ASCII kodu: 97
+>Karakter:  a<br> ASCII kodu: 97
 
 >**SIRA SİZDE**:
 >
@@ -369,8 +370,9 @@ ASCII kodu: 97
 
 Değer olarak içinde ondalık sayıları barındıran veri tipleridir (Tablo 3.2).
 
-- float: Değer atanırken sayının sonuna f veya F yazılır.
-- double: Değer atanırken sayının sonuna d veya D yazılır.
+- float: Değer atanırken sayının sonuna **f** veya **F** yazılır.
+  
+- double: Değer atanırken sayının sonuna **d** veya **D** yazılır.
 
 **Tablo 3.2: Ondalık Veri Tipleri**
 

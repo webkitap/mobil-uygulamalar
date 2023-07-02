@@ -13,7 +13,7 @@ Uygulama geliştirme ortamında sharedPrefrences iki şekilde kullanılır. Bird
 `sharedPreferences.Editor editor=sharedPreferences.edit();` Editor nesnesi oluşturulduktan sonra nesnenin metotları ile veriler hazırlanır.
 
 ```java
-String veri="Herhangi bir veri";
+String veri = "Herhangi bir veri";
 editor.putString("anahtar",veri);
 editor.apply();
 ```

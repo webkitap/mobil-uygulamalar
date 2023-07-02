@@ -91,8 +91,9 @@ Yeni bir mobil uygulama geliştirme ortam projesi açıldığında "MainActivity
 ![Android Studio Tasarım Ekranı](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.30-android-studio-tasarim-ekrani.png)
 </div>
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> Code, Split ve Design görünümleri arasında geçiş yapmak için klavyeden Alt+Shift+Sağ/Sol Ok
-tuşları kullanılır.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>Code, Split ve Design görünümleri arasında geçiş yapmak için klavyeden Alt+Shift+Sağ/Sol Ok tuşları kullanılır.
 
 <h2 id="1.4.3." style="color:#cd2d98;">1.4.3. Ön İzleme Görünümünü Değiştirmek</h2>
 
@@ -104,8 +105,7 @@ Tasarım ekranının en üstündeki düğmeler editör içindeki ön izleme gör
 
 Bu simgelerle yapılan değişiklikler şunlardır:
 
-**1: Select Design Surface (Tasarım Yüzeyini Seçin)** simgesi kullanılarak yerleşimin editörde nasıl
-olacağı seçilir. Design modu seçilirse yerleşimin ön izlemesi görülür. Blueprint seçilirse birleşenlerin sadece dış çizgilerinin görüntülendiği bir yerleşim görülür. Design + Blueprint birlikte olduğu seçenek seçilirse hem tasarım hem de taslak yan yana görülür. Klavyeden **B** tuşuna basılarak bu görünümler arasında geçiş sağlanır.
+**1: Select Design Surface (Tasarım Yüzeyini Seçin)** simgesi kullanılarak yerleşimin editörde nasıl olacağı seçilir. Design modu seçilirse yerleşimin ön izlemesi görülür. Blueprint seçilirse birleşenlerin sadece dış çizgilerinin görüntülendiği bir yerleşim görülür. Design + Blueprint birlikte olduğu seçenek seçilirse hem tasarım hem de taslak yan yana görülür. Klavyeden **B** tuşuna basılarak bu görünümler arasında geçiş sağlanır.
 
 **2: Orientation for Preview (Ön İzleme İçin Oryantasyon)** simgesi kullanılarak ekran yerleşimi Landscape (yatay) veya Portrait (dikey) olarak ayarlanır. Klavyeden **O** tuşuna basılarak bu görünümler arasında geçiş sağlanır.
 

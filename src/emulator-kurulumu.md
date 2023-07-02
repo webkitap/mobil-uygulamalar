@@ -27,7 +27,9 @@ Açılan **Device Manager (Cihaz Yöneticisi)** penceresindeki **Create device (
 **Select a system image (Sistem imajı seçimi)** penceresinde emülatör cihazına bir işletim sistemi seçilir. Pencerenin üstünde **Recommended (Tavsiye edilen)**, **x86 Images (x86 İşlemciler için imajlar)** ve **Other Images (Diğer imajlar)** olmak üzere üç adet sekme yer alır.
 
 - **Recommended**: Bu sekme seçiliyken en hızlı çalışacak işletim sistemi imajı kullanıcıya görüntülenir.
+
 - **x86 Images**: x86 işlemcilerde çalışacak işletim sistemi imajları görüntülenir. 32 bitlik işlemciler için listede x86 olarak belirtilmişken 64 bitlik işlemciler için x86_64 olarak işletim sistemleri belirtilmiştir.
+
 - **Other Images**: Diğer işlemcilerde çalışacak işletim sistemi imajları görüntülenir
 
 <span style="color:#f00;font-weight:bold">UYARI:</span> Her Android işletim sistemi sürümü için tek bir API düzeyi belirlenmiştir. Application Programming Interface (Uygulama Programlama Arayüzü) kelimelerinin baş harfleriyle API isimlendirilmesi yapılır. API, yazılımların kendi aralarında iletişim kurmasını sağlayan bir yapıdır. API düzeyi düştükçe yazılan uygulamanın çalışacağı cihaz sayısı artar ancak uygulamada kullanılacak özellikler azalır. API düzeyi yükseldikçe uygulamada kullanılacak özellikler artar ancak kapsadığı cihaz sayısı azalır.
@@ -43,13 +45,18 @@ Recommended sekmesindeki Android işletim sistemlerinin isimlerinin hemen yanın
 Kurulumun son penceresinde oluşturulan ayarların doğruluğu kontrol edilebilir ve bu pencereden ayarlar değiştirilebilir (Görsel 1.17).
 
 - **AVD Name (AVD İsmi)**: Ayarlanan cihazın ismi bu kutuya yeni değer girilerek değiştirilebilir.
+
 - **5.4” FWVGA 5.4 480x854 mdpi**: Bu yazının sağ tarafında yer alan **Change… (Değiştir)** düğmesi ile ekran boyutları farklı bir cihaz seçilebilir.
+
 - **Marshmallow Android 6.0 x86**: Bu yazının sağ tarafında yer alan **Change…** düğmesi ile seçilen işletim sistemi değiştirilebilir.
 
 - **Startup Orientation (Başlangıç Yönlendirmesi)**: Bu bölümde yar alan iki farklı **Portrait (Portre) ve Landscape (Manzara)** simgelerinden biri seçilerek cihazın dikey ve yatay kullanılacağı belirlenebilir. Dikey kullanım için Portrait simgesi seçilir, yatay kullanım içinse Landscape simgesi seçilir.
+
 - **Emulated Performance (Emülasyon Performansı)**: Bu yazının sağ tarafındaki **Graphics: (Grafikler)** açılır kutusunda üç seçenek yer alır. **Automatic (Otomatik), Hardware (Donanım)** ve **Software (Yazılım)** isimli seçeneklerden bilgisayarın grafik kartı kullanılacaksa emülasyon için Hardware seçilir. Grafik kartıyla problemler yaşanırsa ve grafik kartı yerine yazılım kullanılacaksa emülasyon için Software seçilir. Emülasyonun duruma göre otomatik olması istenirse Automatic seçilebilir.
+
 - **Device Frame (Cihaz Çerçevesi)**: Bu onay kutusu işaretlenerek sanal cihazın kenarında çeşitli işlev düğmeleri kullanılabilir hâle getirilir. Bu düğmeler istenmezse bu onay kutusu
 işaretlenmez.
+
 - **Show Advanced Settings (Gelişmiş Ayarları Göster)**: Sanal cihazla ilgili ayrıntılı ayarlar yapılması gerektiğinde bu düğme tıklanır. Bu düğme tıklandıktan sonra cihaz ön ve arka kamera ayarları, ana bellek miktarı, yardımcı depolama bellek miktarı, SD kart bellek miktarı, cihazın işlemci sayısı gibi ayrıntılı ayarların belirlenebileceği kutular pencerede belirir. 
 <div style="display:block;text-align:center">
 

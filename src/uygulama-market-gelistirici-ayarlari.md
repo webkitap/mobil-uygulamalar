@@ -12,6 +12,7 @@ Uygulamaların yayımlanmasını sağlamak için Android market web sitesi kulla
 </div>
 
 - Açılan sayfa üzerinden var olan bir hesap seçilir veya "Başka bir hesap kullan" butonuna basılır (Görsel 9.2).
+
 - Yeni bir hesap oluşturulmak istenirse "Başka bir hesap kullan" tıklanır ve bir hesap girilir veya "Hesap oluşturun" butonuna tıklanır (Görsel 9.3).
 
 <div style='display:block;text-align:center'>
@@ -20,6 +21,7 @@ Uygulamaların yayımlanmasını sağlamak için Android market web sitesi kulla
 </div>
 
 - "Kendim için" seçeneği seçilir ve Görsel 9.4’teki gibi Ad, Soyad, Kullanıcı Adı ve Şifre bilgileri girilir. İleri butonuna basılır.
+
 - İstenen bilgiler girilir ve İleri butonuna tıklanarak çıkan sözleşme kabul edilir (Görsel 9.5).Ekranda iki adımlı doğrulama çıkarsa kabul edilerek telefon numarası girilir.
 
 <div style='display:block;text-align:center'>
@@ -56,15 +58,22 @@ Uygulamaların yayımlanmasını sağlamak için Android market web sitesi kulla
 </div>
 
 - **Gelen Kutusu:** Firma tarafından gelen mesajların yer aldığı bölümdür. Erişim hesabı olarak geliştirici hesabının kendi tanımlanmış ise uygulamaya gönderilen mesajların da bulunduğu mesaj kutusudur.
+
 - **Politika durumu:** Firmaya ait olan politikalara uygunsuz hareketlerden kaynaklı durumlar varsa bunların yer aldığı bölümdür. Ayrıca uygulama politika ihlalleri veya uygunluğu da bu bölümden görülüp incelenebilir.
+
 - **Kullanıcılar ve izinler:** Play Console ekranını kullanabilecek maillere ait izinler bu bölümden ayarlanır. Birden fazla hesap ile oluşturulan üyeliğe ait Play Console kullanılabilir.
+
 - **Sipariş yönetimi:** "Payments satıcı hesabı" oluşturulduktan sonra bu bölüm kullanılabilir. Adsence gibi yöntemlerle para kazanmak için ödeme planı bu bölümden yapılmalıdır.
 
 
 - **Raporları indirin:** "Yorumlar", "İstatistikler", "Finansal" adında üç raporun yer aldığı bölümdür. Raporlar Google tarafından güncel şekilde bildirilir.
+
 - **Hesap ayrıntıları:** Kişisel veya kurumsal hesap şeklinde düzenlenip telefon, adres, mail gibi birçok bilginin yeniden oluşturulabileceği bölümdür.
+
 - **Geliştirici sayfası:** Geliştirici Adı, Fiziksel Adresi, web sitesi, promosyonlar, geliştirici simgesi, öne çıkan uygulamalar gibi ayarların düzenlendiği seçenektir.
+
 - **İlişkilendirilmiş geliştirici hesapları:** Bir başka geliştirici hesabı ile ilişkilendirme yapılırsa ilişkilendirilmiş o hesap hakkında bilgilerin alındığı bölümdür.
+
 - **Kurulum:** Görsel 9.10’da görülen menülerin yer aldığı, Play Console’a ayrıntılı bilgilerin detaylı biçimde düzenlendiği bölümdür.
 
 <div style='display:block;text-align:center'>

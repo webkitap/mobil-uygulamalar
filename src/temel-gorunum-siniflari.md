@@ -9,10 +9,15 @@
 
 En çok kullanılan görünüm sınıfları şunlardır:
 * TextView (Metin görünümü)
+
 * EditText (Metin girişi)
+
 * Button (Düğme)
+
 * ImageView (Resim görünümü)
+
 * CheckBox (Onay kutusu)
+
 * ProgressBar (İlerleme çubuğu)
 
 <h2 id="2.5.1." style="color:#00b9f2;">2.5.1 TextView</h2>
@@ -101,10 +106,7 @@ XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapılırsa mavi
 
 <h2 id="2.5.2." style="color:#00b9f2;">2.5.2. EditText</h2>
 
-EditText, bir çeşit TextView görünümü olmasına rağmen düzenlenebilir. EditText, TextView ile
-hemen hemen aynı niteliklere sahiptir. Kullanıcının mobil uygulamaya metin girmesi gereken durumlarda EditText kullanılır. EditText görünümüne hem tek satırlı hem de çok satırlı metin girişi
-yapılabilir. Mobil uygulamada bir EditText görünümüne dokunulduğunda klavye otomatik olarak
-aktif hâle gelir. EditText görünümüne ait niteliklerden en çok kullanılanları Tablo 2.2’de verilmiştir.
+EditText, bir çeşit TextView görünümü olmasına rağmen düzenlenebilir. EditText, TextView ile hemen hemen aynı niteliklere sahiptir. Kullanıcının mobil uygulamaya metin girmesi gereken durumlarda EditText kullanılır. EditText görünümüne hem tek satırlı hem de çok satırlı metin girişi yapılabilir. Mobil uygulamada bir EditText görünümüne dokunulduğunda klavye otomatik olarak aktif hâle gelir. EditText görünümüne ait niteliklerden en çok kullanılanları Tablo 2.2’de verilmiştir.
 
 
 <div style="text-align:center;"><b>Tablo 2.1: TextView Görünümüne Ait Nitelikler</b></div>
@@ -122,11 +124,17 @@ aktif hâle gelir. EditText görünümüne ait niteliklerden en çok kullanılan
     <td>Kullanıcı tarafından girilen metnin nasıl olması gerektiği ve hangi amaçla kullanılacağı belirlenir.
 
 - **Text**
+
 - **textAutoComplete**: Kullanıcıya öneri metni sunulur.
+
 - **textAutoCorrect**: Kullanıcının girdiği metinde otomatik düzeltme etkinleştirilir.
+
 - **textPassword**: Kullanıcının girdiği metin ekranda gösterilmez.
+
 - **textUri**: Klavyede web sayfa uzantıları görülür.
+
 - **textEmailAddress**: Sadece e-posta girişi yapılmasına izin verilir.
+
 - **phone**: Numerik klavyenin açılması sağlanır.</td>
   </tr>
   <tr>
@@ -167,8 +175,7 @@ EditText XML kodu bir yerleşim içine yazılıp emülatörde ön izleme yapıl�
 ![EditText ön izleme](./ekran-tasarimi/gorsel-2.12-edittext-on-izleme.png)
 </div>
 
-**4. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım
-ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifrenizi yazınız." metin görünümünü yerleştiriniz.
+**4. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında tasarım ekranına XML kodlarıyla kullanıcının girdiği metni göstermeyen "Şifrenizi yazınız." metin görünümünü yerleştiriniz.
 
 **1. Adım**: Mobil uygulama geliştirme programını çalıştırınız.
 
@@ -284,14 +291,21 @@ ImageView, kullanıcı arayüzünde resim gösterilmesi gerektiğinde kullanıla
     <td>Resmin boyutlandırılması veya taşınması kontrol edilir.
 
 - **center**: Resim, merkeze yerleştirilir fakat ölçeklendirme yapılmaz.
+
 - **centerCrop**: Resim, eşit şekilde ölçeklendirilir.
+
 - **centerInside**: Resim, kapsayıcı içine yerleştirilir ve resmin kenarları ile kapsayıcının kenarları temas ettirilmez. Resim, kapsayıcının içinde bulunur.
+
 - **fitCenter**: Resim, merkezden ölçeklendirilir.
+
 - **fitEnd**: Resim, kapsayıcının sonundan, bir başka deyişle sağ taraftan ölçeklendirilir.
+
 - **fitStart**: Resim, kapsayıcının başlangıcından, bir başka deyişle sol
 taraftan ölçeklendirilir.
+
 - **fitXY**: Resmin, kapsayıcının tamamına doldurulması sağlanır. Resmin en ve boy oranı bozularak, resim gerilerek veya sıkıştırılarak
 kapsayıcıya yerleştirilir.
+
 - **matrix**: Çizim yapılırken görüntü matrisiyle resmin ölçeklendirilmesi için kullanılır.</td>
   </tr>
    <tr>

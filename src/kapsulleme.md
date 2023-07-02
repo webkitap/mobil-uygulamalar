@@ -31,9 +31,7 @@ Nesne tabanlı programlama kavramlarından biri de kapsüllemedir. Kapsülleme, 
     </tbody>
 </table>
 
-2. **Güvenlik Açısından:** Sınıf tanımlanırken güvenlik düşünülmelidir. Örneğin Personel sınıfın-
-daki maaş özelliği public erişim belirleyici olarak tanımlandığında sınıf dışından maaş bilgisi
-istendiği gibi değiştirilebilir. Bu tür durumlar güvenlik açığı oluşturur.
+2. **Güvenlik Açısından:** Sınıf tanımlanırken güvenlik düşünülmelidir. Örneğin Personel sınıfındaki maaş özelliği public erişim belirleyici olarak tanımlandığında sınıf dışından maaş bilgisi istendiği gibi değiştirilebilir. Bu tür durumlar güvenlik açığı oluşturur.
 
 <table>
     <tbody>
@@ -61,11 +59,7 @@ istendiği gibi değiştirilebilir. Bu tür durumlar güvenlik açığı oluştu
     </tbody>
 </table>
 
-3. **Bağımlılık Açısından**: Kapsüllemenin asıl amacı, bağımlılıkları en aza indirmektir. Nesneler
-birbirleriyle etkileşim içindedir. Bağımlılık, bir nesnenin diğer nesneler ile olan ilişkisidir.
-İlişki ne kadar sıkı olursa bağımlılık o kadar artar. Örneğin Personel sınıfı içindeki yaş özel-
-liğinin ismi değiştirildiğinde Muhasebe sınıfından personel sınıfına bağımlık olduğu için
-uygulama hata verir.
+3. **Bağımlılık Açısından**: Kapsüllemenin asıl amacı, bağımlılıkları en aza indirmektir. Nesneler birbirleriyle etkileşim içindedir. Bağımlılık, bir nesnenin diğer nesneler ile olan ilişkisidir. İlişki ne kadar sıkı olursa bağımlılık o kadar artar. Örneğin Personel sınıfı içindeki yaş özelliğinin ismi değiştirildiğinde Muhasebe sınıfından personel sınıfına bağımlık olduğu için uygulama hata verir.
 
 <table>
     <tbody>

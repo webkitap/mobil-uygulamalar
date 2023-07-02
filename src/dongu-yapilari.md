@@ -108,9 +108,7 @@ for( (1); (2); (3); )
 
 **1. Adım**: File>New>New Project sekmesinden yeni proje açınız ve Empty Activity seçiniz.\
 **2. Adım**: MainActivity sınıfını açınız . "onResume" yaşam döngüsü metodunu oluşturunuz.\
-**3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz . Sayacı 0’dan başlatıp sayaç
-100’den küçük veya 100’e eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 1
-sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).\
+**3. Adım**: Yaşam döngüsünün içine bir for döngüsü oluşturunuz . Sayacı 0’dan başlatıp sayaç 100’den küçük veya 100’e eşit oldukça blok içindeki kodları çalıştıran ve her defasında sayacı 1 sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).\
 **4. Adım**: for döngüsünün blokları arasına if karar yapısı oluşturunuz. Gelen her "i" sayacının 3 ile modunu aldırınız. İşlemin sonucu "0" olduğu takdirde ekrana yazdırma işlemi yapacak kodu yazınız (Görsel 4.27).
 <div style="display:block;text-align:center">
 
@@ -165,7 +163,9 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).\
 
 **10. Adım:** Tüm adımlar yapıldığına göre uygulamayı çalıştırınız. Uygulama çalıştırıldığında ve buttonlara tıklandığında çıkan sonuçlar da Görsel 4.33’te verilmiştir. Oluşturulan MainActivity’nin son şekli Görsel 4.34’te görülür.
 
-<span style="font-weight:bold;color:#f00;">UYARI:</span> View, Button, EditTextlerden birinin altı kırmızı çizgi ile çizilmişse ona ait sınıf MainActivity içine import edilmelidir. Bu işlem için uyarı verilen yazının üstüne gelinip **Alt+Enter** tuşlarına birlikte basılırsa çözüm sağlanır.
+<span style="font-weight:bold;color:#f00;">UYARI:</span> 
+
+>View, Button, EditTextlerden birinin altı kırmızı çizgi ile çizilmişse ona ait sınıf MainActivity içine import edilmelidir. Bu işlem için uyarı verilen yazının üstüne gelinip **Alt+Enter** tuşlarına birlikte basılırsa çözüm sağlanır.
 
 **NOT:**
 
@@ -190,7 +190,7 @@ sayı artıran olacak şekilde düzenleyiniz (Görsel 4.25).\
 ><div style="text-align:center;"><b>KONTROL LİSTESİ</b></div>
 >
 >| DEĞERLENDİRME ÖLÇÜTLERİ                                                          | EVET | HAYIR |
->| -------------------------------------------------------------------------------- | ---- | ----- |
+>| :-------------------------------------------------------------------------------- | ---- | ----- |
 >| 1. Palette menüsünü kullanarak istenen üç adet Button ögesini oluşturdu.         |
 >| 2. Palette menüsünü kullanarak sayıları göstermek için ListView ögesi oluşturdu. |
 >| 3. Ögelerin ConstraintLayout içinde sınırlarını belirledi.                       |

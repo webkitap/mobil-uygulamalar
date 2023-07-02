@@ -260,8 +260,11 @@ public class MainActivity extends AppCompatActivity {
 Java programlama dilinde erişim belirleyiciler; bir sınıfın, özelliğin veya metodun erişilebilirliğini veya kapsamını belirtir. Dört tür Java erişim belirleyici vardır (Tablo 5.1).
 
 1. **Private (Özel)**: Erişim düzeyi sınıf düzeyindedir. Sınıf dışından erişilemez.
+
 2. **Default (Varsayılan)**: Varsayılan erişim düzeyi paketle sınırlıdır. Paket dışından erişilemez. Herhangi bir erişim belirleyici kullanılmazsa bu varsayılan erişim düzeyidir.
+
 3. **Protected (Korumalı)**: Bir alt sınıf aracılığıyla hem paket içinden hem de paket dışından erişilir.
+
 4. **Public (Genel)**: Her yerden ulaşılabilen erişim belirleyicisidir.
 
 <div style="text-align:center;"><b>Tablo 5.1: Erişim Belirleyiciler</b></div>
