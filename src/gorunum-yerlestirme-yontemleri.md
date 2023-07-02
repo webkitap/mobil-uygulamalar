@@ -19,10 +19,15 @@ Görünüm, mobil uygulamalarda kullanıcı arabiriminin temel yapı taşıdır 
 Genişlik ve yükseklik niteliklerine wrap_content ve match_parent önceden tanımlı değerler girilebileceği gibi sayılar da girilebilir ancak bu sayıların yanında birim olması gerekir. Bu birimler şunlardır:
 
 - **px (Pixels)**: Girilen değerin ekranda gerçek piksel olarak karşılığıdır.
+
 - **in (Inches)**: Girilen değerin ekranda gerçek inç karşılığıdır.
+
 - **mm (Millimeters)**: Girilen değerin ekranda gerçek milimetre karşılığıdır.
+
 - **pt (Points)**: Girilen değer 1/72 inç oranındadır.
+
 - **dp (Densityindependent Pixels)**: Ekranın fiziksel yoğunluğuna dayanan soyut bir birimdir. Bu birimler 160 dpi ekrana oranlanır. Bu nedenle 1 dp, 160 dpi ekranda 1 piksele karşılık gelir.
+
 - **sp (Scaleable-independent Pixels)**: Bu birim, dp birimine benzer ancak kullanıcının yazı tipi boyutu tercihine göre ölçeklendirilir.
 
 Bir görünümün genişliği, XML kod olarak içeriği gösterecek kadar olsun istenirse **android:layout_width="wrap_content"** şeklinde yazılır veya görünümün genişliği 200 piksel olsun istenirse **android:layout_width="200px"** şeklinde yazılır.
@@ -30,6 +35,7 @@ Bir görünümün genişliği, XML kod olarak içeriği gösterecek kadar olsun 
 <span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#BCEEFF;">ÖRNEK</span>
 
 - **android:layout_width="20in"** XML kodu, görünüm genişliğinin 20 inç olmasını sağlar.
+  
 - **android:layout_width="40mm"** XML kodu, görünüm genişliğinin 40 milimetre olmasını
 sağlar.
 
@@ -62,7 +68,9 @@ XML kodları kullanılarak yapılan görünüm ayarları kod yapısı şu şekil
 XML kodlanırken dikkat edilecek özellikler şunlardır:
 
 - Her zaman küçüktür işareti "<" ile başlar ve ardından görünüm ismi yazılır.
+
 - Görünüm, ekranda nasıl görünecekse bir nitelik ve değer kod olarak yazılır. Her görünümün kendine has nitelikleri vardır.
+
 - "/>" işaretleri kullanılarak görünüm ayarları kapatılır.
 
 <span style="font-weight:bold; padding-top:1px; padding-bottom:1px; padding-left:8px; padding-right:8px; background-color:#BCEEFF;">ÖRNEK</span>

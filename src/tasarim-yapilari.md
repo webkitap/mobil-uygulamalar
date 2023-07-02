@@ -19,8 +19,7 @@ Bu ekrandaki simgeler şunlardır:
 
 - **Get from VCS (Sürüm Kontrol Sistemlerinden Yükle)**: Git, GitHub gibi sitelerde proje geliştirilirse buradan proje yüklenebilir.
 
-New Project simgesi tıklandıktan sonra Templates (Şablonlar) bölümünden Phone and Tablet
-seçilir. Uygulamaya Activity Templates (Tasarım Yapıları) eklenebilen seçim penceresi gelir (Görsel 1.24).
+New Project simgesi tıklandıktan sonra Templates (Şablonlar) bölümünden Phone and Tablet seçilir. Uygulamaya Activity Templates (Tasarım Yapıları) eklenebilen seçim penceresi gelir (Görsel 1.24).
 <div style="display:block;text-align:center">
 
 ![Activity Templates](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.24-activity-templates.png)
@@ -55,11 +54,17 @@ Activity, bir Android uygulamasında kullanıcıya gösterilen ve üzerinde kull
 <h2 id="1.3.2." style="color:#cd2d98;">1.3.2. Activity Çeşitleri</h2>
 
 Yeni bir proje oluşturulurken hazır activitylerden biri seçilmelidir. Hazır activitylerden bazıları şunlardır:
+
 - **No Activity (Activity Yok)**: Yeni bir boş proje oluşturmak anlamına gelir. Bu activity seçildiğinde ne bir XML dosyası ne de bir Java dosyası oluşturulur. Hiçbir dosya otomatik oluşturulmaz.
+
 - **Basic Activity (Temel Activity)**: Temel activity seçildiğinde mobil uygulamada bir menü düğmesi ve kayan bir eylem düğmesi bulunur. Temel activity dosyaları otomatik olarak oluşturulur.
+
 - **Bottom Navigation Activity (Alt Gezinme Activity)**: Alt gezinme activity seçildiğinde mobil uygulamanın alt tarafında üç adet düğme oluşur. Bu düğmelere çoğu sosyal medya uygulamasında yer alan işlevler verilebilir. Bu activity içinde dosyalar otomatik oluşturulur.
+
 - **Empty Activity (Boş Activity)**: En çok kullanılan activitydir. Mobil uygulama geliştirilirken bu activity sık sık seçilir ve yeni bir boş activity oluşturulur.
+
 - **Fullscreen Activity (Tam Ekran Activity)**: Genellikle tam ekran çalışması gereken mobil uygulamalarda kullanılır. Sistem kullanıcı arabiriminin ve eylem çubuğunun görünürlüğünü değiştirir. Birçok uygulama slayt göstermek, video göstermek vb. için ekranın tamamını kullanır. Bu activity için uygun dosyalar otomatik olarak oluşturulur.
+
 - **Login Activity (Giriş Activity)**: Oturum açma mobil uygulaması geliştirmek için kullanılan activitydir. E-posta ve şifre girmek için alanlar ile bu alanları onaylamak için düğme bileşenleri ekranda yer alır. Bu activity için uygun dosyalar otomatik olarak oluşturulur.
 
 <h2 id="1.3.3." style="color:#cd2d98;">1.3.3. Activity Yaşam Döngüsü</h2>

@@ -14,10 +14,15 @@
 Mobil uygulama kavramı, taşınabilir cihazlar için kodlanmış yazılımlardır. Taşınabilir cihazlar veya
 mobil işletim sistemi kullanılan cihazlar denildiğinde ilk akla gelenler şunlardır:
 - Akıllı telefonlar
+
 - Tabletler
+
 - E-kitap okuyucu
+
 - Akıllı televizyonlar
+
 - Otomobiller
+
 - Akıllı saatler
 
 Taşınabilir cihazlarda yaygın olarak kullanılan işletim sistemleri Android ve IOS’tur. Mobil uygulama geliştirilirken tercih edilebilecek yöntemler şunlardır:
@@ -34,8 +39,7 @@ Android işletim sisteminde Java programlama diliyle mobil uygulama geliştirmek
 
 <h2 id="1.1.1." style="color:#cd2d98;">1.1.1. Java Software Development Kit (JDK) Kurulumu</h2>
 
-Java Runtime Environment (JRE) ve Java Software Development Kit (JDK) olmak üzere iki farklı
-Java paketi vardır. JRE, Java programlama dilinde yazılmış programları çalıştırmak için kullanılırken JDK ise yazılımcıların Java programları geliştirmesinde kullanılır.
+Java Runtime Environment (JRE) ve Java Software Development Kit (JDK) olmak üzere iki farklı Java paketi vardır. JRE, Java programlama dilinde yazılmış programları çalıştırmak için kullanılırken JDK ise yazılımcıların Java programları geliştirmesinde kullanılır.
 
 Herhangi bir web tarayıcının adres çubuğunda [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/ "Oracle Resmi WEB Sitesi") adresine gidildiğinde en güncel JDK sürümüne ulaşılır ve kurulum programı bilgisayara indirilir.
 
@@ -99,9 +103,7 @@ JDK kurulumu tamamlandıktan sonra Java diliyle mobil uygulama geliştirme ortam
 ![Android Studio indirme sayfası](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.5-android-studio-indirme-sayfasi.png)
 </div>
 
-Android Studio indirme sayfasındaki **Download Android Studio** düğmesine tıklanır. Yeni gelen
-pencerede kullanıcı sözleşmesinin kabul edildiğini ifade eden onay kutusu işaretlendikten sonra
-**Download Android Studio…** düğmesi tıklanarak indirme başlatılır (Görsel 1.6). 
+Android Studio indirme sayfasındaki **Download Android Studio** düğmesine tıklanır. Yeni gelen pencerede kullanıcı sözleşmesinin kabul edildiğini ifade eden onay kutusu işaretlendikten sonra **Download Android Studio…** düğmesi tıklanarak indirme başlatılır (Görsel 1.6). 
 
 <div style="display:block;text-align:center">
 
@@ -130,8 +132,7 @@ Bir sonraki aşamada ise Android Studio programının kurulacağı dizin ile ilg
 ![Kurulum dizini ayarlama penceresi](./mobil-uygulama-gelistirmeye-hazirlik/gorsel-1.9-kurulum-dizini-ayarlama-penceresi.png)
 </div>
 
-Kullanıcı, bu aşamada Android Studio kısayollarının hangi klasörde oluşturulacağını veya yeni bir
-isim belirleyerek oluşan klasörde kısayolların yer almasını sağlayabilir. Pencerenin altındaki **Do not create shortcuts (Kısayol oluşturma)** onay kutusu işaretlenerek kısayol oluşturulmaması da seçilebilir (Görsel 1.10). Bu pencerede **Install (Yükle)** düğmesi tıklanarak kurulum başlatılır.
+Kullanıcı, bu aşamada Android Studio kısayollarının hangi klasörde oluşturulacağını veya yeni bir isim belirleyerek oluşan klasörde kısayolların yer almasını sağlayabilir. Pencerenin altındaki **Do not create shortcuts (Kısayol oluşturma)** onay kutusu işaretlenerek kısayol oluşturulmaması da seçilebilir (Görsel 1.10). Bu pencerede **Install (Yükle)** düğmesi tıklanarak kurulum başlatılır.
 
 <div style="display:block;text-align:center">
 

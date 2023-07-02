@@ -1,9 +1,6 @@
 <h1 style="color:#00b9f2;">2.1. MOBİL UYGULAMA EKRAN TASARIMINA GİRİŞ</h1>
 
-Android, taşınabilir cihazlarda yaygın olarak kullanılan bir işletim sistemidir. İngilizce Applications
-(Uygulamalar) kelimesinin kısaltılmış hâli olan **Apps**, bu işletim sisteminde çalışan mobil uygulamaları ifade etmek için kullanılır. Kurulum ve çalıştırılabilir dosyalara **Android Package Kit (APK)**
-adı verilir. Bu Android işletim sistemi dosyalarının uzantısı da **.apk** olarak belirlenir.
-Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür.
+Android, taşınabilir cihazlarda yaygın olarak kullanılan bir işletim sistemidir. İngilizce Applications (Uygulamalar) kelimesinin kısaltılmış hâli olan **Apps**, bu işletim sisteminde çalışan mobil uygulamaları ifade etmek için kullanılır. Kurulum ve çalıştırılabilir dosyalara **Android Package Kit (APK)** adı verilir. Bu Android işletim sistemi dosyalarının uzantısı da **.apk** olarak belirlenir. Bir mobil işletim sistemi arayüzünü temel olarak üçe ayırmak mümkündür.
 
 - **Home screen (Ana Ekran)**: Taşınabilir cihaz açıldığında kullanıcıyı karşılayan ekrandır. Bu arayüz özelleştirilebilir veya arayüzün teması değiştirilebilir (Görsel 2.1a).
 

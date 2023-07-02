@@ -253,7 +253,7 @@ Yeni bir veri tabanı oluşturmak için Görsel 7.42'deki **Create database** bu
 ![Firestore güvenlik kuralları belirleme ekranı](./veritabani-islemleri/gorsel-7.43-firestore-guvenlik-kurallari-belirleme-ekrani.png)
 </div>
 
-Sadece geliştirme amaçlı olarak **Start in test mode** seçeneği seçilmelidir. Diğer mod seçilirse de taylı olarak güvenlik ayarları yazılmalıdır. Geliştirme amaçlı olarak Start in test mode ihtiyaçlar için yeterlidir. Next buttonuna basılarak sonraki ekrana geçildiğinde Görsel 7.44'teki ekranla karşılaşılır.
+Sadece geliştirme amaçlı olarak **Start in test mode** seçeneği seçilmelidir. Diğer mod seçilirse detaylı olarak güvenlik ayarları yazılmalıdır. Geliştirme amaçlı olarak Start in test mode ihtiyaçlar için yeterlidir. Next buttonuna basılarak sonraki ekrana geçildiğinde Görsel 7.44'teki ekranla karşılaşılır.
 
 <div style='display:block;text-align:center'>
 
@@ -384,6 +384,7 @@ implementation 'com.google.firebase:firebase-storage'
 ```
 
 <h3 style="color:#632896">7.3.6.1. Mobil Uygulama Geliştirme Ortamında Kullanıcı İşlemleri</h3>
+
 Mobil uygulama geliştirme ortamında Firebase veri tabanı kullanıcı işlemlerinin tamamı **FirebaseAuth** nesnesi ile yapılır.
 
 Firebase nesnelerinin tümü asenkron olarak çalışır. Mobil uygulama geliştirme ortamında ise yazılan tüm kodlar senkron olarak çalışır. Bir başka deyişle satır sırasına göre önce yazılan komut bitmeden sonraki komut çalışmaz. Herhangi bir kod asenkron çalıştığında ise diğer kodların beklemesine gerek yoktur. Sonuç ne zaman gelirse ondan sonra veri kullanılabilir. Uzak veri tabanları internette çalıştığı için verinin sunucudan tekrar cihaza getirilmesi zaman alır. Veri getirme işlemleri senkron olarak yapılırsa sonuç daha gelmeden bir sonraki kod çalışmaz ve sonuç görünmez veya bir hatanın çıkmasına yol açar.
@@ -1045,7 +1046,9 @@ FirebaseFirestore.getInstance()
 Sorgular bileşik olarak da kullanılabilir. Bileşik sorgu sınırlamaları şunlardır:
 
 - Dizi kullanılarak yapılan whereIn, whereNotIn gibi ifadeler en fazla 10 zincir olacak şekilde yazılabilir.
+
 - <, <=, >, >= sorguları sadece kendi aralarında zincir olarak kullanılabilir.
+
 - = ve != sorguları da kendi aralarında zincir olarak kullanılır.
 
 Sadece stokta bulunan ürünlerden fiyatı 1.000'den küçük olanlar uzak veri tabanından şu şekilde getirilir:

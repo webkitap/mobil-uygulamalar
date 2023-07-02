@@ -120,7 +120,9 @@ ConstraintLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazı
 ![Görünümler](./ekran-tasarimi/gorsel-2.24-gorunumler.png)
 </div>
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> ConstraintLayout yerleşiminde birinci görünüme ikinci bir görünüm bağlandığında ikinci görünüm, birinci görünüme göre konumlandırılır. Bir görünüm sol kenar boşluğuna bağlanırsa bu görünümün sol kenar boşluğu korunur, sağ kenar boşluğu değişebilir.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>ConstraintLayout yerleşiminde birinci görünüme ikinci bir görünüm bağlandığında ikinci görünüm, birinci görünüme göre konumlandırılır. Bir görünüm sol kenar boşluğuna bağlanırsa bu görünümün sol kenar boşluğu korunur, sağ kenar boşluğu değişebilir.
 
 <h2 id="2.6.2." style="color:#00b9f2">2.6.2. LinearLayout</h2>
 

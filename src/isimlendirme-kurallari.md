@@ -4,9 +4,13 @@ Her programlama dilinde uyulması gereken isimlendirme kuralları ve standartlar
 
 İsimlendirme kuralları şunlardır:
 * İsimlerde boşluk kullanılmaz.
+
 * İsimlerde $ ve _ karakterleri dışında özel karakterler kullanılmaz.
+
 * İsimler sayı ile başlamaz.
+
 * İsimler büyük ve küçük harf duyarlıdır. Bir uygulama içinde yer alan "ad" değişkeni ile "Ad"değişkeni farklıdır.
+
 * Ayrılmış anahtar kelimeler (reserved keywords) isim olarak kullanılmaz. İsimlendirmede if,else, int, char gibi programa ait ifadeler ayrılmış anahtar kelimelerdir.
 
 Birçok isimlendirme standardı vardır. Bunlardan üç tanesi Java programlama dilinde sıklıkla kullanılır.
@@ -35,11 +39,17 @@ PI_SAYISI, MAAS_KATSAYISI, SAAT_UCRETI
 İsimlendirme standartları kodun okunabilirliğini artırmak için getirilmiştir. Java kodları yazılırken kullanılan isimlendirme standartları şunlardır:
 
 - Türkçe karakter (ç, ğ, ı, ö, ş, ü, Ç, Ğ, İ, Ö, Ş, Ü) kullanmaktan kaçınılmalıdır.
+
 - Proje isimleri Pascal Case şeklinde olmalıdır.
+
 - Sınıf isimleri Pascal Case şeklinde olmalıdır.
+
 - Değişken isimleri Camel Case şeklinde olmalıdır.
+
 - Sabitler Screaming Snake Case şeklinde olmalıdır.
+
 - Paket isimleri Pascal Case şeklinde olmalıdır.
+
 - Metot isimleri Camel Case şeklinde olmalıdır.
 
 >**SIRA SİZDE**: 
