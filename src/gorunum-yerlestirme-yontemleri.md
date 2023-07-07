@@ -146,7 +146,9 @@ ekranına yerleştirilmiş CheckBox görünümünün layout_width kutusuna 100 d
 
 **4. Adım**: Shift+F10 klavye tuşlarına basarak uygulamanın ön izlemesini yapınız.
 
-**UYARI**: ContraintLayout yerleşimindeyken constraint (kısıtlama) ayarları yapılmadığında ön izlemede görünüm sol üst köşede yer alır. 
+**UYARI**: 
+
+>ContraintLayout yerleşimindeyken constraint (kısıtlama) ayarları yapılmadığında ön izlemede görünüm sol üst köşede yer alır. 
 
 
 >**SIRA SİZDE**: 

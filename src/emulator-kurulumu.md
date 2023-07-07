@@ -32,7 +32,9 @@ Açılan **Device Manager (Cihaz Yöneticisi)** penceresindeki **Create device (
 
 - **Other Images**: Diğer işlemcilerde çalışacak işletim sistemi imajları görüntülenir
 
-<span style="color:#f00;font-weight:bold">UYARI:</span> Her Android işletim sistemi sürümü için tek bir API düzeyi belirlenmiştir. Application Programming Interface (Uygulama Programlama Arayüzü) kelimelerinin baş harfleriyle API isimlendirilmesi yapılır. API, yazılımların kendi aralarında iletişim kurmasını sağlayan bir yapıdır. API düzeyi düştükçe yazılan uygulamanın çalışacağı cihaz sayısı artar ancak uygulamada kullanılacak özellikler azalır. API düzeyi yükseldikçe uygulamada kullanılacak özellikler artar ancak kapsadığı cihaz sayısı azalır.
+<span style="color:#f00;font-weight:bold">UYARI:</span> 
+
+>Her Android işletim sistemi sürümü için tek bir API düzeyi belirlenmiştir. Application Programming Interface (Uygulama Programlama Arayüzü) kelimelerinin baş harfleriyle API isimlendirilmesi yapılır. API, yazılımların kendi aralarında iletişim kurmasını sağlayan bir yapıdır. API düzeyi düştükçe yazılan uygulamanın çalışacağı cihaz sayısı artar ancak uygulamada kullanılacak özellikler azalır. API düzeyi yükseldikçe uygulamada kullanılacak özellikler artar ancak kapsadığı cihaz sayısı azalır.
 
 Recommended sekmesindeki Android işletim sistemlerinin isimlerinin hemen yanında Download düğmesi yer alır. Bu düğmeyle o işletim sisteminin imajı indirilir ve işletim sistemi seçime hazır hâle getirilir. Görsel 1.16 penceresinde Marshmallow (Android 6.0) işletim sistemi indirilmiş ve seçime hazır hâle getirilmiştir. Bu sürüm seçilir ve Next düğmesine tıklanır.
 
