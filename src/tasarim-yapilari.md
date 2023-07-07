@@ -83,7 +83,9 @@ Bir Android uygulaması ilk başlatıldığında main (ana) activity oluşturulu
 
 - Kullanıcı, Android cihazın ana ekranına dönerse tüm activityler önce DURAKLATILDI durumuna daha sonra da **DURDURULDU (STOPPED)** durumuna geçer. Kullanıcı, uygulamaya geri dönerse activity BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarından geçer. Android cihazının hafızaya ihtiyacı olursa activitylerin durumu **YOK EDİLDİ (DESTROYED)** durumuna geçer. Bu sayede hafıza boşaltılır.
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> Durumlar, Görsel 1.25’te yer alan okları takip eder. Bir activity OLUŞTURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz.Sırasıyla OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarını geçer. Activityler SÜRDÜRÜLDÜ durumundan DURAKLATILDI durumuna geçebilir veya DURAKLATILDI durumundan SÜRDÜRÜLDÜ durumuna geçebilir.DURAKLATILDI durumundan DURDURULDU durumuna geçebilir ve oradan da BAŞLATILDI durumuna geçebilir fakat asla DURDURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz. 
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>Durumlar, Görsel 1.25’te yer alan okları takip eder. Bir activity OLUŞTURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz.Sırasıyla OLUŞTURULDU, BAŞLATILDI ve SÜRDÜRÜLDÜ durumlarını geçer. Activityler SÜRDÜRÜLDÜ durumundan DURAKLATILDI durumuna geçebilir veya DURAKLATILDI durumundan SÜRDÜRÜLDÜ durumuna geçebilir.DURAKLATILDI durumundan DURDURULDU durumuna geçebilir ve oradan da BAŞLATILDI durumuna geçebilir fakat asla DURDURULDU durumundan SÜRDÜRÜLDÜ durumuna zıplayamaz. 
 
 <h2 id="1.3.4." style="color:#cd2d98;">1.3.4. Activity Yaşam Döngüsü Metotları</h2>
 

@@ -12,7 +12,9 @@ Android, taşınabilir cihazlarda yaygın olarak kullanılan bir işletim sistem
 ![Gorsel 2.1a-b-c](./ekran-tasarimi/gorsel-2.1a-home-screen-gorsel-2.1b-all-apps-gorsel-2.1c-recent-screen.png)
 </div>
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> Bu üç temel mobil cihaz ekranının dışında saatin, bildirimlerin, mesajların gösterilebildiği **Lock screen (Kilit ekranı)** de vardır.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>Bu üç temel mobil cihaz ekranının dışında saatin, bildirimlerin, mesajların gösterilebildiği **Lock screen (Kilit ekranı)** de vardır.
 
 >**SIRA SİZDE:**
 >

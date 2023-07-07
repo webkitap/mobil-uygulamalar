@@ -487,4 +487,6 @@ public class IkinciFragment extends Fragment {
 
 >**TabbedActivity** ile otomatik yüklenen **PlaceHolderFragment** sınıfı ve bu sınıfın bağlı olduğu **fragment_main** örnek üzerinde kullanılmamıştır. Bu sınıfın silinmesi bir sorun oluşturmaz. Yirmi birinci uygulamada canlı verilerle çalışılmış ve Fragment’ler arasında veri transferi yapılmıştır.
 
-<span style="color:#f00; font-weight:bold;">UYARI:</span> Fragment, mobil uygulamaları arasında oldukça gelişmiş ve üst düzey bir yapıdır
+<span style="color:#f00; font-weight:bold;">UYARI:</span> 
+
+>Fragment, mobil uygulamaları arasında oldukça gelişmiş ve üst düzey bir yapıdır

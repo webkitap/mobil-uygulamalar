@@ -79,7 +79,9 @@ ConstraintLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazı
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> XML kodları yazılırken **\<!--** ve **\-->** sembolleri arasına yorum satırları yazılabilir. Yorum satırları, kodların çalışmasını etkilemez.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>XML kodları yazılırken **\<!--** ve **\-->** sembolleri arasına yorum satırları yazılabilir. Yorum satırları, kodların çalışmasını etkilemez.
 
 **7. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında ConstraintLayout yerleşimine iki adet Button görünümü ekleyiniz ve constraint ayarlarını yaparak alt alta yerleştiriniz.
 
@@ -153,7 +155,9 @@ LinearLayout yerleşimi oluşturulmak istenirse XML kod olarak şunlar yazılır
 </LinearLayout>
 ```
 
-<span style="color:#f00;font-weight:bold;">UYARI:</span> LinearLayout yerleşimini dikey ayarlamak için **android:orientation="vertical"** veya yatay ayarlamak için **android:orientation="horizantal"** komutları yazılır.
+<span style="color:#f00;font-weight:bold;">UYARI:</span> 
+
+>LinearLayout yerleşimini dikey ayarlamak için **android:orientation="vertical"** veya yatay ayarlamak için **android:orientation="horizantal"** komutları yazılır.
 
 **8. UYGULAMA**: İşlem adımlarına göre mobil uygulama geliştirme ortamında LinearLayout yerleşimine üç adet CheckBox görünümünü yatay olarak ekleyiniz.\
 **1. Adım**: activity_main.xml dosyasının içindeki tüm kodları siliniz.\
